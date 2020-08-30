@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import "index.scss" ;
+
+$pointColor:rgb(194, 194, 194);
+$pColor:rgb(77, 41, 0);
+
+html,body{
+  background:
+  // rgb(201, 201, 201);
+  $line;
+  font-feature-settings: "palt"1,"swsh" 1;
+        color:rgb(200, 140, 80);
+
+      // animation:fade 3s forwards;
+      /* overflow:hidden; */
+  .homeGroup{
+    padding:0 5%;
+  }
+  // @mixin copyStyle($display:inline,$anima:fade 2s forwards){
+  // display:$display;
+  // animation:$anima;
+  // }
+  .copy{
+    p{
+      // color:$myBlack;
+      // text-shadow:0 0 1px $ppintColor;
+      transition:text-shadow 3s ease 8s ;
+      font-size:55px;
+      padding-left:.7em;
+      display: inline-block;
+    }
+    .item1{
+    animation:fade 1s forwards;
+    opacity:0;
+    animation-delay: 2.5s;
+    }
+    .item2{
+    opacity:0;
+    animation:fade 2s forwards;
+    animation-delay: 3.5s;
+    }
+    .item3{
+    opacity:0;
+    animation:fade 2s forwards;
+    animation-delay: 4s;
+    }
+    .item4{
+    opacity:0;
+    animation:fade 2s forwards;
+    animation-delay: 5s;
+    }
+  }
+  @keyframes  fade{
+    0%{opacity:0}
+    100%{opacity:1}
+  }
+
+  .logo{
+    display:flex;
+    // justify-content: space-between;
+    // animation:fade 4s forwards;
+    margin:0 5%;
+    img{
+      // filter: saturate(.9);
+      // margin:auto;
+      opacity:0;
+      width:200px;
+      height:250px;
+      padding:0;
+      animation:flash 14s infinite;
+    }
+    @keyframes flash{
+     0%{opacity: 0;}
+     1%{opacity: .3;}
+     2%{opacity: 0;}
+     3%{opacity: .3;}
+     4%{opacity: 0;}
+     6%{opacity: .5;}
+     9%{opacity: 0;}
+     25%{opacity: .7;}
+     35%{opacity: .7;}
+     36%{opacity: .5;}
+     37%{opacity: .8;}
+     95%{opacity: 0;}
+     95%{opacity: .8;}
+     97%{opacity: .9;}
+     98%{opacity: .6;}
+     99%{opacity: .5;}
+     100%{opacity: .9;}
+      //以下４.５秒forwardsVer.
+      //  0%{opacity: 0;}
+      //  1%{opacity: 1;}
+      //  10%{opacity: .4;}
+      //  12%{opacity: .8;}
+      //  15%{opacity: .2;}
+      //  20%{opacity: .6;}
+      //  45%{opacity: 0;}
+      // //  50%{opacity: .4;}
+      //  60%{opacity: .8;}
+      //  65%{opacity: .5;}
+      //  70%{opacity: .7;}
+      //  80%{opacity: .3;}
+      //  100%{opacity: .9;}
+    }
+    .nameBar{
+      animation:fade 10s forwards;
+      opacity:0;
+      display:inline-block;
+      animation-delay: 6s;
+      margin-left:30px;
+      h1{
+      font-family: adobe-text-pro,serif;
+font-weight: 300;
+font-style: normal;
+        text-shadow: .5px 0 white,0 .5px white,-.5px 0 white,0 -.5px white;
+        transition:text-shadow 3s ease 8s ;
+        font-size:50px;
+color:$myBlack;
+      }
+      h2{
+
+        animation:fade 4s forwards;
+        animation-delay: 6.5s;
+        // opacity:0;
+        margin:5px auto;
+        font-size:10px;
+        letter-spacing:.9em;
+        transform:translateY(-10px);
+        color:rgba(30, 30, 30,.5);
+      }
+    }
+  }
+
+  .linkbtn{
+      // margin:2em 1em 1em auto;
+    // button{
+    // background:orange;
+    // }
+    p{
+      text-align:right;
+      margin-right:10%;
+      // text-shadow:0 0 10px rgb(179, 119, 0);
+      font-size: 20px;
+    }  
+    a{
+      // color:rgb(70, 45, 0);
+color:rgb(200, 140, 80);
+      display: inline;
+      padding:1em;
+      opacity: 0;
+      animation: efect 1.2s infinite 11s;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    @keyframes efect {
+      0%{opacity: .3;}
+      100%{opacity: 1;}
+    }
+  } 
+}
