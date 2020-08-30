@@ -17,7 +17,7 @@
             echo h($gestName);
           }
         ?>
-      さん！</p>
+      さん</p>
     <form action="index.php" method="get">
       <label for="gest">
       <input id="gest" type="text" name="gestName" autocomplete="off" placeholder="Your name">
@@ -26,7 +26,7 @@
     </form>
   </div>
   <div class="discription">
-    <p>テキストを入力テキストを入力テキストを入力テキストを入力テキストを入力テキストを入力テキストを入力</p>
+    <p>テキストを入力する予定です</p>
   </div>
 </section>
 <section>
