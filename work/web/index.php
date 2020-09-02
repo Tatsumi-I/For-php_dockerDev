@@ -28,6 +28,21 @@
   <div class="discription">
     <p>テキストを入力する予定です</p>
   </div>
+
+  <toolbarbutton label="Back" tooltiptext="Go back one page"/>
+
+  <toolbar tooltiptext="File Buttons">
+  <button label="Open" tooltiptext="Open a File">
+  <button label="Close".nm,./_>
+</toolbar>
+
+<tooltip id="iconic">
+  <image src="imgs/logo.png"/>
+  <label value="Save a file to a remote site"/>
+</tooltip>
+
+<button label="Save" tooltip="iconic"/>
+
 </section>
 <section>
   <div   class="contentsArea">
@@ -53,8 +68,8 @@
   <div class="wrap">
     <div class="charaInfo">
       <img src="imgs/IMG_6619.JPG" width=250px style="filter:saturate(0.2);">
-      <p><?= h($myName);?></p>
-      <p>石川達実</p>
+      <h2><?= h($myName);?></h2>
+      <h3>石川達実</h3>
       <p>Birth year:1986</p>
     </div>
     <div class="infoList">
