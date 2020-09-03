@@ -33,12 +33,12 @@
 
 <body>
 <header>
-  <div class="headerContainer">
+  <div id="header" class="headerContainer">
     <div class="logo">
-      <img src="imgs/logo.png" width=80px>
+      <img src="imgs/logo.png" width="80px">
     </div>
     <div class="inHeader">
-      <h1><?= h($myName);?>_Portofolio</h1>
+      <h1><?= h($myName);?> _ Portofolio</h1>
       <h2>石川達実  ポートフォリオサイト</h2>
     </div>
     <?= $nav;?>

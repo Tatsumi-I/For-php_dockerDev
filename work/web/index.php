@@ -10,7 +10,7 @@
     <p class="rundum">  <?= h($mesagge).'(ランダムメッセージ-全5種類)';?></p>
   </div>
   <div class="gestForm">
-    <p>ようこそ
+    <p id="hide">ようこそ
         <?php
           if(isset($_GET['gestName'])){
             $gestName = $_GET['gestName'];
@@ -28,37 +28,23 @@
   <div class="discription">
     <p>テキストを入力する予定です</p>
   </div>
-
-  <toolbarbutton label="Back" tooltiptext="Go back one page"/>
-
-  <toolbar tooltiptext="File Buttons">
-  <button label="Open" tooltiptext="Open a File">
-  <button label="Close".nm,./_>
-</toolbar>
-
-<tooltip id="iconic">
-  <image src="imgs/logo.png"/>
-  <label value="Save a file to a remote site"/>
-</tooltip>
-
-<button label="Save" tooltip="iconic"/>
-
 </section>
+
 <section>
-  <div   class="contentsArea">
-    <h1 id="hide">Coding</h1>
+  <div id="works" class="contentsArea">
+    <h1 id="coading" >Coding</h1>
       <div class="contents1">
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="cell"></div>
       </div>
-    <h1>Design</h1>
+    <h1 id="design">Design</h1>
       <div class="contents2">
-        <div class="cell"><img src="imgs/art2.png" width=250px></div>
-        <div class="cell"><img src="imgs/art1.png" width=250px></div>
-        <div class="cell"><img src="imgs/Gentlestyle.png" width=250px></div>
-        <div class="cell"><img src="imgs/b.Next.png" width=250px></div>
+        <div class="cell"><img src="imgs/art2.png" width="250px"></div>
+        <div class="cell"><img src="imgs/art1.png" width="250px"></div>
+        <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
+        <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
       </div>
   </div>
 </section>
@@ -66,11 +52,19 @@
 <section>
   <h1>Profile</h1>
   <div class="wrap">
-    <div class="charaInfo">
-      <img src="imgs/IMG_6619.JPG" width=250px style="filter:saturate(0.2);">
+    <div class="info1">
+      <img src="imgs/IMG_6619.JPG" width="250px" style="filter:saturate(0.2);">
       <h2><?= h($myName);?></h2>
       <h3>石川達実</h3>
-      <p>Birth year:1986</p>
+      </div>
+    <div class="charaInfo">
+      <dt>概要</dt>
+      <dd>1986年東京都生まれ。学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
+      <dd>学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
+      <dd>座右の銘：前途多難</dd>
+      <dd>性質を表わす言葉：<br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</dd>
+      <dd>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、義理人情にあつい、明るい、快活、雄弁など</dd>
+      <dd>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して、人々の暮らしに寄り添う感動体験を提供したいという一心からプログラミングをはじめた</dd>
     </div>
     <div class="infoList">
       <dl>
@@ -87,11 +81,15 @@
           <dd><i class="fab fa-docker fa-fw docker"></i>Docker, MANP</dd>
       </dl>
     </div>
-    <div class="dtext">
+    <div class="dtext1">
       <dl>
         <dt>Works</dt>
-          <dd>Coding</dd>
-          <dd>Design</dd>
+        <dd>Coding</dd>
+        <dd>Design</dd>
+      </dl>
+    </div>
+    <div class="dtext2">
+      <dl>
         <dt>どんな人？</dt>
           <dd>石川達実の適性や思考について知る</dd>
           <dd>石川達実5つのKeywords</dd>
@@ -99,5 +97,40 @@
     </div>
   </div>
 </section>
+
+<section>
+
+
+
+<div class=contact>
+
+</div>
+
+<fieldset>
+<legend>
+  あなたのご意見聞かせて下さい[複数回答可]
+</legend>
+  <label><input type="checkbox">面白い</label>
+  <label><input type="checkbox">面白くない</label>
+  <label><input type="checkbox">並み</label>
+  <label><input type="checkbox">改善すべき</label>
+  <!-- <label><input type="checkbox">終わっている</label>
+  <label><input type="checkbox">神がかっている</label> -->
+</fieldset>
+
+<fieldset>
+  <legend>
+    あなたのご意見聞かせて下さい（どれか一つを選択）
+  </legend>
+    <label><input type="radio" name="feel">面白い</label>
+    <label><input type="radio" name="feel">面白くない</label>
+    <label><input type="radio" name="feel">並み</label>
+    <label><input type="radio" name="feel">改善すべき</label>
+    <!-- <label><input type="radio" name="feel">終わっている</label>
+    <label><input type="radio" name="feel">神がかっている</label> -->
+ </fieldset>
+
+</section>
+
 <?php 
 include_once('footer.php');

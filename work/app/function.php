@@ -3,7 +3,7 @@
     return htmlspecialchars($str,ENT_QUOTES,'UTF-8');
   }
 
-  $myName = 'Tatsumi Ishikawa';
+  $myName = 'Tatsumi-Ishikawa';
 
   $date = 'Y/F/d (D) H:i:s';
 
@@ -22,14 +22,14 @@
 
   $nav= 
     '<nav>
-      <p><a href=""></a>実績/works</p>
+      <p><a href="#works">実績/Works</a></p>
         <ul>
-          <li><a href=""></a>Coding</li>
-          <li><a href=""></a>Design</li>
+          <li><a href="#coading">Coding</a></li>
+          <li><a href="#design">Design</a></li>
         </ul>
-      <p><a href=""></a>人物/Character</p>
-      <p><a href=""></a>経歴/Backbone</p>
-      <p><a href=""></a>将来/Prospects</p>
+      <p><a href="">人物/Character</a></p>
+      <p><a href="">経歴/Backbone</a></p>
+      <p><a href="">将来/Prospects</a></p>
     </nav>'
 
 

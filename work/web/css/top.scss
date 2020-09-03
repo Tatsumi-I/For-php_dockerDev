@@ -5,12 +5,15 @@ $pointColor:rgb(194, 194, 194);
 $pColor:rgb(77, 41, 0);
 
 html,body{
-  background:
+  background:$myBlack;
   // rgb(201, 201, 201);
-  $line;
+  //以下はグレー
+  // $line;
   font-feature-settings: "palt"1,"swsh" 1;
         color:rgb(200, 140, 80);
-
+font-family: itc-american-typewriter, sans-serif;
+  font-style: normal;
+  font-weight: 300;
       // animation:fade 3s forwards;
       /* overflow:hidden; */
   .homeGroup{
@@ -59,9 +62,9 @@ html,body{
     display:flex;
     // justify-content: space-between;
     // animation:fade 4s forwards;
-    margin:0 5%;
+    margin:5%;
     img{
-      // filter: saturate(.9);
+      filter: opacity(.9);
       // margin:auto;
       opacity:0;
       width:200px;
@@ -106,27 +109,30 @@ html,body{
       animation:fade 10s forwards;
       opacity:0;
       display:inline-block;
-      animation-delay: 6s;
+      animation-delay: 5.5s;
       margin-left:30px;
       h1{
+        letter-spacing: .2;
       font-family: adobe-text-pro,serif;
 font-weight: 300;
+font-size:48px;
 font-style: normal;
-        text-shadow: .5px 0 white,0 .5px white,-.5px 0 white,0 -.5px white;
-        transition:text-shadow 3s ease 8s ;
-        font-size:50px;
+text-shadow: .5px 0 white,0 .5px white,-.5px 0 white,0 -.5px white;
+transition:text-shadow 3s ease 8s ;
+font-size:50px;
 color:$myBlack;
-      }
-      h2{
-
-        animation:fade 4s forwards;
-        animation-delay: 6.5s;
-        // opacity:0;
-        margin:5px auto;
-        font-size:10px;
+}
+h2{
+  
+  animation:fade 4s forwards;
+  animation-delay: 6.5s;
+  // opacity:0;
+  margin:5px auto;
+  font-size:10px;
+  font-weight: 200;
         letter-spacing:.9em;
         transform:translateY(-10px);
-        color:rgba(30, 30, 30,.5);
+        color:rgba(255, 255, 255, 0.5);
       }
     }
   }
@@ -148,7 +154,7 @@ color:rgb(200, 140, 80);
       display: inline;
       padding:1em;
       opacity: 0;
-      animation: efect 1.2s infinite 11s;
+      animation: efect 1.2s infinite 9s;
       text-decoration: none;
       border-radius: 4px;
     }
