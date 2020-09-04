@@ -150,18 +150,18 @@ footer .footerContainer .inFooter { color: ivory; margin: auto 0; }
 
 footer .footerContainer .inFooter h1 { font-size: 12px; text-align: right; }
 
-footer .footerContainer .inFooter h1:hover { text-shadow: 0 0 2px 20px yellow; -webkit-animation: efect 2s infinite; animation: efect 2s infinite; -webkit-animation-play-state: running; animation-play-state: running; }
+footer .footerContainer .inFooter h1:hover { text-shadow: 0 0 2px 20px yellow; -webkit-animation: delay 2s infinite; animation: delay 2s infinite; -webkit-animation-play-state: running; animation-play-state: running; }
 
 footer .footerContainer .inFooter p { text-align: right; }
 
-@-webkit-keyframes efect { 0% { opacity: .3; }
+@-webkit-keyframes delay { 0% { opacity: .3; }
   20% { opacity: .6; }
   40% { opacity: .1; }
   60% { opacity: 0; }
   80% { opacity: .8; }
   100% { pacity: .2; } }
 
-@keyframes efect { 0% { opacity: .3; }
+@keyframes delay { 0% { opacity: .3; }
   20% { opacity: .6; }
   40% { opacity: .1; }
   60% { opacity: 0; }
@@ -220,8 +220,8 @@ html .logo .nameBar h2, body .logo .nameBar h2 { -webkit-animation: fade 4s forw
 
 html .linkbtn p, body .linkbtn p { text-align: right; margin-right: 10%; font-size: 20px; }
 
-html .linkbtn a, body .linkbtn a { color: #c88c50; display: inline; padding: 1em; opacity: 0; -webkit-animation: efect 1.2s infinite 9s; animation: efect 1.2s infinite 9s; text-decoration: none; border-radius: 4px; }
+html .linkbtn a, body .linkbtn a { color: #c88c50; display: inline; padding: 1em; opacity: 0; -webkit-animation: delay 1.2s infinite 9s; animation: delay 1.2s infinite 9s; text-decoration: none; border-radius: 4px; }
 
-@keyframes efect { 0% { opacity: .3; }
+@keyframes delay { 0% { opacity: .3; }
   100% { opacity: 1; } }
 /*# sourceMappingURL=top.min.css.map */

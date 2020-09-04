@@ -6,24 +6,22 @@
 <main>
 <section>
   <div class="headLine">
-    <p class="date"><?= date($date).'　　最終更新時刻';?></p>
-    <p class="rundum">  <?= h($mesagge).'(ランダムメッセージ-全5種類)';?></p>
-  </div>
-  <div class="gestForm">
-    <p id="hide">ようこそ
-        <?php
+    <div id= "hide" class="gestForm">
+      <form id="tooltip" action="index.php" method="get" description="Input your name" >
+        <label for="gest">ようこそ  
+          <?php
           if(isset($_GET['gestName'])){
-            $gestName = $_GET['gestName'];
-            echo h($gestName);
+            $gestName = h($_GET['gestName']);
+            echo $gestName;
           }
-        ?>
-      さん</p>
-    <form action="index.php" method="get">
-      <label for="gest">
-      <input id="gest" type="text" name="gestName" autocomplete="off" placeholder="Your name">
-      <input type="submit" value="OK">
-      </label>
-    </form>
+          ?>
+          さん</label>
+          <input id="gest" type="text" name="gestName" autocomplete="off" placeholder="">
+          <input type="submit" value="OK">
+        </form>
+    </div>
+      <p class="date">”<?= date($date).'  更新時刻';?>”</p>
+      <p class="rundum">「<?= h($mesagge).'(ランダムメッセージ-全5種類)';?>」</p>
   </div>
   <div class="discription">
     <p>テキストを入力する予定です</p>
@@ -33,19 +31,78 @@
 <section>
   <div id="works" class="contentsArea">
     <h1 id="coading" >Coding</h1>
+    <div class="coadingArea">
       <div class="contents1">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
+        <div>
+          <div id="cell1" class="cell" description="Github上で公開しています">
+            <a href="https://tatsumi-i.github.io/MyFirstCode/">
+            <img src="imgs/mfc.png" width="250px"></a>
+          </div>
+          <div>
+            <p>初めての制作</p>
+          </div>
+        </div>
       </div>
+      <div class="contents1">
+        <div>
+          <div id="cell1" class="cell" description="Github上で公開しています">
+            <a href="https://tatsumi-i.github.io/MyFirstCode/">
+            <img src="imgs/mfc.png" width="250px"></a>
+          </div>
+          <div>
+            <p>初めての制作</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents1">
+        <div>
+          <div id="cell1" class="cell" description="Github上で公開しています">
+            <a href="https://tatsumi-i.github.io/MyFirstCode/">
+            <img src="imgs/mfc.png" width="250px"></a>
+          </div>
+          <div>
+            <p>初めての制作</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
     <h1 id="design">Design</h1>
+    <div class="designArea">
       <div class="contents2">
-        <div class="cell"><img src="imgs/art2.png" width="250px"></div>
-        <div class="cell"><img src="imgs/art1.png" width="250px"></div>
-        <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
-        <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
+        <div class="cell">
+          <img src="imgs/art2.png" width="250px">
+        </div>
+        <div>
+          <p> ファーストビュー</p>
+        </div>
       </div>
+      <div class="contents2">
+      <div class="cell"><img src="imgs/art1.png" width="250px"></div>
+      <div>  
+      <p> ファーストビュー</p>
+          </div>
+
+      </div>
+      <div class="contents2">
+      <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
+      <div>
+        <p> ファーストビュー</p>
+      </div>
+    </div>
+      <div class="contents2">
+      <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
+      <div>
+            <p> ファーストビュー</p>
+          </div>
+      </div>
+
+
+  
+      
+    
+      </div>
+    </div>
   </div>
 </section>
 
@@ -63,8 +120,8 @@
       <dd>学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
       <dd>座右の銘：前途多難</dd>
       <dd>性質を表わす言葉：<br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</dd>
-      <dd>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、義理人情にあつい、明るい、快活、雄弁など</dd>
-      <dd>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して、人々の暮らしに寄り添う感動体験を提供したいという一心からプログラミングをはじめた</dd>
+      <dd>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、熱い、明るい、快活、雄弁など</dd>
+      <dd>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して、暮らしに寄り添う感動体験を提供したいという一心からプログラミングをはじめた</dd>
     </div>
     <div class="infoList">
       <dl>
@@ -98,39 +155,38 @@
   </div>
 </section>
 
-<section>
+<section style="margin:100px;">
 
 
-
-<div class=contact>
-
-</div>
 
 <fieldset>
 <legend>
   あなたのご意見聞かせて下さい[複数回答可]
 </legend>
-  <label><input type="checkbox">面白い</label>
-  <label><input type="checkbox">面白くない</label>
-  <label><input type="checkbox">並み</label>
-  <label><input type="checkbox">改善すべき</label>
-  <!-- <label><input type="checkbox">終わっている</label>
-  <label><input type="checkbox">神がかっている</label> -->
-</fieldset>
 
-<fieldset>
-  <legend>
-    あなたのご意見聞かせて下さい（どれか一つを選択）
-  </legend>
-    <label><input type="radio" name="feel">面白い</label>
-    <label><input type="radio" name="feel">面白くない</label>
-    <label><input type="radio" name="feel">並み</label>
-    <label><input type="radio" name="feel">改善すべき</label>
-    <!-- <label><input type="radio" name="feel">終わっている</label>
-    <label><input type="radio" name="feel">神がかっている</label> -->
- </fieldset>
+<form id="testForm" name="testForm">
+  <div>
+    <label for="title">あなたのご意見題名</label>
+    <input id="title" name="title" type="text">
+  </div>
+  <div>
+    <label for="voice">  あなたのご意見聞かせて下さ</label>
+    <input id="voice" name="voice" type="text">
+  </div>
+  <div>
+    <input id="jj" name="levels" type="checkbox" value="面白い">
+    <label for="jj">面白い</label>
+    <input id="jj" name="levels" type="checkbox" value="余り">
+    <label for="jj">余り</label>
+    <input id="jj" name="levels" type="checkbox" value="全然">
+    <label for="jj">全然</label>
+  </div>
+</form>
+<button onclick="formModule.sumForm()">入力内容を確認する</button>
+<button onclick="formModule.submitForm()">送信</button>
+
 
 </section>
-
 <?php 
+
 include_once('footer.php');
