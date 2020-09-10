@@ -10,47 +10,44 @@ html,body{
   //以下はグレー
   // $line;
   font-feature-settings: "palt"1,"swsh" 1;
-        color:rgb(200, 140, 80);
-font-family: itc-american-typewriter, sans-serif;
+  color:$Orange;
+  font-family: itc-american-typewriter, sans-serif;
   font-style: normal;
   font-weight: 300;
       // animation:fade 3s forwards;
       /* overflow:hidden; */
   .homeGroup{
     padding:0 5%;
+    height:100%;
   }
   // @mixin copyStyle($display:inline,$anima:fade 2s forwards){
   // display:$display;
   // animation:$anima;
   // }
   .copy{
+    animation:flash 2s infinite 10s;
     p{
-      // color:$myBlack;
-      // text-shadow:0 0 1px $ppintColor;
+      text-shadow:0px 0px 5px rgba(151, 98, 52, 0.5);
       transition:text-shadow 3s ease 8s ;
-      font-size:55px;
-      padding-left:.7em;
+      font-size:60px;
+      padding-left:1em;
       display: inline-block;
     }
     .item1{
-    animation:fade 1s forwards;
+    animation:fade 1s forwards 2s;
     opacity:0;
-    animation-delay: 2.5s;
     }
     .item2{
     opacity:0;
-    animation:fade 2s forwards;
-    animation-delay: 3.5s;
+    animation:fade 2s forwards 2.5s;
     }
     .item3{
     opacity:0;
-    animation:fade 2s forwards;
-    animation-delay: 4s;
+    animation:fade 2s forwards 3s;
     }
     .item4{
     opacity:0;
-    animation:fade 2s forwards;
-    animation-delay: 5s;
+    animation:fade 2s forwards 4s;
     }
   }
   @keyframes  fade{
@@ -60,17 +57,15 @@ font-family: itc-american-typewriter, sans-serif;
 
   .logo{
     display:flex;
-    // justify-content: space-between;
-    // animation:fade 4s forwards;
     margin:5%;
     img{
       filter: opacity(.9);
-      // margin:auto;
       opacity:0;
       width:200px;
       height:250px;
       padding:0;
       animation:flash 14s infinite;
+      
     }
     @keyframes flash{
      0%{opacity: 0;}
@@ -90,71 +85,49 @@ font-family: itc-american-typewriter, sans-serif;
      98%{opacity: .6;}
      99%{opacity: .5;}
      100%{opacity: .9;}
-      //以下４.５秒forwardsVer.
-      //  0%{opacity: 0;}
-      //  1%{opacity: 1;}
-      //  10%{opacity: .4;}
-      //  12%{opacity: .8;}
-      //  15%{opacity: .2;}
-      //  20%{opacity: .6;}
-      //  45%{opacity: 0;}
-      // //  50%{opacity: .4;}
-      //  60%{opacity: .8;}
-      //  65%{opacity: .5;}
-      //  70%{opacity: .7;}
-      //  80%{opacity: .3;}
-      //  100%{opacity: .9;}
     }
     .nameBar{
-      animation:fade 10s forwards;
-      opacity:0;
       display:inline-block;
-      animation-delay: 5.5s;
-      margin-left:30px;
+      margin:auto;
       h1{
+        opacity:0;
+        animation:fade 8s forwards 5s;
         letter-spacing: .2;
-      font-family: adobe-text-pro,serif;
-font-weight: 300;
-font-size:48px;
-font-style: normal;
-text-shadow: .5px 0 white,0 .5px white,-.5px 0 white,0 -.5px white;
-transition:text-shadow 3s ease 8s ;
-font-size:50px;
-color:$myBlack;
-}
-h2{
-  
-  animation:fade 4s forwards;
-  animation-delay: 6.5s;
-  // opacity:0;
-  margin:5px auto;
-  font-size:10px;
-  font-weight: 200;
-        letter-spacing:.9em;
-        transform:translateY(-10px);
-        color:rgba(255, 255, 255, 0.5);
+        font-family: adobe-text-pro,serif;
+        font-weight: 300;
+        font-size:48px;
+        font-style: normal;
+        text-shadow: .5px 0 white,0 .5px white,-.5px 0 white,0 -.5px white
+        ,2px 2px 5px rgba(0, 0, 0, 0.5)
+        ,7px 7px 5px rgba(0, 0, 0, 0.5)
+        ,12px 12px 5px rgba(0, 0, 0, 0.5)
+       ;
+        font-size:55px;
+        color:$myBlack;
+        }
+        h2{
+          animation:fade 9s forwards 6s;
+          opacity:0;
+          margin:5px auto;
+          font-size:10px;
+          font-weight: 200;
+          letter-spacing:.9em;
+          transform:translateY(-10px);
+          color:rgba(255, 255, 255, 0.5);
+          text-shadow: 2px 2px 5px black;
+        }
       }
     }
-  }
-
   .linkbtn{
-      // margin:2em 1em 1em auto;
-    // button{
-    // background:orange;
-    // }
-    p{
+    a{
+      display:block;
       text-align:right;
       margin-right:10%;
-      // text-shadow:0 0 10px rgb(179, 119, 0);
       font-size: 20px;
-    }  
-    a{
-      // color:rgb(70, 45, 0);
-color:rgb(200, 140, 80);
-      display: inline;
+      animation: delay 2s infinite 9s;
+      color:$Orange;
       padding:1em;
       opacity: 0;
-      animation: delay 1.2s infinite 9s;
       text-decoration: none;
       border-radius: 4px;
     }
@@ -162,5 +135,5 @@ color:rgb(200, 140, 80);
       0%{opacity: .3;}
       100%{opacity: 1;}
     }
-  } 
+  }
 }

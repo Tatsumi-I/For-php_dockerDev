@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
 <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
 <script src="https://javascript/jquery-3.5.1.min.js"></script>
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
 <script>//日本語font
   (function(d) {
     var config = {
@@ -30,25 +30,27 @@
   <script src="p5sketch/p5sketch.js"></script> -->
 </head>
 <body>
-<div class="homeGroup">
-  <div class="copy">
-    <p class="item1">Create</p>
-    <p class="item2">a</p>
-    <p class="item3"> New</p>
-    <p class="item4">Experience.</p>
-  </div>
-  <div class="logo">
-    <img src="imgs/logo.png">
-    <div class="nameBar">
-      <h1 class="item5"><?= h($myName);?>_Portfolio</h1>
-      <h2>石川達実  ポートフォリオサイト</h2>
+  <header>
+    <div class="homeGroup">
+      <div class="copy">
+        <p class="item1">Create</p>
+        <p class="item2">a</p>
+        <p class="item3"> New</p>
+        <p class="item4">Experience.</p>
+      </div>
+      <div class="logo">
+        <img src="imgs/logo.png">
+        <div class="nameBar">
+          <h1 class="item5"><?= h($myName);?>_Portfolio</h1>
+          <h2>石川達実  ポートフォリオサイト</h2>
+        </div>
+      </div>
+      <div class="linkbtn">
+        <a href="index.php">Click here...</a>
+      </div>
     </div>
-  </div>
-  <div class="linkbtn">
-  <!-- <button type="button" name="siteLink"> -->
-    <p ><a href="index.php">Click here...</a></p>
-  <!-- </button> -->
-  </div>
-</div>
+</header>
+
+
 </body>
 </html>

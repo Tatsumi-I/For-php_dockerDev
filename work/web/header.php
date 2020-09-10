@@ -2,7 +2,6 @@
   require_once('../app/function.php')
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -45,11 +44,15 @@
 <header>
   <div id="header" class="headerContainer">
     <div class="logo">
-      <img src="imgs/logo.png" width="80px">
+      <a href="top.php">
+        <img src="imgs/logo.png" width="80px">
+      </a>
     </div>
     <div class="inHeader">
+      <a href="top.php">
       <h1><?= h($myName);?> _ Portofolio</h1>
-      <h2>石川達実  ポートフォリオサイト</h2>
+        <h2>石川達実  ポートフォリオサイト</h2>
+      </a>
     </div>
     <?= $nav;?>
   </div>

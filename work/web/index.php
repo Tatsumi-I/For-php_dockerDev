@@ -4,72 +4,44 @@
 ?>
 
 <main>
-<section>
-  <div class="headLine">
-    <div id= "hide" class="gestForm">
-      <form id="tooltip" action="index.php" method="get" description="Input your name" >
-        <label for="gest">ようこそ  
-          <?php
-          if(isset($_GET['gestName'])){
-            $gestName = h($_GET['gestName']);
-            echo $gestName;
-          }
-          ?>
-          さん</label>
-          <input id="gest" type="text" name="gestName" autocomplete="off" placeholder="">
-          <input type="submit" value="OK">
-        </form>
-    </div>
-      <p class="date">”<?= date($date).'  更新時刻';?>”</p>
-      <p class="rundum">「<?= h($mesagge).'(ランダムメッセージ-全5種類)';?>」</p>
-  </div>
-  <div class="discription">
-    <p>テキストを入力する予定です</p>
-  </div>
-</section>
 
 <section>
   <div id="works" class="contentsArea">
     <h1 id="coading" >Coding</h1>
     <div class="coadingArea">
-      <div class="contents1">
+      <div id="card"  description="Github上で公開しています">
+        <div class="cell">
+          <a href="https://tatsumi-i.github.io/MyFirstCode/">
+          <img src="imgs/mfc.png" width="250px"></a>
+        </div>
         <div>
-          <div id="cell1" class="cell" description="Github上で公開しています">
-            <a href="https://tatsumi-i.github.io/MyFirstCode/">
-            <img src="imgs/mfc.png" width="250px"></a>
-          </div>
-          <div>
-            <p>初めての制作</p>
-          </div>
+          <p>初めての制作</p>
         </div>
       </div>
-      <div class="contents1">
+      <div id="card"  description="Github上で公開しています">
+        <div class="cell">
+          <a href="https://tatsumi-i.github.io/MyFirstCode/">
+          <img src="imgs/mfc.png" width="250px"></a>
+        </div>
         <div>
-          <div id="cell1" class="cell" description="Github上で公開しています">
-            <a href="https://tatsumi-i.github.io/MyFirstCode/">
-            <img src="imgs/mfc.png" width="250px"></a>
-          </div>
-          <div>
-            <p>初めての制作</p>
-          </div>
+          <p>初めての制作</p>
         </div>
       </div>
-      <div class="contents1">
+      <div id="card"  description="Github上で公開しています">
+        <div class="cell">
+          <a href="https://tatsumi-i.github.io/MyFirstCode/">
+          <img src="imgs/mfc.png" width="250px"></a>
+        </div>
         <div>
-          <div id="cell1" class="cell" description="Github上で公開しています">
-            <a href="https://tatsumi-i.github.io/MyFirstCode/">
-            <img src="imgs/mfc.png" width="250px"></a>
-          </div>
-          <div>
-            <p>初めての制作</p>
-          </div>
+          <p>初めての制作</p>
         </div>
       </div>
+
     </div>
       
     <h1 id="design">Design</h1>
     <div class="designArea">
-      <div class="contents2">
+      <div >
         <div class="cell">
           <img src="imgs/art2.png" width="250px">
         </div>
@@ -77,31 +49,28 @@
           <p> ファーストビュー</p>
         </div>
       </div>
-      <div class="contents2">
-      <div class="cell"><img src="imgs/art1.png" width="250px"></div>
-      <div>  
-      <p> ファーストビュー</p>
-          </div>
-
-      </div>
-      <div class="contents2">
-      <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
-      <div>
+   
+      <div >
+        <div class="cell"><img src="imgs/art1.png" width="250px"></div>
+        <div>  
         <p> ファーストビュー</p>
-      </div>
-    </div>
-      <div class="contents2">
-      <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
-      <div>
-            <p> ファーストビュー</p>
-          </div>
+        </div>
       </div>
 
-
-  
-      
+      <div >
+        <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
+        <div>
+          <p> ファーストビュー</p>
+        </div>
+      </div>
+   
+      <div >
+        <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
+        <div>
+         <p> ファーストビュー</p>
+        </div>
+      </div>
     
-      </div>
     </div>
   </div>
 </section>
@@ -113,7 +82,7 @@
       <img src="imgs/IMG_6619.JPG" width="250px" style="filter:saturate(0.2);">
       <h2><?= h($myName);?></h2>
       <h3>石川達実</h3>
-      </div>
+    </div>
     <div class="charaInfo">
       <dt>概要</dt>
       <dd>1986年東京都生まれ。学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
@@ -155,10 +124,8 @@
   </div>
 </section>
 
+
 <section style="margin:100px;">
-
-
-
 <fieldset>
 <legend>
   あなたのご意見聞かせて下さい[複数回答可]
@@ -182,7 +149,7 @@
     <label for="jj">全然</label>
   </div>
 </form>
-<button onclick="formModule.sumForm()">入力内容を確認する</button>
+<button onclick="formModule.sumForm()">入力内容を表示する</button>
 <button onclick="formModule.submitForm()">送信</button>
 
 

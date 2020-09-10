@@ -47,6 +47,12 @@ const formModule =(() => {
        題名:${title}<br>
        内容:${inputText}<br>
        面白いレベル:${levelCheck}</p>`)
-      }
-   }
+      },
+
+
+gestFormAct :() =>{
+  const day = new Date();
+  document.getTime(),
+console.log('day')
+  ,}
 })();
