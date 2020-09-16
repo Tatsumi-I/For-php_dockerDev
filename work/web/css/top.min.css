@@ -1,4 +1,4 @@
-html, body { background-color: #1e1e1e; color: #1e1e1e; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: adobe-text-pro,vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; line-height: 1.5; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
+html, body { color: #1e1e1e; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: adobe-text-pro,vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; line-height: 1.5; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
 
 html h1, html h2, html h3, html h4, html h5, html h6, html a, html b, html p, body h1, body h2, body h3, body h4, body h5, body h6, body a, body b, body p { display: block; text-align: center; }
 
@@ -16,7 +16,7 @@ html nav, body nav { font-size: small; margin: auto; min-width: -webkit-max-cont
 
 html nav a, body nav a { margin: auto; text-align: left; }
 
-header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; background: #1e1e1e; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 20px; }
+header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; background: #1e1e1e; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 60px 20px; }
 
 header .headerContainer img { opacity: 0; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; }
 
@@ -80,47 +80,47 @@ main .contentsArea .cell { width: 260px; background: rgba(206, 206, 206, 0.5); -
 
 main .contentsArea .cell img { height: auto; }
 
-main .contentsArea h1 { display: block; background: white; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); margin: 50px; padding: 1em; text-align: initial; border-left: solid 20px #1e1e1e; border-radius: 0 6px 6px 0; }
+main h1 { display: block; background: white; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); margin: 50px; padding: 1em; text-align: initial; border-left: solid 20px #1e1e1e; border-radius: 0 6px 6px 0; }
 
-main .contentsArea .wrap { padding: 20px 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 2; }
+main .wrap { padding: 20px 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; line-height: 2; }
 
-main .contentsArea .wrap dt { font: 400; background: white; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); padding: 1em; margin: 10px; border-radius: 6px; }
+main .wrap dt { font: 400; background: white; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); padding: 1em; margin: 10px; border-radius: 6px; }
 
-main .contentsArea .wrap .info1 { -ms-flex-preferred-size: 270px; flex-basis: 270px; }
+main .wrap .info1 { -ms-flex-preferred-size: 270px; flex-basis: 270px; }
 
-main .contentsArea .wrap .info1 img { margin: 0 25px; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); }
+main .wrap .info1 img { margin: 0 25px; -webkit-box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); box-shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5); }
 
-main .contentsArea .wrap .charaInfo { -ms-flex-preferred-size: 500px; flex-basis: 500px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 10px 5px 20px 5px; }
+main .wrap .charaInfo { -ms-flex-preferred-size: 500px; flex-basis: 500px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 10px 5px 20px 5px; }
 
-main .contentsArea .wrap .charaInfo dd { padding: .5em 1em; margin: 0 1em; font-family: noto-sans-cjk-jp; font-weight: 200; font-style: normal; }
+main .wrap .charaInfo dd { padding: .5em 1em; margin: 0 1em; font-family: noto-sans-cjk-jp; font-weight: 200; font-style: normal; }
 
-main .contentsArea .wrap .infoList { -ms-flex-preferred-size: 270px; flex-basis: 270px; margin: 10px 5px 20px 5px; }
+main .wrap .infoList { -ms-flex-preferred-size: 270px; flex-basis: 270px; margin: 10px 5px 20px 5px; }
 
-main .contentsArea .wrap .infoList i { margin-right: 15px; }
+main .wrap .infoList i { margin-right: 15px; }
 
-main .contentsArea .wrap .infoList .html5 { color: red; }
+main .wrap .infoList .html5 { color: red; }
 
-main .contentsArea .wrap .infoList .css3 { color: #3e98ff; }
+main .wrap .infoList .css3 { color: #3e98ff; }
 
-main .contentsArea .wrap .infoList .scss { margin-right: initial; color: #e100ff; }
+main .wrap .infoList .scss { margin-right: initial; color: #e100ff; }
 
-main .contentsArea .wrap .infoList .js { color: #e4d500; }
+main .wrap .infoList .js { color: #e4d500; }
 
-main .contentsArea .wrap .infoList .p5::before { content: 'p5'; font-family: vdl-v7gothic, serif; background: #003477; display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; color: #FFF; font-weight: bold; border-radius: 50%; font-size: 5px; margin-right: 15px; }
+main .wrap .infoList .p5::before { content: 'p5'; font-family: vdl-v7gothic, serif; background: #003477; display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; color: #FFF; font-weight: bold; border-radius: 50%; font-size: 5px; margin-right: 15px; }
 
-main .contentsArea .wrap .infoList .php { color: #66427a; }
+main .wrap .infoList .php { color: #66427a; }
 
-main .contentsArea .wrap .infoList .wp { color: #008cff; }
+main .wrap .infoList .wp { color: #008cff; }
 
-main .contentsArea .wrap .infoList .git { color: #dd4024; }
+main .wrap .infoList .git { color: #dd4024; }
 
-main .contentsArea .wrap .infoList .adobe { color: #d11212; }
+main .wrap .infoList .adobe { color: #d11212; }
 
-main .contentsArea .wrap .infoList .pc { color: #585858; }
+main .wrap .infoList .pc { color: #585858; }
 
-main .contentsArea .wrap .infoList .docker { color: #00a2ff; }
+main .wrap .infoList .docker { color: #00a2ff; }
 
-main .contentsArea .wrap .dtext1, main .contentsArea .wrap .dtext2 { -ms-flex-preferred-size: 270px; flex-basis: 270px; margin: 10px 5px 20px 5px; }
+main .wrap .dtext1, main .wrap .dtext2 { -ms-flex-preferred-size: 270px; flex-basis: 270px; margin: 10px 5px 20px 5px; }
 
 footer { margin-top: 200px; }
 

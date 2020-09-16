@@ -1,5 +1,5 @@
 <?php 
-  require_once('../app/function.php')
+  require_once('../app/function.php');
 ?>
 
 <!DOCTYPE html>
@@ -57,3 +57,4 @@
     <?= $nav;?>
   </div>
 </header>
+<main>

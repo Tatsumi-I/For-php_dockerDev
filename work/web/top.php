@@ -41,7 +41,7 @@
       <div class="logo">
         <img src="imgs/logo.png">
         <div class="nameBar">
-          <h1 class="item5"><?= h($myName);?>_Portfolio</h1>
+          <h1 class="item5"><?= h($myName);?> _ Portfolio</h1>
           <h2>石川達実  ポートフォリオサイト</h2>
         </div>
       </div>

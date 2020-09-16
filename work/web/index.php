@@ -3,94 +3,110 @@
   include_once('header.php');
 ?>
 
-<main>
-
 <section>
-  <div id="works" class="contentsArea">
-    <h1 id="coading" >Coding</h1>
-    <div class="coadingArea">
-      <div id="card"  description="Github上で公開しています">
-        <div class="cell">
-          <a href="https://tatsumi-i.github.io/MyFirstCode/">
-          <img src="imgs/mfc.png" width="250px"></a>
-        </div>
-        <div>
-          <p>初めての制作</p>
-        </div>
-      </div>
-      <div id="card"  description="Github上で公開しています">
-        <div class="cell">
-          <a href="https://tatsumi-i.github.io/MyFirstCode/">
-          <img src="imgs/mfc.png" width="250px"></a>
-        </div>
-        <div>
-          <p>初めての制作</p>
-        </div>
-      </div>
-      <div id="card"  description="Github上で公開しています">
-        <div class="cell">
-          <a href="https://tatsumi-i.github.io/MyFirstCode/">
-          <img src="imgs/mfc.png" width="250px"></a>
-        </div>
-        <div>
-          <p>初めての制作</p>
-        </div>
-      </div>
-
+  <div id="pageTop" class="fastView">
+    <div>
+      <img src="./imgs/img_5870.png" alt="tatsumi's Face" width="450px" height="auto">
     </div>
-      
-    <h1 id="design">Design</h1>
-    <div class="designArea">
-      <div >
-        <div class="cell">
-          <img src="imgs/art2.png" width="250px">
-        </div>
+    <div class="concept">
+      <h1>Create a New Experience</h1>
         <div>
-          <p> ファーストビュー</p>
+          <h2>”新しい感動体験を創り出す”</h2>
+          <h3>ユーザーにとって</h3>
+          <p><em>最良で</em><em>心地よく</em><em>今までにない</em></p>
+          <p>感動体験を提供する</p>
+          <h4>そのために努力し、学び続け、手を動かす</h4>
+          <h2>それが私の理念です</h2>
         </div>
-      </div>
-   
-      <div >
-        <div class="cell"><img src="imgs/art1.png" width="250px"></div>
-        <div>  
-        <p> ファーストビュー</p>
-        </div>
-      </div>
-
-      <div >
-        <div class="cell"><img src="imgs/Gentlestyle.png" width="250px"></div>
-        <div>
-          <p> ファーストビュー</p>
-        </div>
-      </div>
-   
-      <div >
-        <div class="cell"><img src="imgs/b.Next.png" width="250px"></div>
-        <div>
-         <p> ファーストビュー</p>
-        </div>
-      </div>
-    
     </div>
   </div>
 </section>
 
 <section>
+<div class="contentsArea">
+    <h1 id="works">Coding</h1>
+    <div id="coading" class="coadingArea">
+      <div>
+        <div class="cell" id="card" title="GitHubにて公開しています">
+          <a href="https://tatsumi-i.github.io/MyFirstCode/">
+          <img src="imgs/mfc.png" width="350px"></a>
+        </div>
+        <p>初めての制作</p>
+      </div>
+      <div id="card"  description="Github上で公開しています">
+        <div class="cell">
+        <iframe src="p5test.php" width="350px" height="350px"></iframe>
+        </div>
+        <p>クリエイティブコーディング</p>
+      </div>
+    </div>
+
+    <h1 id="design">Design</h1>
+    <div class="designArea">
+      <div class="design_des">
+        <div class="cell">
+          <img src="imgs/art2.png" width="350px">
+        </div>
+        <p>
+          <a href="design.php" target="tatsumi_Design">
+            このデザインはテキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力
+          </a>
+        </p>
+      </div>
+      <div class="design_des">
+          <p><a href="design.php" target="tatsumi_Design">
+            このデザインはテキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力
+          </a>
+        </p>
+        <div class="cell">
+          <img src="imgs/art1.png" width="350px">
+        </div>
+      </div>
+      <div class="design_des">
+        <div class="cell">
+          <img src="imgs/Gentlestyle.png" width="350px">
+        </div>
+        <p> 
+          <a href="design.php" target="tatsumi_Design">
+            ファーストビュー
+            このデザインはテキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力
+          </a>
+        </p>
+      </div>
+      <div class="design_des">
+        <p> 
+          <a href="design.php" target="tatsumi_Design">  
+            ファーストビュー
+            このデザインはテキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力テキスト-説明文を入力
+          </a>
+        </p>
+        <div class="cell">
+          <img src="imgs/b.Next.png" width="350px">
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+
+<section>
   <h1>Profile</h1>
   <div class="wrap">
     <div class="info1">
-      <img src="imgs/IMG_6619.JPG" width="250px" style="filter:saturate(0.2);">
+      <img src="imgs/IMG_6619.JPG" width="350px" style="filter:saturate(0.2);">
       <h2><?= h($myName);?></h2>
       <h3>石川達実</h3>
     </div>
     <div class="charaInfo">
-      <dt>概要</dt>
-      <dd>1986年東京都生まれ。学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
-      <dd>学生時代を鹿児島で過ごし、結婚を機に愛知へ移住</dd>
-      <dd>座右の銘：前途多難</dd>
-      <dd>性質を表わす言葉：<br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</dd>
-      <dd>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、熱い、明るい、快活、雄弁など</dd>
-      <dd>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して、暮らしに寄り添う感動体験を提供したいという一心からプログラミングをはじめた</dd>
+      <dl>
+        <dt>概要</dt>
+        <dd>1986年東京都生まれ。</dd>
+        <dd>学生時代を鹿児島で過ごし、結婚を機に愛知へ移住。</dd>
+        <dd>性質を表わす言葉：<br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</dd>
+        <dd>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、熱い、明るい、快活、雄弁など</dd>
+        <dd>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して感動体験を提供したい、という一心からプログラミングをはじめた</dd>
+      </dl>
     </div>
     <div class="infoList">
       <dl>
@@ -117,28 +133,29 @@
     <div class="dtext2">
       <dl>
         <dt>どんな人？</dt>
-          <dd>石川達実の適性や思考について知る</dd>
-          <dd>石川達実5つのKeywords</dd>
+          <dd><a href="character.php">石川達実の頭の中を覗く</a></dd>
+          <dd>
+          <a href=""></a>  
+          石川達実5つのKeywords</dd>
       </dl>
     </div>
   </div>
 </section>
 
-
-<section style="margin:100px;">
+<section style=" margin:100px;">
 <fieldset>
 <legend>
-  あなたのご意見聞かせて下さい[複数回答可]
+  ご意見フォーム
 </legend>
-
-<form id="testForm" name="testForm">
+<form action="index.php" id="testForm" name="testForm">
   <div>
-    <label for="title">あなたのご意見題名</label>
+    <label for="title">題名<br></label>
     <input id="title" name="title" type="text">
   </div>
   <div>
-    <label for="voice">  あなたのご意見聞かせて下さ</label>
-    <input id="voice" name="voice" type="text">
+    <label for="voice">  あなたのご意見聞かせて下さい<br></label>
+    <textarea cols="30" rows="10" id="voice" name="voice" type="text">
+</textarea>
   </div>
   <div>
     <input id="jj" name="levels" type="checkbox" value="面白い">
@@ -151,9 +168,8 @@
 </form>
 <button onclick="formModule.sumForm()">入力内容を表示する</button>
 <button onclick="formModule.submitForm()">送信</button>
-
-
 </section>
+
 <?php 
 
 include_once('footer.php');

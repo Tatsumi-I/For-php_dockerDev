@@ -22,14 +22,14 @@
 
   $nav= 
     '<nav>
-      <a href="#works">　実績/Works　　</a>
+      <p><a href="#works">Tatsumi Works　　</a></p>
         <ul>
           <li><a href="#coading">Coding</a></li>
           <li><a href="#design">Design</a></li>
         </ul>
-      <a href="">人物/Character</a>
-      <a href="">経歴/Backbone</a>
-      <a href="">将来/Prospects</a>
+      <p><a href="">Character　人物</a></p>
+      <p><a href="">Backbone　経歴</a></p>
+      <p><a href="">Prospects　将来</a></p>
     </nav>'
 
 

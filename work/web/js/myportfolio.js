@@ -23,6 +23,7 @@ const formModule =(() => {
         for (const level of forms.levels){
           if(level.checked){
             levelCheck.push(level.value)
+            window.alert('送信しました')
           }
        } 
       console.log(
@@ -43,16 +44,10 @@ const formModule =(() => {
         }
       const formInfo = document.getElementById('testForm')
       formInfo.insertAdjacentHTML('beforeend',
-      `<p>
+      `<p style="text-align:initial;margin:20px;">
        題名:${title}<br>
        内容:${inputText}<br>
        面白いレベル:${levelCheck}</p>`)
       },
-
-
-gestFormAct :() =>{
-  const day = new Date();
-  document.getTime(),
-console.log('day')
-  ,}
+    }
 })();
