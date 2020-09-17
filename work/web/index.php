@@ -4,9 +4,13 @@
 ?>
 
 <section>
+
+
+
+
   <div id="pageTop" class="fastView">
     <div>
-      <img src="./imgs/img_5870.png" alt="tatsumi's Face" width="450px" height="auto">
+      <img src="./imgs/img_5870.png" width="400px" height="auto" alt="tatsumi's Face">
     </div>
     <div class="concept">
       <h1>Create a New Experience</h1>
@@ -122,21 +126,39 @@
           <dd><i class="fas fa-laptop-code fa-fw pc"></i>Mac, VScode</dd>
           <dd><i class="fab fa-docker fa-fw docker"></i>Docker, MANP</dd>
       </dl>
+      <p><a href="skills.php">More about...</a></p>
     </div>
-    <div class="dtext1">
+    <div style="background:black;box-shadow:0 0 10px grey;">
+      <img src="./imgs/laptop.jpg" width="400px" height="auto" alt="" style=" margin:100px auto;">
+    </div>
+    <!-- <div class="dtext1">
       <dl>
         <dt>Works</dt>
         <dd>Coding</dd>
         <dd>Design</dd>
       </dl>
+    </div> -->
+    <div style="background:black;box-shadow:0 0 10px grey;">
+      <img src="./imgs/brain.jpg" width="400px" height="auto" alt="" style=" margin:100px auto;">
     </div>
     <div class="dtext2">
       <dl>
-        <dt>どんな人？</dt>
-          <dd><a href="character.php">石川達実の頭の中を覗く</a></dd>
+        <dt>人物像</dt>
+          <dd><a href="character.php">性格や気質</a></dd>
+          <dd><a href="backBone.php">経験</a></dd>
+          <dd><a href="hobby.php">趣味や嗜好</a></dd>
           <dd>
-          <a href=""></a>  
-          石川達実5つのKeywords</dd>
+            <a href=""></a>
+          </dd>
+          <dd>
+            <a href=""></a>
+          </dd>
+          <dd>
+            <a href=""></a>
+          </dd>
+          <dd>
+            <a href=""></a>
+          </dd>
       </dl>
     </div>
   </div>
@@ -150,11 +172,11 @@
 <form action="index.php" id="testForm" name="testForm">
   <div>
     <label for="title">題名<br></label>
-    <input id="title" name="title" type="text">
+    <input id="title" name="title" type="text" required>
   </div>
   <div>
     <label for="voice">  あなたのご意見聞かせて下さい<br></label>
-    <textarea cols="30" rows="10" id="voice" name="voice" type="text">
+    <textarea cols="30" rows="10" id="voice" name="voice" type="text" required>
 </textarea>
   </div>
   <div>

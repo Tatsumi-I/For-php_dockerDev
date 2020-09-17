@@ -43,18 +43,54 @@
 <body>
 <header>
   <div id="header" class="headerContainer">
+    
     <div class="logo">
-      <a href="top.php">
+      <a href="index.php">
         <img src="imgs/logo.png" width="80px">
       </a>
     </div>
     <div class="inHeader">
-      <a href="top.php">
+      <a href="index.php">
       <h1><?= h($myName);?> _ Portofolio</h1>
         <h2>石川達実  ポートフォリオサイト</h2>
       </a>
     </div>
     <?= $nav;?>
+
   </div>
+  
 </header>
+<div class="openMenu">
+  <details>
+    <summary>Global Menu</summary>
+    <div class="fl">
+      <div>
+        <p><a href="index.php">HOME</a></p>
+        <p>Coding</p>
+        <ul>
+          <li><a href="      ">Skills included on this site</a></li>
+          <li><a href="      ">My first code</a></li>
+          <li><a href="      ">Processing</a></li>
+        </ul>
+        <p><a href="design.php">Design</a></p>
+        <p>Profile</p>
+        <ul>
+          <li><a href="skills.php">Knowledge & Skill</a></li>
+          <li><a href="character.php">Character</a></li>
+          <li><a href="backBone.php">Backbone</a></li>
+          <li><a href="hobby.php">Hobby</a></li>
+        </ul>
+        <p><a href="contact.php">Contact</a></p>
+      </div>
+      <hr>
+      <div class="siteLogo">
+        <a href="top.php">
+          <p>Create a New Experience</p>
+          <h1><?= h($myName)?> _ portfolio</h1>
+        </a>
+      </div>
+    </div>
+  </details>
+</div>
+
 <main>

@@ -1,9 +1,9 @@
 @charset "utf-8";
 $textColor : rgb(109, 109, 109);
 $line:rgba(206, 206, 206, 0.5);
-$shadow: 0px 4px 8px 0px rgba(180, 180, 180, 0.5) ;
+$shadow: 0px 0px 5px rgba(180, 180, 180, 0.5) ;
 $myBlack:rgb(30,30,30);
-$Orange:rgb(151, 98, 52);
+$Orange:rgb(150, 100, 50);
 
 html,body{
   color:$myBlack;
@@ -41,11 +41,11 @@ html,body{
 }
 
 header{
+  background: $myBlack;
   .headerContainer{
     animation: toDown 2s forwards;
-    background: $myBlack;
     display:flex;
-    padding:50px 20px;
+    padding:20px 20px;
     img{
       opacity:0;
       animation:flash 10s infinite;
@@ -107,18 +107,20 @@ header{
   }
   
   
-  main{
-    h1{
-      font-size: 24px;
-      color:$Orange;
-      display:block;
-      background:white;
-      box-shadow: $shadow;
-    margin:50px;
+main{
+  width:1000px;
+  margin:0 auto;
+  h1{
+    font-size: 26px;
+    color:$Orange;
+    display:block;
+    background:white;
+    box-shadow: $shadow;
+    margin:50px auto;
     padding:1em;
     text-align: initial;
     border-left: solid 20px $myBlack;
-    border-radius: 0 6px 6px 0;
+    border-radius: 0 10px 10px 0;
   }
   .headLine {
    animation:delay 13s forwards;
@@ -155,7 +157,7 @@ header{
     display:flex;
     flex-wrap: no-wrap;
     img{
-      filter: saturate(.7);
+      filter: saturate(.5);
     }
     .concept{
       width:calc(100% - 400px);
@@ -205,6 +207,7 @@ header{
       overflow-x: hidden;
       overflow-y: scroll;
       height:360px;
+      margin:20px;
       img{
         height:auto;
       }
@@ -220,22 +223,25 @@ header{
       }
     }
     .designArea{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content:space-between;
-      padding:20px 60px;
-      margin:3px;
+      // display: flex;
+      // flex-wrap: wrap;
+      // justify-content:space-between;
+      padding:50px;
       .design_des{
         display: flex;
-        margin:50px;
+        justify-content:space-between;
+        margin:50px 0;
+        // padding: 100px;
+        // border-radius: 10px;
+        // box-shadow: $shadow;
         p{
           line-height: 3;
-          margin:auto;
-          padding:0 50px;
+          margin:auto 50px;
+          width:calc(100% - 370px);
           a{
-            width:calc(100% - 350px);
-            margin:auto ;
-            text-decoration: none;
+            // padding:0 50px;
+            margin:auto 0;
+            // text-decoration: none;
             color:$myBlack;
           }
         }
@@ -244,13 +250,15 @@ header{
   }
   
     .wrap{
-      padding:20px 60px;
       display: flex;
       flex-wrap: wrap;
       justify-content:space-around;
       line-height: 2;
+      div{
+        margin:50px 10px;
+      }
       dl{
-        min-width: 350px;
+        min-width: 300px;
         dt{
           font: 400;
           background:white;
@@ -276,15 +284,13 @@ header{
       .charaInfo{
         flex-basis: 500px;
         flex-grow: 1;
-        margin:10px 5px 20px 5px;
         font-family: noto-sans-cjk-jp;
         font-weight: 200;
         font-style: normal;
         
       }
       .infoList{
-        // flex-basis: 270px;
-        margin:10px 5px 20px 5px;
+        flex-grow: 1;
         i{
           margin-right: 15px;
         }
@@ -302,7 +308,7 @@ header{
           color:rgb(228, 213, 0);
         }
         .p5::before{
-          content:'p5';
+          content:'P';
           font-family:vdl-v7gothic, serif;
           background:rgb(0, 52, 119);
           display: inline-block;
@@ -336,8 +342,14 @@ header{
         }
       }
       .dtext1,.dtext2{
-        // flex-basis: 270px;
-        margin:10px 5px 20px 5px;
+        flex-grow: 1;
+        dd{
+          &:before{
+            margin-right: 10px;
+            content: "□";
+            color: $Orange;
+          }
+        }
       }
     }
   }
@@ -447,8 +459,126 @@ fieldset{
   }
 }
 
+.characterPage{
+  img{
+    filter:drop-shadow(0 0 10px rgb(206, 206, 206));
+  }
+  .personalType{
+    padding:0 50px;
+  }
+  .infoWrap{
+    display: flex;
+    padding:50px auto;
+    justify-content: space-around;
+  }
+  .intpType{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p.intp{
+      font-size: 30px;
+      text-align: center;
+      color:rgb(67, 44, 95);
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      text-shadow: 1px 0 white,0 1px white,-1px 0 white,0 -1px white;
+      margin:20px;
+      border-radius: 50%;
+      background: url(../imgs/unsplash.jpg) top left;
+      background-size:150px;
+      box-shadow:0 0 15px grey;
+    }
+    div{
+      margin:auto 50px;
+    }
+    dl{
+      margin:auto;
+      text-align: initial;
+      dt{
+        font-size: 20px;
+        font-weight: bold;
+        padding:10px;
+      }
+      dd{
+        margin:1em;
+        font-size: 12px;
+        &:before{
+          content:"　" + "\025b6" + "　";
+        }
+      }
+    }
+  }
+  b{
+    display: block;
+    text-align: right;
+    margin:50px 100px;
+  }
 
-.intjType{
-  margin:0 10%;
+  blockquote{
+    line-height: 2em;
+    padding:50px;
+    margin:50px auto;
+    width: 700px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    border-radius: 6px;
+    background: rgba(184, 184, 184, 0.5);
+    b{
+      margin: 1em;
+    }
+  }
+  
+    .infoIntro
+    {
+      padding:10px;
+      text-align: center;
+    }
+  }
+  
 
+.openMenu{
+  // position: fixed;
+  padding:0px;
+  opacity:0;
+  transition-duration: 2s;
+  color:$Orange;
+  div{
+    animation:delay 2s ease;
+    padding:20px;
+    margin:0 50px;
+    p,a{
+      margin:5px;
+      padding:5px 0 ;
+    }
+  }
+  .fl{
+    display: flex;
+    .siteLogo{
+      flex-grow: 1;
+      margin:auto 30px;
+      animation: flash 3s infinite;
+      text-align: center;
+      color: $Orange;
+    }
+  }
+  details[open] summary{
+    opacity:1;
+
+  }
+  summary{
+    padding:20px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &:link{
+    color:yellowgreen;
+  }
+  &:visited{
+    color:yellowgreen;
+  }
+  &:hover{
+    opacity: 1;
+    background:$myBlack;
+  }
 }
