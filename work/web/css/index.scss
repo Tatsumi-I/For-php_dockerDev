@@ -45,7 +45,7 @@ header{
   .headerContainer{
     animation: toDown 2s forwards;
     display:flex;
-    padding:20px 20px;
+    padding:40px 20px 20px;
     img{
       opacity:0;
       animation:flash 10s infinite;
@@ -80,33 +80,133 @@ header{
       //  100%{transform:translate(1px,-20px);}
       //   }
       // }
-      a{
+    a{
+      color:white;
+      text-decoration: none;
+      &:visited{
         color:white;
-        text-decoration: none;
-        &:visited{
-          color:white;
+      }
+      &:hover{
+        transform: scale(.98);
+      }
+    }
+  }
+  @keyframes rum-col {
+    0% {color: rgb(200, 140, 80);}
+    10% {color: rgb(134, 70, 33);}
+    20% {color: rgb(163, 24, 0);}
+    30% {color: rgb(134, 0, 101);}
+    40% {color: rgb(71, 1, 163);}
+    50% {color: rgb(28, 35, 100);}
+    60% {color: rgb(0, 94, 138);}
+    70% {color: rgb(1, 122, 102);}
+    80% {color: rgb(1, 110, 28);}
+    90% {color: rgb(113, 126, 0);}
+    100% {color: rgb(185, 157, 0);}
+  }
+  
+  .headerOpenMenu{
+    padding:0px;
+    color:$Orange;
+    animation:fade 3s forwards 7s;
+    filter: opacity(0);
+    transition-duration: 1s;
+    &:hover{
+      background:none;
+      filter: opacity(1);
+    }
+    summary{
+      opacity: 0;
+      text-shadow:0px 0px 10px rgb(151, 98, 52), -1px -1px 20px rgba(192, 192, 192, 0.5);
+      padding:20px;
+      text-align: center;
+      font-size: x-large;
+      padding-right: 300px;
+      animation: delay 2s infinite 7s;
+      position: absolute;
+      top:20px;
+      right:50px;
+      outline:1px solid silver;
+    }
+    &:hover{
+      opacity: 1;
+      cursor: pointer;
+      background:white;
+    }
+    p,a,li{
+      font-size: 16px;
+      color:forestgreen;
+      margin:5px 0;
+    }
+    a{
+      &:hover{
+        box-shadow: 0 0 2px rgba(192, 192, 192, 0.5);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      &:link,&:visited{
+        color:forestgreen;
+        animation: flash 12s infinite;
+      }
+    }
+    .fl{
+      background:rgb(250, 250, 250);
+      height:fit-content;
+      display: flex;
+      flex-wrap: nowrap;
+      margin:30px;
+      padding: 50px;
+      border-radius: 10px;
+      background: rgba(10, 10, 10, 0.4);
+      background: rgba(165, 165, 165, 0.5);
+      >div{
+        margin:0 auto;
+        padding:0 50px;
+        border-radius: 5px;
+        // box-shadow:-1px -1px 2px rgb(230, 230, 230),1px 1px 2px black;
+      }
+      .siteLogo{
+        flex-grow: 1;
+        margin:0 auto;
+        animation: flash 5s infinite;
+        text-align: center;
+        color: $Orange;
+        height:fit-content;
+        // box-shadow:-1px -1px 2px rgb(230, 230, 230),1px 1px 2px black;
+        border-radius: 5px;
+        img{
+          padding:30px;
         }
-        &:hover{
-          transform: scale(.98);
+        h2,h3{
+          font-family: adobe-text-pro,vdl-v7gothic, sans-serif;
+          font-weight: 200;
+          font-style: normal;
+        }
+        h3{
+          font-size: small;
         }
       }
     }
-    @keyframes rum-col {
-      0% {color: rgb(200, 140, 80);}
-      10% {color: rgb(134, 70, 33);}
-      20% {color: rgb(163, 24, 0);}
-      30% {color: rgb(134, 0, 101);}
-      40% {color: rgb(71, 1, 163);}
-      50% {color: rgb(28, 35, 100);}
-      60% {color: rgb(0, 94, 138);}
-      70% {color: rgb(1, 122, 102);}
-      80% {color: rgb(1, 110, 28);}
-      90% {color: rgb(113, 126, 0);}
-      100% {color: rgb(185, 157, 0);}
+    details[open]{
+      height: 100vh;
+      summary{
+        padding: 30px;
+        &::after{
+          content:"close";
+          margin-left: 2em;
+        }
+      }
+      hr{
+        width: 50%;
+        border: 1px outset forestgreen;
+        margin:50px;
+      }
     }
-  }
-  
-  
+  }  
+}
+
+
+
 main{
   width:1000px;
   margin:0 auto;
@@ -536,49 +636,8 @@ fieldset{
   }
   
 
-.openMenu{
-  // position: fixed;
-  padding:0px;
-  opacity:0;
-  transition-duration: 2s;
-  color:$Orange;
-  div{
-    animation:delay 2s ease;
-    padding:20px;
-    margin:0 50px;
-    p,a{
-      margin:5px;
-      padding:5px 0 ;
-    }
-  }
-  .fl{
-    display: flex;
-    .siteLogo{
-      flex-grow: 1;
-      margin:auto 30px;
-      animation: flash 3s infinite;
-      text-align: center;
-      color: $Orange;
-    }
-  }
-  details[open] summary{
-    opacity:1;
+ 
 
+  .tra3d{
+    transform-style: preserve-3d;
   }
-  summary{
-    padding:20px;
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  &:link{
-    color:yellowgreen;
-  }
-  &:visited{
-    color:yellowgreen;
-  }
-  &:hover{
-    opacity: 1;
-    background:$myBlack;
-  }
-}

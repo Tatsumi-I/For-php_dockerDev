@@ -59,38 +59,40 @@
 
   </div>
   
+  <div class="headerOpenMenu">
+    <details>
+      <summary>Global Menu</summary>
+        <div class="fl">
+          <div>
+            <p><a href="index.php">HOME</a></p>
+            <p>Coding</p>
+            <ul>
+              <li><a href="      ">Skills included on this site</a></li>
+              <li><a href="      ">My first code</a></li>
+              <li><a href="      ">Processing</a></li>
+            </ul>
+            <p><a href="design.php">Design</a></p>
+            <p>Profile</p>
+            <ul>
+              <li><a href="skills.php">Knowledge & Skill</a></li>
+              <li><a href="character.php">Character</a></li>
+              <li><a href="backBone.php">Backbone</a></li>
+              <li><a href="hobby.php">Hobby</a></li>
+            </ul>
+            <p><a href="contact.php">Contact</a></p>
+          </div>
+          <hr>
+            <div class="siteLogo">
+              <h1>Create a New Experience.</h1>
+              <div>
+                <img src="imgs/myLogoWhite.png" width="100px">
+                <h2><?= h($myName);?> _ Portfolio</h2>
+                <h3>石川達実  ポートフォリオサイト</h3>
+              </div>
+            </div>
+        </div>
+      </details>
+  </div>
 </header>
-<div class="openMenu">
-  <details>
-    <summary>Global Menu</summary>
-    <div class="fl">
-      <div>
-        <p><a href="index.php">HOME</a></p>
-        <p>Coding</p>
-        <ul>
-          <li><a href="      ">Skills included on this site</a></li>
-          <li><a href="      ">My first code</a></li>
-          <li><a href="      ">Processing</a></li>
-        </ul>
-        <p><a href="design.php">Design</a></p>
-        <p>Profile</p>
-        <ul>
-          <li><a href="skills.php">Knowledge & Skill</a></li>
-          <li><a href="character.php">Character</a></li>
-          <li><a href="backBone.php">Backbone</a></li>
-          <li><a href="hobby.php">Hobby</a></li>
-        </ul>
-        <p><a href="contact.php">Contact</a></p>
-      </div>
-      <hr>
-      <div class="siteLogo">
-        <a href="top.php">
-          <p>Create a New Experience</p>
-          <h1><?= h($myName)?> _ portfolio</h1>
-        </a>
-      </div>
-    </div>
-  </details>
-</div>
 
 <main>

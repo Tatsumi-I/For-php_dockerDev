@@ -30,27 +30,69 @@
   <script src="p5sketch/p5sketch.js"></script> -->
 </head>
 <body>
-  <header>
-    <div class="homeGroup">
-      <div class="copy">
-        <p class="item1">Create</p>
-        <p class="item2">a</p>
-        <p class="item3"> New</p>
-        <p class="item4">Experience.</p>
-      </div>
-      <div class="logo">
-        <img src="imgs/logo.png">
-        <div class="nameBar">
-          <h1 class="item5"><?= h($myName);?> _ Portfolio</h1>
-          <h2>石川達実  ポートフォリオサイト</h2>
+
+<header>
+
+  <hr class="hr">
+
+  <div class="topOpenMenu">
+    <details>
+      <summary>Global Menu</summary>
+        <div class="fl">
+          <div>
+            <p><a href="index.php">HOME</a></p>
+            <p>Coding</p>
+            <ul>
+              <li><a href="      ">Skills included on this site</a></li>
+              <li><a href="      ">My first code</a></li>
+              <li><a href="      ">Processing</a></li>
+            </ul>
+            <p><a href="design.php">Design</a></p>
+            <p>Profile</p>
+            <ul>
+              <li><a href="skills.php">Knowledge & Skill</a></li>
+              <li><a href="character.php">Character</a></li>
+              <li><a href="backBone.php">Backbone</a></li>
+              <li><a href="hobby.php">Hobby</a></li>
+            </ul>
+            <p><a href="contact.php">Contact</a></p>
+          </div>
+          <hr>
+          <a href="index.php">
+            <div class="siteLogo">
+              <h1>Create a New Experience.</h1>
+              <div>
+                <img src="imgs/logo.png" width="100px">
+                <h2><?= h($myName);?> _ Portfolio</h2>
+                <h3>石川達実  ポートフォリオサイト</h3>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="linkbtn">
-        <a href="index.php">Click here...</a>
+      </details>
+  </div>
+  
+  <div class="homeGroup">
+    <div class="copy">
+      <p class="item1">Create</p>
+      <p class="item2">a</p>
+      <p class="item3"> New</p>
+      <p class="item4">Experience.</p>
+    </div>
+    <div class="logo">
+      <img src="imgs/logo.png">
+      <div class="nameBar">
+        <p>石川達実  ポートフォリオサイト</p>
+        <h1 class="item5"><?= h($myName);?> _ Portfolio</h1>
       </div>
     </div>
+  </div>
 </header>
-
-
-</body>
-</html>
+<main>
+  </main>
+  <footer>
+    
+    </footer>
+  </body>
+  
+  </html>

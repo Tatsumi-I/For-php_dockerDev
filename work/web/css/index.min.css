@@ -11,7 +11,7 @@ html nav ul, body nav ul { margin: 0; }
 
 header { background: #1e1e1e; }
 
-header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 20px; }
+header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 40px 20px 20px; }
 
 header .headerContainer img { opacity: 0; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; }
 
@@ -52,6 +52,40 @@ header .headerContainer a:hover { -webkit-transform: scale(0.98); transform: sca
   80% { color: #016e1c; }
   90% { color: #717e00; }
   100% { color: #b99d00; } }
+
+header .headerOpenMenu { padding: 0px; color: #966432; -webkit-animation: fade 3s forwards 7s; animation: fade 3s forwards 7s; -webkit-filter: opacity(0); filter: opacity(0); -webkit-transition-duration: 1s; transition-duration: 1s; }
+
+header .headerOpenMenu:hover { background: none; -webkit-filter: opacity(1); filter: opacity(1); }
+
+header .headerOpenMenu summary { opacity: 0; text-shadow: 0px 0px 10px #976234, -1px -1px 20px rgba(192, 192, 192, 0.5); padding: 20px; text-align: center; font-size: x-large; padding-right: 300px; -webkit-animation: delay 2s infinite 7s; animation: delay 2s infinite 7s; position: absolute; top: 20px; right: 50px; outline: 1px solid silver; }
+
+header .headerOpenMenu:hover { opacity: 1; cursor: pointer; background: white; }
+
+header .headerOpenMenu p, header .headerOpenMenu a, header .headerOpenMenu li { font-size: 16px; color: forestgreen; margin: 5px 0; }
+
+header .headerOpenMenu a:hover { -webkit-box-shadow: 0 0 2px rgba(192, 192, 192, 0.5); box-shadow: 0 0 2px rgba(192, 192, 192, 0.5); border-radius: 5px; cursor: pointer; }
+
+header .headerOpenMenu a:link, header .headerOpenMenu a:visited { color: forestgreen; -webkit-animation: flash 12s infinite; animation: flash 12s infinite; }
+
+header .headerOpenMenu .fl { background: #fafafa; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; margin: 30px; padding: 50px; border-radius: 10px; background: rgba(10, 10, 10, 0.4); background: rgba(165, 165, 165, 0.5); }
+
+header .headerOpenMenu .fl > div { margin: 0 auto; padding: 0 50px; border-radius: 5px; }
+
+header .headerOpenMenu .fl .siteLogo { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0 auto; -webkit-animation: flash 5s infinite; animation: flash 5s infinite; text-align: center; color: #966432; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; border-radius: 5px; }
+
+header .headerOpenMenu .fl .siteLogo img { padding: 30px; }
+
+header .headerOpenMenu .fl .siteLogo h2, header .headerOpenMenu .fl .siteLogo h3 { font-family: adobe-text-pro,vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; }
+
+header .headerOpenMenu .fl .siteLogo h3 { font-size: small; }
+
+header .headerOpenMenu details[open] { height: 100vh; }
+
+header .headerOpenMenu details[open] summary { padding: 30px; }
+
+header .headerOpenMenu details[open] summary::after { content: "close"; margin-left: 2em; }
+
+header .headerOpenMenu details[open] hr { width: 50%; border: 1px outset forestgreen; margin: 50px; }
 
 main { width: 1000px; margin: 0 auto; }
 
@@ -257,25 +291,5 @@ fieldset p { display: list-item; }
 
 .characterPage .infoIntro { padding: 10px; text-align: center; }
 
-.openMenu { padding: 0px; opacity: 0; -webkit-transition-duration: 2s; transition-duration: 2s; color: #966432; }
-
-.openMenu div { -webkit-animation: delay 2s ease; animation: delay 2s ease; padding: 20px; margin: 0 50px; }
-
-.openMenu div p, .openMenu div a { margin: 5px; padding: 5px 0; }
-
-.openMenu .fl { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-.openMenu .fl .siteLogo { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; margin: auto 30px; -webkit-animation: flash 3s infinite; animation: flash 3s infinite; text-align: center; color: #966432; }
-
-.openMenu details[open] summary { opacity: 1; }
-
-.openMenu summary { padding: 20px; }
-
-.openMenu summary:hover { cursor: pointer; }
-
-.openMenu:link { color: yellowgreen; }
-
-.openMenu:visited { color: yellowgreen; }
-
-.openMenu:hover { opacity: 1; background: #1e1e1e; }
+.tra3d { -webkit-transform-style: preserve-3d; transform-style: preserve-3d; }
 /*# sourceMappingURL=index.min.css.map */
