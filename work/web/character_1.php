@@ -12,10 +12,10 @@
     <img src="./imgs/IMG_6619.jpg" width="350px" alt="">
   </div>
   <div class="personalType" style="width:calc(100% - 350px);">
-    <h1>頭の中</h1>
+    <h2>頭の中</h2>
      
          
-            <h2>ここでは〜</h2>
+            <h3>ここでは〜</h3>
             
             <b>16personalitiesとは：世界中で使われている性格分類ツールです</b>
           </div>
@@ -23,8 +23,8 @@
 
 </section>
 <section>
-  <h1>性格や気質</h1>
-  <h2></h2>
+  <h2>性格や気質</h2>
+  <h3></h3>
       <div class="infoWrap">
           <div class="intpType" >
             <p class="intp">INTP-A</p>
@@ -52,22 +52,22 @@
 </section>
 <section>
 
-  <h1>INTP型について</h1>
+  <h2>INTP型について</h2>
   <div class="infoIntro">
     <p>（注釈）自分にとって良い所を抜粋して説明するのは私にとって望ましい事ではありません。</p>
     <p>性格分類について、ぜひご自身の目で確認していただけたら幸いです。</p>
   </div>
   <div class="infoWrap">
     <div>
-      <h2>INTP型の特徴</h2>
+      <h3>INTP型の特徴</h3>
       <ul>
         <li><a href="https://www.16personalities.com/intp-strengths-and-weaknesses">強み弱み - 16personalities.com</a></li>
         <li><a href="https://xn--16-573d25rtpd1v4e.com/intp.php">INTP 独創的に問題を解決する人 - seikaku7.com</a></li>
       </ul>
-      <h2>適性や適職は?</h2>
+      <h3>適性や適職は?</h3>
       <ul>
         <li><a href="https://www.16personalities.com/intp-careers">16personalities.com</a></li>
-        <li><a href="https://xn--bfv490dh2g4mg.jp/intp.php">seikaku7.com</a></li>
+        <li><a href="https://xn--bfv490dh3g4mg.jp/intp.php">seikaku7.com</a></li>
       </ul>
     </div>
     <div>
@@ -82,9 +82,9 @@
 <section>
   <aside id="more16">
 
-    <h1>INTP型についてもっと詳しく知る</h1>
+    <h2>INTP型についてもっと詳しく知る</h2>
     <div class="infoWrap">
-    <h2></h2>
+    <h3></h3>
       <ul>
         <li><a href="https://everythingofneet.com/2020/04/30/post-7022/">INTPに関する8つの興味深い事実 - everythingofneet.com</a></li>
         <li><a href="http://singlelifefever.com/personalities/intp-characteristic/#:~:text=2%2D3.%E4%BB%96%E4%BA%BA%E3%81%AB%E5%BD%B1%E9%9F%BF,%E3%81%84%E3%82%8B%E3%81%A8%E8%80%83%E3%81%88%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82">INTP型（論理学者)の特徴は最強の理屈民族 - singlelifefever.com</a></li>

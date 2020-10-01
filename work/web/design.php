@@ -3,7 +3,7 @@
   include_once('header.php');
 ?>
 
-<h1>design content</h1>
+<h2>design content</h2>
 <img src="./imgs/GentleStyle.png" alt="">
 
 

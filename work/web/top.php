@@ -11,18 +11,7 @@
 <meta name="description" content="たつみのポートフォリオ">
 <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
 <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
-<script src="https://javascript/jquery-3.5.1.min.js"></script>
 
-<script>//日本語font
-  (function(d) {
-    var config = {
-      kitId: 'pjg4svf',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
   <style>
   
   </style>
@@ -60,11 +49,11 @@
           <hr>
           <a href="index.php">
             <div class="siteLogo">
-              <h1>Create a New Experience.</h1>
+              <h2>Create a New Experience.</h2>
               <div>
                 <img src="imgs/logo.png" width="100px">
-                <h2><?= h($myName);?> _ Portfolio</h2>
-                <h3>石川達実  ポートフォリオサイト</h3>
+                <h3><?= h($myName);?> _ Portfolio</h3>
+                <h4>石川達実  ポートフォリオサイト</h4>
               </div>
             </div>
           </a>
@@ -74,25 +63,31 @@
   
   <div class="homeGroup">
     <div class="copy">
-      <p class="item1">Create</p>
-      <p class="item2">a</p>
-      <p class="item3"> New</p>
-      <p class="item4">Experience.</p>
+      <a href="index.php">
+        <p class="item0">"Feel"</p>
+        <p class="item1">Create</p>
+        <p class="item2">a</p>
+        <p class="item3"> New</p>
+        <p class="item4">Experience</p>
+        <p class="item5">with your mind.</p>
+      </a>
     </div>
     <div class="logo">
-      <img src="imgs/logo.png">
+      
+        <img src="imgs/logo.png"><a href="index.php"> </a></img>
+     
       <div class="nameBar">
-        <p>石川達実  ポートフォリオサイト</p>
-        <h1 class="item5"><?= h($myName);?> _ Portfolio</h1>
+        <h1>石川達実  ポートフォリオサイト</h1>
+        <h2 class="item5"><?= h($myName);?> _ Portfolio</h2>
       </div>
     </div>
   </div>
 </header>
 <main>
-  </main>
-  <footer>
-    
-    </footer>
-  </body>
-  
-  </html>
+</main>
+<footer></footer>
+
+
+</body>
+
+</html>
