@@ -5,9 +5,9 @@
 <footer>
   <p><a href="#header">PageTopへ</a></p>
     <div class="footerContainer">
-    <?= $nav;?>
+    <?= $icon;?>
     <div class="logo">
-      <img src="imgs/logo.png" width="80px">
+      <a href="home.php"><img src="imgs/logo.png" width="80px"></a>
     </div>
     <div class="inFooter">
       <p><?= h($myName);?></p>

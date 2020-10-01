@@ -12,7 +12,7 @@
 <!-- 説明はここに -->
     <div class="concept">
     <nav>
-      <p><a href="index.php">HOME</a>  >    >  <a href=".php"></a></p>
+      <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >    >  <a href=".php"></a></p>
     </nav>
     <h2>a</h2>
       <div>

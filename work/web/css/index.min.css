@@ -5,8 +5,6 @@ html a, body a { text-decoration: none; color: darkgreen; }
 
 html nav, body nav { margin: auto; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
 
-html nav ul, body nav ul { margin: 0; }
-
 html b, body b { display: block; text-align: center; margin: 30px; }
 
 html blockquote, body blockquote { text-align: center; padding: 50px 100px; margin: 0px auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; -webkit-box-shadow: 0 0 10px rgba(245, 245, 245, 0.5); box-shadow: 0 0 10px rgba(245, 245, 245, 0.5); border-radius: 6px; background: rgba(219, 197, 149, 0.5); }
@@ -17,13 +15,15 @@ html .icons > div, body .icons > div { -webkit-column-count: 2; column-count: 2;
 
 html .icons p, body .icons p { text-align: left; }
 
-html .icons img, body .icons img { margin-right: 10px; width: 16px; }
+html .icons img, body .icons img { margin-right: 15px; width: 16px; }
 
 html .icons i, body .icons i { margin-right: 10px; font-size: 16px; }
 
 html .icons .html5, body .icons .html5 { color: red; }
 
 html .icons .css3, body .icons .css3 { color: #3e98ff; }
+
+html .icons .rwd, body .icons .rwd { color: silver; margin: 0 15px 0 3px; }
 
 html .icons .scss, body .icons .scss { color: #e100ff; }
 
@@ -35,7 +35,7 @@ html .icons .php, body .icons .php { color: #66427a; }
 
 html .icons .wp, body .icons .wp { color: #008cff; }
 
-html .icons .git, body .icons .git { color: #3b3b3b; }
+html .icons .git, body .icons .git { color: #636363; }
 
 html .icons .adobe, body .icons .adobe { color: #d11212; }
 
@@ -49,17 +49,17 @@ html .icons .mamp::before, body .icons .mamp::before { content: 'MAMP'; letter-s
 
 header { background: #1e1e1e; }
 
-header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 10px 0px; }
+header .headerContainer { -webkit-animation: toDown 2s forwards; animation: toDown 2s forwards; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 50px 20px 10px; }
 
-header .headerContainer img { opacity: 0; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; }
-
-header .headerContainer .logo { margin: auto; }
+header .headerContainer .logo { opacity: 0; margin-left: 40px; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; }
 
 header .headerContainer .inHeader { margin: 0 auto; -webkit-animation: toDown 5s forwards; animation: toDown 5s forwards; }
 
 header .headerContainer h1 { text-align: center; margin: 1em auto 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: 1; flex-flow: 1; font-size: 30px; -webkit-animation: rum-col 30s infinite; animation: rum-col 30s infinite; }
 
 header .headerContainer h2 { color: rgba(255, 255, 240, 0.5); font-size: 6px; letter-spacing: .9em; text-align: center; }
+
+header .headerContainer .icons { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 130px; -webkit-filter: saturate(0.6); filter: saturate(0.6); }
 
 header .headerContainer a { color: white; text-decoration: none; }
 
@@ -151,6 +151,8 @@ main .fastView .concept div p { width: -webkit-fit-content; width: -moz-fit-cont
 
 main .fastView .concept div em { margin: 30px; color: #966432; }
 
+main .fastView nav { margin-left: 100px; }
+
 main .contentsArea .text { padding: 20px; margin: 50px 0; }
 
 main .contentsArea .text p { text-align: center; }
@@ -160,6 +162,8 @@ main .contentsArea .text ul { margin: 50px auto 10px; width: -webkit-fit-content
 main .contentsArea .cell { min-width: 320px; background: rgba(206, 206, 206, 0.5); -webkit-box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px white; box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px white; overflow-x: scroll; overflow-y: scroll; height: 320px; margin: 20px; z-index: 99; }
 
 main .contentsArea .cell img { height: auto; }
+
+main .contentsArea .coadingArea .container > div:not(.codeDes) { margin: auto 0; }
 
 main .contentsArea .coadingArea .codeDes { width: 390px; margin: 50px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
@@ -193,13 +197,13 @@ footer > p { margin: 0; color: #966432; background: rgba(206, 206, 206, 0.5); te
 
 footer > p a { padding: 20px; }
 
-footer .footerContainer { background: #1e1e1e; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 40px; color: #966432; }
+footer .footerContainer { background: #1e1e1e; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 40px; color: #966432; }
+
+footer .footerContainer .icons { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 130px; -webkit-filter: saturate(0.6); filter: saturate(0.6); }
 
 footer .footerContainer a { color: white; text-decoration: none; }
 
 footer .footerContainer a:hover { -webkit-transform: scale(0.98); transform: scale(0.98); }
-
-footer .footerContainer nav { margin: 20px; }
 
 footer .footerContainer .logo { margin: auto; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; text-align: center; opacity: 0; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; }
 

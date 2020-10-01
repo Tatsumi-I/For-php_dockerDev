@@ -10,7 +10,7 @@
     </div>
     <div class="concept">
     <nav>
-      <p><a href="index.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
+      <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
     </nav>
       <h2>頭</h2>
         <div>

@@ -33,9 +33,6 @@ html,body{
     margin:auto;
     min-width: max-content;
     color:$Orange;
-    ul{
-      margin:0;
-    }
   }
   b{
     display: block;
@@ -63,7 +60,7 @@ html,body{
 
     }
     img{
-      margin-right: 10px;
+      margin-right: 15px;
       width: 16px;
     }
     i{
@@ -75,6 +72,10 @@ html,body{
     }
     .css3{
       color: rgb(62, 152, 255);
+    }
+    .rwd{
+      color:silver;
+      margin:0 15px 0 3px;
     }
     .scss{
       color: rgb(225, 0, 255);
@@ -105,7 +106,7 @@ html,body{
       color:rgb(0, 140, 255);
     }
     .git{
-      color:rgb(59, 59, 59);
+      color:rgb(99, 99, 99);
     }
     .adobe{
       color:rgb(209, 18, 18);
@@ -143,13 +144,11 @@ header{
   .headerContainer{
     animation: toDown 2s forwards;
     display:flex;
-    padding:20px 10px 0px;
-    img{
-      opacity:0;
-      animation:flash 10s infinite;
-    }
+    padding:50px 20px 10px;
     .logo{
-      margin:auto;
+      opacity:0;
+      margin-left: 40px;
+      animation:flash 10s infinite;
     }
     .inHeader{
       margin:0 auto;
@@ -169,15 +168,15 @@ header{
       font-size:6px;
       letter-spacing:.9em;
       text-align: center;
-      //  animation:vib 5s infinite 11S;
     } 
-    //   @keyframes vib{
-      //  0%{transform:translate(0px,-21px);}
-      //  1%{transform:translate(1px,-19px);}
-      //  2%{transform:translate(-1px,-21px);}
-      //  100%{transform:translate(1px,-20px);}
-      //   }
-      // }
+    .icons{
+      display: flex;
+      flex-wrap: wrap;
+      // column-count: 4;
+      width:130px;
+      filter: saturate(.6);
+  
+    }
     a{
       color:white;
       text-decoration: none;
@@ -395,26 +394,6 @@ main{
       z-index: 100;
       width:calc(100% - 400px);
       background:url(../imgs/myLogoWhite.png)top 90% left 90% / 20% content-box no-repeat ;
-      // h2{
-        // animation: typing 5s steps(20) 1s forwards,cursor .5s infinite;
-        // letter-spacing: 3px;
-        // overflow: hidden;
-        // left:27ch;
-        // transform: translateX(-24ch);
-        // opacity: 0;
-        // position:relative;
-        // width:34ch;
-        // white-space: wrap;
-        // border-right: 1px solid black ;
-        // @keyframes typing{
-          //   0%{width:0em;opacity: 1;}
-          //   100%{width:34ch;opacity: 1;}
-          // }
-          // @keyframes cursor{
-            //   0%{border-right-color: black;}
-            //   100%{border-right-color:transparent;}
-            // }
-            // }
       div{
         z-index: 100;
         margin: 60px;
@@ -428,6 +407,9 @@ main{
           color: $Orange;
         }
       }
+    }
+    nav{
+      margin-left: 100px;
     }
   }
   .contentsArea{
@@ -457,6 +439,11 @@ main{
       }
     }
     .coadingArea{
+      .container{
+        >div:not(.codeDes){
+          margin: auto 0;
+        }
+      }
       .codeDes{
         width: 390px;
         margin: 50px;
@@ -574,17 +561,20 @@ footer{
   .footerContainer{
     background: $myBlack;
     display:flex;
-    padding:20px 40px;
+    padding: 40px;
     color:$Orange;
+    .icons{
+      display: flex;
+      flex-wrap: wrap;
+      width:130px;
+      filter: saturate(.6);
+    }
     a{
       color:white;
       text-decoration: none;
       &:hover{
         transform: scale(.98);
       }
-    }
-    nav{
-      margin:20px;
     }
     .logo{
      margin :auto;

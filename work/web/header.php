@@ -24,17 +24,17 @@
   <div id="header" class="headerContainer">
     
     <div class="logo">
-      <a href="index.php">
+      <a href="home.php">
         <img src="imgs/logo.png" width="80px">
       </a>
     </div>
     <div class="inHeader">
-      <a href="index.php">
+      <a href="home.php">
       <h1><?= h($myName);?> _ Portofolio</h1>
         <h2>石川達実  ポートフォリオサイト</h2>
       </a>
     </div>
-    <?= $nav;?>
+      <?= $icon;?>
 
   </div>
   
@@ -43,7 +43,7 @@
       <summary>Global Menu</summary>
         <div class="fl">
           <div>
-            <p><a href="index.php">HOME</a></p>
+            <p><a href="home.php">HOME</a></p>
             <p>Works</p>
             <p class="indent">Coding Skills included on</p>
             <ul>
@@ -63,7 +63,7 @@
           </div>
           <hr>
             <div class="siteLogo">
-              <a href="top.php">
+              <a href="index.php">
                 <h1>Create a New Experience.</h1>
                   <div>
                     <img src="imgs/logo.png" width="100px">

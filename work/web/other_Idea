@@ -2,7 +2,7 @@
 <section>
   <div class="headLine">
     <div id= "hide" class="gestForm">
-      <form id="tooltip" action="index.php" method="get" description="Input your name" >
+      <form id="tooltip" action="home.php" method="get" description="Input your name" >
         <label for="gest"> Welcome 
           <?php
            if(isset($_GET['gestName'])){
