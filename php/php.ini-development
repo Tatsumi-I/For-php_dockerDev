@@ -724,10 +724,10 @@ default_charset = "UTF-8"
 ; Paths and Directories ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; UNIX: "/path1:/path2"
+; UNIX: "/path1:/path3"
 ;include_path = ".:/php/includes"
 ;
-; Windows: "\path1;\path2"
+; Windows: "\path1;\path3"
 ;include_path = ".;c:\php\includes"
 ;
 ; PHP's default setting for include_path is ".;/path/to/php/pear"
@@ -919,7 +919,7 @@ default_socket_timeout = 60
 ;extension=odbc
 ;extension=openssl
 ;extension=pdo_firebird
-;extension=pdo_mysql
+extension=pdo_mysql
 ;extension=pdo_oci
 ;extension=pdo_odbc
 ;extension=pdo_pgsql
