@@ -9,7 +9,7 @@
 
 <div class="fastView">
   <div>
-    <img src="./imgs/IMG_6619.jpg" width="350px" alt="">
+    <img src="./imgs/IMG_6619.jpg"  alt="">
   </div>
   <div class="personalType" style="width:calc(100% - 350px);">
     <h2>頭の中</h2>
@@ -25,7 +25,7 @@
 <section>
   <h2>性格や気質</h2>
   <h3></h3>
-      <div class="infoWrap">
+      <div class="infocontentsArea">
           <div class="intpType" >
             <p class="intp">INTP-A</p>
             <div>
@@ -57,7 +57,7 @@
     <p>（注釈）自分にとって良い所を抜粋して説明するのは私にとって望ましい事ではありません。</p>
     <p>性格分類について、ぜひご自身の目で確認していただけたら幸いです。</p>
   </div>
-  <div class="infoWrap">
+  <div class="infocontentsArea">
     <div>
       <h3>INTP型の特徴</h3>
       <ul>
@@ -83,7 +83,7 @@
   <aside id="more16">
 
     <h2>INTP型についてもっと詳しく知る</h2>
-    <div class="infoWrap">
+    <div class="infocontentsArea">
     <h3></h3>
       <ul>
         <li><a href="https://everythingofneet.com/2020/04/30/post-7022/">INTPに関する8つの興味深い事実 - everythingofneet.com</a></li>

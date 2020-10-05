@@ -5,7 +5,7 @@
 
   $myName = 'Tatsumi-Ishikawa';
 
-  $date = 'Y/F/d (D) H:i:s';
+  $date = 'Y/m/d (D) H:i:s';
 
   $n = mt_rand(1, 5);//乱数とランダム表示
     if($n === 1){

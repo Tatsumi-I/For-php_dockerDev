@@ -22,7 +22,6 @@
 <body>
 <header>
   <div id="header" class="headerContainer">
-    
     <div class="logo">
       <a href="home.php">
         <img src="imgs/logo.png" width="80px">
@@ -30,15 +29,20 @@
     </div>
     <div class="inHeader">
       <a href="home.php">
-      <h1><?= h($myName);?> _ Portofolio</h1>
+        <h1><?= h($myName);?> _ Portofolio</h1>
         <h2>石川達実  ポートフォリオサイト</h2>
       </a>
     </div>
-      <?= $icon;?>
-
+    <div class="navi">
+            <p><a href="home.php">HOME</a></p>
+            <p>Coding</p>
+            <p><a href="design.php">Design</a></p>
+            <p><a href="home.php#profile">Profile</a></p>
+            <p><a href="contact.php">Contact</a></p>
+    </div>
   </div>
   
-  <div class="headerOpenMenu">
+  <div class="headFootOpenMenu">
     <details>
       <summary>Global Menu</summary>
         <div class="fl">

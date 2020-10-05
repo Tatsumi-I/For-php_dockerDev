@@ -9,7 +9,7 @@
 
 <div class="fastView">
   <div>
-    <img src="./imgs/IMG_5848.jpg" width="350px" alt="">
+    <img src="./imgs/IMG_5848.jpg"  alt="">
   </div>
   <div class="personalType" style="width:calc(100% - 350px);">
     <h2>ビジュアルコーディングについて</h2>
@@ -23,7 +23,7 @@
 <section>
   <h2></h2>
   <h3></h3>
-      <div class="infoWrap">
+      <div class="infocontentsArea">
           <div class="intpType" >
             <p class="intp"></p>
             <div>
@@ -40,7 +40,7 @@
     <p></p>
     <p></p>
   </div>
-  <div class="infoWrap">
+  <div class="infocontentsArea">
     <div>
       <h3></h3>
     </div>

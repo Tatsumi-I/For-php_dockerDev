@@ -40,7 +40,7 @@
             <p>Profile</p>
             <ul>
               <li><a href="skills.php">Knowledge & Skill</a></li>
-              <li><a href="character.php">Character</a></li>
+              <li><a href="chara.php">Character</a></li>
               <li><a href="backBone.php">Backbone</a></li>
               <li><a href="hobby.php">Hobby</a></li>
             </ul>
