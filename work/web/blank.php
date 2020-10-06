@@ -59,14 +59,6 @@
             </div>
           </div>
         </div>
-        <div class="desc">
-          <p>まとめると…</p>
-          <div class="sum">
-            <p>独創的・論理的<br>・客観的な<br>思考と分析</p>
-            <P>知的好奇心と<br>向上心があり<br>自立している</P>
-            <p>伝統や常識よりも<br>柔軟で、より良い<br>新しい方法を探す</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -120,33 +112,12 @@
     </div>
   </section>
   <section>
-    <h2>まとめ</h2>
-    <div class="desc">
-      <p>私は、自分にとって新しいことについて学んだり、ある物事の詳細について多角的に理解することに特に喜びを感じます</p>
+    <div class="sectionArea">
+      <h2>まとめ</h2>
+      <div class="desc">    
+        <p>私は、自分にとって新しいことについて学んだり、ある物事の詳細について多角的に理解することに特に喜びを感じます</p>
+      </div>
     </div>
-    
-    <div class="contentsArea">
-      <div class="container2">
-        <div class="contentImg">
-          <img src="" >
-          <p></p>
-          <p></h4>
-        </div>
-        <div class="text">
-          <h3></h3>
-          
-        </div>
-      </div>
-      <div class="container1">
-        <div class="text">
-          <h3>...</h3>
-          
-        </div>
-        <div>
-          
-          </div>
-        </div>
-      </div>
     </section>
   </article>
 

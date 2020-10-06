@@ -385,7 +385,8 @@ main {
     flex-wrap: wrap-reverse;
     z-index: 100;
     .contentImg{
-      margin:0px 20px;
+      margin:0 auto;
+      flex-basis: 350px;
       img {
         filter: saturate(0.5);
         width: 300px;
@@ -395,13 +396,15 @@ main {
     .concept {
       margin: 0 auto;
       z-index: 100;
-      min-width: 370px;
+      // min-width: 300px;
+      flex-basis: 350px;
       flex-grow: 1;
       background: url(../imgs/myLogoWhite.png) top 96% left 96% / 15%
       content-box no-repeat;
       >div {
         z-index: 100;
         margin: 0 auto;
+        padding: 50px;
         p {
           text-align: center;
           line-height: 4;
@@ -440,41 +443,44 @@ main {
       flex-wrap: wrap-reverse;
     }
     .container1,.container2{
-      justify-content: space-around;
+      justify-content: space-between;
       display: flex;
-      margin: 50px auto;
-      padding: 50px 20px;
+      margin: 0 auto;
+      padding: 70px 20px;
       z-index: 3;
       .contentImg {
         margin: auto;
         z-index: 99;
+        flex-basis: 300px;
         img {
-          width: 350px;
+          width: 300px;
           height: auto;
           margin: 0 50px;
           padding: 20px 0;
         }
         iframe {
-          margin: 0 50px;
+          flex-basis: 350px;
+          margin: 0 auto;
           height: 320px;
         }
       }
       .contentImg_over {
-        margin: 0 50px;
-        width: 350px;
+        margin: 0 auto;
+        flex-basis: 300px;
         overflow-y: scroll;
         height: 400px;
         z-index: 99;
         // height: auto;
         img {
-          width: 340px;
+          width: 300px;
           height: auto;
-          margin: 0 30px;
+          // margin: 0 50px;
         }
       }
       .text {
-        width: 350px;
+        flex-basis: 350px;
         margin: 0 auto;
+        padding: 30px;
         flex-grow: 1;
         a {
           // background: rgba(150, 100, 50, 0.5);
@@ -488,6 +494,7 @@ main {
         }
         .notes {
           padding: 30px;
+          flex-basis: 350px;
           margin: 0px auto;
           width: fit-content;
           box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
@@ -498,7 +505,7 @@ main {
     }
     .sum {
       margin: 0 auto;
-      width: fit-content;
+      // width: fit-content;
       p {
         background: $darkBlue;
         display: inline-block;
