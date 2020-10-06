@@ -15,8 +15,9 @@
         </nav>
         <h2>石川達実ってどんな人？</h2>
         <div>
-          <p>このページでは<strong>16タイプ分類性格診断テスト(MBTI診断)</strong>という性格分類法に基づいて、石川達実の人物像をご紹介します。</p>
-          <p><strong>16タイプ分類性格診断テスト</strong>とは、主に欧米で使われている性格分類方法で,心理学者ユングの理論も基に発展させたもので、思考パターンや行動パターンに応じて性格を16タイプに分類する性格分類ツールです。</p>
+          <p>このページでは<strong>16タイプ分類性格診断テスト(MBTI診断)</strong>に基づいて、石川達実の人物像をご紹介します。</p>
+          <p><strong>16タイプ分類性格診断テスト</strong>とは、主に欧米で使われている性格分類方法で,心理学者ユングの理論も基に発展させたものです。</p>
+          <p>思考パターンや行動パターンに応じて性格を16タイプに分類するツールです。</p>
           <p>その分類によると、<strong>石川達実は<em>"INTP"</em>という型</strong>に分類されます。</p>
         </div>
       </div>
@@ -74,14 +75,18 @@
             </div>
           </div>
         </div>
-        <div class="desc">
-          <p>まとめると…</p>
-          <div class="sum">
-            <p>独創的・論理的<br>・客観的な<br>思考と分析</p>
-            <P>知的好奇心と<br>向上心があり<br>自立している</P>
-            <p>伝統や常識よりも<br>柔軟で、より良い<br>新しい方法を探す</p>
+        <div class="container1">
+          <div class="text">
+            <h3>INTP型についてもっと詳しく知る</h3>
+            <p><a href="https://everythingofneet.com/2020/04/30/post-7022/" target="chara">INTPに関する8つの興味深い事実 - everythingofneet.com</a></p>
+            <p><a href="http://singlelifefever.com/personalities/intp-characteristic/#:~:text=2%2D3.%E4%BB%96%E4%BA%BA%E3%81%AB%E5%BD%B1%E9%9F%BF,%E3%81%84%E3%82%8B%E3%81%A8%E8%80%83%E3%81%88%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82" target="chara">INTP型（論理学者)の特徴は最強の理屈民族 - singlelifefever.com</a></p>
+          </div>
+          <div class="contentImg">
+            <img src="imgs/typeTable.png">
+            <b><a href="https://iwamishinji.com/tools/16personalities/" target="chara">いわろぐ - https://iwamishinji.com/tools/16personalities/ より引用</a></b>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -95,8 +100,8 @@
       <div class="contentsArea">
         <div class="container1">
           <div class=text>
-            <h3>ご期待に応えます</h3>
-            <h4>石川達実は約束します。</h4>
+            <h3>私は約束します。</h3>
+            <h4></h4>
             <ul>
               <li>新しい知識を<strong>学び続ける</strong>ことで、常にスキルアップします。</li>
               <li>複雑な事柄も<strong>冷静かつ客観的に分析</strong>し、課題の<strong>真因</strong>を捉えることにより、チームをリードします。</li>
@@ -106,7 +111,7 @@
               <p>前職では…</p>
               <p>＊店舗課題を解決するための<strong>施策を企画・運営・管理</strong>していました。</p>
               <p>＊店舗状況や売上に関する週ごとの<strong>業績報告を担当</strong>していました。</p>
-              <p>＊ブラックエプロンテストと呼ばれる、<strong>合格率約10%の社内試験を5年連続で合格</strong>しました。個人的に作成した<strong>60ページに及ぶテスト対策用テキスト</strong>は、今でも<strong>3万人以上が閲覧出来る資料</strong>として社内サイト上に掲載されています。</p>
+              <p>＊<strong>合格率約10%の社内試験を5年連続で合格</strong>しました。個人的に作成した<strong>60ページに及ぶテスト対策用テキスト</strong>は、今でも<strong>3万人以上が閲覧出来る資料</strong>として社内サイト上に掲載されています。</p>
               <p><a href="backBone.php">前職についてはこちらのページもご参照下さい。</a></p>
             </div>
           </div>
@@ -120,7 +125,7 @@
             <img src="imgs/office.jpg">
           </div>
           <div class="text">
-            <h3>未経験・異業種出身でほんとに大丈夫？</h3>
+            <h3>なぜ今転職するの？</h3>
             <ul>
               <li>私は<strong>本当に価値のある仕事</strong>をしたいと考えています。</li>
               <li>私の考える”価値のある仕事”とは、<strong>”価値のある体験”</strong>を提供できる仕事のことです。</li>
@@ -130,48 +135,28 @@
             <p><a href="https://narukinhonda.com/narushinrigaku/mbti/111intp001.html" target="chara">INTP(研究者タイプ)に向いている職業、キャリア、お仕事、役割 - narukinhonda.com</a></p>
           </div>
         </div>
-        <div class="container1">
-          <div class="text">
-            <h3>INTP型についてもっと詳しく知る</h3>
-            <p><a href="https://everythingofneet.com/2020/04/30/post-7022/" target="chara">INTPに関する8つの興味深い事実 - everythingofneet.com</a></p>
-            <p><a href="http://singlelifefever.com/personalities/intp-characteristic/#:~:text=2%2D3.%E4%BB%96%E4%BA%BA%E3%81%AB%E5%BD%B1%E9%9F%BF,%E3%81%84%E3%82%8B%E3%81%A8%E8%80%83%E3%81%88%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82" target="chara">INTP型（論理学者)の特徴は最強の理屈民族 - singlelifefever.com</a></p>
-          </div>
-          <div class="contentImg">
-            <img src="imgs/typeTable.png">
-            <b><a href="https://iwamishinji.com/tools/16personalities/" target="chara">いわろぐ - https://iwamishinji.com/tools/16personalities/ より引用</a></b>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
   <section>
-    <h2>まとめ</h2>
-    <div class="desc">
-      <p>私は、自分にとって新しいことについて学んだり、ある物事の詳細について多角的に理解することに特に喜びを感じます</p>
+    <div class="sectionArea">
+      <h2>まとめ</h2>
+      <div class="desc">
+        <p>INTP型である私 石川達実は、自分にとって新しいことについて常に学んだり、ある物事の詳細について多角的に理解することに喜びを感じます</p>
+        <p>まとめると…</p>
+        <div class="sum">
+          <p>独創的・論理的<br>・客観的<br>思考</p>
+          <p>人と違っても気にしない・孤立しがち</p>
+          <p>洞察力・分析力に優れ、本質を見抜く</p>
+          <p>感情移入や表現は苦手</p>
+          <P>知的好奇心・<br>向上心<br>自立している</P>
+          <p>一人で悩みを抱えがち</p>
+          <p>伝統や常識よりも<br>柔軟で、より良い<br>新しい方法を探す</p>
+          <p>変人と呼ばれる</p>
+        </div>
+      </div>
     </div>
-    
-    <div class="contentsArea">
-      <div class="container2">
-        <div class="contentImg">
-          <img src="" >
-          <p></p>
-          <p></h4>
-        </div>
-        <div class="text">
-          <h3></h3>
-          
-        </div>
-      </div>
-      <div class="container1">
-        <div class="text">
-          <h3>...</h3>
-          
-        </div>
-        <div>
-          
-          </div>
-        </div>
-      </div>
     </section>
   </article>
     

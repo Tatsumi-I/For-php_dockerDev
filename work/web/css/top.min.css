@@ -145,11 +145,11 @@ main li::before { margin-right: 10px; content: "□"; color: #966432; }
 
 main .fastView { -webkit-animation: toUp 3s forwards; animation: toUp 3s forwards; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; z-index: 100; }
 
-main .fastView .contentImg { margin: 0 auto; }
+main .fastView .contentImg { margin: 0 20px; }
 
 main .fastView .contentImg img { -webkit-filter: saturate(0.5); filter: saturate(0.5); width: 350px; height: auto; }
 
-main .fastView .concept { margin: 0 auto; z-index: 100; max-width: 490px; min-width: 350px; background: url(../imgs/myLogoWhite.png) top 96% left 96%/15% content-box no-repeat; }
+main .fastView .concept { margin: 0 20px; z-index: 100; max-width: 490px; min-width: 350px; background: url(../imgs/myLogoWhite.png) top 96% left 96%/15% content-box no-repeat; }
 
 main .fastView .concept div { z-index: 100; }
 
@@ -175,9 +175,9 @@ main .sectionArea .container1 .contentImg, main .sectionArea .container2 .conten
 
 main .sectionArea .container1 .contentImg img, main .sectionArea .container2 .contentImg img { width: 350px; height: auto; margin: 0 50px; }
 
-main .sectionArea .container1 .contentImg iframe, main .sectionArea .container2 .contentImg iframe { height: 320px; }
+main .sectionArea .container1 .contentImg iframe, main .sectionArea .container2 .contentImg iframe { margin: 0 50px; height: 320px; }
 
-main .sectionArea .container1 .contentImg_over, main .sectionArea .container2 .contentImg_over { width: 350px; overflow-y: scroll; height: 400px; margin: 0 auto; z-index: 99; }
+main .sectionArea .container1 .contentImg_over, main .sectionArea .container2 .contentImg_over { margin: 0 50px; width: 350px; overflow-y: scroll; height: 400px; z-index: 99; }
 
 main .sectionArea .container1 .contentImg_over img, main .sectionArea .container2 .contentImg_over img { width: 340px; height: auto; margin: 0 30px; }
 
@@ -275,9 +275,6 @@ fieldset p { display: list-item; }
 
 .tra3d { -webkit-transform: translateZ(-20px); transform: translateZ(-20px); font-size: 400px; height: 0; z-index: 1; text-align: center; white-space: nowrap; opacity: 0.1; color: #63413070; }
 
-@media (max-width: 600px) { html, body { font-size: 80%; }
-  html img, body img { width: 100px; } }
-
 html, body { background: #1e1e1e; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; color: #966432; font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 300; overflow: hidden; }
 
 header { height: 100vh; position: relative; background: radial-gradient(circle at top center, #333333 4%, #0a0a0a 50%, black); }
@@ -353,7 +350,7 @@ header .topOpenMenu a:hover { -webkit-box-shadow: 0 0 2px rgba(192, 192, 192, 0.
 
 header .topOpenMenu a:link, header .topOpenMenu a:visited { color: darkgreen; -webkit-animation: flash 2s infinite; animation: flash 2s infinite; }
 
-header .topOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; flex-contentsarea: nocontentsArea; margin: 30px; padding: 50px; border-radius: 10px; background: rgba(10, 10, 10, 0.5); -webkit-box-shadow: 0 0 1px rgba(102, 102, 102, 0.5); box-shadow: 0 0 1px rgba(102, 102, 102, 0.5); }
+header .topOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; margin: 30px; padding: 50px; border-radius: 10px; background: rgba(10, 10, 10, 0.5); -webkit-box-shadow: 0 0 1px rgba(102, 102, 102, 0.5); box-shadow: 0 0 1px rgba(102, 102, 102, 0.5); }
 
 header .topOpenMenu .fl > div { margin: auto; padding: 30px; border-radius: 5px; }
 

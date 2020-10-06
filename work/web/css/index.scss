@@ -132,7 +132,12 @@ body {
 }
 
 header {
-  background: $myBlack;
+  background: radial-gradient(
+    ellipse at top center,
+    rgb(51, 51, 51) 4%,
+    rgb(10, 10, 10) 40%,
+    black
+  );
   .icons {
     padding: 20px;
     filter: saturate(0.6);
@@ -380,23 +385,23 @@ main {
     flex-wrap: wrap-reverse;
     z-index: 100;
     .contentImg{
-      margin: 0 auto;
+      margin:0px 20px;
       img {
         filter: saturate(0.5);
-        width: 350px;
+        width: 300px;
         height: auto;
       }
     }
     .concept {
       margin: 0 auto;
       z-index: 100;
-      max-width: 490px;
-      min-width: 350px;
+      min-width: 370px;
+      flex-grow: 1;
       background: url(../imgs/myLogoWhite.png) top 96% left 96% / 15%
-        content-box no-repeat;
-      div {
+      content-box no-repeat;
+      >div {
         z-index: 100;
-        // margin: 60px;
+        margin: 0 auto;
         p {
           text-align: center;
           line-height: 4;
@@ -429,22 +434,17 @@ main {
       }
     }
     .container1 {
-      justify-content: space-around;
-      display: flex;
       flex-wrap: wrap;
-      margin: 50px auto;
-      padding: 20px 0;
-      z-index: 3;
     }
     .container2 {
-      justify-content: space-around;
-      display: flex;
       flex-wrap: wrap-reverse;
-      margin: 50px auto;
-      padding: 20px 0;
-      z-index: 3;
     }
     .container1,.container2{
+      justify-content: space-around;
+      display: flex;
+      margin: 50px auto;
+      padding: 50px 20px;
+      z-index: 3;
       .contentImg {
         margin: auto;
         z-index: 99;
@@ -452,16 +452,18 @@ main {
           width: 350px;
           height: auto;
           margin: 0 50px;
+          padding: 20px 0;
         }
         iframe {
+          margin: 0 50px;
           height: 320px;
         }
       }
       .contentImg_over {
+        margin: 0 50px;
         width: 350px;
         overflow-y: scroll;
         height: 400px;
-        margin:0 auto;
         z-index: 99;
         // height: auto;
         img {
@@ -540,8 +542,14 @@ footer {
     }
   }
   .footerContainer {
-    background: $myBlack;
+    background: radial-gradient(
+    ellipse at top center,
+    rgb(51, 51, 51) 4%,
+    rgb(10, 10, 10) 50%,
+    black
+  );
     display: flex;
+    flex-wrap: wrap;
     padding: 40px;
     color: $Orange;
     a {

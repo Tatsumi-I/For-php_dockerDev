@@ -4,14 +4,6 @@
 $pointColor: rgb(194, 194, 194);
 $pColor: rgb(77, 41, 0);
 
-@media (max-width:600px){
-  html,body{
-    font-size: 80%;
-    img{
-      width: 100px;
-    }
-  }
-}
 
 html,
 body {
@@ -252,7 +244,7 @@ header {
     .fl {
       height: fit-content;
       display: flex;
-      flex-contentsarea: nocontentsArea;
+      flex-wrap: nowrap;
       margin: 30px;
       padding: 50px;
       border-radius: 10px;
