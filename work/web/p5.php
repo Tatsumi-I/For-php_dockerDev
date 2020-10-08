@@ -7,7 +7,7 @@
 <section>
 
 
-<div class="fastView">
+<div class="firstView">
   <div>
     <img src="./imgs/IMG_5848.jpg"  alt="">
   </div>

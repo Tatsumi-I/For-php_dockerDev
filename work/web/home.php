@@ -5,15 +5,15 @@
 <article>
 
 <section>
-    <div id="pageTop" class="fastView">
+    <div id="pageTop" class="firstView">
       <div class="contentImg">
         <img src="./imgs/img_5870.png" alt="tatsumi's Face">
       </div>
       <div class="concept">
         <nav>
-          <p><i class="fas fa-home"></i>  HOME</p>
-          <p><?php echo date($date); ?></p>
+          <p class="nav"><i class="fas fa-home"></i>  HOME</p>
         </nav>
+          <p><?php echo date($date); ?></p>
         <h2>Create a New Experience</h2>
         <div>
           <p><strong>”新しい感動体験を創り出す”</strong></p>
@@ -34,9 +34,9 @@
       <div class="tra3d">Coading...</div>
       
       <div id="coading" class="contentsArea">
+        <h3>ポートフォリオサイト</h3>
         <div class="container1">
           <div class="text">
-            <h3>ポートフォリオサイト</h3>
             <div class="icons">
               <i class="fab fa-docker fa-fw docker"></i>
               <i class="fab fa-php fa-fw php"></i>
@@ -45,6 +45,7 @@
             <p>2020.9月から構想を重ね、今に至ります。</p>
             <p>内容もデザインもすごく悩みましたが、<strong>誰かの真似やコピペはせず</strong>に作りました。</p>
             <p><strong>私のスキルや知識のこと、私自身のことを是非知ってください。</strong></p>
+            <p><a href="https://github.com/Tatsumi-I/For-php_dockerDev/tree/tougou">GitHubでコードを見る</a></p>
             <ul>
               <li>Docker</li>
               <li>PHP</li>
@@ -57,13 +58,13 @@
             <img src="imgs/top.png"  alt="">
           </div>
         </div>
+        <h3>"My first code"</h3>
         <div class="container2">
           <div class="contentImg">
             <a href="https://tatsumi-i.github.io/MyFirstCode/">
             <img src="imgs/mfc.png"  title="GitHubにて公開しています"></a>
           </div>
           <div class="text">
-            <h3>"My first code"</h3>
             <div class="icons">
               <i class="fab fa-html5 fa-fw html5"></i>
               <i class="fab fa-css3 fa-fw css3"></i>
@@ -78,9 +79,9 @@
           </div>
         </div>
         
+        <h3>クリエイティブコーディング</h3>
         <div class="container1">
           <div class="text">
-            <h3>クリエイティブコーディング</h3>
             <div class="icons">
               <i class="fab fa-js fa-fw js"></i>
               <i class="p5"></i>
@@ -116,12 +117,12 @@
         
       </div>
       <div class="contentsArea">
+        <h3>欧州モーターバイクレース協会</h3>
         <div class="container2">
           <div class="contentImg_over">
             <img src="imgs/art2.png" >
           </div>
           <div class=text>
-            <h3>欧州モーターバイクレース協会</h3>
             <div class="icons">
               <img src="imgs/ps.png" alt="">
               <img src="imgs/ai.png" alt="">
@@ -131,9 +132,9 @@
             <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
           </div>
         </div>
+        <h3>こどもふれあいパーク</h3>
         <div class="container1">
           <div class=text>
-            <h3>こどもふれあいパーク</h3>
             <div class="icons">
               <img src="imgs/ps.png" width="20px" alt="">
               <img src="imgs/ai.png" width="20px" alt="">
@@ -147,12 +148,12 @@
           </div>
         </div>
         
+        <h3>Gentle’s Style</h3>
         <div class="container2">
           <div class="contentImg">
             <img src="imgs/Gentlestyle.png" >
           </div>
           <div class=text>
-            <h3>Gentle’s Style</h3>
             <div class="icons">
               <img src="imgs/ps.png" width="20px" alt="">
               <img src="imgs/ai.png" width="20px" alt="">
@@ -162,9 +163,9 @@
             <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
           </div>
         </div>
+        <h3>株式会社 b.Next</h3>
         <div class="container1">
           <div class=text>
-            <h3>株式会社 b.Next</h3>
             <div class="icons">
               <img src="imgs/ps.png" width="20px" alt="">
               <img src="imgs/ai.png" width="20px" alt="">
@@ -187,25 +188,22 @@
       <div class="tra3d">profile...</div>
       
       <div class="contentsArea">
+        <h3>石川達実/<?= h($myName);?></h3>
         <div class="container2">
           <div class="contentImg">
           <img src="imgs/IMG_6619.JPG" style="filter:saturate(0.2);">
           </div>
           <div class="text">
-            <h3>石川達実/<?= h($myName);?></h3>
             <p>1986年東京都生まれ。</p>
             <p>学生時代を鹿児島で過ごし、結婚を機に愛知へ移住。</p>
-            <p>性質を表わす言葉：<br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</p>
-            <p>該当しない言葉：<br>にぎやか、面倒見の良い、活発、感情的、情熱的、熱い、明るい、快活、雄弁など</p>
-            <p>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、自分の能力を本当に活かせる仕事を通して感動体験を提供したい、という一心からプログラミングをはじめた</p>
-            <p><a href="chara.php">性格や気質</a></p>
-            <p><a href="backBone.php">経験</a></p>
-            <p><a href="hobby.php">趣味や嗜好</a></p>
+            <p><strong>性質を表わす言葉：</strong><br>ユーモラス、独特、鋭い、賢い、謎、冷静、穏やか、聡明、大胆、知的、繊細、器用など</p>
+            <p><strong>該当しない言葉：</strong><br>にぎやか、面倒見の良い、活発、感情的、情熱的、熱い、明るい、快活、雄弁など</p>
+            <p>2020.5月、自店舗の約1か月間のコロナ休業をきっかけに一大決心し、<strong>自分の能力を本当に活かせる仕事を通して感動体験を提供したい</strong>という一心からプログラミングをはじめた</p>
           </div>
         </div>
+        <h3>Knowledgeable about...</h3>
         <div class="container1">
           <div class="text">
-            <h3>Knowledgeable about...</h3>
             <div class="icons">
               <div>
                 <p><i class="fab fa-html5 fa-fw html5"></i>HTML5</p>
@@ -230,6 +228,19 @@
           </div>
           <div class="contentImg">
             <img src="./imgs/laptop.jpg" alt="">
+          </div>
+        </div>
+        <h3>石川達実を正しく知る</h3>
+        <div class="container2">
+          <div class="contentImg">
+          <img src="imgs/IMG_6619.JPG" style="filter:saturate(0.2);">
+          </div>
+          <div class="text">
+            <p>石川達実の<strong>一風変わった過去やBackboneについて知る</strong>ことができます。是非ご参照下さい！
+            <p><a href="chara.php">性格や思考タイプ</a></p>
+            <p><a href="backBone.php">過去/Backbone</a></p>
+            <p><a href="blackApron.php">ブラックエプロンとは?</a></p>
+            <p><a href="hobby.php">趣味や嗜好</a></p>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>tatsumi's-portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/top.min.css">
+<link rel="stylesheet" type="text/css" href="css/index.min.css">
 <meta name="description" content="たつみのポートフォリオ">
 <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
 <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
@@ -15,8 +15,14 @@
   <style>
   
   </style>
-    <!-- <script src="p5sketch/p5.min.js"></script>
-  <script src="p5sketch/p5sketch.js"></script> -->
+    <!-- <script src="p5sketch/p5.min.js"></script> -->
+  <script>
+    get = getElementByClassName("topOpenMenu");
+    onLoad = function(){
+        get.style.color.red;
+    } 
+
+  </script>
 </head>
 <body>
 
@@ -24,40 +30,10 @@
 
   <hr class="hr">
 
-  <div class="topOpenMenu">
+  <div class="topOpenMenu" onclick=(event)>
     <details>
       <summary>Global Menu</summary>
-        <div class="fl">
-          <div>
-            <p><a href="home.php">HOME</a></p>
-            <p>Coding</p>
-            <ul>
-              <li><a href="      ">Skills included on this site</a></li>
-              <li><a href="      ">My first code</a></li>
-              <li><a href="      ">Processing</a></li>
-            </ul>
-            <p><a href="design.php">Design</a></p>
-            <p>Profile</p>
-            <ul>
-              <li><a href="skills.php">Knowledge & Skill</a></li>
-              <li><a href="chara.php">Character</a></li>
-              <li><a href="backBone.php">Backbone</a></li>
-              <li><a href="hobby.php">Hobby</a></li>
-            </ul>
-            <p><a href="contact.php">Contact</a></p>
-          </div>
-          <hr>
-          <a href="home.php">
-            <div class="siteLogo">
-              <h2>Create a New Experience.</h2>
-              <div>
-                <img src="imgs/logo.png" width="100px">
-                <h3><?= h($myName);?> _ Portfolio</h3>
-                <h4>石川達実  ポートフォリオサイト</h4>
-              </div>
-            </div>
-          </a>
-        </div>
+        <?= $globalMenu; ?>
       </details>
   </div>
   

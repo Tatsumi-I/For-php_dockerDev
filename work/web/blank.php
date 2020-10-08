@@ -4,7 +4,7 @@
 ?>
 <article>
   <section>
-    <div id="pageTop" class="fastView">
+    <div id="pageTop" class="firstView">
       <div class="contentImg">
         <img src="./imgs/IMG_6619.jpg" alt="">
       </div>

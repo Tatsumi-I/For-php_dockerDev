@@ -37,7 +37,46 @@
       <i class="fas fa-database db" title="MYSQL"></i>
       <p><a href="">More about...</a></p>
     </div>
-  '
+  ';
 
+
+  $globalMenu = 
+  '
+  <div class="fl">
+  <div>
+    <p><a href="home.php">HOME</a></p>
+    <p class="indent1">Works</p>
+    <p class="indent2">Coding Skills included on</p>
+    <ul class="indent2">
+      <li><a href="      ">This site</a></li>
+      <li><a href="      ">My first code</a></li>
+      <li><a href="      ">Processing</a></li>
+    </ul>
+    <p class="indent2"><a href="design.php">Design</a></p>
+    <p class="indent1">Profile</p>
+    <ul class="indent2">
+      <li><a href="skills.php">Knowledge & Skill</a></li>
+      <li><a href="chara.php">Character</a></li>
+      <li><a href="backBone.php">Backbone</a></li>
+      <li><a href="blackApron.php">What is Black Apron?</a></li>
+      <li><a href="hobby.php">Hobby</a></li>
+    </ul>
+    <p class="indent1"><a href="contact.php">Contact</a></p>
+  </div>
+  
+  <hr>
+  
+  <div class="siteLogo">
+    <a href="index.php">
+      <h1>Create a New Experience.</h1>
+        <div>
+          <img src="imgs/logo.png" width="100px">
+          <p><?= h($myName);?> _ Portfolio</p>
+          <p class="ja">石川達実  ポートフォリオサイト</p>
+        </div>
+    </a>
+  </div>
+</div>
+  ';
 
 ?>
