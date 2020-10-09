@@ -1,16 +1,18 @@
-<?php 
-// この情報はDB接続のために共通して必要
-// $user = "tatsumi";
-// $pass = "vWtiKogx0heXmvEl";
-// $user = "docker";
-// $pass = "docker";
-$user = "root";
-$pass = "root";
-$time = date("Y-m-d H:i:s");
-?>
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>詳細表示</title>
+</head>
+<body>
+  
 
 <?php
+
+ //require_once('.../app/db_cnf.php');
+$user = "root";
+$pass = "root";
 // idを受け取るコード（詳細表示）
   try{
     if (empty($_GET['id'])) throw new Exception('idの取得エラー'); 
@@ -26,8 +28,8 @@ $time = date("Y-m-d H:i:s");
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     // 受け取った情報の表示
-    print_r($result);
-    var_dump($result);
+    // print_r($result);
+    // var_dump($result);
     echo "<br>\n";
     echo "No. " . htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8') . "<br>\n";
     echo "タイトル: " . htmlspecialchars($result['title'],ENT_QUOTES,'UTF-8') . "<br>\n";
@@ -46,7 +48,7 @@ $time = date("Y-m-d H:i:s");
     // echo "評価: " . htmlspecialchars($result['checked'],ENT_QUOTES,'UTF-8') . "<br>\n";
     echo '評価:';
     $checked = (string) htmlspecialchars($result['checked'],ENT_QUOTES,'UTF-8');
-      if (isset($checked)) {
+      if (!empty($checked)) {
         if ($checked === '1'){
           echo "Good !";
         } elseif ($checked === '2'){
@@ -59,11 +61,16 @@ $time = date("Y-m-d H:i:s");
       }
     echo "<br>";
     echo "コメント:" . nl2br(htmlspecialchars($result['comments'],ENT_QUOTES,'UTF-8')) . "<br>\n";
-    echo "更新時間: " . htmlspecialchars($result['time'],ENT_QUOTES,'UTF-8') . "<br>\n";
+    echo "登録日時: " . htmlspecialchars($result['time_now'],ENT_QUOTES,'UTF-8') . "<br>\n";
     $dbh = null;
   } catch (Exception $e) {
     echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
   }
-  var_dump($time);
+  // var_dump($time);
 ?>
+
+<p><a href="list_table.php">評価コメント一覧に戻る</a></p>
+
+</body>
+</html>

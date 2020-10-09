@@ -41,7 +41,7 @@
 
 <details>
   <summary>Keep your comments</summary>
-  <form method="post" action="add.php">
+  <form method="post" action="eva.php">
   <!-- <input type="hidden" name="number" value="<//?php echo $number; ?>"> -->
   <label for="title">コメントタイトル
     <br>
@@ -72,28 +72,13 @@
     <textarea name="comments" col="20" row="5" maxlength="100"></textarea>
     <br>
   </label>
-    <input type="submit" name="time_now" value="KEEP">
+    <input type="reset" value="リセット">
+    <input type="submit" value="KEEP">
   </form>
+
+
+
+<p><a href="list_table.php">評価コメント一覧を見る</a></p>
 </details>
-
-<?php 
-// この情報はDB接続のために共通して必要
-// $user = "tatsumi";
-// $pass = "vWtiKogx0heXmvEl";
-// $user = "docker";
-// $pass = "docker";
-$user = "root";
-$pass = "root";
-$time = date("Y-m-d H:i:s");
-?>
-
-
-
-
-
-
-
-
-
 </body>
 </html>

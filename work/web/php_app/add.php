@@ -1,17 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBへの接続と追加のページ</title>
+</head>
+<body>
+  
+
 
 <?php
-// 新規追加のためのコード
-// この情報はDB接続のために共通して必要
+ //require_once('.../app/db_cnf.php');
 $user = "root";
 $pass = "root";
-$time = date("Y-m-d H:i:s");
+  
+  // 新規追加のためのコード
 
-$id = (!empty($_POST['id']));
-$title = (!empty($_POST['title']));
-$category = (int) (!empty($_POST['category']));
-$checked = (int) (!empty($_POST['checked']));
-$comments = (!empty($_POST['comments']));
-$time_now = $time;
+
+$title = $_POST['title'];
+$category = (int) $_POST['category'];
+$checked = (int) $_POST['checked'];
+$comments = $_POST['comments'];
+$time = date('Y/m/d h:m;s');
 
 // session_start();
 // if ((isset($_REQUEST['name'] == true)
@@ -29,14 +39,13 @@ try{
   $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $sql = "INSERT INTO eva (id, title, category, checked, comments, time_now) VALUES (?,?,?,?,?,?)";
+  $sql = "INSERT INTO eva (title, category, checked, comments, time_now) VALUES (?,?,?,?,?)";
   $stmt = $dbh->prepare($sql);
-  $stmt->bindValue(1, $id, PDO::PARAM_INT);
-  $stmt->bindValue(2, $title, PDO::PARAM_STR);
-  $stmt->bindValue(3, $category, PDO::PARAM_INT);
-  $stmt->bindValue(4, $checked, PDO::PARAM_INT);
-  $stmt->bindValue(5, $comments, PDO::PARAM_STR);
-  $stmt->bindValue(6, $time_now, PDO::PARAM_STR);
+  $stmt->bindValue(1, $title, PDO::PARAM_STR);
+  $stmt->bindValue(2, $category, PDO::PARAM_INT);
+  $stmt->bindValue(3, $checked, PDO::PARAM_INT);
+  $stmt->bindValue(4, $comments, PDO::PARAM_STR);
+  $stmt->bindValue(5, $time, PDO::PARAM_STR);
   $stmt->execute();
   $dbh = null;
 
@@ -46,56 +55,56 @@ try{
   echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
   die();
 }
-  echo "($time)";
   echo "<br>";
 ?>
 
 <?php
-  if (isset($_POST['title'])){
+
+  if (!empty($_POST['title'])){
       echo 'タイトル:' . htmlspecialchars($_POST['title'],ENT_QUOTES,'UTF-8');
     } else {
     echo 'No-title';
     }
   echo "<br>";
   echo 'Category:';
-  if (isset($_POST['category'])){
+  if (!empty($_POST['category'])){
     if ($_POST['category'] === '1'){
       echo "coading";
     } elseif ($_POST['category'] === '2'){
       echo "Design";
     }
-  } 
-  else {
+  } else {
     echo "未選択";
-  }
+  };
   
   
   echo "<br>";
   echo '評価:';
-  if (isset($_POST['checked'])) {
+  if (!empty($_POST['checked'])) {
     if ($_POST['checked'] === '1'){
       echo "Good !";
     } elseif ($_POST['checked'] === '2'){
       echo "Bad...";
-    } elseif ($_POST['checked'] === '3'){
+    } elseif ($_POST['checked'] === '3') {
       echo "What's ?!";
-    }
-  }
-  else {
+    } 
+  } else {
     echo "未選択";
-  }
+  };
+
   echo "<br>";
   echo 'コメント:';
-  if (isset($_POST['comments'])){
-    if ($_POST['comments']){
-      echo nl2br(htmlspecialchars($_POST['comments'],ENT_QUOTES,'UTF-8'));
-    } else {
-      echo 'なし';
-    }
-  }
+  if ($_POST['comments']){
+    echo nl2br(htmlspecialchars($_POST['comments'],ENT_QUOTES,'UTF-8'));
+  } else {
+    echo 'なし';
+  };
   echo "<br>";
-  echo $time_now;
   echo '更新時間:' . $time;
   echo "<br>";
-  print_r($time_now);
 ?>
+
+<p><a href="list_table.php">一覧を見る</a></p>
+<p><a href="eva.php">新規コメント入力</a></p>
+</body>
+</html>
