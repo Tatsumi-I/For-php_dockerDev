@@ -1,7 +1,7 @@
 'use strict';
 
 function setup(){
-  createCanvas(350,350,WEBGL);
+  createCanvas(280,280,WEBGL);
   colorMode(HSB,360,100,100,100);
   background(0);
 }

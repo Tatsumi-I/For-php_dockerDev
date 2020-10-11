@@ -4,9 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>削除ページ</title>
+  <style>
+      <?php
+      require_once('appStyle.min.css');
+      ?>
+    </style>
 </head>
+
 <body>
-  
+  <header>
+    <p>PHP & MYSQL_app ”Hoz_on”</p>
+  </header>
+  <main>
+    <div class="all">
 
 
 <?php 
@@ -14,9 +24,12 @@
 $user = "root";
 $pass = "root";
 
-  try{
-    if (empty($_GET['id'])) throw new Exception('id取得エラー'); 
+try{
+  if (empty($_GET['id'])){
+    throw new Exception('id取得エラー'); 
+  }
     $id = (int) $_GET['id'];
+    $title = $_GET['title'];
     // var_dump($id);
     // print_r($id);
     $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
@@ -25,17 +38,30 @@ $pass = "root";
     $sql = "DELETE FROM eva WHERE id = ?";
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(1, $id, PDO::PARAM_INT);
+    $stmt->bindValue(2, $title, PDO::PARAM_STR);
     $stmt->execute();
     $dbh = null;
-    echo "ID: " . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . "を削除しました。";
+    echo "No." . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . ":";
+      // if (!empty($title)){
+    echo htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
+      // } elseif ($title) {
+      //   echo "No-title";
+      // }
+    echo "を削除しました。";
   } catch (Exception $e) {
     echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
   } 
 ?>
 
-<p><a href="eva.php">コメント機能へ戻る</a></p>
-<p><a href="list_table.php">コメント一覧へ戻る</a></p>
+<p><a href="eva.php">新規登録ページへ戻る</a></p>
+<p><a href="list_table.php">Hoz_on リストを見る</a></p>
 
+
+</div>
+</main>
+<footer>
+  <p>PHP & MYSQL_app ”Hoz_on”</p>
+</footer>
 </body>
 </html>

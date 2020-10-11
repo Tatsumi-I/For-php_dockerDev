@@ -1,0 +1,136 @@
+@charset "utf-8";
+$textColor: rgb(109, 109, 109);
+$line: rgba(206, 206, 206, 0.322);
+$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
+$myBlack: rgb(30, 30, 30);
+$Orange: rgb(150, 100, 50);
+$darkBlue: rgba(27, 37, 73, 0.8);
+$night: #1a3664;
+$grege: #80786630;
+$beige: #634130;
+
+html {
+  background: rgba(132, 147, 156, 0.274);
+  font-size: 70%;
+  color: $beige;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  // height: 100%;
+  overflow-x: hidden;
+  font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  line-height: 3;
+  font-feature-settings: "palt" 1, "swsh" 1;
+  // transform-style: preserve-3d;
+  // perspective: 10px;
+
+  }
+
+  a {
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+    color: darkgreen;
+    cursor: pointer;
+    padding: 1em 2em;
+  }
+  nav {
+    margin: 10px auto 0;
+    min-width: max-content;
+    color: $Orange;
+  }
+
+body{
+  width:clamp(300px,600px,100%);
+  margin:30px auto;
+  height:100%;
+
+}
+
+form{
+  text-align: left;
+  margin:0 auto;
+  padding: 30px;
+  width: fit-content;
+  p{
+    a{
+      background: transparent;
+    }
+  }
+}
+label{
+  input,textarea,select{
+    background: linear-gradient(to top,transparent,ivory);
+  }
+  select{
+    width:100%;
+    font-size: 1em;
+    padding: 2px 5px;
+  }
+  textarea{
+    width: 100%;
+  }
+  margin:0 auto;
+  justify-content: space-between;
+}
+button{
+  border: none;
+  background:rgba(245, 245, 245, 0.5);
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: $shadow;
+  text-align: center;
+}
+
+header,footer{
+  background: $myBlack;
+  padding: 10px;
+}
+
+
+h1{
+  margin: 0;
+  padding: 10px;
+}
+p{
+  margin: 15px;
+}
+
+
+.all{
+  background: $grege;
+  margin: 0 auto;
+  padding:30px;
+  height: 100%;
+
+}
+.appDesc{
+  text-align: left;
+}
+.app{
+  p{
+    margin: 0;
+    text-align: center;
+    a{
+      border-radius: 5%;
+      display:block;
+    }
+  }
+}
+table{
+  margin-top:30px;
+  border-spacing: 0;
+    th,td,tr{
+    padding: 1em 5px;
+    border-bottom: 1px solid $Orange;
+
+  }
+}

@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <title>tatsumi's-portfolio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/home.min.css">
+<link rel="stylesheet" type="text/css" href="./css/home.min.css">
 <script src="js/myportfolio.js"></script>
 <meta name="description" content="たつみのポートフォリオ">
 <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">

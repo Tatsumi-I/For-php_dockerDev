@@ -5,51 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <style>
-    details{
-      background:skyblue;
-      color:bule;
-      border-radius:10px;
-    }
-    summary{
-      text-align:center;
-      padding:20px;
-    }
-    label {
-      margin:20px ;
-    }
-    input,select,textarea{
-      margin:30px -20px 20px 50px;
-    }
-
-    table{
-      margin:50px;
-      /* border:1px solid grey; */
-    }
-    th{
-      text-align:right;
-      padding:1em;
-      margin:20px;
-    }
-    td{
-      margin:20px;
-      padding:1em;
-      text-align:center;
-    }
+    <?php
+    require_once('appStyle.min.css');
+    ?>
   </style>
 </head>
 <body>
+<header>
+  <p>PHP & MYSQL_app ”Hoz_on”</p>
+</header>
+<main>
+<div class="all">
 
-<details>
-  <summary>Keep your comments</summary>
-  <form method="post" action="eva.php">
-  <!-- <input type="hidden" name="number" value="<//?php echo $number; ?>"> -->
+  <form method="post" action="add.php">
   <label for="title">コメントタイトル
-    <br>
+    <!-- <br> -->
     <input type="text" name="title">
   </label>
   <br>
   <label for="category">Category
-    <br>
+    <!-- <br> -->
     <select name="category" id="">
       <option value="0">カテゴリ選択</option>
       <option value="1">Code</option>
@@ -72,13 +47,17 @@
     <textarea name="comments" col="20" row="5" maxlength="100"></textarea>
     <br>
   </label>
-    <input type="reset" value="リセット">
-    <input type="submit" value="KEEP">
+    <button type="reset">Reset</button>
+    <button type="submit">Keep!</button>
   </form>
 
 
-
 <p><a href="list_table.php">評価コメント一覧を見る</a></p>
-</details>
+  
+</div>
+</main>
+<footer>
+  <p>PHP & MYSQL_app ”Hoz_on”</p>
+</footer>
 </body>
 </html>

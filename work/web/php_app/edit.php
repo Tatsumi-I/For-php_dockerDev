@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>編集ページ</title>
+  <style>
+      <?php
+      require_once('appStyle.min.css');
+      ?>
+    </style>
 </head>
+
 <body>
-  
+  <header>
+    <p>PHP & MYSQL_app ”Hoz_on”</p>
+  </header>
+  <main>
+    <div class="all">
+
 
 <?php
 
@@ -35,51 +46,48 @@ $pass = "root";
   }
 ?>
 
-
+  <h1>ここは編集ページです</h1>
   <p>No.
-  <?php if ($result['id']){
-      echo htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8') ;} ?>
+    <?php echo htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8') ; ?>
   </p>
   <p>
-    登録日時：[
-    <?php if ($result['time_now']){
-      echo htmlspecialchars($result['time_now'], ENT_QUOTES, 'UTF-8') ;} ?>
-      ]のデータを編集する
-    </p>
+    登録日時："
+      <?php echo htmlspecialchars($result['time_now'], ENT_QUOTES, 'UTF-8') ;?>
+      "のデータを編集する
+  </p>
   <form method="POST" action="update.php">
-    <label for="title">コメントタイトル
-      <br>
-      <input type="text" name="title" value="<?php
-        if (!empty($result['title'])){
-          echo htmlspecialchars($result['title'], ENT_QUOTES, 'UTF-8');
-          }
-           ?>">
-     </label>
+    <label for="title">Title/タイトル<input type="text" name="title" value="<?php
+            if (!empty($result['title'])){
+              echo htmlspecialchars($result['title'], ENT_QUOTES, 'UTF-8');
+            }
+          ?>"></label>
     <br>
     <label for="category">Category
-      <br>
       <select name="category">
         <option value="0"
           <?php 
-          if ($result['category'] === 0){
-            echo "selected"; 
+            if ($result['category'] === 0){
+              echo "selected"; 
             }
-             ?>
-        >カテゴリ選択</option>
+          ?>
+        >
+        カテゴリ選択</option>
         <option value="1" 
           <?php 
             if ($result['category'] === 1){
               echo "selected" ;
             }
-              ?>
-        >Code</option>
+          ?>
+        >
+        Code</option>
         <option value="2"
           <?php 
             if ($result['category'] === 2) {
-            echo "selected";
+              echo "selected";
            }
-            ?>
-        >Design</option>
+          ?>
+        >
+        Design</option>
       </select>
     </label>
     <br>
@@ -90,47 +98,49 @@ $pass = "root";
          if ($result['checked'] === 1){
            echo "checked";
           } 
-          ?>
+        ?>
       >
-        <label for="checked">Good !</label>
+    <label for="checked">Good !</label>
       <input type="radio" name="checked" value="2"
          <?php 
           if ($result['checked'] === 2){
             echo "checked"; 
           } 
-            ?>
+        ?>
       >
-        <label for="checked">Bad...</label>
+    <label for="checked">Bad...</label>
       <input type="radio" name="checked" value="3"
           <?php 
             if ($result['checked'] === 3){
               echo "checked"; 
             } 
-              ?>
+          ?>
       >
-        <label for="checked">What's?!</label>
-    </label>
-    <br>
+    <label for="checked">What's?!</label>
+  </label>
+  <br>
     <label for="textarea">コメント
       <br>
-      <textarea name="comments" col="20" row="5" maxlength="100">
-      <?php 
-        if (!empty($result['comments'])){
-          echo htmlspecialchars($result['comments'], ENT_QUOTES, 'UTF-8') ;} ?>
-      </textarea>
+      <textarea name="comments" col="20" row="5" maxlength="100"><?php 
+          if (!empty($result['comments'])){
+            echo htmlspecialchars($result['comments'], ENT_QUOTES, 'UTF-8') ;
+          } 
+        ?></textarea>
       <br>
     </label>
-      <input type="hidden" name="id" value="
-        <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); 
-        ?>
-      ">
-      <input type="submit" value="更新">
-    
+    <input type="hidden" name="id" value="
+      <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); ?>
+    ">
+    <button>更新</button>
+
     </form>
 
 
 
-
+  </div>
+</main>
+<footer>
+  <p>PHP & MYSQL_app ”Hoz_on”</p>
+</footer>
 </body>
-
 </html>

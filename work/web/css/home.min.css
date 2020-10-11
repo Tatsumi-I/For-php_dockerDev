@@ -1,4 +1,6 @@
 @charset "UTF-8";
+.app { width: 50px; height: 50px; line-height: 50px; position: -webkit-sticky; position: sticky; top: 80%; text-align: center; background: rgba(12, 63, 121, 0.479); border-radius: 50%; margin: 0; padding: 20px; z-index: 100; -webkit-box-shadow: 0px 0px 20px grey; box-shadow: 0px 0px 20px grey; color: white; }
+
 html, body { font-size: 70%; color: #634130; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; }
 
 html a, body a { text-decoration: none; color: darkgreen; cursor: pointer; }
@@ -133,7 +135,7 @@ header .headerContainer a:hover { -webkit-transform: scale(0.98); transform: sca
 
 .headFootOpenMenu details[open] hr { border: 1px outset darkgreen; }
 
-main { width: clamp(280px, 90vw, 100%); margin: 0 auto; line-height: 3; }
+main { width: 90%; margin: 0 auto; width: clamp(280px, 90vw, 100%); margin: 0 auto; line-height: 3; }
 
 main img { width: clamp(280px, 100%, 100vw); }
 
@@ -179,7 +181,7 @@ main .container1 { -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 main .container2 { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
 
-main .container1, main .container2 { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; padding: clamp(0px, 30px, 50px); z-index: 3; }
+main .container1, main .container2 { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 auto; padding: 50px 0; z-index: 3; width: 90%; }
 
 main .container1 summary, main .container2 summary { text-align: center; width: 90vw; }
 
@@ -193,7 +195,7 @@ main .container1 .contentImg_over, main .container2 .contentImg_over { margin: a
 
 main .container1 .contentImg_over img, main .container2 .contentImg_over img { width: 280px; height: auto; }
 
-main .text { min-width: 280px; -ms-flex-preferred-size: 280px; flex-basis: 280px; margin: 0 auto; padding: clamp(0px, 10px, 30px); -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+main .text { min-width: 280px; -ms-flex-preferred-size: 280px; flex-basis: 280px; margin: 0 auto; padding: 0 30px; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
 main .text a { border: 1px solid #63413070; color: #634130; display: block; padding: 15px; margin: 30px 10px; text-align: center; border-radius: 10px; }
 
@@ -203,7 +205,7 @@ main .sum { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display:
 
 main .sum p { font-size: 120%; font-weight: bold; width: clamp(300px, 40%, 50vw); background: #80786630; text-align: center; margin: 10px auto; padding: 20px; border-radius: 20px; }
 
-footer { margin-top: 200px; background: #80786630; }
+footer { margin-top: 150px; background: #80786630; }
 
 footer p.toTop { margin: 0; color: #966432; text-align: center; padding: 20px; }
 
