@@ -1,3 +1,8 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,13 +11,13 @@
   <title></title>
   <style>
     <?php
-    require_once('appStyle.min.css');
+    require_once('./styleForApp/appStyle.min.css');
     ?>
   </style>
 </head>
 <body>
 <header>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </header>
 <main>
 <div class="all">
@@ -20,7 +25,7 @@
   <form method="post" action="add.php">
   <label for="title">コメントタイトル
     <!-- <br> -->
-    <input type="text" name="title">
+    <input type="text" class="textInput" name="title">
   </label>
   <br>
   <label for="category">Category
@@ -47,17 +52,17 @@
     <textarea name="comments" col="20" row="5" maxlength="100"></textarea>
     <br>
   </label>
-    <button type="reset">Reset</button>
-    <button type="submit">Keep!</button>
+    <button type="reset" class="reset">! Reset</button>
+    <button type="submit">Hoz_on !</button>
   </form>
 
 
-<p><a href="list_table.php">評価コメント一覧を見る</a></p>
+<p><a href="list_table.php">Hoz_on リストを見る</a></p>
   
 </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

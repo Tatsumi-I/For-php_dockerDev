@@ -1,16 +1,19 @@
 <?php 
+
+  $pageName = 'Home - ';
   require_once('../app/function.php');
+  
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>tatsumi's-portfolio</title>
+<title><?php h($pageName);?>tatsumi's_portfolio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./css/home.min.css">
 <script src="js/myportfolio.js"></script>
-<meta name="description" content="たつみのポートフォリオ">
+<meta name="description" content="たつみのポートフォリオサイト">
 <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
@@ -51,3 +54,7 @@
 </header>
 
 <main>
+<article>
+<div class="app">
+    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+</div>

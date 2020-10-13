@@ -1,3 +1,8 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,14 +11,14 @@
   <title>削除ページ</title>
   <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
     <div class="all">
@@ -21,8 +26,8 @@
 
 <?php 
 //require_once('.../app/db_cnf.php');
-$user = "root";
-$pass = "root";
+
+
 
 try{
   if (empty($_GET['id'])){
@@ -41,15 +46,15 @@ try{
     $stmt->bindValue(2, $title, PDO::PARAM_STR);
     $stmt->execute();
     $dbh = null;
-    echo "No." . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . ":";
+    echo "No." . h($id, ENT_QUOTES, 'UTF-8') . ":";
       // if (!empty($title)){
-    echo htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
+    echo h($title, ENT_QUOTES, 'UTF-8');
       // } elseif ($title) {
       //   echo "No-title";
       // }
     echo "を削除しました。";
   } catch (Exception $e) {
-    echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
+    echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
   } 
 ?>
@@ -61,7 +66,7 @@ try{
 </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

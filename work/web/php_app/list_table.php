@@ -1,21 +1,30 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>評価コメント一覧</title>
+  <title>Hoz_on リストを見る</title>
    <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
+
+<p>「<?= h($message).'(ランダムメッセージ-全5種類)';?>」</p>
+
+</button>
     <div class="app">
       <p>
         <a href="hoz_onTop.php">Hoz_onとは??</a>
@@ -29,9 +38,6 @@
     
 <?php 
 
-//require_once('.../app/db_cnf.php');
-$user = "root";
-$pass = "root";
 // 以下、DBとの接続
 try {
   $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
@@ -59,11 +65,11 @@ try {
 
     echo "<tr>\n";
       echo "<td>" ;
-      echo "<a href=detail.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">";
+      echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">";
       echo $row['id'] . "</a></td>\n";
   
         if (!empty($row['title'])){
-          echo "<td>" .htmlspecialchars($row['title'],ENT_QUOTES,'UTF-8') ."</td>\n";
+          echo "<td>" .h($row['title'],ENT_QUOTES,'UTF-8') ."</td>\n";
           } else {
           echo "<td>" . 'No-title' . "</td>\n";
         };
@@ -86,11 +92,11 @@ try {
           echo "<td>" . '未選択' . "</td>\n";
         };
 
-        echo "<td>" . htmlspecialchars($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
+        echo "<td>" . h($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
         echo "<td colspan=\"3\">\n";
-          // echo "<a href=detail.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">詳細</a>\n";
-          echo "<a href=edit.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
-          echo "<a href=del_confirm.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">削除</a>\n";
+          // echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">詳細</a>\n";
+          echo "<a href=edit.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
+          echo "<a href=del_confirm.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">削除</a>\n";
         echo "</td>\n";
         echo "</tr>\n";
       }
@@ -100,7 +106,7 @@ try {
   $dbh = null;
 
   } catch (Exception $e) {
-    echo "ERROR:" . htmlspecialchars($e->getMessage(),ENT_QUOTES,'UTF-8') . "<br>";
+    echo "ERROR:" . h($e->getMessage(),ENT_QUOTES,'UTF-8') . "<br>";
     die();
   }
 ?>
@@ -120,11 +126,11 @@ try {
           foreach (array_reverse($result) as $row){
               echo "<tr>\n";
                 echo "<td>" ;
-                echo "<a href=detail.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">";
+                echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">";
                 echo $row['id'] . "</a></td>\n";
 
                 if (!empty($row['title'])){
-                  echo "<td>" .htmlspecialchars($row['title'],ENT_QUOTES,'UTF-8') ."</td>\n";
+                  echo "<td>" .h($row['title'],ENT_QUOTES,'UTF-8') ."</td>\n";
                 } else {
                   echo "<td>" . 'No-title' . "</td>\n";
                 };
@@ -148,11 +154,11 @@ try {
                   echo "<td>" . '未選択' . "</td>\n";
                 };
               
-                echo "<td>" . htmlspecialchars($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
+                echo "<td>" . h($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
                       
                 echo "<td>\n";
-                  echo "<a href=edit.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
-                  echo "<a href=del_confirm.php?id=" . htmlspecialchars($row['id'],ENT_QUOTES,'UTF-8') . ">削除</a>\n";
+                  echo "<a href=edit.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
+                  echo "<a href=del_confirm.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">削除</a>\n";
                 echo "</td>\n";
               echo "</tr>\n";
           }
@@ -165,7 +171,7 @@ try {
 </main>
 
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

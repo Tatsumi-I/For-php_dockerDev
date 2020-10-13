@@ -1,3 +1,10 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -7,73 +14,54 @@
 
   <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
     <div class="all">
-
+    <h1>新規Hoz_on情報</h1>
 
 <?php
 
- //require_once('.../app/db_cnf.php');
- $title = $_POST['title'];
- $category = (int) (!empty($_POST['category']));
- $checked = (int) (!empty($_POST['checked']));
- $comments = $_POST['comments'];
- $time = date('Y-m-d H:i:s');
-// session_start();
-// if ((isset($_REQUEST['name'] == true)
-//   && (isset($_REQUEST['keep']) == true)){
-//     if ((isset($_REQUEST['number']) == true) && (isset($_SESSION['number']) == true) && ($_REQUEST['number'] == $_SESSION['number'])){
-
-//       echo $_SESSION['number'];
-//       var_dump($_SESSION);
-//     } else{
-
-//     }
-// }
-  $user = "root";
-  $pass = "root";
+  if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     
-    // 新規追加のためのコード
+    $title = $_POST['title'];
+    $category = (int) (!empty($_POST['category']));
+    $checked = (int) (!empty($_POST['checked']));
+    $comments = $_POST['comments'];
+    $time = date('Y-m-d H:i:s');
   
-
+    try{
+      $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
+      $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+      $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-try{
-  $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
-  $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-  $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-  $sql = "INSERT INTO eva (title, category, checked, comments, time_now) VALUES (?,?,?,?,?)";
-  $stmt = $dbh->prepare($sql);
-  $stmt->bindValue(1, $title, PDO::PARAM_STR);
-  $stmt->bindValue(2, $category, PDO::PARAM_INT);
-  $stmt->bindValue(3, $checked, PDO::PARAM_INT);
-  $stmt->bindValue(4, $comments, PDO::PARAM_STR);
-  $stmt->bindValue(5, $time, PDO::PARAM_STR);
-  $stmt->execute();
-  $dbh = null;
-
-  echo "<h1>以下の内容で登録しました</h1>";
-} catch (Exception $e) {
-  echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
-  die();
-}
+      $sql = "INSERT INTO eva (title, category, checked, comments, time_now) VALUES (?,?,?,?,?)";
+      $stmt = $dbh->prepare($sql);
+      $stmt->bindValue(1, $title, PDO::PARAM_STR);
+      $stmt->bindValue(2, $category, PDO::PARAM_INT);
+      $stmt->bindValue(3, $checked, PDO::PARAM_INT);
+      $stmt->bindValue(4, $comments, PDO::PARAM_STR);
+      $stmt->bindValue(5, $time, PDO::PARAM_STR);
+      $stmt->execute();
+      $dbh = null;
+      echo "<h2>以下の内容で登録しました</h2>";
+    } catch (Exception $e) {
+      echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
+      die();
+    } 
 ?>
-
-
   <p>
     <?php
       echo "Title/タイトル : ";
       if (!empty($_POST['title'])){
-          echo htmlspecialchars($_POST['title'],ENT_QUOTES,'UTF-8');
+          echo h($_POST['title'],ENT_QUOTES,'UTF-8');
         } else {
         echo 'No-title';
         }
@@ -113,7 +101,7 @@ try{
     <?php
       echo 'Comments/コメント : ';
       if (!empty($_POST['comments'])){
-        echo nl2br(htmlspecialchars($_POST['comments'],ENT_QUOTES,'UTF-8'));
+        echo nl2br(h($_POST['comments'],ENT_QUOTES,'UTF-8'));
       } else {
         echo 'なし';
       };
@@ -125,6 +113,13 @@ try{
     ?>
   </p>
 
+<?php
+  }
+?>
+
+
+  
+
 
 <p><a href="list_table.php">一覧を見る</a></p>
 <p><a href="eva.php">新規コメント入力</a></p>
@@ -132,7 +127,7 @@ try{
 </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

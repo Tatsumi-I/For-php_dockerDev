@@ -1,3 +1,8 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,14 +11,14 @@
   <title>編集ページ</title>
   <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
     <div class="all">
@@ -22,8 +27,8 @@
 <?php
 
  //require_once('.../app/db_cnf.php');
-$user = "root";
-$pass = "root";
+
+
   //編集機能
   try{
     if (empty($_GET['id'])) throw new Exception('idの取得エラー'); 
@@ -39,26 +44,27 @@ $pass = "root";
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $dbh = null;
-    // echo "ID: " . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
+    // echo "ID: " . h($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
   } catch (Exception $e) {
-    echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
+    echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
   }
 ?>
 
   <h1>ここは編集ページです</h1>
   <p>No.
-    <?php echo htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8') ; ?>
+    <?php echo h($result['id'], ENT_QUOTES, 'UTF-8') ; ?>
   </p>
   <p>
     登録日時："
-      <?php echo htmlspecialchars($result['time_now'], ENT_QUOTES, 'UTF-8') ;?>
+      <?php echo h($result['time_now'], ENT_QUOTES, 'UTF-8') ;?>
       "のデータを編集する
   </p>
+
   <form method="POST" action="update.php">
-    <label for="title">Title/タイトル<input type="text" name="title" value="<?php
+    <label for="title">Title/タイトル<input type="text" class="textInput" name="title" value="<?php
             if (!empty($result['title'])){
-              echo htmlspecialchars($result['title'], ENT_QUOTES, 'UTF-8');
+              echo h($result['title'], ENT_QUOTES, 'UTF-8');
             }
           ?>"></label>
     <br>
@@ -123,13 +129,13 @@ $pass = "root";
       <br>
       <textarea name="comments" col="20" row="5" maxlength="100"><?php 
           if (!empty($result['comments'])){
-            echo htmlspecialchars($result['comments'], ENT_QUOTES, 'UTF-8') ;
+            echo h($result['comments'], ENT_QUOTES, 'UTF-8') ;
           } 
         ?></textarea>
       <br>
     </label>
     <input type="hidden" name="id" value="
-      <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); ?>
+      <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); ?>
     ">
     <button>更新</button>
 
@@ -140,7 +146,7 @@ $pass = "root";
   </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

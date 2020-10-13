@@ -1,7 +1,7 @@
 @charset "utf-8";
 $textColor: rgb(109, 109, 109);
 $line: rgba(206, 206, 206, 0.322);
-$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
+$shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582);
 $myBlack: rgb(30, 30, 30);
 $Orange: rgb(150, 100, 50);
 $darkBlue: rgba(27, 37, 73, 0.8);
@@ -30,15 +30,15 @@ html {
   // perspective: 10px;
 
   }
-
-  a {
-    background: rgba(245, 245, 245, 0.5);
-    border-radius: 5px;
+  a{
     text-decoration: none;
-    color: darkgreen;
-    cursor: pointer;
-    padding: 1em 2em;
+    color:$Orange;
+    &:visited,
+    &:link{
+      color:$Orange;
+    }
   }
+ 
   nav {
     margin: 10px auto 0;
     min-width: max-content;
@@ -57,38 +57,36 @@ form{
   margin:0 auto;
   padding: 30px;
   width: fit-content;
-  p{
-    a{
-      background: transparent;
-    }
-  }
+
 }
 label{
   input,textarea,select{
-    background: linear-gradient(to top,transparent,ivory);
+    background: linear-gradient(to top,transparent,rgba(255, 255, 240, 0.555));
   }
-  select{
+  .textInput,select,textarea{
     width:100%;
     font-size: 1em;
     padding: 2px 5px;
   }
-  textarea{
-    width: 100%;
-  }
-  margin:0 auto;
-  justify-content: space-between;
 }
 button{
   border: none;
   background:rgba(245, 245, 245, 0.5);
   font-size: 1em;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 5px 20px;
   border-radius: 5px;
   box-shadow: $shadow;
   text-align: center;
+  &:hover{
+    cursor: pointer;
+  }
 }
+.reset{
+  background: rgba(46, 46, 46, 0.158);
+}
+
 
 header,footer{
   background: $myBlack;
@@ -110,7 +108,15 @@ p{
   margin: 0 auto;
   padding:30px;
   height: 100%;
-
+  a {
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+    color: darkgreen;
+    cursor: pointer;
+    padding: 1em 2em;
+    box-shadow: $shadow;
+  }
 }
 .appDesc{
   text-align: left;

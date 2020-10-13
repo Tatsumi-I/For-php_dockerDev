@@ -9,15 +9,15 @@
 
   $n = mt_rand(1, 5);//乱数とランダム表示
     if($n === 1){
-    $mesagge = 'php勉強中';
+    $message = 'php勉強中';
     } elseif($n === 2){
-    $mesagge = 'p5勉強中';
+    $message = 'p5勉強中';
     } elseif($n === 3){
-    $mesagge = 'Docker導入しました';
+    $message = 'Docker導入しました';
     } elseif($n === 4){
-    $mesagge = 'React学習中';
+    $message = 'React学習中';
     } elseif($n === 5){
-    $mesagge = '独習は正直つらい…';
+    $message = '独習は正直つらい…';
   }
 
   $icon= 

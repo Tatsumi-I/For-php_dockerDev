@@ -1,3 +1,8 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,14 +11,14 @@
   <title>詳細表示</title>
   <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
     <div class="all">
@@ -22,8 +27,8 @@
 <?php
 
  //require_once('.../app/db_cnf.php');
-$user = "root";
-$pass = "root";
+
+
 // idを受け取るコード（詳細表示）
   try{
     if (empty($_GET['id'])) throw new Exception('id取得エラー'); 
@@ -48,17 +53,17 @@ $pass = "root";
     ?>
 
     <p>No.
-      <?php echo  htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8');?>
+      <?php echo  h($result['id'],ENT_QUOTES,'UTF-8');?>
     </p>
     <p>Title/タイトル:
-      <?php echo htmlspecialchars($result['title'],ENT_QUOTES,'UTF-8');
+      <?php echo h($result['title'],ENT_QUOTES,'UTF-8');
         if (empty($result['title'])){
           echo "No-title";
         }
       ?>
     </p>
     <p>Category:
-      <?php $category = (string) htmlspecialchars($result['category'],ENT_QUOTES,'UTF-8');
+      <?php $category = (string) h($result['category'],ENT_QUOTES,'UTF-8');
       if (!empty($category)){
         if ($category === '1') {
           echo "Coading";
@@ -71,8 +76,8 @@ $pass = "root";
       ?>
     </p>
     <p>Evaluation/評価: 
-      <?php htmlspecialchars($result['checked'],ENT_QUOTES,'UTF-8');
-      $checked = (string) htmlspecialchars($result['checked'],ENT_QUOTES,'UTF-8');
+      <?php h($result['checked'],ENT_QUOTES,'UTF-8');
+      $checked = (string) h($result['checked'],ENT_QUOTES,'UTF-8');
       if (!empty($checked)) {
         if ($checked === '1'){
           echo "Good !";
@@ -87,21 +92,21 @@ $pass = "root";
       ?>
     </p>
     <p>コメント:
-      <?php echo nl2br(htmlspecialchars($result['comments'],ENT_QUOTES,'UTF-8'));
+      <?php echo nl2br(h($result['comments'],ENT_QUOTES,'UTF-8'));
         if (empty($result['comments'])){
           echo "なし";
       }
       ?>
     </p>
     <p>登録日時:
-      <?php echo htmlspecialchars($result['time_now'],ENT_QUOTES,'UTF-8');
+      <?php echo h($result['time_now'],ENT_QUOTES,'UTF-8');
       ?>
     </p>
 
   <?php
     $dbh = null;
   } catch (Exception $e) {
-    echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "</br>";
+    echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "</br>";
     die();
   }
 ?>
@@ -109,17 +114,15 @@ $pass = "root";
 
 <form method="GET" action="edit.php">
   <input type="hidden" name="id" value="
-    <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); 
+    <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
   <input type="hidden" name="title" value="
-    <?php echo htmlspecialchars($result['title'],ENT_QUOTES,'UTF-8'); 
+    <?php echo h($result['title'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
 
-    <p><a href="edit.php">
-      <button>このコメントを編集する</button>
-    </a></p>
+  <button>このコメントを編集する</button>
   </form>
   <p><a href="list_table.php">Hoz_on リストを見る</a></p>
 
@@ -127,7 +130,7 @@ $pass = "root";
 </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
 </body>
 </html>

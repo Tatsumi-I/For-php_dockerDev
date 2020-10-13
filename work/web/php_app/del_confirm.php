@@ -1,3 +1,8 @@
+<?php 
+  require_once('/work/app/function.php');
+  require_once('/work/app/db_cnf.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +11,14 @@
   <title>削除前の意思確認ページ</title>
   <style>
       <?php
-      require_once('appStyle.min.css');
+      require_once('./styleForApp/appStyle.min.css');
       ?>
     </style>
 </head>
 
 <body>
   <header>
-    <p>PHP & MYSQL_app ”Hoz_on”</p>
+    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
     <div class="all">
@@ -22,8 +27,8 @@
 <?php
 
  //require_once('.../app/db_cnf.php');
-$user = "root";
-$pass = "root";
+
+
   //編集機能
   try{
     if (empty($_GET['id'])) throw new Exception('idの取得エラー'); 
@@ -39,20 +44,20 @@ $pass = "root";
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $dbh = null;
-    // echo "ID: " . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
+    // echo "ID: " . h($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
   } catch (Exception $e) {
-    echo "ERROR: " . htmlspecialchars($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
+    echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
   }
 ?>
 
 <body>
   <p>No.
-    <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); ?>
+    <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); ?>
     :"
     <?php 
       if (!empty($result['title'])){
-        echo htmlspecialchars($result['title'],ENT_QUOTES,'UTF-8'); 
+        echo h($result['title'],ENT_QUOTES,'UTF-8'); 
       } else {
         echo "No-title";
       }
@@ -61,17 +66,14 @@ $pass = "root";
   
   <form method="GET" action="remove.php">
   <input type="hidden" name="id" value="
-    <?php echo htmlspecialchars($result['id'],ENT_QUOTES,'UTF-8'); 
+    <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
   <input type="hidden" name="title" value="
-    <?php echo htmlspecialchars($result['title'],ENT_QUOTES,'UTF-8'); 
+    <?php echo h($result['title'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
-  <p><a href="list_table.php">
-    <button>キャンセル</button>
-    </a>
-  </p>
+  <p><a href="list_table.php">キャンセル</a></p>
   <button>
     削除する
   </button>
@@ -80,7 +82,7 @@ $pass = "root";
 </div>
 </main>
 <footer>
-  <p>PHP & MYSQL_app ”Hoz_on”</p>
+  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 
 </footer>
 </body>

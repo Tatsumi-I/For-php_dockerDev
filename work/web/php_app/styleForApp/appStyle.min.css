@@ -1,6 +1,8 @@
 html { background: rgba(132, 147, 156, 0.274); font-size: 70%; color: #634130; scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
 
-a { background: rgba(245, 245, 245, 0.5); border-radius: 5px; text-decoration: none; color: darkgreen; cursor: pointer; padding: 1em 2em; }
+a { text-decoration: none; color: #966432; }
+
+a:visited, a:link { color: #966432; }
 
 nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
 
@@ -8,17 +10,15 @@ body { width: clamp(300px, 600px, 100%); margin: 30px auto; height: 100%; }
 
 form { text-align: left; margin: 0 auto; padding: 30px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 
-form p a { background: transparent; }
+label input, label textarea, label select { background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(255, 255, 240, 0.555))); background: linear-gradient(to top, transparent, rgba(255, 255, 240, 0.555)); }
 
-label { margin: 0 auto; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+label .textInput, label select, label textarea { width: 100%; font-size: 1em; padding: 2px 5px; }
 
-label input, label textarea, label select { background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(ivory)); background: linear-gradient(to top, transparent, ivory); }
+button { border: none; background: rgba(245, 245, 245, 0.5); font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); text-align: center; }
 
-label select { width: 100%; font-size: 1em; padding: 2px 5px; }
+button:hover { cursor: pointer; }
 
-label textarea { width: 100%; }
-
-button { border: none; background: rgba(245, 245, 245, 0.5); font-size: 1em; display: block; margin: 0 auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px #dddddd; box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px #dddddd; text-align: center; }
+.reset { background: rgba(46, 46, 46, 0.158); }
 
 header, footer { background: #1e1e1e; padding: 10px; }
 
@@ -27,6 +27,8 @@ h1 { margin: 0; padding: 10px; }
 p { margin: 15px; }
 
 .all { background: #80786630; margin: 0 auto; padding: 30px; height: 100%; }
+
+.all a { background: rgba(245, 245, 245, 0.5); border-radius: 5px; text-decoration: none; color: darkgreen; cursor: pointer; padding: 1em 2em; -webkit-box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); }
 
 .appDesc { text-align: left; }
 

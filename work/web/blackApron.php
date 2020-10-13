@@ -1,4 +1,6 @@
 <?php 
+  
+  $pageName = '';
   require_once('../app/function.php');
   include_once('header.php');
 ?>

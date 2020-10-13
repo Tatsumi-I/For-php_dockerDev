@@ -17,7 +17,7 @@
         </form>
     </div>
       <p class="date">”<?= date($date).'  更新時刻';?>”</p>
-      <p class="rundum">「<?= h($mesagge).'(ランダムメッセージ-全5種類)';?>」</p>
+      <p class="rundum">「<?= h($message).'(ランダムメッセージ-全5種類)';?>」</p>
   </div>
   <div class="discription">
     <p>石川達実のポートフォリオサイトでは</p>

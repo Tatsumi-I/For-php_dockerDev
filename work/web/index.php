@@ -1,11 +1,13 @@
 <?php 
+  
+  $pageName = '';
   require_once('../app/function.php')
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>tatsumi's-portfolio</title>
+<title><?php h($pageName);?>tatsumi's_portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/index.min.css">
 <meta name="description" content="たつみのポートフォリオ">
