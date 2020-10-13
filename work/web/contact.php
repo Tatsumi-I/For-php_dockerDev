@@ -2,10 +2,10 @@
   
   $pageName = '';
   require_once('../app/function.php');
-  include_once('header.php');
+  include_once('_header.php');
 ?>
 
-  <section>
+  <section id="area_">
     <fieldset>
       <legend>
         ご意見フォーム
@@ -35,4 +35,4 @@
   
 <?php 
 
-include_once('footer.php');
+include_once('_footer.php');

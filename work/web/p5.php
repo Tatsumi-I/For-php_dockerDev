@@ -2,11 +2,11 @@
   
   $pageName = '';
   require_once('../app/function.php');
-  include_once('header.php');
+  include_once('_header.php');
 ?>
 
 <div class="Page">
-<section>
+<section id="area_">
 
 
 <div class="firstView">
@@ -15,16 +15,16 @@
   </div>
   <div class="personalType" style="width:calc(100% - 350px);">
     <h2>ビジュアルコーディングについて</h2>
-      <h3></h3>
+      <div class="content"><h3></h3>
       <p></p>
       <b></b>
     </div>
       </div>
 
 </section>
-<section>
+<section id="area_">
   <h2></h2>
-  <h3></h3>
+  <div class="content"><h3></h3>
       <div class="infocontentsArea">
           <div class="intpType" >
             <p class="intp"></p>
@@ -35,7 +35,7 @@
         </div>
          
 </section>
-<section>
+<section id="area_">
 
   <h2></h2>
   <div class="infoIntro">
@@ -44,7 +44,7 @@
   </div>
   <div class="infocontentsArea">
     <div>
-      <h3></h3>
+      <div class="content"><h3></h3>
     </div>
     <div>
       <figure>
@@ -55,14 +55,14 @@
   </div>
 </section>
 
-<section>
+<section id="area_">
   
 </section>
-<section>
+<section id="area_">
 
   <h2>まとめ</h2>
   <div class="infoIntro">
-      <h3>私は</h3>
+      <div class="content"><h3>私は</h3>
        <p>　　ます</p>
        <p></p>
   </div>
@@ -73,4 +73,4 @@
 
 <?php 
 
-include_once('footer.php');
+include_once('_footer.php');

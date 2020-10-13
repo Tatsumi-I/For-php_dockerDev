@@ -10,20 +10,19 @@ $grege: #80786630;
 $beige: #634130;
 
 html {
-  background: rgba(132, 147, 156, 0.274);
+  background: $grege;
   font-size: 70%;
-  color: $beige;
+  color: $night;
   scroll-behavior: smooth;
   margin: 0 auto;
   padding: 0;
   width: 100%;
   text-align: center;
-  // height: 100%;
   overflow-x: hidden;
   font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
-  font-weight: 200;
+  font-weight: 600;
   font-style: normal;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;
   line-height: 3;
   font-feature-settings: "palt" 1, "swsh" 1;
   // transform-style: preserve-3d;
@@ -33,6 +32,7 @@ html {
   a{
     text-decoration: none;
     color:$Orange;
+    margin: 10px;
     &:visited,
     &:link{
       color:$Orange;
@@ -46,27 +46,51 @@ html {
   }
 
 body{
-  width:clamp(300px,600px,100%);
-  margin:30px auto;
-  height:100%;
+  width:clamp(300px,100vw,100%);
+  margin:0 auto;
+  // height:100%;
 
 }
 
 form{
-  text-align: left;
-  margin:0 auto;
-  padding: 30px;
+  margin:30px auto;
   width: fit-content;
+  padding: 30px 40px;
+    // border: 1px solid black;
+    border-radius: 5px;
+    text-align: initial;
+    box-shadow: 
+    1px 1px 1px rgb(117, 117, 117)
+    ,-1px -1px 1px rgb(236, 236, 236)
+    ;
 
 }
 label{
   input,textarea,select{
-    background: linear-gradient(to top,transparent,rgba(255, 255, 240, 0.555));
+    // background: linear-gradient(to bottom,transparent,rgba(212, 161, 102, 0.2));
+    background: linear-gradient(transparent,rgba(202, 197, 180, 0.555));
+    cursor: pointer;
   }
   .textInput,select,textarea{
+    border: none;
+    border-radius: 5px;
+    width:94%;
+    font-size: 1em;
+    padding: 2px 5px;
+    box-shadow: 
+    1px 1px 1px inset rgb(117, 117, 117)
+    ,-1px -1px 1px inset rgb(236, 236, 236)
+    ;
+  }
+  select{
+    border: none;
     width:100%;
     font-size: 1em;
     padding: 2px 5px;
+    box-shadow: 
+    1px 1px 1px inset rgb(117, 117, 117)
+    ,-1px -1px 1px inset rgb(236, 236, 236)
+    ;
   }
 }
 button{
@@ -106,33 +130,45 @@ p{
 .all{
   background: $grege;
   margin: 0 auto;
-  padding:30px;
-  height: 100%;
+  padding:clamp(5px, 10px, 30px);
+  min-height: 400px;
+  // height: 100%;
   a {
     background: rgba(245, 245, 245, 0.5);
     border-radius: 5px;
     text-decoration: none;
-    color: darkgreen;
     cursor: pointer;
     padding: 1em 2em;
     box-shadow: $shadow;
   }
 }
 .appDesc{
-  text-align: left;
-}
-.app{
-  p{
-    margin: 0;
-    text-align: center;
-    a{
-      border-radius: 5%;
-      display:block;
+  max-width: 400px;
+  margin: 0 auto;
+  fieldset{
+    margin: 10px;
+    padding: 20px;
+    ul,li{
+      padding: 0;
+      margin: 0;
+      list-style: none;
     }
   }
 }
+.linkBar{
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-between;
+    a{
+      display: block;
+      border-radius: 5%;
+    }
+  }
+
 table{
-  margin-top:30px;
+  margin: 0 auto;
   border-spacing: 0;
     th,td,tr{
     padding: 1em 5px;

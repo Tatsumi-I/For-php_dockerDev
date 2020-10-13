@@ -2,10 +2,12 @@
   
   $pageName = '';
   require_once('../app/function.php');
-  include_once('header.php');
+  include_once('_header.php');
+
 ?>
+
 <article>
-<section>
+<section id="area_">
   <div class="sectionArea">
     <div class="firstView">
       <div class="contentImg">
@@ -70,4 +72,4 @@
 
 <?php 
 
-include_once('footer.php');
+include_once('_footer.php');

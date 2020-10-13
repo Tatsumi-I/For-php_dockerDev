@@ -11,7 +11,7 @@
         <?= $globalMenu; ?>
       </details>
   </div>
-  <p class="toTop"><a href="#header">PageTopへ</a></p>
+  <p class="toTop"><a href="#area_0">PageTopへ</a></p>
   <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
   <div class="footerContainer">
     <div class="logo">

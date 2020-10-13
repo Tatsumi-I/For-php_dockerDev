@@ -1,27 +1,12 @@
 <?php 
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
+  require_once('_header.php');
+  
+  
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>編集ページ</title>
-  <style>
-      <?php
-      require_once('./styleForApp/appStyle.min.css');
-      ?>
-    </style>
-</head>
 
-<body>
-  <header>
-    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-  </header>
-  <main>
-    <div class="all">
 
 
 <?php
@@ -44,6 +29,10 @@
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $dbh = null;
+    echo "<br>\n";
+      if (empty($result['id'])){
+        echo "<a href=list_table.php>このデータは存在しません。Clickで一覧に戻ります。</a>";
+     }
     // echo "ID: " . h($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
   } catch (Exception $e) {
     echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
@@ -99,30 +88,27 @@
     <br>
     <label for="radio">評価
       <br>
-      <input type="radio" name="checked" value="1"
+      <label><input type="radio" name="checked" value="1"
         <?php 
          if ($result['checked'] === 1){
            echo "checked";
           } 
         ?>
-      >
-    <label for="checked">Good !</label>
-      <input type="radio" name="checked" value="2"
+      >Good !</label>
+      <label><input type="radio" name="checked" value="2"
          <?php 
           if ($result['checked'] === 2){
             echo "checked"; 
           } 
         ?>
-      >
-    <label for="checked">Bad...</label>
-      <input type="radio" name="checked" value="3"
+      >Bad...</label>
+      <label><input type="radio" name="checked" value="3"
           <?php 
             if ($result['checked'] === 3){
               echo "checked"; 
             } 
           ?>
-      >
-    <label for="checked">What's?!</label>
+      >What's?!</label>
   </label>
   <br>
     <label for="textarea">コメント

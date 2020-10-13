@@ -1,28 +1,11 @@
 <?php 
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
+  require_once('_header.php');
+  
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>更新完了表示ページ</title>
-  <style>
-      <?php
-      require_once('./styleForApp/appStyle.min.css');
-      ?>
-    </style>
-</head>
-
-<body>
-  <header>
-    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-  </header>
-  <main>
-    <div class="all">
-
+<h1>Hoz_onを更新しました</h1>
 
 
 <?php 
@@ -65,7 +48,7 @@
         } else {
           echo h($title, ENT_QUOTES, 'UTF-8');
           }
-      echo "を更新しました。" ;
+      echo "の情報を更新しました。" ;
       
 
     } catch (Exception $e) {
@@ -75,9 +58,7 @@
  } 
 ?>
 
-
-  <p><a href="eva.php">新規登録ページへ戻る</a></p>
-  <p><a href="list_table.php">Hoz_on リストを見る</a></p>
+  
 
 </div>
 </main>

@@ -2,7 +2,7 @@
   
   $pageName = '';
   require_once('../app/function.php');
-  include_once('header.php');
+  include_once('_header.php');
 ?>
 
 <h2>design content</h2>
@@ -11,4 +11,4 @@
 
 <?php 
 
-include_once('footer.php');
+include_once('_footer.php');

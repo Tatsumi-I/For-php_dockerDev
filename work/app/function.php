@@ -9,15 +9,15 @@
 
   $n = mt_rand(1, 5);//乱数とランダム表示
     if($n === 1){
-    $message = 'php勉強中';
+    $message = 'php & MySQL';
     } elseif($n === 2){
-    $message = 'p5勉強中';
+    $message = '…';
     } elseif($n === 3){
-    $message = 'Docker導入しました';
+    $message = 'Docker';
     } elseif($n === 4){
-    $message = 'React学習中';
+    $message = 'え?';
     } elseif($n === 5){
-    $message = '独習は正直つらい…';
+    $message = 'Hoz_onの感想もHoz_onしてね！';
   }
 
   $icon= 
@@ -71,7 +71,7 @@
       <h1>Create a New Experience.</h1>
         <div>
           <img src="imgs/logo.png" width="100px">
-          <p><?= h($myName);?> _ Portfolio</p>
+          <p>Tatsumi-Ishikawa _ Portfolio</p>
           <p class="ja">石川達実  ポートフォリオサイト</p>
         </div>
     </a>

@@ -1,5 +1,5 @@
 // 1-27 headline　ようこそ　や時間表示
-<section>
+<section id="area_">
   <div class="headLine">
     <div id= "hide" class="gestForm">
       <form id="tooltip" action="home.php" method="get" description="Input your name" >

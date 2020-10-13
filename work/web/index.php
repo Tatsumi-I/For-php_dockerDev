@@ -2,7 +2,11 @@
   
   $pageName = '';
   require_once('../app/function.php')
+
+
 ?>
+
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,14 +21,7 @@
   <style>
   
   </style>
-    <!-- <script src="p5sketch/p5.min.js"></script> -->
-  <script>
-    get = getElementByClassName("topOpenMenu");
-    onLoad = function(){
-        get.style.color.red;
-    } 
 
-  </script>
 </head>
 <body>
 
@@ -32,7 +29,7 @@
 
   <hr class="hr">
 
-  <div class="topOpenMenu" onclick=(event)>
+  <div class="topOpenMenu">
     <details>
       <summary>Global Menu</summary>
         <?= $globalMenu; ?>

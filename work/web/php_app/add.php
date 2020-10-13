@@ -1,30 +1,12 @@
 <?php 
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
+  require_once('_header.php');
 
  
 ?>
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DBへの接続と追加のページ</title>
 
-  <style>
-      <?php
-      require_once('./styleForApp/appStyle.min.css');
-      ?>
-    </style>
-</head>
-
-<body>
-  <header>
-    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-  </header>
-  <main>
-    <div class="all">
     <h1>新規Hoz_on情報</h1>
 
 <?php
@@ -122,8 +104,6 @@
 
 
 <p><a href="list_table.php">一覧を見る</a></p>
-<p><a href="eva.php">新規コメント入力</a></p>
-<br>
 </div>
 </main>
 <footer>

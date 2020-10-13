@@ -2,11 +2,11 @@
   
   $pageName = '';
   require_once('../app/function.php');
-  include_once('header.php');
+  include_once('_header.php');
 ?>
 <article>
-  <section>
-    <div id="pageTop" class="firstView">
+  <section id="area_">
+    <div class="firstView">
       <div class="contentImg">
         <img src="./imgs/IMG_6619.jpg" alt="">
       </div>
@@ -23,19 +23,19 @@
     </div>
   </section>
   
-  <section>
+  <section id="area_">
     <div class="sectionArea">
       <h2>INTP型って？</h2>
       
       <div class="tra3d">Character...</div>
       
-      <div id="coading" class="contentsArea">
+      <div class="contentsArea">
         <div class="desc">
           <p></p>
         </div>
         <div class="container1">
           <div class="text">
-            <h3></h3>
+            <div class="content"><h3></h3>
             <h4></h4>
             <ul>
               <li></li>
@@ -54,7 +54,7 @@
             <b>INTPは論理学者、分析者、探求者、研究者タイプ</b>
           </div>
           <div class="text">
-            <h3>INTP - ??</h3>
+            <div class="content"><h3>INTP - ??</h3>
             <div class="notes">
               
               <b><a href="https://narukinhonda.com/narushinrigaku/mbti/intp-seikaku.html" target="chara">ナルメカ(ナルキンのそうなるメカニズム) -NaruMECHANISM- より引用</a></b>
@@ -65,7 +65,7 @@
     </div>
   </section>
   
-  <section>
+  <section id="area_">
     <div class="sectionArea">
       <h2></h2>
       
@@ -74,7 +74,7 @@
       <div class="contentsArea">
         <div class="container1">
           <div class=text>
-            <h3></h3>
+            <div class="content"><h3></h3>
             <h4></h4>
             <ul>
               <li></li>
@@ -93,7 +93,7 @@
             <img src="imgs/office.jpg">
           </div>
           <div class="text">
-            <h3></h3>
+            <div class="content"><h3></h3>
             <ul>
               <li></li>
             </ul>
@@ -102,7 +102,7 @@
         </div>
         <div class="container1">
           <div class="text">
-            <h3></h3>
+            <div class="content"><h3></h3>
             <p></p>
           </div>
           <div class="contentImg">
@@ -113,7 +113,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="area_">
     <div class="sectionArea">
       <h2>まとめ</h2>
       <div class="desc">    
@@ -126,4 +126,4 @@
 
 <?php 
 
-include_once('footer.php');
+include_once('_footer.php');

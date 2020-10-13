@@ -1,27 +1,9 @@
 <?php 
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
+  require_once('_header.php');
+  
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>削除前の意思確認ページ</title>
-  <style>
-      <?php
-      require_once('./styleForApp/appStyle.min.css');
-      ?>
-    </style>
-</head>
-
-<body>
-  <header>
-    <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-  </header>
-  <main>
-    <div class="all">
 
 
 <?php

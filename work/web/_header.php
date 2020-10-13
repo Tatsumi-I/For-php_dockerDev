@@ -40,7 +40,7 @@
             <p><a href="home.php">HOME</a></p>
             <p>Coding</p>
             <p><a href="design.php">Design</a></p>
-            <p><a href="home.php#profile">Profile</a></p>
+            <p><a href="chara.php">Profile</a></p>
             <p><a href="contact.php">Contact</a></p>
     </div>
   </div>
