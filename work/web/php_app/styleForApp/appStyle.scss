@@ -1,18 +1,18 @@
 @charset "utf-8";
 $textColor: rgb(109, 109, 109);
 $line: rgba(206, 206, 206, 0.322);
-$shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582);
+$shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9);
 $myBlack: rgb(30, 30, 30);
 $Orange: rgb(150, 100, 50);
 $darkBlue: rgba(27, 37, 73, 0.8);
 $night: #1a3664;
-$grege: #80786630;
+$grege: #b4ad9b27;
 $beige: #634130;
 
 html {
   background: $grege;
   font-size: 70%;
-  color: $night;
+  color: $darkBlue;
   scroll-behavior: smooth;
   margin: 0 auto;
   padding: 0;
@@ -20,7 +20,7 @@ html {
   text-align: center;
   overflow-x: hidden;
   font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   // letter-spacing: 0.1em;
   line-height: 3;
@@ -53,15 +53,17 @@ body{
 }
 
 form{
+  background: linear-gradient(  #ccc8bd30, #c0bdb470);
+
   margin:30px auto;
-  width: fit-content;
+  width: 220px;
   padding: 30px 40px;
     // border: 1px solid black;
     border-radius: 5px;
     text-align: initial;
     box-shadow: 
     1px 1px 1px rgb(117, 117, 117)
-    ,-1px -1px 1px rgb(236, 236, 236)
+    ,-1px -1px 1px rgb(255, 255, 255)
     ;
 
 }

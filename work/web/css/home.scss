@@ -21,7 +21,7 @@ $beige: #634130;
   margin: 0;
   padding: 20px;
   z-index: 120;
-  box-shadow: 0px 0px 2px $grege;
+  box-shadow: 0px 0px 2px $beige;
   opacity: 0;
   animation:delay 1s 5s forwards;
   a{
@@ -350,8 +350,10 @@ main {
   margin: 0 auto;
   line-height: 3;
   img {
-    width: 270px;
-    max-width: 90vw;
+    width: 350px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
   }
   a {
     &::after {
@@ -416,9 +418,9 @@ main {
       }
     }
     .concept {
-      margin: 0 auto;
+      margin: 0 1%;
       z-index: 100;
-      min-width: 300px;
+      // min-width: 280px;
       flex-basis: 350px;
       flex-grow: 1;
       background: url(../imgs/myLogoWhite.png) top 96% left 96% / 15%
@@ -447,6 +449,7 @@ main {
     }
   }
   .sectionArea {
+    margin: 50px 0;
     .desc {
       padding: 20px;
       margin: 30px 0;
@@ -485,8 +488,8 @@ main {
       margin: auto;
       z-index: 99;
       min-width: 260px;
-      max-width: 320px;
-      flex-basis: 260px;
+      // max-width: 320px;
+      // flex-basis: 260px;
       iframe {
         flex-basis: 260px;
         margin: 0 auto;
@@ -495,8 +498,8 @@ main {
     .contentImg_over {
       margin: auto;
       min-width: 260px;
-      max-width: 320px;
-      flex-basis: 260px;
+      // max-width: 320px;
+      // flex-basis: 260px;
       overflow-y: scroll;
       height: 400px;
       z-index: 99;

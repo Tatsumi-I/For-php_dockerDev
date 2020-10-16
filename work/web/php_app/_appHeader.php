@@ -22,4 +22,6 @@
         <a href="eva.php">新規登録</a>
         <a href="list_table.php">Hoz_onリスト</a>
       </div>
-        <p><?= "\"" . h($message) .  "\"" . '  (ランダムメッセージ)';?></p><hr>
+      <hr>
+        <p><?= "\"" . h($message) .  "\"" . '  (ランダムメッセージ)';?></p>
+        <p><a href="../home.php">Tatsumi's_Portfolioに戻る</a></p>

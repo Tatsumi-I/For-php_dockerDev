@@ -1,4 +1,4 @@
-html { background: #80786630; font-size: 70%; color: #1a3664; scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 600; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
+html { background: #b4ad9b27; font-size: 70%; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
 
 a { text-decoration: none; color: #966432; margin: 10px; }
 
@@ -8,7 +8,7 @@ nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-c
 
 body { width: clamp(300px, 100vw, 100%); margin: 0 auto; }
 
-form { margin: 30px auto; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; padding: 30px 40px; border-radius: 5px; text-align: initial; -webkit-box-shadow: 1px 1px 1px #757575, -1px -1px 1px #ececec; box-shadow: 1px 1px 1px #757575, -1px -1px 1px #ececec; }
+form { background: -webkit-gradient(linear, left top, left bottom, from(#ccc8bd30), to(#c0bdb470)); background: linear-gradient(#ccc8bd30, #c0bdb470); margin: 30px auto; width: 220px; padding: 30px 40px; border-radius: 5px; text-align: initial; -webkit-box-shadow: 1px 1px 1px #757575, -1px -1px 1px white; box-shadow: 1px 1px 1px #757575, -1px -1px 1px white; }
 
 label input, label textarea, label select { background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(202, 197, 180, 0.555))); background: linear-gradient(transparent, rgba(202, 197, 180, 0.555)); cursor: pointer; }
 
@@ -16,7 +16,7 @@ label .textInput, label select, label textarea { border: none; border-radius: 5p
 
 label select { border: none; width: 100%; font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; }
 
-button { border: none; background: rgba(245, 245, 245, 0.5); font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); text-align: center; }
+button { border: none; background: rgba(245, 245, 245, 0.5); font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); text-align: center; }
 
 button:hover { cursor: pointer; }
 
@@ -28,9 +28,9 @@ h1 { margin: 0; padding: 10px; }
 
 p { margin: 15px; }
 
-.all { background: #80786630; margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
+.all { background: #b4ad9b27; margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
 
-.all a { background: rgba(245, 245, 245, 0.5); border-radius: 5px; text-decoration: none; cursor: pointer; padding: 1em 2em; -webkit-box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); box-shadow: 1px 1px 1px rgba(139, 135, 124, 0.61), -1px -1px 1px rgba(194, 177, 146, 0.582); }
+.all a { background: rgba(245, 245, 245, 0.5); border-radius: 5px; text-decoration: none; cursor: pointer; padding: 1em 2em; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
 
 .appDesc { max-width: 400px; margin: 0 auto; }
 
