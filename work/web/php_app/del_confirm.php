@@ -2,7 +2,6 @@
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
   require_once('_appHeader.php');
-  
 ?>
 
 
@@ -33,7 +32,7 @@
   }
 ?>
 
-<body>
+<div class="desc">
   <p>No.
     <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); ?>
     :"
@@ -45,14 +44,15 @@
       }
       ?>"
     を本当に削除しますか？</p>
-  
-  <form method="GET" action="remove.php">
-  <input type="hidden" name="id" value="
-    <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); 
+  </div>
+    
+    <form method="GET" action="remove.php">
+      <input type="hidden" name="id" value="
+      <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
   <input type="hidden" name="title" value="
-    <?php echo h($result['title'],ENT_QUOTES,'UTF-8'); 
+  <?php echo h($result['title'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
   <p><a href="list_table.php">キャンセル</a></p>
@@ -61,11 +61,5 @@
   </button>
   </form>
 
-</div>
-</main>
-<footer>
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-
-</footer>
-</body>
-</html>
+  <?php
+  require_once('_appFooter.php');

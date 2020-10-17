@@ -2,7 +2,6 @@
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
   require_once('_appHeader.php');
-  
 ?>
 
 <?php
@@ -35,17 +34,18 @@
   ?>
 
 
-    <p>No.
-      <?php echo  h($result['id'],ENT_QUOTES,'UTF-8');?>
-    </p>
-    <p>Title/タイトル:
-      <?php echo h($result['title'],ENT_QUOTES,'UTF-8');
+<div class="desc">
+  <p><strong>No.</strong>
+    <?php echo  h($result['id'],ENT_QUOTES,'UTF-8');?>
+  </p>
+  <p><strong>Title/タイトル:</strong>
+    <?php echo h($result['title'],ENT_QUOTES,'UTF-8');
         if (empty($result['title'])){
           echo "No-title";
         }
-      ?>
+        ?>
     </p>
-    <p>Category:
+    <p><strong>Category:</strong>
       <?php $category = (string) h($result['category'],ENT_QUOTES,'UTF-8');
       if (!empty($category)){
         if ($category === '1') {
@@ -54,11 +54,11 @@
           echo "Design";
         } 
       } else {
-          echo "未選択";
+        echo "未選択";
       }
       ?>
     </p>
-    <p>Evaluation/評価: 
+    <p><strong>Evaluation/評価: </strong>
       <?php h($result['checked'],ENT_QUOTES,'UTF-8');
       $checked = (string) h($result['checked'],ENT_QUOTES,'UTF-8');
       if (!empty($checked)) {
@@ -74,18 +74,19 @@
       }
       ?>
     </p>
-    <p>コメント:
+    <p><strong>コメント:</strong>
       <?php echo nl2br(h($result['comments'],ENT_QUOTES,'UTF-8'));
         if (empty($result['comments'])){
           echo "なし";
-      }
-      ?>
+        }
+        ?>
     </p>
-    <p>登録日時:
+    <p><strong>登録日時:</strong>
       <?php echo h($result['time_now'],ENT_QUOTES,'UTF-8');
       ?>
     </p>
-
+  </div>
+    
 
 
 
@@ -110,10 +111,6 @@
   <button>削除する</button>
 </form>
 
-</div>
-</main>
-<footer>
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-</footer>
-</body>
-</html>
+<?php
+  require_once('_appFooter.php');
+

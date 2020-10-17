@@ -12,7 +12,7 @@
       </div>
       <div class="concept">
         <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile <a href="backBone.php"> > Backbone</a><a href="blackApron.php"> > What is Black Apron? </a> </p>
+          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile <a href="backBone.php"> > Backbone</a><a href="blackApron.php"> > What is Black Apron? </a></p>
         </nav>
           <p><?php echo date($date); ?></p>
         <h2>Black Apronとは?</h2>
@@ -57,6 +57,7 @@
                 <b>星の数は合格した数を表している</b>
               </div>
               <div class="text">
+                <h4>10%程度</h4>
                 <div class="notes">
                 </div>
               </div>
@@ -85,20 +86,19 @@
                 </ul>
                 <div class="notes">
                   <p></p>
-
                 </div>
               </div>
               <div class="contentImg">
-                <img src="imgs/grow.jpg"></img>
+                <img src="imgs/.jpg"></img>
                 <b>石川達実は常に成長する意欲と実績を持っている</b>
               </div>
             </div>
         </div>
         <div class="container2">
+          <h3></h3>
           <div class="content">
-            <h3>先生と呼ばれていました</h3>
               <div class="contentImg">
-                <img src="imgs/office.jpg">
+                <img src="imgs/.jpg">
               </div>
               <div class="text">
                 <ul>
@@ -115,8 +115,7 @@
                 <p></p>
               </div>
               <div class="contentImg">
-                <img src="imgs/typeTable.png">
-                <b><a href="https://iwamishinji.com/tools/16personalities/" target="chara">いわろぐ - https://iwamishinji.com/tools/16personalities/ より引用</a></b>
+                <img src="imgs/.png">
               </div>
            </div>
         </div>

@@ -3,21 +3,22 @@
   $pageName = '';
   require_once('../app/function.php');
   include_once('_header.php');
+  
 ?>
 <article>
   <section id="area_">
     <div class="firstView">
       <div class="contentImg">
-        <img src="./imgs/IMG_6619.jpg" alt="">
+        <img src="./imgs/office.jpg" alt="">
       </div>
       <div class="concept">
         <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
+          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="skills.php">Knowledge & Skill</a></p>
           <p><?php echo date($date); ?></p>
         </nav>
-        <h2>石川達実ってどんな人？</h2>
+        <h2>Knowledge & Skill</h2>
         <div>
-          <p></p>
+          <p>このページでは、石川達実の<strong>現在の知識とスキル</strong>、<strong>今後の方向性</strong>について知ることができます。</p>
         </div>
       </div>
     </div>
@@ -25,39 +26,38 @@
   
   <section id="area_">
     <div class="sectionArea">
-      <h2>INTP型って？</h2>
+      <h2></h2>
       
-      <div class="tra3d">Character...</div>
+      <div class="tra3d">Knowledge...</div>
       
       <div class="contentsArea">
         <div class="desc">
           <p></p>
         </div>
-        <div class="container1">
-          <div class="text">
-            <div class="content"><h3></h3>
-            <h4></h4>
-            <ul>
-              <li></li>
-            </ul>
+        <div class="content">
+          <h3></h3>
+          <div class="container1">
+            <div class="text">
+              <h4></h4>
+              <ul>
+                <li></li>
+              </ul>
               <p></p>
-          </div>
-          <div class="contentImg">
-            <b>16personalities.com　での石川達実の診断結果</b>
-            <img src="imgs/thinkType.png">
-            <b>INTP"-A"については次項をご覧ください</b>
+            </div>
+            <div class="contentImg">
+              <img src="imgs/.png">
+            </div>
           </div>
         </div>
-        <div class="container2">
-           <div class="contentImg">
-            <img src="imgs/labo.jpg"></img>
-            <b>INTPは論理学者、分析者、探求者、研究者タイプ</b>
-          </div>
-          <div class="text">
-            <div class="content"><h3>INTP - ??</h3>
-            <div class="notes">
-              
-              <b><a href="https://narukinhonda.com/narushinrigaku/mbti/intp-seikaku.html" target="chara">ナルメカ(ナルキンのそうなるメカニズム) -NaruMECHANISM- より引用</a></b>
+        <div class="content">
+          <h3></h3>
+          <div class="container2">
+            <div class="contentImg">
+              <img src="imgs/.jpg"></img>
+            </div>
+            <div class="text">
+              <div class="notes">
+              </div>
             </div>
           </div>
         </div>
@@ -69,45 +69,50 @@
     <div class="sectionArea">
       <h2></h2>
       
-      <div class="tra3d">Can Be Team</div>
-      
+      <div class="tra3d">Skills...</div>
+
       <div class="contentsArea">
-        <div class="container1">
-          <div class=text>
-            <div class="content"><h3></h3>
-            <h4></h4>
-            <ul>
-              <li></li>
-            </ul>
-            <div class="notes">
-              <p></p>
+        <div class="content">
+          <h3></h3>
+          <div class="container1">
+            <div class=text>
+              <h4></h4>
+              <ul>
+                <li></li>
+              </ul>
+              <div class="notes">
+                <p></p>
+              </div>
+            </div>
+            <div class="contentImg">
+              <img src="imgs/.jpg"></img>
+              <b>石川達実は常に成長する意欲と実績を持っている</b>
             </div>
           </div>
-          <div class="contentImg">
-            <img src="imgs/grow.jpg"></img>
-            <b>石川達実は常に成長する意欲と実績を持っている</b>
+        </div>
+        <div class="content">
+          <h3></h3>
+          <div class="container2">
+            <div class="contentImg">
+              <img src="imgs/.jpg">
+            </div>
+            <div class="text">
+              <ul>
+                <li></li>
+              </ul>
+              <p><a></a></p>
+            </div>
           </div>
         </div>
-        <div class="container2">
-          <div class="contentImg">
-            <img src="imgs/office.jpg">
-          </div>
-          <div class="text">
-            <div class="content"><h3></h3>
-            <ul>
-              <li></li>
-            </ul>
-            <p><a></a></p>
-          </div>
-        </div>
-        <div class="container1">
-          <div class="text">
-            <div class="content"><h3></h3>
-            <p></p>
-          </div>
-          <div class="contentImg">
-            <img src="imgs/typeTable.png">
-            <b><a href="https://iwamishinji.com/tools/16personalities/" target="chara">いわろぐ - https://iwamishinji.com/tools/16personalities/ より引用</a></b>
+        <div class="content">
+          <h3></h3>
+          <div class="container1">
+            <div class="text">
+              <p></p>
+            </div>
+            <div class="contentImg">
+              <img src="imgs/.png">
+            </div>
           </div>
         </div>
       </div>
@@ -116,8 +121,10 @@
   <section id="area_">
     <div class="sectionArea">
       <h2>まとめ</h2>
-      <div class="desc">    
-        <p>私は、自分にとって新しいことについて学んだり、ある物事の詳細について多角的に理解することに特に喜びを感じます</p>
+      <div class="desc">
+        <p>
+
+        </p>
       </div>
     </div>
     </section>

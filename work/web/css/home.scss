@@ -76,6 +76,7 @@ body {
     img {
       margin-right: 15px;
       width: 16px;
+      display: inline;
     }
     i {
       margin-right: 10px;
@@ -253,6 +254,7 @@ header {
   }
 }
 .headFootOpenMenu {
+  background: $grege;
   color: $Orange;
   summary {
     transition-duration: 1s;
@@ -260,7 +262,10 @@ header {
     padding: 20px;
     font-size: 20px;
     outline: 1px solid silver;
+  background: $grege;
+
     &:hover {
+
       filter: opacity(1);
       cursor: pointer;
     }
@@ -492,7 +497,7 @@ main {
       // flex-basis: 260px;
       iframe {
         flex-basis: 260px;
-        margin: 0 auto;
+        height: 280px;
       }
     }
     .contentImg_over {
@@ -553,6 +558,7 @@ footer {
   margin-top: 150px;
   background: $grege;
   p.toTop {
+    background: $grege;
     margin: 0;
     color: $Orange;
     text-align: center;

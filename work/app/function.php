@@ -48,9 +48,9 @@
     <p class="indent1">Works</p>
     <p class="indent2">Coding Skills included on</p>
     <ul class="indent2">
-      <li><a href="      ">This site</a></li>
-      <li><a href="      ">My first code</a></li>
-      <li><a href="      ">Processing</a></li>
+      <li><a href="include.php">This site</a></li>
+      <li><a href="include.php">My first code</a></li>
+      <li><a href="include.php">Processing</a></li>
     </ul>
     <p class="indent2"><a href="design.php">Design</a></p>
     <p class="indent1">Profile</p>

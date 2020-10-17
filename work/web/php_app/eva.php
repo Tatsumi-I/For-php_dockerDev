@@ -2,17 +2,18 @@
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
   require_once('_appHeader.php');
-  
 
 ?>
 
-
+  <h1>Keep your inspiration!!</h1>
+  
+  
   <form method="post" action="add.php">
-  <label for="title">Title/タイトル
+  <label for="title"><strong>Title/タイトル<strong>
     <input type="text" class="textInput" name="title">
   </label>
-  <br>
-  <label for="category">Category/カテゴリ
+    <br>
+  <label for="category"><strong>Category/カテゴリ</strong>
     <!-- <br> -->
     <select name="category" id="">
       <option value="0">カテゴリ選択</option>
@@ -21,14 +22,14 @@
     </select>
   </label>
   <br>
-  <label for="radio">Evaluation/評価
+  <label for="radio"><strong>Evaluation/評価</strong>
     <br>
     <label><input type="radio" name="checked" value="1">Good !</label>
     <label><input type="radio" name="checked" value="2">Bad...</label>
     <label><input type="radio" name="checked" value="3">What's?!</label>
   </label>
   <br>
-  <label for="textarea">Comments/コメント
+  <label for="textarea"><strong>Comments/コメント</strong>
     <br>
     <textarea name="comments" col="20" row="5" maxlength="100"></textarea>
     <br>
@@ -38,10 +39,5 @@
   </form>
 
   
-</div>
-</main>
-<footer>
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-</footer>
-</body>
-</html>
+  <?php
+  require_once('_appFooter.php');

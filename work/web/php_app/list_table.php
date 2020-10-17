@@ -2,7 +2,6 @@
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
   require_once('_appHeader.php');
-  
 ?>
 
     <h1>Hoz_on リスト</h1>
@@ -138,12 +137,5 @@ try {
       echo "</table>\n";
       ?>
 </details>
-</div>
-
-</main>
-
-<footer>
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-</footer>
-</body>
-</html>
+<?php
+  require_once('_appFooter.php');

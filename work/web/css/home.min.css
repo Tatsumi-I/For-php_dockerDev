@@ -17,7 +17,7 @@ html .icons > div, body .icons > div { -webkit-column-count: 2; column-count: 2;
 
 html .icons p, body .icons p { text-align: left; }
 
-html .icons img, body .icons img { margin-right: 15px; width: 16px; }
+html .icons img, body .icons img { margin-right: 15px; width: 16px; display: inline; }
 
 html .icons i, body .icons i { margin-right: 10px; font-size: 16px; }
 
@@ -99,9 +99,9 @@ header .headerContainer a:hover { -webkit-transform: scale(0.98); transform: sca
   90% { color: #717e00; }
   100% { color: #b99d00; } }
 
-.headFootOpenMenu { color: #966432; }
+.headFootOpenMenu { background: #80786630; color: #966432; }
 
-.headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; -webkit-filter: opacity(0); filter: opacity(0); padding: 20px; font-size: 20px; outline: 1px solid silver; }
+.headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; -webkit-filter: opacity(0); filter: opacity(0); padding: 20px; font-size: 20px; outline: 1px solid silver; background: #80786630; }
 
 .headFootOpenMenu summary:hover { -webkit-filter: opacity(1); filter: opacity(1); cursor: pointer; }
 
@@ -193,7 +193,7 @@ main .container1 summary, main .container2 summary { text-align: center; width: 
 
 main .container1 .contentImg, main .container2 .contentImg { margin: auto; z-index: 99; min-width: 260px; }
 
-main .container1 .contentImg iframe, main .container2 .contentImg iframe { -ms-flex-preferred-size: 260px; flex-basis: 260px; margin: 0 auto; }
+main .container1 .contentImg iframe, main .container2 .contentImg iframe { -ms-flex-preferred-size: 260px; flex-basis: 260px; height: 280px; }
 
 main .container1 .contentImg_over, main .container2 .contentImg_over { margin: auto; min-width: 260px; overflow-y: scroll; height: 400px; z-index: 99; }
 
@@ -209,7 +209,7 @@ main .sum p { font-size: 120%; font-weight: bold; width: clamp(300px, 40%, 50vw)
 
 footer { margin-top: 150px; background: #80786630; }
 
-footer p.toTop { margin: 0; color: #966432; text-align: center; padding: 20px; }
+footer p.toTop { background: #80786630; margin: 0; color: #966432; text-align: center; padding: 20px; }
 
 footer p.toTop a { padding: 20px; }
 

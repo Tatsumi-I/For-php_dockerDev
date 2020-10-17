@@ -238,7 +238,7 @@
           <h3>石川達実/<?= h($myName);?></h3>
             <div class="container2">
               <div class="contentImg">
-              <img src="imgs/IMG_6619.JPG" style="filter:saturate(0.2);">
+              <img src="imgs/ba.png" style="filter:saturate(0.2);">
               </div>
               <div class="text">
                 <p>1986年東京都生まれ。</p>

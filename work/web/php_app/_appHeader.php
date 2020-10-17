@@ -3,12 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./styleForApp/appStyle.min.css">
 <title><?php h($pageName);?></title>
 <style>
-    <?php
-    require_once('./styleForApp/appStyle.min.css');
-    ?>
-  </style>
+</style>
 </head>
 
 <body>
@@ -22,6 +20,4 @@
         <a href="eva.php">新規登録</a>
         <a href="list_table.php">Hoz_onリスト</a>
       </div>
-      <hr>
-        <p><?= "\"" . h($message) .  "\"" . '  (ランダムメッセージ)';?></p>
-        <p><a href="../home.php">Tatsumi's_Portfolioに戻る</a></p>
+  <hr>

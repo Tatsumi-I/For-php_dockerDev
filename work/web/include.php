@@ -9,16 +9,16 @@
   <section id="area_">
     <div class="firstView">
       <div class="contentImg">
-        <img src="./imgs/.jpg" alt="">
+        <img src="./imgs/office.jpg" alt="">
       </div>
       <div class="concept">
         <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  <a href="design.php">Design</a></p>
+          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="skills.php">Knowledge & Skill</a></p>
           <p><?php echo date($date); ?></p>
         </nav>
-        <h2>Design</h2>
+        <h2>Knowledge & Skill</h2>
         <div>
-          <p>このページでは、石川達実の<strong>現在の知識とスキル</strong>、<strong>今後の方向性</strong>について知ることができます。</p>
+          <p>このページでは、成果物に<strong>内包されているスキル</strong>や<strong>こだわり</strong>について知ることができます。</p>
         </div>
       </div>
     </div>
@@ -35,11 +35,15 @@
           <p></p>
         </div>
         <div class="content">
-          <h3></h3>
+          <h3>このサイト</h3>
           <div class="container1">
             <div class="text">
               <h4></h4>
-              <ul>
+              <ul></strong>
+                <li>見る人にとって<strong>必要な情報</strong>を<strong>明確に</strong>伝える</li>
+                <li>配色</li>
+                <li><strong>非メディアクエリー<strong>によるレスポンシブ対応</li>
+                <li></li>
                 <li></li>
               </ul>
               <p></p>

@@ -104,10 +104,6 @@
 
 
 <p><a href="list_table.php">一覧を見る</a></p>
-</div>
-</main>
-<footer>
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
-</footer>
-</body>
-</html>
+
+<?php
+  require_once('_appFooter.php');

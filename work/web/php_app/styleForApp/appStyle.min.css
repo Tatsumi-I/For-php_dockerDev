@@ -1,22 +1,22 @@
 html { background: #b4ad9b27; font-size: 70%; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
 
-a { text-decoration: none; color: #966432; margin: 10px; }
+main { background: #b4ad9b27; }
 
-a:visited, a:link { color: #966432; }
+main a { text-decoration: none; border: none; background: #1a3664; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
 
 nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
 
 body { width: clamp(300px, 100vw, 100%); margin: 0 auto; }
 
-form { background: -webkit-gradient(linear, left top, left bottom, from(#ccc8bd30), to(#c0bdb470)); background: linear-gradient(#ccc8bd30, #c0bdb470); margin: 30px auto; width: 220px; padding: 30px 40px; border-radius: 5px; text-align: initial; -webkit-box-shadow: 1px 1px 1px #757575, -1px -1px 1px white; box-shadow: 1px 1px 1px #757575, -1px -1px 1px white; }
+form { margin: 0 auto; width: 220px; border-radius: 5px; text-align: initial; }
 
-label input, label textarea, label select { background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(202, 197, 180, 0.555))); background: linear-gradient(transparent, rgba(202, 197, 180, 0.555)); cursor: pointer; }
+label input, label textarea, label select { background: transparent; cursor: pointer; color: black; }
 
-label .textInput, label select, label textarea { border: none; border-radius: 5px; width: 94%; font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; }
+label .textInput, label select, label textarea { border: none; border-radius: 5px; width: 94%; font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; }
 
-label select { border: none; width: 100%; font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; box-shadow: 1px 1px 1px inset #757575, -1px -1px 1px inset #ececec; }
+label select { border: none; width: 100%; color: rgba(27, 37, 73, 0.8); font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; }
 
-button { border: none; background: rgba(245, 245, 245, 0.5); font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); text-align: center; }
+button { border: none; background: #1a3664; color: whitesmoke; font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); text-align: center; }
 
 button:hover { cursor: pointer; }
 
@@ -24,19 +24,21 @@ button:hover { cursor: pointer; }
 
 header, footer { background: #1e1e1e; padding: 10px; }
 
-h1 { margin: 0; padding: 10px; }
+header a, footer a { text-decoration: none; color: #966432; margin: 10px; }
 
-p { margin: 15px; }
+header a:visited, header a:link, footer a:visited, footer a:link { color: #966432; }
 
-.all { background: #b4ad9b27; margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
+h1 { margin: 10px; padding: 10px; line-break: 18px; }
 
-.all a { background: rgba(245, 245, 245, 0.5); border-radius: 5px; text-decoration: none; cursor: pointer; padding: 1em 2em; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
+.all { margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
 
-.appDesc { max-width: 400px; margin: 0 auto; }
+span { background: #1a3664; color: whitesmoke; padding: 1em 2em; border-radius: 5px; }
 
-.appDesc fieldset { margin: 10px; padding: 20px; }
+.desc { max-width: 300px; margin: 0 auto; }
 
-.appDesc fieldset ul, .appDesc fieldset li { padding: 0; margin: 0; list-style: none; }
+.desc fieldset { margin: 10px; padding: 20px; }
+
+.desc fieldset ul, .desc fieldset li { padding: 0; margin: 0; list-style: none; }
 
 .linkBar { max-width: 340px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
