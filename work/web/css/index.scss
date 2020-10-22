@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "home.scss";
+// @import "home.scss";
 
 $pointColor: rgb(194, 194, 194);
 $pColor: rgb(77, 41, 0);
@@ -7,9 +7,9 @@ $pColor: rgb(77, 41, 0);
 
 html,
 body {
-  background: $myBlack;
+  // background: $myBlack;
   font-feature-settings: "palt" 1, "swsh" 1;
-  color: $Orange;
+  // color: $Orange;
   font-family: itc-american-typewriter, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -33,9 +33,9 @@ header {
       animation: flash 2s infinite 10s;
       text-align: center;
       margin-top: 10%;
-      a {
-        color: $Orange;
-      }
+      // a {
+        // color: $Orange;
+      // }
       p {
         text-shadow: 0px 0px 15px rgb(192, 112, 41);
         font-size: 7em;
@@ -167,6 +167,9 @@ header {
         text-align: center;
         text-shadow: 0 0 15px rgba(245, 245, 245, 0.3);
         transition: text-shadow 3s ease 8s;
+        &:hover{
+          animation:flash 3s infinite;
+        }
         h1 {
           animation: fade 9s forwards 6s;
           opacity: 0;
@@ -203,7 +206,7 @@ header {
   }
 
   .topOpenMenu {
-    color: $Orange;
+    // color: $Orange;
     summary {
       font-size: .8em;
       opacity: 0;
@@ -264,7 +267,7 @@ header {
         margin: 0 5%;
         animation: flash 9s infinite 10s;
         text-align: center;
-        color: $Orange;
+        // color: $Orange;
         // height:fit-content;
         // box-shadow:-3px -3px 5px rgb(65, 65, 65),3px 3px 2px black;
         border-radius: 5px;

@@ -44,12 +44,12 @@
         <p class="item2">a</p>
         <p class="item3"> New</p>
         <p class="item4">Experience</p>
-        <p class="item5">with your mind.</p>
+        <p class="item5">with　your　mind.</p>
       </a>
     </div>
     <div class="logo">
       
-        <img src="imgs/logo.png"><a href="home.php"> </a></img>
+        <a href="index.php"><img src="imgs/logo.png"></img></a>
      
       <div class="nameBar">
         <h1>石川達実  ポートフォリオサイト</h1>

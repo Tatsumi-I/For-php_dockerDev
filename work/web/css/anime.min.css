@@ -1,0 +1,109 @@
+@-webkit-keyframes flash { 0% { opacity: 0; }
+  1% { opacity: 0.3; }
+  2% { opacity: 0; }
+  3% { opacity: 0.3; }
+  4% { opacity: 0; }
+  6% { opacity: 0.5; }
+  9% { opacity: 0; }
+  25% { opacity: 0.7; }
+  35% { opacity: 0.7; }
+  36% { opacity: 0.5; }
+  37% { opacity: 0.8; }
+  95% { opacity: 0; }
+  95% { opacity: 0.8; }
+  97% { opacity: 0.9; }
+  98% { opacity: 0.6; }
+  99% { opacity: 0.5; }
+  100% { opacity: 0.9; } }
+
+@keyframes flash { 0% { opacity: 0; }
+  1% { opacity: 0.3; }
+  2% { opacity: 0; }
+  3% { opacity: 0.3; }
+  4% { opacity: 0; }
+  6% { opacity: 0.5; }
+  9% { opacity: 0; }
+  25% { opacity: 0.7; }
+  35% { opacity: 0.7; }
+  36% { opacity: 0.5; }
+  37% { opacity: 0.8; }
+  95% { opacity: 0; }
+  95% { opacity: 0.8; }
+  97% { opacity: 0.9; }
+  98% { opacity: 0.6; }
+  99% { opacity: 0.5; }
+  100% { opacity: 0.9; } }
+
+@-webkit-keyframes fade { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes fade { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@-webkit-keyframes delay { 0% { opacity: 0.3; }
+  100% { opacity: 1; } }
+
+@keyframes delay { 0% { opacity: 0.3; }
+  100% { opacity: 1; } }
+
+@-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at top, #333333 4%, #0a0a0a 50%, black); }
+  30% { background: radial-gradient(circle at top center, #9b9b9b 4%, #4e4c47 40%, #3f3c35); }
+  60% { background: radial-gradient(circle at top center, #bbbbbb70 4%, #8a877f70 40%, #49453b70); }
+  100% { background: radial-gradient(circle at top center, #dbdbdb50 4%, #97928450 40%, #524e4750); } }
+
+@keyframes bgcolor { 0% { background: radial-gradient(circle at top, #333333 4%, #0a0a0a 50%, black); }
+  30% { background: radial-gradient(circle at top center, #9b9b9b 4%, #4e4c47 40%, #3f3c35); }
+  60% { background: radial-gradient(circle at top center, #bbbbbb70 4%, #8a877f70 40%, #49453b70); }
+  100% { background: radial-gradient(circle at top center, #dbdbdb50 4%, #97928450 40%, #524e4750); } }
+
+@-webkit-keyframes rum-col { 0% { color: #c88c50; }
+  10% { color: #864621; }
+  20% { color: #a31800; }
+  30% { color: #860065; }
+  40% { color: #4701a3; }
+  50% { color: #1c2364; }
+  60% { color: #005e8a; }
+  70% { color: #017a66; }
+  80% { color: #016e1c; }
+  90% { color: #717e00; }
+  100% { color: #b99d00; } }
+
+@keyframes rum-col { 0% { color: #c88c50; }
+  10% { color: #864621; }
+  20% { color: #a31800; }
+  30% { color: #860065; }
+  40% { color: #4701a3; }
+  50% { color: #1c2364; }
+  60% { color: #005e8a; }
+  70% { color: #017a66; }
+  80% { color: #016e1c; }
+  90% { color: #717e00; }
+  100% { color: #b99d00; } }
+
+@-webkit-keyframes toUp { 0% { opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes toUp { 0% { opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes toDown { 0% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+  98% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  99% { -webkit-transform: translateY(-2px); transform: translateY(-2px); }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px); } }
+
+@keyframes toDown { 0% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+  98% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  99% { -webkit-transform: translateY(-2px); transform: translateY(-2px); }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px); } }
+
+@keyframes delay { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+/*# sourceMappingURL=anime.min.css.map */

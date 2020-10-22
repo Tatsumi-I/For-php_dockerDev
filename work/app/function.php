@@ -35,7 +35,6 @@
       <i class="fab fa-docker fa-fw docker" title="Docker"></i>
       <i class="fab fa-php fa-fw php" title="PHP"></i>
       <i class="fas fa-database db" title="MYSQL"></i>
-      <p><a href="">More about...</a></p>
     </div>
   ';
 
@@ -43,31 +42,35 @@
   $globalMenu = 
   '
   <div class="fl">
-  <div>
-    <p><a href="home.php">HOME</a></p>
-    <p class="indent1">Works</p>
-    <p class="indent2">Coding Skills included on</p>
-    <ul class="indent2">
-      <li><a href="include.php">This site</a></li>
-      <li><a href="include.php">My first code</a></li>
-      <li><a href="include.php">Processing</a></li>
-    </ul>
-    <p class="indent2"><a href="design.php">Design</a></p>
-    <p class="indent1">Profile</p>
-    <ul class="indent2">
-      <li><a href="skills.php">Knowledge & Skill</a></li>
-      <li><a href="chara.php">Character</a></li>
-      <li><a href="backBone.php">Backbone</a></li>
-      <li><a href="blackApron.php">What is Black Apron?</a></li>
-      <li><a href="hobby.php">Hobby</a></li>
-    </ul>
-    <p class="indent1"><a href="contact.php">Contact</a></p>
+  <div class="inner">
+    <p><a href="home.php"><span>HOME</span></a></p>
+    <div>
+      <p class="indent1"><span>Works</span></p>
+      <p class="indent2">Coding Skills included on</p>
+      <ul class="indent2">
+        <li><a href="include.php">This site</a></li>
+        <li><a href="include.php">My first code</a></li>
+        <li><a href="include.php">Processing</a></li>
+      </ul>
+    </div>
+    <p class="indent1"><a href="design.php"><span>Design</span></a></p>
+    <div>
+      <p class="indent1"><span>Profile</span></p>
+      <ul class="indent2">
+        <li><a href="skills.php">Knowledge & Skill</a></li>
+        <li><a href="chara.php">Character</a></li>
+        <li><a href="backBone.php">Backbone</a></li>
+        <li><a href="blackApron.php">What is Black Apron?</a></li>
+        <li><a href="hobby.php">Hobby</a></li>
+      </ul>
+    </div>
+    <p class="indent1"><a href="contact.php"><span>Contact</span></a></p>
   </div>
   
   <hr>
   
   <div class="siteLogo">
-    <a href="index.php">
+    <a href="home.php">
       <h1>Create a New Experience.</h1>
         <div>
           <img src="imgs/logo.png" width="100px">

@@ -5,18 +5,19 @@
   include_once('_header.php');
   
 ?>
+<iframe src="pro.php" frameborder="0" width="400px" height="400px"></iframe>
 
   <section id="area_0">
-    <div class="firstView">
-      <div class="contentImg">
-        <img src="./imgs/img_5870.png" alt="tatsumi's Face">
-      </div>
-      <div class="concept">
-        <nav>
-          <p class="nav"><i class="fas fa-home"></i>  HOME</p>
-        </nav>
-          <p><?php echo date($date); ?></p>
-        <h2>Create a New Experience</h2>
+    <div class="concept">
+      <nav>
+        <p class="nav"><i class="fas fa-home"></i>  HOME</p>
+      </nav>
+      <p><?php echo date($date); ?></p>
+      <h2>Create a New Experience</h2>
+        <div class="firstView">
+        <!-- <!-- <div class="contentImg"> -->
+          <img src="./imgs/img_5870.png" alt="tatsumi's Face">
+        <!-- </div> --> 
         <div>
           <p><strong>”新しい感動体験を創り出す”</strong></p>
           <p>ユーザーにとって</p>
@@ -28,6 +29,19 @@
       </div>
     </div>
   </section>
+
+  <div class="app">
+    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+  </div>
+
+
+
+      <div class="gaiyou">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+      </div>
+
   
   <section id="area_1">
     <div class="sectionArea">
@@ -36,7 +50,11 @@
       <div class="tra3d">Coading...</div>
       
       <div class="contentsArea">
-        
+        <div class="desc">
+          <p>2020.6月から学習を始めました完全未経験の初学者ですが、細部までこだわって作り上げました。</p>
+          <p>Coading Skillの詳細について以下よりご覧いただけます。</p>
+          <a href="skills.php">Knowlegde & Skiis ページへ</a>
+        </div>
         <div class="content">
           <h3>アプリケーション</h3>
             <div class="icons">
@@ -46,13 +64,16 @@
             </div>
             <div class="container2">
               <div class="contentImg">
-                <img src="imgs/appShot.png"  alt="">
+                <img src="imgs/app_shot.png"  alt="">
               </div>
               <div class="text">
-                <p>test</p>
+                <h4>初めてのApp - ”Hoz_on”</h4>
+                <p>是非使ってみて下さい！</p>
+                <a href="../php_app/eva.php" target="_Hoz_on">Hoz_onを使ってみる</a>
                 <ul>
                   <li>Docker</li>
                   <li>PHP</li>
+                  <li>phpmyadmin</li>
                   <li>MYSQL</li>
                 </ul>
               </div>

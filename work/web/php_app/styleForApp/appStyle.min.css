@@ -2,7 +2,7 @@ html { background: #b4ad9b27; font-size: 70%; color: rgba(27, 37, 73, 0.8); scro
 
 main { background: #b4ad9b27; }
 
-main a { text-decoration: none; border: none; background: #1a3664; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
+main a { text-decoration: none; border: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
 
 nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
 
@@ -16,7 +16,7 @@ label .textInput, label select, label textarea { border: none; border-radius: 5p
 
 label select { border: none; width: 100%; color: rgba(27, 37, 73, 0.8); font-size: 1em; padding: 2px 5px; -webkit-box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; box-shadow: 1px 1px 1px inset #747474, -1px -1px 1px inset #858585; }
 
-button { border: none; background: #1a3664; color: whitesmoke; font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); text-align: center; }
+button { border: none; background: #213a63de; color: whitesmoke; font-size: 1em; display: block; margin: 20px auto; padding: 5px 20px; border-radius: 5px; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); text-align: center; }
 
 button:hover { cursor: pointer; }
 
@@ -32,7 +32,7 @@ h1 { margin: 10px; padding: 10px; line-break: 18px; }
 
 .all { margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
 
-span { background: #1a3664; color: whitesmoke; padding: 1em 2em; border-radius: 5px; }
+span { background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; }
 
 .desc { max-width: 300px; margin: 0 auto; }
 

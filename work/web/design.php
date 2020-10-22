@@ -18,7 +18,9 @@
         </nav>
         <h2>Design</h2>
         <div>
-          <p>このページでは、石川達実の<strong>現在の知識とスキル</strong>、<strong>今後の方向性</strong>について知ることができます。</p>
+          <p>
+            Adobeツールでの成果物についての詳解ページ
+          </p>
         </div>
       </div>
     </div>
@@ -45,7 +47,7 @@
               <p></p>
             </div>
             <div class="contentImg">
-              <img src="imgs/.png">
+              <img src="imgs/art2.png">
             </div>
           </div>
         </div>
@@ -53,7 +55,7 @@
           <h3></h3>
           <div class="container2">
             <div class="contentImg">
-              <img src="imgs/.jpg"></img>
+              <img src="imgs/art1.png"></img>
             </div>
             <div class="text">
               <div class="notes">

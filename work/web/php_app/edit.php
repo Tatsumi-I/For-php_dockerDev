@@ -12,7 +12,7 @@
 
  //require_once('.../app/db_cnf.php');
 
-
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
   //編集機能
   try{
     if (empty($_GET['id'])) throw new Exception('idの取得エラー'); 
@@ -31,12 +31,16 @@
     echo "<br>\n";
       if (empty($result['id'])){
         echo "<a href=list_table.php>このデータは存在しません。Clickで一覧に戻ります。</a>";
-     }
-    // echo "ID: " . h($id, ENT_QUOTES, 'UTF-8') . "の削除完了";
-  } catch (Exception $e) {
-    echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
-    die();
-  }
+      }
+    } catch (Exception $e) {
+      echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
+      die();
+    } 
+  }else {
+      echo 'modoru';
+    }
+      require_once('_appFooter.php');
+  
 ?>
 
   <h1>ここは編集ページです</h1>
@@ -128,5 +132,6 @@
 
 
 
-    <?php
+<?php
+  
   require_once('_appFooter.php');

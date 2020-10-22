@@ -25,17 +25,17 @@
   </section>
   
   <section id="area_">
+
+    <div class="tra3d">Knowledge...</div>
+
     <div class="sectionArea">
-      <h2></h2>
-      
-      <div class="tra3d">Knowledge...</div>
-      
+      <div class="desc">
+      </div>
       <div class="contentsArea">
-        <div class="desc">
-          <p></p>
-        </div>
+        <h2>Knowledge</h2>
+        <p></p>
         <div class="content">
-          <h3></h3>
+          <h3>Coding</h3>
           <div class="container1">
             <div class="text">
               <h4></h4>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="content">
-          <h3></h3>
+          <h3>Programing</h3>
           <div class="container2">
             <div class="contentImg">
               <img src="imgs/.jpg"></img>
@@ -61,13 +61,28 @@
             </div>
           </div>
         </div>
+        <div class="content">
+          <h3>Design</h3>
+          <div class="container1">
+            <div class="text">
+              <h4></h4>
+              <ul>
+                <li></li>
+              </ul>
+              <p></p>
+            </div>
+            <div class="contentImg">
+              <img src="imgs/.png">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   
   <section id="area_">
     <div class="sectionArea">
-      <h2></h2>
+      <h2>Skills</h2>
       
       <div class="tra3d">Skills...</div>
 
@@ -86,7 +101,6 @@
             </div>
             <div class="contentImg">
               <img src="imgs/.jpg"></img>
-              <b>石川達実は常に成長する意欲と実績を持っている</b>
             </div>
           </div>
         </div>
@@ -104,17 +118,49 @@
             </div>
           </div>
         </div>
+        
+      </div>
+    </div>
+  </section>
+  <section id="area_">
+    <div class="sectionArea">
+      <h2>今後の学習予定</h2>
+      
+      <div class="tra3d">Future...</div>
+
+      <div class="contentsArea">
         <div class="content">
-          <h3></h3>
+          <h3>習得必須</h3>
           <div class="container1">
-            <div class="text">
-              <p></p>
+            <div class=text>
+              <h4></h4>
+              <ul>
+                <li></li>
+              </ul>
+              <div class="notes">
+                <p></p>
+              </div>
             </div>
             <div class="contentImg">
-              <img src="imgs/.png">
+              <img src="imgs/.jpg"></img>
             </div>
           </div>
         </div>
+        <div class="content">
+          <h3>興味のある分野</h3>
+          <div class="container2">
+            <div class="contentImg">
+              <img src="imgs/.jpg">
+            </div>
+            <div class="text">
+              <ul>
+                <li></li>
+              </ul>
+              <p><a></a></p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
