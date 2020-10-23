@@ -46,15 +46,15 @@
 @keyframes delay { 0% { opacity: 0.3; }
   100% { opacity: 1; } }
 
-@-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at top, #333333 4%, #0a0a0a 50%, black); }
-  30% { background: radial-gradient(circle at top center, #9b9b9b 4%, #4e4c47 40%, #3f3c35); }
-  60% { background: radial-gradient(circle at top center, #bbbbbb70 4%, #8a877f70 40%, #49453b70); }
-  100% { background: radial-gradient(circle at top center, #dbdbdb50 4%, #97928450 40%, #524e4750); } }
+@-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
+  40% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  70% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  100% { background: radial-gradient(circle at center top, #afaaa385 4%, #666259a1 50%, #5e594d30); } }
 
-@keyframes bgcolor { 0% { background: radial-gradient(circle at top, #333333 4%, #0a0a0a 50%, black); }
-  30% { background: radial-gradient(circle at top center, #9b9b9b 4%, #4e4c47 40%, #3f3c35); }
-  60% { background: radial-gradient(circle at top center, #bbbbbb70 4%, #8a877f70 40%, #49453b70); }
-  100% { background: radial-gradient(circle at top center, #dbdbdb50 4%, #97928450 40%, #524e4750); } }
+@keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
+  40% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  70% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  100% { background: radial-gradient(circle at center top, #afaaa385 4%, #666259a1 50%, #5e594d30); } }
 
 @-webkit-keyframes rum-col { 0% { color: #c88c50; }
   10% { color: #864621; }

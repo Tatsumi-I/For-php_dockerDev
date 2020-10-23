@@ -5,17 +5,13 @@
   include_once('_header.php');
   
 ?>
-<article>
+  <nav>
+    <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="skills.php">Knowledge & Skill</a></p>
+    <p><?php echo date($date); ?></p>
+  </nav>
   <section id="area_">
     <div class="firstView">
-      <div class="contentImg">
-        <img src="./imgs/office.jpg" alt="">
-      </div>
       <div class="concept">
-        <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="skills.php">Knowledge & Skill</a></p>
-          <p><?php echo date($date); ?></p>
-        </nav>
         <h2>Knowledge & Skill</h2>
         <div>
           <p>このページでは、石川達実の<strong>現在の知識とスキル</strong>、<strong>今後の方向性</strong>について知ることができます。</p>
@@ -24,7 +20,20 @@
     </div>
   </section>
   
-  <section id="area_">
+    <div class="app">
+    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+  </div>
+
+
+
+      <p>このページでわかること</p><div class="gaiyou">
+        <div class="a">Coading成果物の概要</div>
+        <div class="b">Design成果物の概要</div>
+        <div class="c">プロフィールの概要</div>
+      </div>
+
+  
+  <section id="area_1">
 
     <div class="tra3d">Knowledge...</div>
 
@@ -174,7 +183,6 @@
       </div>
     </div>
     </section>
-  </article>
 
 
 <?php 

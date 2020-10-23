@@ -4,28 +4,39 @@
   require_once('../app/function.php');
   include_once('_header.php');
 ?>
-<article>
-  <section id="area_">
+<nav>
+  <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
+  <p class="date"><?php echo date($date); ?></p>
+</nav>
+
+  <section id="area_0">
     <div class="firstView">
-      <div class="contentImg">
-        <img src="./imgs/IMG_6619.jpg" alt="">
-      </div>
       <div class="concept">
-        <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
-        </nav>
-          <p class="date"><?php echo date($date); ?></p>
         <h2>石川達実ってどんな人？</h2>
-        <div>
+        <div class="text">
           <p>このページでは<strong>16タイプ分類性格診断テスト(MBTI診断)</strong>に基づいて、石川達実の人物像をご紹介します。</p>
-          <p><strong>16タイプ分類性格診断テスト</strong>とは、主に欧米で使われている性格分類方法で,心理学者ユングの理論も基に発展させたもので、思考パターンや行動パターンに応じて性格を16タイプに分類するツールです。</p>
+          <p><strong>16タイプ分類性格診断テスト</strong>とは</p>
+          <p>主に欧米で使われている性格分類方法で,心理学者ユングの理論も基に発展させたもので、<br>思考パターンや行動パターンに応じて性格を16タイプに分類するツールです。</p>
           <p>その分類によると、<strong>石川達実は<em>"INTP"</em>という型</strong>に分類されます。</p>
         </div>
       </div>
     </div>
   </section>
   
-  <section id="area_">
+    <div class="app">
+    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+  </div>
+
+
+
+      <p>このページでわかること</p><div class="gaiyou">
+        <div class="a">Coading成果物の概要</div>
+        <div class="b">Design成果物の概要</div>
+        <div class="c">プロフィールの概要</div>
+      </div>
+
+  
+  <section id="area_1">
     <div class="sectionArea">
       <h2>INTP型って？</h2>
       
@@ -200,7 +211,6 @@
       </div>
     </div>
     </section>
-  </article>
     
     
 

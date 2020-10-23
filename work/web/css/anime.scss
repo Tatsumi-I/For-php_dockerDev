@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 $grege: #80786630;
 
 @keyframes flash {
@@ -75,37 +76,48 @@ $grege: #80786630;
 
 @keyframes bgcolor {
   0% {
-    background:radial-gradient(
-    circle at top,
-    rgb(51, 51, 51) 4%,
+    background:radial-gradient(circle at center top,
+    rgb(65, 65, 65) 4%,
     rgb(10, 10, 10) 50%,
-    black
+    rgb(0, 0, 0)
     );
   }
-  30% {
-    background: radial-gradient(
-      circle at top center,
-      #9b9b9b 4%,
-      #4e4c47 40%,
-      #3f3c35
+  40% {
+    background:radial-gradient(circle at center top,
+    rgba(68, 68, 68, 0.8) 4%,
+    rgb(27, 27, 27) 50%,
+    rgb(22, 22, 22)
     );
   }
-  60% {
-    background: radial-gradient(
-      circle at top center,
-      #bbbbbb70 4%,
-      #8a877f70 40%,
-      #49453b70
+  70% {
+    background:radial-gradient(circle at center top,
+    rgba(117, 117, 117, 0.6) 4%,
+    rgba(10, 10, 10, 0.6) 50%,
+    rgba(0, 0, 0, 0.6)
     );
   }
+  // 70% {
+  //   background:radial-gradient(circle cl centerosest-side/   at top,
+  //   #3a362e20 4%,
+  //   #3a362e40 50%,
+  //   #3a362e60,
+  //   );
+  // }
   100% {
-    background: radial-gradient(
-      circle at top center,
-      #dbdbdb50 4%,
-      #97928450 40%,
-      #524e4750
+    background:radial-gradient(circle at center top,
+    #afaaa385 4%,
+    #666259a1 50%,
+    #5e594d30
     );
   }
+  // 100% {
+  //   background:radial-gradient(circle at center top,
+  //   #b6b3aead 4%,
+  //   #a19c8eb4 50%,
+  //   #80786680
+  //   );
+  // }
+
 }
 
 @keyframes rum-col {

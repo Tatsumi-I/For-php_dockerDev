@@ -6,18 +6,17 @@
 
 ?>
 
-<article>
-<section id="area_">
+<nav>
+  <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a> > <a href="tatsumi-jyuku.php">Black Apronテスト対策用テキスト</a> </p>
+  <p class="date"><?php echo date($date); ?></p>
+</nav>
+<section id="area_0">
   <div class="sectionArea">
     <div class="firstView">
       <div class="contentImg">
         <img src="imgs/ba.png" alt="">
       </div>
       <div class="concept">
-        <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a> > <a href="tatsumi-jyuku.php">Black Apronテスト対策用テキスト</a> </p>
-        </nav>
-        <p class="date"><?php echo date($date); ?></p>
         <h2>ブラックエプロン対策用テキスト-たつみ塾の全容</h2>
       </div>
     </div>
@@ -65,9 +64,6 @@
     </div>
   </div>
   </section>
-  
-  
-</article>
 
 
 <?php 

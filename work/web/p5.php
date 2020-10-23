@@ -6,7 +6,7 @@
 ?>
 
 <div class="Page">
-<section id="area_">
+<section id="area_0">
 
 
 <div class="firstView">

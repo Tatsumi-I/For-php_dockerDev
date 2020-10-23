@@ -5,17 +5,16 @@
   include_once('_header.php');
   
 ?>
-<article>
-  <section id="area_">
+  <nav>
+    <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  <a href="design.php">Design</a></p>
+    <p><?php echo date($date); ?></p>
+  </nav>
+  <section id="area_0">
     <div class="firstView">
       <div class="contentImg">
         <img src="./imgs/.jpg" alt="">
       </div>
       <div class="concept">
-        <nav>
-          <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  <a href="design.php">Design</a></p>
-          <p><?php echo date($date); ?></p>
-        </nav>
         <h2>Design</h2>
         <div>
           <p>
@@ -26,7 +25,20 @@
     </div>
   </section>
   
-  <section id="area_">
+    <div class="app">
+    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+  </div>
+
+
+
+      <p>このページでわかること</p><div class="gaiyou">
+        <div class="a">Coading成果物の概要</div>
+        <div class="b">Design成果物の概要</div>
+        <div class="c">プロフィールの概要</div>
+      </div>
+
+  
+  <section id="area_1">
     <div class="sectionArea">
       <h2></h2>
       

@@ -67,9 +67,9 @@
       <summary>Global Menu</summary>
         <?= $globalMenu; ?>
       </details>
-  </div>
+      <?= $icon;?>
+    </div>
 </header>
 
 <main>
-  <?= $icon;?>
 <article>
