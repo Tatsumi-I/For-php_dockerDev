@@ -38,7 +38,7 @@
   })(document);
 </script>
 
-<script src="js/myportfolio.js"></script>
+<script src="js/myPortfolio.js"></script>
 
 </body>
 </html>

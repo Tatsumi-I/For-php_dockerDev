@@ -1,15 +1,13 @@
 <?php 
   
   $pageName = '';
+  $menuList = '';
   require_once('../app/function.php');
   include_once('_header.php');
   
 ?>
-  <nav>
-    <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="skills.php">Knowledge & Skill</a></p>
-    <p><?php echo date($date); ?></p>
-  </nav>
-  <section id="area_">
+
+  <section id="area_0">
     <div class="firstView">
       <div class="concept">
         <h2>Knowledge & Skill</h2>
@@ -18,19 +16,20 @@
         </div>
       </div>
     </div>
-  </section>
-  
-    <div class="app">
-    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
-  </div>
 
 
 
-      <p>このページでわかること</p><div class="gaiyou">
-        <div class="a">Coading成果物の概要</div>
-        <div class="b">Design成果物の概要</div>
-        <div class="c">プロフィールの概要</div>
+
+      <div class="desc">
+        <h3>このページでわかること</h3><div class="gaiyou">
+        
+          <div class="a">Coading成果物の概要</div>
+          <div class="b">Design成果物の概要</div>
+          <div class="c">プロフィールの概要</div>
+        </div>
       </div>
+    </div>
+  </section>
 
   
   <section id="area_1">

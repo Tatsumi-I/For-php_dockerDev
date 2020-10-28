@@ -5,8 +5,9 @@
 
 ?>
 
-  <h1>Keep your inspiration!!</h1>
-  
+  <a href="hoz_onTop.php">Hoz_onについての詳細はこちら</a>
+  <p>↓新規登録はこちらから↓</p>
+
   
   <form method="post" action="add.php">
   <label for="title"><strong>Title/タイトル<strong>

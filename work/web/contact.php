@@ -1,6 +1,7 @@
 <?php 
   
   $pageName = '';
+  $menuList = '';
   require_once('../app/function.php');
   include_once('_header.php');
 ?>

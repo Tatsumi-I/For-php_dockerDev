@@ -1,12 +1,38 @@
-html { background: #b4ad9b27; font-size: 70%; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; }
+html { background: #b4ad9b27; font-size: 70%; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; width: 100%; text-align: center; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; background: rgba(255, 255, 255, 0.5); }
 
-main { background: #b4ad9b27; }
+header, footer { background: #b4ad9b27; margin: 0; padding: 10px; }
 
-main a { text-decoration: none; border: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
+header a, footer a { text-decoration: none; color: #966432; margin: 10px; }
+
+header a:visited, header a:link, footer a:visited, footer a:link { color: #966432; }
+
+body { width: clamp(500px, 100vw, 100%); margin: 0 auto; }
+
+.linkBar { max-width: 340px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.linkBar a { display: block; border-radius: 5%; }
+
+table { margin: 0 auto; border-spacing: 0; min-width: 350px; overflow: scroll; }
+
+table th, table td, table tr { padding: 1em 5px; border-bottom: 1px solid #966432; }
+
+main { width: clamp(500px, 90%, 90vw); margin: 0 auto; min-height: 80vh; }
+
+main h1 { margin: 10px; padding: 10px; line-break: 18px; }
+
+main a { text-decoration: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); }
+
+main .title { font-size: 120%; height: 400px; background: url(/imgs/keep.jpg) no-repeat top 0 left 50%; background-size: contain; margin-bottom: 50px; }
+
+main .title h1, main .title h2, main .title p { padding: 0; margin: 0; }
+
+main .title h1 { margin-bottom: 250px; }
+
+main .title h1 span { width: 350px; background: #213a63de; color: whitesmoke; padding: 1em; }
+
+.all { margin: 0 auto; padding: 0; min-height: 68vh; }
 
 nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
-
-body { width: clamp(300px, 100vw, 100%); margin: 0 auto; }
 
 form { margin: 0 auto; width: 220px; border-radius: 5px; text-align: initial; }
 
@@ -20,31 +46,13 @@ button { border: none; background: #213a63de; color: whitesmoke; font-size: 1em;
 
 button:hover { cursor: pointer; }
 
+p { text-align: center; }
+
 .reset { background: rgba(46, 46, 46, 0.158); }
 
-header, footer { background: #1e1e1e; padding: 10px; }
+fieldset { margin: 1%; padding: 2%; }
 
-header a, footer a { text-decoration: none; color: #966432; margin: 10px; }
+fieldset legend { font-size: 300%; }
 
-header a:visited, header a:link, footer a:visited, footer a:link { color: #966432; }
-
-h1 { margin: 10px; padding: 10px; line-break: 18px; }
-
-.all { margin: 0 auto; padding: clamp(5px, 10px, 30px); min-height: 400px; }
-
-span { background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; }
-
-.desc { max-width: 300px; margin: 0 auto; }
-
-.desc fieldset { margin: 10px; padding: 20px; }
-
-.desc fieldset ul, .desc fieldset li { padding: 0; margin: 0; list-style: none; }
-
-.linkBar { max-width: 340px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-
-.linkBar a { display: block; border-radius: 5%; }
-
-table { margin: 0 auto; border-spacing: 0; }
-
-table th, table td, table tr { padding: 1em 5px; border-bottom: 1px solid #966432; }
+fieldset ul, fieldset li { padding: 0; margin: 0; list-style: none; }
 /*# sourceMappingURL=appStyle.min.css.map */

@@ -1,12 +1,14 @@
 <?php 
   
   $pageName = '';
+  $menuList = '';
   require_once('../app/function.php');
   include_once('_header.php');
 ?>
 
 <div class="Page">
 <section id="area_0">
+    <div class="sectionArea">
 
 
 <div class="firstView">

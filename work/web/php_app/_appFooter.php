@@ -15,5 +15,6 @@
 <footer>
   <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
 </footer>
+<script src="../js/myPortfolio.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 
  //require_once('.../app/db_cnf.php');
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+// if ($_SERVER['REQUEST_METHOD'] === 'GET'){
   //編集機能
   try{
     if (empty($_GET['id'])) throw new Exception('idの取得エラー'); 
@@ -36,10 +36,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
       echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
       die();
     } 
-  }else {
-      echo 'modoru';
-    }
-      require_once('_appFooter.php');
+  // }else {
+  //     echo 'modoru';
+  //   }
+      // require_once('_appFooter.php');
   
 ?>
 

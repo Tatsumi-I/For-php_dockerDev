@@ -1,6 +1,7 @@
 <?php 
 
-  $pageName = 'Home - ';
+  $pageName = ' -';
+  $menuList = '';
   require_once('../app/function.php');
   
 ?>
@@ -22,7 +23,7 @@
 <!-- <script src="./js/processing.min.js"></script> -->
 
 <style>
-  </style>
+</style>
 </head>
 
 <!-- <canvas id="app" data-processing-sources="./js/ellpse.js"></canvas> -->
@@ -60,16 +61,35 @@
         <h2>石川達実  ポートフォリオサイト</h2>
       </a>
     </div> -->
-  </div>
-  
-  <div class="headFootOpenMenu">
-    <details open>
-      <summary>Global Menu</summary>
+    
+    <div id="globalMenu" class="headFootOpenMenu">
+      <details open>
+        <summary>Global Menu</summary>
         <?= $globalMenu; ?>
       </details>
       <?= $icon;?>
     </div>
+  </div>
 </header>
 
 <main>
+  <nav id="del">
+    <img src="./imgs/myLogoWhite.png" alt="">
+    <p class="nav"><i class="fas fa-home"></i>HOME<?= $menuList;?></p>
+    <a class="globalMenu" href="#globalMenu">Global menu</a>
+    <p><?php echo date($date); ?></p>
+    <a class="app" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+  </nav>
 <article>
+  <script>
+
+    (function(){
+      document.addEventListener('DOMContentLoaded' , function(){
+        const del = document.querySelector('#del');
+        del.addEventListener('click' , function(event){
+          alert('Delete?');
+        });
+    });
+  })();
+
+  </script>

@@ -69,9 +69,9 @@
     </div>
     <div class="siteLogo">
       <a href="home.php">
-        <h1>Create a New Experience.</h1>
+        <p>Create a New Experience.</p>
         <div>
-          <img src="imgs/logo.png" width="100px">
+          <img src="imgs/logo.png">
           <p>Tatsumi-Ishikawa _ Portfolio</p>
           <p class="ja">石川達実  ポートフォリオサイト</p>
         </div>
@@ -79,5 +79,8 @@
     </div>
   </div>
   ';
+
+  
+  
 
 ?>

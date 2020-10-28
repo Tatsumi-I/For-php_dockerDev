@@ -108,7 +108,9 @@
     <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
-  <button>削除する</button>
+  <!-- <button>削除する</button> -->
+  <button id="del">削除する</button>
+
 </form>
 
 <?php

@@ -5,10 +5,7 @@
 ?>
 
 
-  <div class="desc">
- 
-  <h1><span>Keep your inspiration!!</span></h1>
-  <h2>by "Hoz_on" !!</h2>
+  
   <fieldset>
     <legend><strong>What's Hoz_on?!</strong></legend>
       <ul>
@@ -28,8 +25,6 @@
   </fieldset>
     <p>あなたの<strong>感想や貴重なアドバイスも</strong>”Hozon”致します！</p>
     <p>あなたのための Hoz_on を今すぐ始めましょう！</p>
-
-  </div>
 
     <p><a href="eva.php">今すぐ Hoz_on する</a></p>
     

@@ -21,3 +21,9 @@
         <a href="list_table.php">Hoz_onリスト</a>
       </div>
   <hr>
+    <div class="title">
+      <h1><span>Keep your inspiration!!</span></h1>
+      <h2>by "Hoz_on" !!</h2>
+      <p>~あなたのアイデア保存します~</p>
+
+    </div>

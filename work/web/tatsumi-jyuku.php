@@ -1,16 +1,14 @@
 <?php 
   
   $pageName = '';
+  $menuList = '';
   require_once('../app/function.php');
   include_once('_header.php');
 
 ?>
 
-<nav>
-  <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a> > <a href="tatsumi-jyuku.php">Black Apronテスト対策用テキスト</a> </p>
-  <p class="date"><?php echo date($date); ?></p>
-</nav>
 <section id="area_0">
+    <div class="sectionArea">
   <div class="sectionArea">
     <div class="firstView">
       <div class="contentImg">

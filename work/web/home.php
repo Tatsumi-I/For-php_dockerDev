@@ -1,20 +1,17 @@
 <?php 
   
   $pageName = '';
+  $menuList = '';
   require_once('../app/function.php');
   include_once('_header.php');
   
 ?>
 
-<nav>
-  <p class="nav"><i class="fas fa-home"></i>  HOME</p>
-  <p><?php echo date($date); ?></p>
-</nav>
-
   <section id="area_0">
-    <div class="firstView">
-      <div class="concept">
-        <h2>Create a New Experience</h2>
+    <div class="sectionArea">
+      <div class="firstView">
+        <div class="concept">
+          <h2>Create a New Experience</h2>
           <div class="text">
             <p><strong>”新しい感動体験を創り出す”</strong></p>
             <p>ユーザーにとって</p>
@@ -23,23 +20,22 @@
             <p>そのために努力し、学び続け、手を動かす</p>
             <p><strong>それが私の理念です</strong></p>
           </div>
+        </div>
+      </div>
+
+      
+      <div class="desc">
+        <h3>このページでわかること</h3>
+        <div class="gaiyou">
+        
+          
+          <a href="#area_1">Coading成果物の概要</a>
+          <a href="#area_2">Design成果物の概要</a>
+          <a href="#area_3">プロフィールの概要</a>
+        </div>
       </div>
     </div>
   </section>
-
-  <div class="app">
-    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
-  </div>
-
-
-
-      <p>このページでわかること</p><div class="gaiyou">
-        <div class="a">Coading成果物の概要</div>
-        <div class="b">Design成果物の概要</div>
-        <div class="c">プロフィールの概要</div>
-      </div>
-
-  
   <section id="area_1">
     <div class="sectionArea">
       <h2>Coding</h2>
@@ -60,7 +56,6 @@
               <i class="fab fa-php fa-fw php"></i>
               <i class="fas fa-database db"></i>
               <i class="fab fa-github git" title="Git/GitHub"></i>
-              
             </div>
             <div class="container2">
               <div class="contentImg_over">
@@ -81,7 +76,7 @@
               <i class="fab fa-php fa-fw php"></i>
               <i class="fab fa-github git" title="Git/GitHub"></i>
             </div>
-            <div class="container1">
+            <div class="container2">
               <div class="contentImg">
                 <img src="imgs/top.png"  alt="">
               </div>
@@ -104,8 +99,7 @@
             </div>
             <div class="container2">
               <div class="contentImg">
-                <a href="https://tatsumi-i.github.io/MyFirstCode/">
-                <img src="imgs/mfc.png"  title="GitHubにて公開しています"></a>
+                <img src="imgs/mfc.png"  title="GitHubにて公開しています">
               </div>
               <div class="text">
                 
@@ -123,7 +117,7 @@
               <!-- <i class="p5"></i> -->
               <img src="imgs/p5.png" alt="">
             </div>
-            <div class="container1">
+            <div class="container2">
               <iframe src="sketch_1.php" frameborder="0" ></iframe>
               <iframe src="sketch_2.php" frameborder="0"></iframe>
               <div class="text">
@@ -186,7 +180,7 @@
                 <img src="imgs/ps.png" width="20px" alt="">
                 <img src="imgs/ai.png" width="20px" alt="">
               </div>
-              <div class="container1">
+              <div class="container2">
                 <div class="contentImg">
                   <img src="imgs/art1.png" >
                 </div>
@@ -223,8 +217,8 @@
                 <img src="imgs/ps.png" width="20px" alt="">
                 <img src="imgs/ai.png" width="20px" alt="">
               </div>
-              <div class="container1">
-                <div class="contentImg_over">
+              <div class="container2">
+                <div class="contentImg">
                   <img src="imgs/b.Next.png">
                 </div>
                 <div class=text>
@@ -246,7 +240,6 @@
       <div class="tra3d">profile...</div>
       
       <div class="contentsArea">
-        <div class="contentOuter">
           <div class="content">
             <h3>石川達実/<?= h($myName);?></h3>
               <div class="container2">
@@ -265,15 +258,12 @@
           <div class="content">
             <h3>Knowledgeable about...</h3>
               <div class="container1">
-                <div class="contentImg">
-                  <img src="./imgs/laptop.jpg" alt="">
-                </div>
                 <div class="text">
                   <div class="icons">
                     <div>
                       <p><i class="fab fa-html5 fa-fw html5"></i>HTML5</p>
                       <p><i class="fab fa-css3 fa-fw css3"></i>CSS3/animation</p>
-                      <p><i class="fas fa-mobile-alt rwd"></i>レスポンシブWEBデザイン</p>
+                      <p><i class="fas fa-mobile-alt rwd"></i>レスポンシブデザイン</p>
                       <p><i class="fab fa-sass fa-fw scss"></i>Scss</p>
                       <p><i class="fab fa-js fa-fw js"></i>javascript</p>
                       <p><img src="imgs/jq.png" alt="">jQuery</p>
@@ -291,7 +281,9 @@
                   </div>
                   <p><a href="skills.php">More about...</a></p>
                 </div>
-                
+                <div class="contentImg">
+                  <img src="./imgs/laptop.jpg" alt="">
+                </div>
               </div>
           </div>
           <div class="content">
@@ -309,7 +301,6 @@
                 </div>
               </div>
           </div>
-        </div>
       </div>
     </div>
   </section>

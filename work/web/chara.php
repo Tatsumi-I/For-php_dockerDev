@@ -1,15 +1,15 @@
 <?php 
   
   $pageName = 'Character - ';
+  $menuList = '\>' . '<a href="home.php#area_3">Profile</a>' . '\> Character';
   require_once('../app/function.php');
   include_once('_header.php');
+  
 ?>
-<nav>
-  <p><i class="fas fa-home"></i><a href="home.php">HOME</a>  >  Profile  >  <a href="chara.php">Character</a></p>
-  <p class="date"><?php echo date($date); ?></p>
-</nav>
+
 
   <section id="area_0">
+    <div class="sectionArea">
     <div class="firstView">
       <div class="concept">
         <h2>石川達実ってどんな人？</h2>
@@ -21,19 +21,21 @@
         </div>
       </div>
     </div>
-  </section>
-  
-    <div class="app">
-    <a href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
-  </div>
 
 
 
-      <p>このページでわかること</p><div class="gaiyou">
-        <div class="a">Coading成果物の概要</div>
-        <div class="b">Design成果物の概要</div>
-        <div class="c">プロフィールの概要</div>
+
+      <div class="desc">
+        <h3>このページでわかること</h3>
+        <div class="gaiyou">
+        
+          <a href="#area_1">性格や思考タイプ</a>
+          <a href="#area_2">キャラクターまとめ</a>
+          <a href="#area_3">採用担当者必見情報</a>
+        </div>
       </div>
+    </div>
+  </section>
 
   
   <section id="area_1">
@@ -108,11 +110,11 @@
               </div>
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="area_2">
           <h3>INTP型まとめ</h3>
             <div class="container2">
               <div class="text">
-                <h4>INTPのついての私なりにまとめました。</h4>
+                <h4>INTPのついて私なりにまとめました。</h4>
                 
                 <div class="sum">
                   <p>独創的・論理的・客観的思考</p>
@@ -131,7 +133,7 @@
     </div>
   </section>
   
-  <section id="area_">
+  <section id="area_3">
     <div class="sectionArea">
       <h2>石川達実をチームに迎えるべきか?</h2>
       
@@ -140,7 +142,7 @@
       <div class="contentsArea">
         <div class="content">
           <h3>石川達実はINTPの特性を必ずチームに還元します。</h3>
-            <div class="container1">
+            <div class="container2">
             <div class="contentImg">
                 <img src="imgs/organized.jpg"></img>
                 <b></b>
@@ -160,7 +162,7 @@
         </div>
         <div class="content">
           <h3>前職ではどうだったのか?</h3>
-            <div class="container2">
+            <div class="container1">
               <div class="text">
                 <h4>一例として</h4>
                 <ul>
@@ -180,7 +182,7 @@
         </div>
         <div class="content">
           <h3>転職の動機は何なのか?</h3>
-            <div class="container1">
+            <div class="container2">
               <div class="contentImg">
                 <img src="imgs/joy.jpg">
                 <b>転職は成長意欲と"自分の能力を活かして感動体験を提供したい"という願いの表れ</b>
@@ -210,7 +212,7 @@
         <p><strong>新しいチームにおいても、あなたの期待に応え、有用な役割を担うことになるでしょう。</strong></p>
       </div>
     </div>
-    </section>
+  </section>
     
     
 
