@@ -69,7 +69,7 @@
     </div>
     <div class="siteLogo">
       <a href="home.php">
-        <p>Create a New Experience.</p>
+        <h1>Create a New Experience.</h1>
         <div>
           <img src="imgs/logo.png">
           <p>Tatsumi-Ishikawa _ Portfolio</p>
@@ -81,6 +81,7 @@
   ';
 
   
+  $apiKey = 'e446264b25946d417b1277c00910b88e';
   
 
 ?>

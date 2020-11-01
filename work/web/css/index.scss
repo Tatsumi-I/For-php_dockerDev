@@ -4,37 +4,36 @@
 $pointColor: rgb(194, 194, 194);
 $pColor: rgb(77, 41, 0);
 
-
 html,
 body {
   // background: $myBlack;
-  font-feature-settings: "palt" 1, "swsh" 1;
+  font-feature-settings: "palt"1, "swsh"1;
   // color: $Orange;
   font-family: itc-american-typewriter, sans-serif;
   font-style: normal;
   font-weight: 300;
   overflow: hidden;
 }
+
 header {
   height: 100vh;
   position: relative;
-  background: radial-gradient(
-    circle at top,
-    rgb(51, 51, 51) 4%,
-    rgb(10, 10, 10) 50%,
-    black
-  )
-  ;
+  background: radial-gradient(circle at top,
+      rgb(51, 51, 51) 4%,
+      rgb(10, 10, 10) 50%,
+      black);
 
   .homeGroup {
+
     // margin:0 50px;
     // padding:0 50px;
     .copy {
       animation: flash 2s infinite 10s;
       text-align: center;
       margin-top: 10%;
+
       // a {
-        // color: $Orange;
+      // color: $Orange;
       // }
       p {
         text-shadow: 0px 0px 15px rgb(192, 112, 41);
@@ -42,41 +41,51 @@ header {
         display: inline-block;
         margin: 0 30px;
       }
+
       .item0 {
         display: none;
         animation: fade 3s forwards;
         opacity: 0;
       }
+
       .item1 {
         animation: fade 4s 1.5s forwards;
         opacity: 0;
       }
+
       .item2 {
         opacity: 0;
         animation: fade 2s forwards 2.5s;
       }
+
       .item3 {
         opacity: 0;
         animation: fade 2s forwards 3s;
       }
+
       .item4 {
         opacity: 0;
         animation: fade 2s forwards 4s;
       }
+
       .item5 {
-        animation: fade 4s forwards .5s;
+        animation: fade 4s forwards 0.5s;
         display: none;
         opacity: 0;
       }
+
       &:hover {
         margin-bottom: 35px;
-        p{
-          text-shadow:0px 0px 2px rgba(179, 90, 12, 0.795)
-          ,-1px -1px 10px rgba(192, 192, 192, 0.3);
+
+        p {
+          text-shadow: 0px 0px 2px rgba(179, 90, 12, 0.795),
+            -1px -1px 10px rgba(192, 192, 192, 0.3);
         }
+
         .item1 {
           display: none;
         }
+
         .item0,
         .item5 {
           // animation: fade 1s forwards;
@@ -89,12 +98,14 @@ header {
       0% {
         opacity: 0;
       }
+
       100% {
         opacity: 1;
       }
     }
 
     .logo {
+
       // display:flex;
       img {
         filter: opacity(0.5);
@@ -108,73 +119,93 @@ header {
         animation: flash 12s infinite;
         display: block;
       }
+
       @keyframes flash {
         0% {
           opacity: 0;
         }
+
         1% {
           opacity: 0.3;
         }
+
         2% {
           opacity: 0;
         }
+
         3% {
           opacity: 0.3;
         }
+
         4% {
           opacity: 0;
         }
+
         6% {
           opacity: 0.5;
         }
+
         9% {
           opacity: 0;
         }
+
         25% {
           opacity: 0.7;
         }
+
         35% {
           opacity: 0.7;
         }
+
         36% {
           opacity: 0.5;
         }
+
         37% {
           opacity: 0.8;
         }
+
         95% {
           opacity: 0;
         }
+
         95% {
           opacity: 0.8;
         }
+
         97% {
           opacity: 0.9;
         }
+
         98% {
           opacity: 0.6;
         }
+
         99% {
           opacity: 0.5;
         }
+
         100% {
           opacity: 0.9;
         }
       }
+
       .nameBar {
         display: block;
         margin: 0 auto;
         text-align: center;
         text-shadow: 0 0 15px rgba(245, 245, 245, 0.3);
         transition: text-shadow 3s ease 8s;
-        &:hover{
-          animation:flash 3s infinite;
+
+        &:hover {
+          animation: flash 3s infinite;
         }
+
         h1 {
           animation: fade 9s forwards 6s;
           opacity: 0;
           margin: 0 auto;
-          font-size: .5em;
+          font-size: 0.5em;
           font-weight: 200;
           letter-spacing: 0.9em;
           // transform:translateY(-10px);
@@ -182,6 +213,7 @@ header {
           text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
           text-align: center;
         }
+
         h2 {
           color: white;
           opacity: 0;
@@ -196,24 +228,27 @@ header {
       }
     }
   }
+
   @keyframes delay {
     0% {
       opacity: 0.3;
     }
+
     100% {
       opacity: 1;
     }
   }
 
   .topOpenMenu {
+
     // color: $Orange;
     summary {
-      font-size: .8em;
+      font-size: 0.8em;
       opacity: 0;
       // transform: translateY(600px);
       text-shadow: 0px 0px 10px rgb(151, 98, 52),
         -1px -1px 20px rgba(192, 192, 192, 0.5);
-      padding:2%;
+      padding: 2%;
       font-size: x-large;
       // padding-right: 300px;
       position: absolute;
@@ -221,12 +256,14 @@ header {
       top: 2%;
       right: 10%;
       outline: none;
+
       &:hover {
         cursor: pointer;
         outline: 1px solid rgb(43, 43, 43);
         opacity: 1;
       }
     }
+
     p,
     a,
     li {
@@ -234,18 +271,21 @@ header {
       color: darkgreen;
       margin: 5px 0;
     }
+
     a {
       &:hover {
         box-shadow: 0 0 2px rgba(192, 192, 192, 0.5);
         border-radius: 5px;
         cursor: pointer;
       }
+
       &:link,
       &:visited {
         color: darkgreen;
         animation: flash 2s infinite;
       }
     }
+
     .fl {
       height: fit-content;
       display: flex;
@@ -256,13 +296,15 @@ header {
       border-radius: 10px;
       background: rgba(10, 10, 10, 0.5);
       box-shadow: 0 0 1px rgba(102, 102, 102, 0.5);
+
       // background: rgba(165, 165, 165, 0.5);
-      > div {
+      >div {
         margin: auto;
         padding: 3%;
         border-radius: 5px;
         // flex-grow: 1;
       }
+
       .siteLogo {
         margin: 0 5%;
         animation: flash 9s infinite 10s;
@@ -271,34 +313,41 @@ header {
         // height:fit-content;
         // box-shadow:-3px -3px 5px rgb(65, 65, 65),3px 3px 2px black;
         border-radius: 5px;
+
         img {
           padding: 3%;
         }
+
         h3,
         h4 {
           font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
           font-weight: 200;
           font-style: normal;
         }
+
         h4 {
           font-size: small;
         }
       }
     }
+
     details[open] {
       // .openMenu{
       overflow: scroll;
       cursor: initial;
       height: 90vh;
       margin: 10% 0;
+
       // }
       summary {
+
         // padding: 30px;
         &::before {
           content: "close";
           margin-right: 2em;
         }
       }
+
       hr {
         // width: 50%;
         border: 1px outset darkgreen;
@@ -307,15 +356,18 @@ header {
     }
   }
 }
+
 .hr {
   animation: hrs 10s infinite alternate 10s, flash 30s infinite 10s;
   opacity: 0;
 }
+
 @keyframes hrs {
   0% {
     transform: translateY(-10vh);
     border: 1px solid rgba(192, 192, 192, 0.5);
   }
+
   100% {
     transform: translateY(100vh);
     border: 1px solid rgba(53, 53, 53, 0.212);

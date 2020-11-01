@@ -4,7 +4,8 @@
 
 $textColor: rgb(109, 109, 109);
 $line: rgba(206, 206, 206, 0.322);
-$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
+$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5),
+-1px -1px 1px rgb(221, 221, 221);
 $myBlack: rgb(30, 30, 30);
 $Orange: rgb(150, 100, 50);
 $darkBlue: rgba(27, 37, 73, 0.8);
@@ -15,11 +16,7 @@ $beige: #634130;
 
 html,
 body {
-
-
-
   color: $beige;
-  // color: white;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -32,91 +29,114 @@ body {
   font-style: normal;
   letter-spacing: 0.1em;
   // line-height: 1.5;
-  font-feature-settings: "palt" 1, "swsh" 1;
+  font-feature-settings: "palt"1, "swsh"1;
   transform-style: preserve-3d;
   perspective: 10px;
+
   a {
     text-decoration: none;
     color: darkgreen;
     cursor: pointer;
   }
+
   b {
     display: block;
     text-align: center;
-    a{
-       width: 300px;
+
+    a {
+      width: 300px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
   }
+
   .icons {
     text-align: right;
     margin: auto;
     width: 80%;
     transform: scale(1.2);
-    > div {
+
+    >div {
       display: flex;
       flex-wrap: wrap;
-      margin:100px auto;
-      p{
+      margin: 100px auto;
+
+      p {
         min-width: 160px;
         display: inline-block;
-        a{
+
+        a {
           margin: 100px 0;
           width: 90%;
         }
       }
     }
+
     p {
       text-align: left;
     }
+
     img {
       margin-right: 15px;
       width: 16px;
       display: inline;
     }
+
     i {
       margin-right: 10px;
       font-size: 16px;
     }
+
     .html5 {
       color: rgb(255, 0, 0);
     }
+
     .css3 {
       color: rgb(62, 152, 255);
     }
+
     .rwd {
       color: rgb(105, 105, 105);
       margin: 0 15px 0 3px;
     }
+
     .scss {
       color: rgb(225, 0, 255);
     }
+
     .js {
       color: rgb(228, 213, 0);
     }
+
     .php {
       color: rgb(102, 66, 122);
     }
+
     .wp {
       color: rgb(0, 140, 255);
     }
+
     .git {
       color: rgb(49, 49, 49);
     }
+
     .adobe {
       color: rgb(209, 18, 18);
     }
+
     .pc {
       color: rgb(88, 88, 88);
     }
+
     .docker {
       color: rgb(0, 162, 255);
     }
+
     .db {
       color: rgb(24, 46, 88);
     }
+
     .mamp::before {
       content: "MAMP";
       letter-spacing: -1px;
@@ -140,16 +160,15 @@ body {
 
 main {
   max-width: 1200px;
-
-  // width: 100vw;
   margin: 0 auto;
 
   line-height: 3;
   font-size: 110%;
-  nav{
+
+  nav {
     font-size: 70%;
     position: sticky;
-    top:0;
+    top: 0;
     background: white;
     display: flex;
     flex-wrap: wrap;
@@ -157,31 +176,39 @@ main {
     z-index: 200;
     padding: 5px;
     margin: 0 auto;
-    img{
+
+    img {
       width: 45px;
       margin: 0;
     }
-    a{
-      margin:10px;
+
+    a {
+      margin: 10px;
     }
-    a.globalMenu{
+
+    a.globalMenu {
       display: none;
     }
+
     @media (max-width:700px) {
-      nav{
+      nav {
         background: $grege;
       }
-      p{
+
+      p {
         display: none;
       }
-      a{
+
+      a {
         padding: 0 3em;
         margin: auto;
       }
-      a.globalMenu{
+
+      a.globalMenu {
         display: block;
       }
     }
+
     a.app {
       margin: 0;
       padding: 0;
@@ -192,24 +219,27 @@ main {
       background: #978e8970;
       text-align: center;
       width: 50px;
-      height:50px;
+      height: 50px;
       line-height: 50px;
       box-shadow: $shadow;
       border-radius: 50%;
     }
   }
+
   // article{
   //   background: rgb(255, 255, 255);
   //   // background: ;
   //   width: 95%;
   // }
   a {
-    color:#634130dc;
+    color: #634130dc;
     text-align: center;
+
     &::after {
       content: "\0bb  ";
     }
   }
+
   h2 {
     font-size: 21px;
     // width: 100vw;
@@ -223,9 +253,10 @@ main {
     border-left: solid 20px $beige;
     border-radius: 0 10px 10px 0;
     position: sticky;
-    top: 6%;
+    top: 7%;
     z-index: 100;
   }
+
   h3 {
     // color:white;
     color: $beige;
@@ -238,15 +269,19 @@ main {
     // width: fit-content;
     // border-radius: 5px;
   }
+
   strong {
     font-family: vdl-v7gothic, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
+
   ul {
     padding: 0 10%;
+
     li {
       list-style: none;
+
       &::before {
         margin-right: 10px;
         content: "□";
@@ -254,24 +289,30 @@ main {
       }
     }
   }
-  
+
   .firstView {
     animation: toUp 3s forwards;
-    display: flex;
-    flex-wrap: wrap;
+    
     z-index: 100;
-    // background: url(../imgs/img_5870.png) top 92px left 0% / 40% content-box no-repeat;
     img {
       margin: 0 auto;
-      filter: saturate(0.5);
-      // width: 350px;
-      // height: auto;
+      // filter: saturate(0.5);
+      // width: 50%;
+      max-width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 1px solid black;
+
     }
+
     .concept {
+      display: flex;
+      flex-wrap: wrap;
       margin: 0 auto;
       z-index: 100;
       width: 100vw;
       background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat;
+
       .text {
         // z-index: 100;
         font-size: 130%;
@@ -279,12 +320,13 @@ main {
         margin: 0 auto;
         min-height: 400px;
         padding: 5%;
-        width: clamp(230px,500px,90vw);
+        width: clamp(230px, 500px, 90vw);
 
         p {
           text-align: center;
           line-height: 4;
         }
+
         em {
           margin: 20px;
           color: $Orange;
@@ -295,68 +337,95 @@ main {
 
   .sectionArea {
     margin: 50px 0;
+
     img {
       width: 100%;
     }
-    .icons{
-      img{
-        width:16px;
+
+    .icons {
+      img {
+        width: 16px;
       }
     }
+
     .desc {
       padding: 50px 10px;
       // margin: 50px 0;
       // height: 100vh;
 
-      
       a {
         width: 50%;
         animation: flash 5s infinite;
 
       }
+
       p {
         text-align: center;
       }
+
       ul {
         margin: 50px auto 10px;
         width: fit-content;
+
         li {
           list-style: none;
         }
       }
-      h3{
+
+      h3 {
         position: sticky;
         top: 8%;
         z-index: 100;
       }
+
       .gaiyou {
         display: flex;
         margin: 0 auto;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 50px 0;
-        
-        height:70vh;
+        // min-height: 50vh;
 
+      
         a{
-          border: 1px solid #63413070;
-          border-radius: 10px;
+          height:200px;
+          width: 200px;
+          line-height: 200px;
+          border-radius: 50%;
+          background: $night;
+          color:white;
+          text-shadow: 1px 1px 1px $grege,-1px -1px 1px $grege;
+          font-weight: bold;
+          text-align: center;
           box-shadow: $shadow;
-          margin: 30px auto;
-          padding: 15px;
-          display: block;
-          min-width:280px;
-          font-size: 150%;
-          background: white;
-          // color:white;
-          height: fit-content;
+
         }
+
+        @media (max-width:700px) {
+  
+          a {
+            border: 1px solid #63413070;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            margin: 10px auto;
+            padding: 5px;
+            display: block;
+            min-width: 280px;
+            font-size: 150%;
+            line-height: 3em;
+            // background: white;
+            background: $night;
+            color:white;
+            height: fit-content;
+          }
+        }
+
       }
     }
   }
 
-  .contentsArea{
-    a{
+  .contentsArea {
+    a {
       border: 1px solid #63413070;
       border-radius: 10px;
       box-shadow: $shadow;
@@ -364,23 +433,26 @@ main {
       padding: 15px;
       display: block;
     }
-    .content{
-      width: clamp(320px,90%,95vw);
+
+    .content {
+      width: clamp(320px, 90%, 95vw);
       margin: 50px auto;
       box-shadow: $shadow;
       border-radius: 5px;
       padding: 1% 0;
-      h3{
-        width:95%;
+
+      h3 {
+        width: 95%;
       }
     }
 
-    .contentOuter{
+    .contentOuter {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      .content{
-        width: clamp(270px,20%,95vw);
+
+      .content {
+        width: clamp(270px, 20%, 95vw);
         margin: 20px 1%;
         flex-grow: 1;
         box-shadow: $shadow;
@@ -388,96 +460,100 @@ main {
         background: #8b877b20;
         box-shadow: $shadow;
         padding: 1% 0;
-        min-height:30vh;
+        min-height: 30vh;
       }
     }
-    .container1 {
-        flex-wrap: wrap-reverse;
-      }
-      .container2 {
-        flex-wrap: wrap;
-        }
-        .container1,
-        .container2 {
-          // flex-wrap: wrap;
-          
-          // justify-content: space-between;
-          display: flex;
-          margin: 0 auto;
-          padding: 0 0 50px;
-          z-index: 3;
-          // width: 90%;
-          
-          summary {
-            text-align: center;
-            width: 90vw;
-          }
-          .contentImg {
-            margin: auto;
-            width: clamp(300px,50%,50vw);
-            z-index: 99;
-          }
-          .contentImg_over {
-            margin: auto;
-            min-width: 260px;
-            // max-width: 320px;
-            // flex-basis: 260px;
-            overflow-y: scroll;
-            height: 400px;
-            z-index: 99;
-            // height: auto;
-          }
-        }
-        iframe {
-          margin: 0 auto;
-          min-height: 270px;
-          width: 270px;
-          display: block;
-        }
-        .text {
-          flex-basis: 280px;
-          margin: 0 auto;
-          padding: 0 3%;
-          flex-grow: 1;
-          a{
-            animation:flash 10s infinite;
-          }
-        }
-        .notes {
-          padding: clamp(0px, 20px, 3%);
-          flex-basis: 280px;
-          margin: 0px auto;
-          width: fit-content;
-          box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
-          border-radius: 6px;
-          background: $grege;
-        }
-        .sum {
-          margin: 0 auto;
-          display: flex;
-          flex-wrap: wrap;
-          // width: fit-content;
-          p {
-            font-size: 120%;
-            font-weight: bold;
-            width: clamp(300px, 40%, 50vw);
-            background: $grege;
-            text-align: center;
-            margin: 10px auto;
-            padding: 20px;
-            border-radius: 20px;
-          }
-        }
-      }
-    }
-      
-      
-      
-      .jsTest {
-  background: pink;
-  // position: absolute;
 
-  // left:20px;
+    .container1 {
+      flex-wrap: wrap-reverse;
+    }
+
+    .container2 {
+      flex-wrap: wrap;
+    }
+
+    .container1,
+    .container2 {
+      // flex-wrap: wrap;
+
+      // justify-content: space-between;
+      display: flex;
+      margin: 0 auto;
+      padding: 0 0 50px;
+      z-index: 3;
+      // width: 90%;
+
+      summary {
+        text-align: center;
+        width: 90vw;
+      }
+
+      .contentImg {
+        margin: auto;
+        width: clamp(300px, 50%, 50vw);
+        z-index: 99;
+      }
+
+      .contentImg_over {
+        margin: auto;
+        min-width: 260px;
+        // max-width: 320px;
+        // flex-basis: 260px;
+        overflow-y: scroll;
+        height: 400px;
+        z-index: 99;
+        // height: auto;
+      }
+    }
+
+    iframe {
+      margin: 0 auto;
+      min-height: 270px;
+      width: 270px;
+      display: block;
+    }
+
+    .text {
+      flex-basis: 280px;
+      margin: 0 auto;
+      padding: 0 3%;
+      flex-grow: 1;
+    }
+
+    .notes {
+      padding: clamp(0px, 20px, 3%);
+      flex-basis: 280px;
+      margin: 0px auto;
+      width: fit-content;
+      box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
+      border-radius: 6px;
+      background: $grege;
+    }
+
+    .sum {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      // width: fit-content;
+      p {
+        font-size: 120%;
+        font-weight: bold;
+        width: clamp(300px, 40%, 50vw);
+        background: $grege;
+        text-align: center;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+
+.jsTest {
+  background: pink;
   opacity: 0.9;
 
   // background-color:pink;
@@ -485,10 +561,12 @@ main {
   // transform:translate(2px,2px);
   border-radius: 50%;
 }
+
 fieldset {
   padding: 30px;
   width: 500px;
   text-align: center;
+
   p {
     display: list-item;
   }

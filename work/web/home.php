@@ -10,8 +10,9 @@
   <section id="area_0">
     <div class="sectionArea">
       <div class="firstView">
+      <h2>Create a New Experience</h2>
         <div class="concept">
-          <h2>Create a New Experience</h2>
+          <!-- <img src="./imgs/5870.png" alt=""> -->
           <div class="text">
             <p><strong>”新しい感動体験を創り出す”</strong></p>
             <p>ユーザーにとって</p>
@@ -27,11 +28,9 @@
       <div class="desc">
         <h3>このページでわかること</h3>
         <div class="gaiyou">
-        
-          
-          <a href="#area_1">Coading成果物の概要</a>
-          <a href="#area_2">Design成果物の概要</a>
-          <a href="#area_3">プロフィールの概要</a>
+          <a href="#area_1">Coading成果物</a>
+          <a href="#area_2">Design成果物</a>
+          <a href="#area_3">プロフィール</a>
         </div>
       </div>
     </div>
@@ -43,11 +42,11 @@
       <div class="tra3d">Coading...</div>
       
       <div class="contentsArea">
-        <div class="desc">
+        <!-- <div class="desc">
           <p>2020.6月から学習を始めました完全未経験の初学者ですが、細部までこだわって作り上げました。</p>
           <p>Coading Skillの詳細について以下よりご覧いただけます。</p>
           <a href="skills.php">Knowlegde & Skiis ページへ</a>
-        </div>
+        </div> -->
         <div class="contentOuter">
           <div class="content">
             <h3>アプリケーション</h3>
@@ -121,9 +120,8 @@
               <iframe src="sketch_1.php" frameborder="0" ></iframe>
               <iframe src="sketch_2.php" frameborder="0"></iframe>
               <div class="text">
-                <p><strong>Processing</strong>という言語による動くプログラミングには、学習開始初期から関心があります。</p>
-                <p><strong>p5.js</strong>を使っています。</p>
-                <p>思い通りの操作をするには、まだまだ学習時間が足りていませんが、<strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>
+                <p>学習開始初期から関心のある<strong>Processing</strong></p>
+                <p><strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>
               </div>
             </div>
           </div>
@@ -140,16 +138,11 @@
       <div class="tra3d">Design...</div>
       
       <div class="desc">
-        <p>WEBデザインとAdobeソフトのスキル表現のため、<strong>架空サイトのファーストビュー</strong>を作りました。</p>
-        <p>WEBデザインで大切なことは、<strong>「誰のためのデザインなのか」</strong></p>
-        <p>つまり、<strong>対象ユーザーにとって</strong>最良で、<strong>必要かつ豊富な情報が、明確に提供される</strong>ことだと考えています。</p>
-        <p></p>
+        <p><strong>架空サイトのファーストビュー</strong>です</p>
         <ul>
           <li>模写や模倣はありません。</li>
-          <li>デザインセンスを表現するために、ジャンルや対象ユーザーの異なるデザインを作りました。</li>
+          <li>ジャンルや対象ユーザーの異なるデザインを作りました。</li>
         </ul>
-        <p></p>
-        <p>＊デザインセンスと言っても、自信があるわけないです('-`;)…</p>
         
       </div>
       <div class="contentsArea">
@@ -244,7 +237,7 @@
             <h3>石川達実/<?= h($myName);?></h3>
               <div class="container2">
                 <div class="contentImg">
-                <img src="imgs/ba.png" style="filter:saturate(0.2);">
+                <img src="imgs/ba.png" style="filter:saturate(0.5);">
                 </div>
                 <div class="text">
                   <p>1986年東京都生まれ。</p>
@@ -290,7 +283,7 @@
             <h3>石川達実を正しく知る</h3>
               <div class="container2">
                 <div class="contentImg">
-                <img src="imgs/IMG_6619.JPG" style="filter:saturate(0.2);">
+                <img src="imgs/IMG_6619.JPG" style="filter:saturate(0.5);">
                 </div>
                 <div class="text">
                   <p>石川達実の<strong>一風変わった過去やBackboneについて知る</strong>ことができます。是非ご参照下さい！

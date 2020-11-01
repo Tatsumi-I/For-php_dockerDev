@@ -1,0 +1,57 @@
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: adobe-text-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt" 1, "swsh" 1;
+  transform-style: preserve-3d;
+  perspective: 10px;
+  background: url(/work/web/imgs/sun.jpg) no-repeat;
+  background-size: cover;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 200%;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  background: #e5ff00;
+  font-size: 200%;
+}
+
+.tables {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+table {
+  display: block;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  background: skyblue;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 1em;
+}
+table tr {
+  padding: 0 1em;
+  border: 1px solid grey;
+}
+table img {
+  filter: saturate(1.3);
+}

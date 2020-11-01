@@ -16,7 +16,7 @@ header .homeGroup .copy .item3 { opacity: 0; -webkit-animation: fade 2s forwards
 
 header .homeGroup .copy .item4 { opacity: 0; -webkit-animation: fade 2s forwards 4s; animation: fade 2s forwards 4s; }
 
-header .homeGroup .copy .item5 { -webkit-animation: fade 4s forwards .5s; animation: fade 4s forwards .5s; display: none; opacity: 0; }
+header .homeGroup .copy .item5 { -webkit-animation: fade 4s forwards 0.5s; animation: fade 4s forwards 0.5s; display: none; opacity: 0; }
 
 header .homeGroup .copy:hover { margin-bottom: 35px; }
 
@@ -74,7 +74,7 @@ header .homeGroup .logo .nameBar { display: block; margin: 0 auto; text-align: c
 
 header .homeGroup .logo .nameBar:hover { -webkit-animation: flash 3s infinite; animation: flash 3s infinite; }
 
-header .homeGroup .logo .nameBar h1 { -webkit-animation: fade 9s forwards 6s; animation: fade 9s forwards 6s; opacity: 0; margin: 0 auto; font-size: .5em; font-weight: 200; letter-spacing: 0.9em; color: rgba(255, 255, 255, 0.5); text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); text-align: center; }
+header .homeGroup .logo .nameBar h1 { -webkit-animation: fade 9s forwards 6s; animation: fade 9s forwards 6s; opacity: 0; margin: 0 auto; font-size: 0.5em; font-weight: 200; letter-spacing: 0.9em; color: rgba(255, 255, 255, 0.5); text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); text-align: center; }
 
 header .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s; animation: fade 8s forwards 5s; letter-spacing: 0.2; font-family: adobe-text-pro, serif; font-weight: 300; font-style: normal; font-size: 7em; margin-top: 3%; }
 
@@ -84,7 +84,7 @@ header .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animatio
 @keyframes delay { 0% { opacity: 0.3; }
   100% { opacity: 1; } }
 
-header .topOpenMenu summary { font-size: .8em; opacity: 0; text-shadow: 0px 0px 10px #976234, -1px -1px 20px rgba(192, 192, 192, 0.5); padding: 2%; font-size: x-large; position: absolute; -webkit-animation: delay 2s infinite 8s, fade 4s infinite 7s; animation: delay 2s infinite 8s, fade 4s infinite 7s; top: 2%; right: 10%; outline: none; }
+header .topOpenMenu summary { font-size: 0.8em; opacity: 0; text-shadow: 0px 0px 10px #976234, -1px -1px 20px rgba(192, 192, 192, 0.5); padding: 2%; font-size: x-large; position: absolute; -webkit-animation: delay 2s infinite 8s, fade 4s infinite 7s; animation: delay 2s infinite 8s, fade 4s infinite 7s; top: 2%; right: 10%; outline: none; }
 
 header .topOpenMenu summary:hover { cursor: pointer; outline: 1px solid #2b2b2b; opacity: 1; }
 

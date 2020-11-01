@@ -1,0 +1,22 @@
+html { scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; overflow-x: hidden; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; }
+
+body { background: url(/imgs/sun.jpg) no-repeat; background-size: cover; }
+
+header { margin: 0 auto; text-align: center; font-size: 200%; background: rgba(135, 207, 235, 0.7); padding: 30px; }
+
+header h1 { margin: 0; color: white; text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; }
+
+main { margin: 0 auto; text-align: center; }
+
+p { font-size: 200%; padding: 2em; margin: 30px; }
+
+.tables { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10px auto; }
+
+table { display: block; text-align: right; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 10px; border-radius: 10px; background: rgba(135, 207, 235, 0.3); border: 1px solid grey; text-align: center; padding: 1em; border: 1px solid grey; }
+
+table tr { padding: 1em; }
+
+table th, table td { padding: 0 1em; }
+
+table img { -webkit-filter: saturate(1.3); filter: saturate(1.3); }
+/*# sourceMappingURL=weather.min.css.map */

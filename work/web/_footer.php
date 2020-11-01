@@ -6,8 +6,22 @@
 ?>
 
 
+<section>
+  <div class="sectionArea">
+    <div class="desc">
+      <h3>このサイトの他のページを見る</h3>
+      <div class="gaiyou">
+        <a href="#area_1">skill</a>
+        <a href="#area_2">profile</a>
+        <a href="#area_3">other</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 </article>
+
 <footer>
   <p class="toTop"><a href="#area_0">PageTopへ</a></p>
   <div id="footer" class="headFootOpenMenu">

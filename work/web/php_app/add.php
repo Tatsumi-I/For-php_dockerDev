@@ -2,7 +2,6 @@
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
   require_once('_appHeader.php');
-
  
 ?>
 
