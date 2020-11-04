@@ -179,6 +179,7 @@ main {
 
     img {
       width: 45px;
+      height: 50px;
       margin: 0;
     }
 
@@ -310,7 +311,7 @@ main {
       flex-wrap: wrap;
       margin: 0 auto;
       z-index: 100;
-      width: 100vw;
+      // width: 100vw;
       background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat;
 
       .text {
@@ -345,6 +346,10 @@ main {
     .icons {
       img {
         width: 16px;
+      }
+      .api{
+        filter:saturate(3);
+
       }
     }
 
@@ -457,7 +462,7 @@ main {
         flex-grow: 1;
         box-shadow: $shadow;
         border-radius: 5px;
-        background: #8b877b20;
+        // background: #8b877b20;
         box-shadow: $shadow;
         padding: 1% 0;
         min-height: 30vh;

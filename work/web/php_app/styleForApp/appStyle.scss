@@ -12,14 +12,13 @@ $beige: #634130;
 
 html {
   background: $grege;
-  font-size: 70%;
+  // font-size: 70%;
   color: $darkBlue;
   scroll-behavior: smooth;
   margin: 0 auto;
   padding: 0;
-  width: 100%;
   text-align: center;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -31,6 +30,7 @@ html {
 }
 header,
 footer {
+  // width: 100vw;
   background: $grege;
   margin: 0;
   padding: 10px;
@@ -46,17 +46,18 @@ footer {
 }
 
 body {
-  width: clamp(500px, 100vw, 100%);
+  
   margin: 0 auto;
 }
 .linkBar {
-  max-width: 340px;
+  // max-width: 340px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   a {
     display: block;
+    width: fit-content;
     border-radius: 5%;
   }
 }
@@ -70,12 +71,18 @@ table {
   td,
   tr {
     padding: 1em 5px;
+    white-space: nowrap;
     border-bottom: 1px solid $Orange;
+    a{
+      display: inline;
+    }
   }
 }
 
 main{
-  width: clamp(500px,90%,90vw);
+  // width: clamp(350px,500px,90vw);
+  width: max-content;
+
   margin: 0 auto;
   min-height:80vh;
   h1 {
@@ -91,10 +98,13 @@ main{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: $shadow;
+    width: 95%;
+    display:block;
+    margin: 3% auto;
   }
   .title{
     font-size: 120%;
-    height: 400px;
+    // height: 400px;
     background: url(/imgs/keep.jpg) no-repeat top 0 left 50% ;
     background-size: contain;
     margin-bottom: 50px;
@@ -107,17 +117,19 @@ main{
     h1{
       margin-bottom: 250px;
       span {
+        display: block;
         width: 350px;
         background: $night;
         color: whitesmoke;
-        padding: 1em;
+        padding: 0 1em;
+        margin: auto;
         // border-radius: 5px;
       }
     }
   }
 }
 .all {
-  
+  width: fit-content;
   margin: 0 auto;
   padding: 0;
   min-height: 68vh;

@@ -18,17 +18,12 @@ footer {
 
   .icons {
     padding: 20px;
-    filter: saturate(0.6);
     opacity: 0;
     animation: delay 10s forwards;
   }
 
   .headerContainer {
-    animation: bgcolor 20s 
-    forwards
-    // both
-    5s
-    ;
+    animation: bgcolor 20s forwards;
 
     .homeGroup {
       padding: 3%;
@@ -36,7 +31,7 @@ footer {
       .copy {
         font-family: itc-american-typewriter, sans-serif;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 600;
         animation: flash 2s infinite 10s;
         text-align: center;
         margin: auto;
@@ -208,7 +203,7 @@ footer {
 
   // background: $grege;
   p.toTop {
-    background: $grege;
+    // background: $grege;
     margin: 0;
     color: $Orange;
     text-align: center;
@@ -252,7 +247,7 @@ address {
 }
 
 .headFootOpenMenu {
-  // background: $grege;
+  background: $grege;
 
   summary {
     transition-duration: 1s;
@@ -260,7 +255,7 @@ address {
     padding: 20px;
     font-size: 20px;
     outline: 1px solid silver;
-    background: $grege;
+    // background: $grege;
 
     &:hover {
       cursor: pointer;

@@ -47,14 +47,14 @@
   100% { opacity: 1; } }
 
 @-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
-  70% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
-  90% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
-  100% { background: transparent; } }
+  40% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  80% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  100% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); } }
 
 @keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
-  70% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
-  90% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
-  100% { background: transparent; } }
+  40% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  80% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  100% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); } }
 
 @-webkit-keyframes rum-col { 0% { color: #c88c50; }
   10% { color: #864621; }
@@ -109,13 +109,13 @@
 
 header, footer { background: url(/imgs/sky.jpg) no-repeat; background-size: cover; }
 
-header .icons, footer .icons { padding: 20px; -webkit-filter: saturate(0.6); filter: saturate(0.6); opacity: 0; -webkit-animation: delay 10s forwards; animation: delay 10s forwards; }
+header .icons, footer .icons { padding: 20px; opacity: 0; -webkit-animation: delay 10s forwards; animation: delay 10s forwards; }
 
-header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 20s forwards 5s; animation: bgcolor 20s forwards 5s; }
+header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 20s forwards; animation: bgcolor 20s forwards; }
 
 header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 3%; }
 
-header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 300; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
+header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 600; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
 
 header .headerContainer .homeGroup .copy a, footer .headerContainer .homeGroup .copy a { color: #966432; }
 
@@ -167,7 +167,7 @@ header .headerContainer a:hover, footer .headerContainer a:hover { -webkit-trans
 
 footer { margin-top: 150px; }
 
-footer p.toTop { background: #80786630; margin: 0; color: #966432; text-align: center; padding: 20px; }
+footer p.toTop { margin: 0; color: #966432; text-align: center; padding: 20px; }
 
 footer p.toTop a { padding: 20px; }
 
@@ -181,7 +181,9 @@ address { text-align: right; margin: 0 50px; }
 
 address:hover { text-shadow: 0 0 2px 20px white; }
 
-.headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; padding: 20px; font-size: 20px; outline: 1px solid silver; background: #80786630; }
+.headFootOpenMenu { background: #80786630; }
+
+.headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; padding: 20px; font-size: 20px; outline: 1px solid silver; }
 
 .headFootOpenMenu summary:hover { cursor: pointer; }
 

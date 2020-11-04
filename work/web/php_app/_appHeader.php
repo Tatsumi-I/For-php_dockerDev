@@ -14,16 +14,15 @@
     <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>
-    <div class="all">
-      <div class="linkBar">
-        <a href="hoz_onTop.php">Hoz_onとは??</a>
-        <a href="eva.php">新規登録</a>
-        <a href="list_table.php">Hoz_onリスト</a>
-      </div>
-  <hr>
+    <div class="linkBar">
+      <a href="hoz_onTop.php">Hoz_onとは??</a>
+      <a href="eva.php">新規登録</a>
+      <a href="list_table.php">Hoz_onリスト</a>
+    </div>
+    <hr>
+  <div class="all">
     <div class="title">
       <h1><span>Keep your inspiration!!</span></h1>
       <h2>by "Hoz_on" !!</h2>
       <p>~あなたのアイデア保存します~</p>
-
     </div>

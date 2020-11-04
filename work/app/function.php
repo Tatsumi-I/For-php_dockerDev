@@ -36,6 +36,7 @@
       <i class="fab fa-docker fa-fw docker" title="Docker"></i>
       <i class="fab fa-php fa-fw php" title="PHP"></i>
       <i class="fas fa-database db" title="MYSQL"></i>
+      <img src="imgs/api.jpg" alt="" title="">
     </div>
   ';
 

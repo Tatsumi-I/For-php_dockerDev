@@ -14,6 +14,8 @@
 </main>
 <footer>
   <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
+  <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
+
 </footer>
 <script src="../js/myPortfolio.js"></script>
 </body>

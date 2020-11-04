@@ -1,22 +1,44 @@
-html { scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; overflow-x: hidden; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; }
+html, body { scroll-behavior: smooth; margin: 0; padding: 0; width: -webkit-max-content; width: -moz-max-content; width: max-content; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; background: url(/imgs/view.jpg) no-repeat; }
 
-body { background: url(/imgs/sun.jpg) no-repeat; background-size: cover; }
+header, footer { min-height: 100px; margin: 0 auto; color: white; text-align: center; background: rgba(69, 151, 206, 0.7); padding: 3%; }
 
-header { margin: 0 auto; text-align: center; font-size: 200%; background: rgba(135, 207, 235, 0.7); padding: 30px; }
+header div, footer div { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; max-width: 500px; }
 
-header h1 { margin: 0; color: white; text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; }
+header .logo, footer .logo { width: 60px; }
 
-main { margin: 0 auto; text-align: center; }
+header .api, footer .api { width: 200px; -webkit-filter: saturate(3); filter: saturate(3); }
 
-p { font-size: 200%; padding: 2em; margin: 30px; }
+h1 { margin: auto; text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; }
 
-.tables { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 10px auto; }
+h2 { text-align: center; }
 
-table { display: block; text-align: right; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 10px; border-radius: 10px; background: rgba(135, 207, 235, 0.3); border: 1px solid grey; text-align: center; padding: 1em; border: 1px solid grey; }
+b { background: white; margin: 0; padding: 2em; width: 300px; border-radius: 10px; margin: 0 auto; }
 
-table tr { padding: 1em; }
+main { margin: 0 auto; text-align: center; width: 100vw; }
 
-table th, table td { padding: 0 1em; }
+fieldset { max-width: 500px; margin: 20px auto; background: rgba(225, 225, 225, 0.8); padding: 2%; border-radius: 5px; font-weight: bold; }
 
-table img { -webkit-filter: saturate(1.3); filter: saturate(1.3); }
+fieldset legend { text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; color: white; border-radius: 5px; }
+
+fieldset div { margin: 0 auto; }
+
+fieldset label { border: transparent; padding: 1em; cursor: pointer; white-space: nowrap; display: inline-block; }
+
+fieldset button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: 2% auto 0; }
+
+.weather_now { background: rgba(135, 207, 235, 0.74); max-width: 500px; margin: 20px auto; padding: 2%; border-radius: 5px; }
+
+.weather_now h3 { margin: 0; }
+
+details { width: clamp(300px, 500px, 90vw); display: block; margin: 30px auto; background: rgba(225, 225, 225, 0.8); border-radius: 10px; -webkit-box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); }
+
+details h3, details p, details i { margin: auto; border-radius: 5px; }
+
+details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; }
+
+details summary { color: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: rgba(135, 207, 235, 0.8); border-radius: 10px; }
+
+details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: white; cursor: pointer; margin: 0 auto; -ms-flex-pack: distribute; justify-content: space-around; }
+
+button { display: block; margin: 10px auto; }
 /*# sourceMappingURL=weather.min.css.map */

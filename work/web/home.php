@@ -125,6 +125,25 @@
               </div>
             </div>
           </div>
+          <div class="content">
+            <h3>Web_API</h3>
+            <div class="icons">
+              <img src="imgs/api.jpg" alt="">
+              <i class="fab fa-docker fa-fw docker"></i>
+              <i class="fab fa-php fa-fw php"></i>
+              <i class="fab fa-github git" title="Git/GitHub"></i>
+            </div>
+            <div class="container2">
+              <div class="contentImg">
+                <img src="imgs/weather_app.png"  title="">
+              </div>
+              <div class="text">
+                <p>Webサービスの可能性を広げる<strong>API</strong></p>
+                <p>Web APIによる天気予報アプリです。</p>
+                <a href="/weather_API/weather.php" target="_api">使う</a>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -270,6 +289,7 @@
                       <p><i class="fab fa-docker fa-fw docker"></i>Docker</p>
                       <p><i class="fab fa-php fa-fw php"></i>php</p>
                       <p><i class="fas fa-database db"></i>Mysql</p>
+                      <p><img class="api" src="imgs/api.jpg" alt="">Web_API</p>
                     </div>
                   </div>
                   <p><a href="skills.php">More about...</a></p>
