@@ -26,6 +26,7 @@ html {
   line-height: 3;
   font-feature-settings: "palt" 1, "swsh" 1;
   background:rgba(255, 255, 255, 0.5);
+  width: 100vw;
 
 }
 header,
@@ -46,7 +47,7 @@ footer {
 }
 
 body {
-  
+  background: url(/imgs/keep.jpg) left 50% / cover no-repeat ;
   margin: 0 auto;
 }
 .linkBar {
@@ -65,7 +66,7 @@ body {
 table {
   margin: 0 auto;
   border-spacing: 0;
-  min-width: 350px;
+  min-width: 250px;
   overflow: scroll;
   th,
   td,
@@ -74,15 +75,15 @@ table {
     white-space: nowrap;
     border-bottom: 1px solid $Orange;
     a{
-      display: inline;
+      display: block;
     }
   }
 }
 
 main{
-  // width: clamp(350px,500px,90vw);
-  width: max-content;
-
+  width: clamp(300px,500px,100vw);
+  background:rgba(255, 255, 255, 0.8);
+  // width: max-content;
   margin: 0 auto;
   min-height:80vh;
   h1 {
@@ -98,16 +99,12 @@ main{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: $shadow;
-    width: 95%;
+    // width: 95%;
     display:block;
     margin: 3% auto;
   }
   .title{
     font-size: 120%;
-    // height: 400px;
-    background: url(/imgs/keep.jpg) no-repeat top 0 left 50% ;
-    background-size: contain;
-    margin-bottom: 50px;
     h1,
     h2,
     p{
@@ -115,13 +112,12 @@ main{
       margin: 0;
     }
     h1{
-      margin-bottom: 250px;
       span {
         display: block;
-        width: 350px;
+        min-width: 300px;
         background: $night;
         color: whitesmoke;
-        padding: 0 1em;
+        padding: 0;
         margin: auto;
         // border-radius: 5px;
       }
@@ -129,7 +125,7 @@ main{
   }
 }
 .all {
-  width: fit-content;
+  // width: fit-content;
   margin: 0 auto;
   padding: 0;
   min-height: 68vh;

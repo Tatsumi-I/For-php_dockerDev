@@ -16,12 +16,13 @@ $beige: #634130;
 
 html,
 body {
+  background: 
+  url(../imgs/growth_2.jpg) top left 50% / cover no-repeat;
   color: $beige;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   width: 100%;
-  // width: clamp(300px,100vw,100%);
   height: 100%;
   overflow-x: hidden;
   font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
@@ -32,11 +33,14 @@ body {
   font-feature-settings: "palt"1, "swsh"1;
   transform-style: preserve-3d;
   perspective: 10px;
+  filter: drop-shadow(0 0 1px white);
+
 
   a {
     text-decoration: none;
     color: darkgreen;
     cursor: pointer;
+    filter: drop-shadow(2px 2px 3px dimgrey);
   }
 
   b {
@@ -157,19 +161,20 @@ body {
 }
 
 
-
 main {
-  max-width: 1200px;
-  margin: 0 auto;
+  // background: rgba(255, 255, 255, .8);
+  // border:1px solid $darkBlue;
 
+  max-width: 1500px;
+  margin: 0 auto;
   line-height: 3;
   font-size: 110%;
 
-  nav {
+  nav{
     font-size: 70%;
     position: sticky;
     top: 0;
-    background: white;
+    background: $grege;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -182,35 +187,22 @@ main {
       height: 50px;
       margin: 0;
     }
-
-    a {
-      margin: 10px;
+    
+    p{
+      margin: auto;
     }
-
-    a.globalMenu {
-      display: none;
-    }
-
-    @media (max-width:700px) {
-      nav {
-        background: $grege;
+    a{
+      .miniLogo{
+        margin: 0;
       }
-
-      p {
-        display: none;
-      }
-
-      a {
-        padding: 0 3em;
+      .globalMenu{
         margin: auto;
-      }
-
-      a.globalMenu {
-        display: block;
+        background: $grege;
+        border-radius: 5px;
+        padding: 2px;
       }
     }
-
-    a.app {
+    .app {
       margin: 0;
       padding: 0;
       opacity: 0;
@@ -227,11 +219,6 @@ main {
     }
   }
 
-  // article{
-  //   background: rgb(255, 255, 255);
-  //   // background: ;
-  //   width: 95%;
-  // }
   a {
     color: #634130dc;
     text-align: center;
@@ -246,15 +233,18 @@ main {
     // width: 100vw;
     color: $beige;
     display: block;
-    background: #61524a21;
+    background: $grege;
     // box-shadow: $shadow;
-    margin: 0px auto 30px;
+    margin: 0px auto;
     padding: 10px 1em;
     text-align: initial;
     border-left: solid 20px $beige;
     border-radius: 0 10px 10px 0;
-    position: sticky;
-    top: 7%;
+
+    @media (min-width:500px){
+      position: sticky;
+      top: 9%;
+    }
     z-index: 100;
   }
 
@@ -278,8 +268,8 @@ main {
   }
 
   ul {
-    padding: 0 10%;
-
+    text-align: initial;
+    padding: 0;
     li {
       list-style: none;
 
@@ -297,12 +287,7 @@ main {
     z-index: 100;
     img {
       margin: 0 auto;
-      // filter: saturate(0.5);
-      // width: 50%;
-      max-width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 1px solid black;
+      max-width: 300px;
 
     }
 
@@ -312,20 +297,25 @@ main {
       margin: 0 auto;
       z-index: 100;
       // width: 100vw;
-      background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat;
+      justify-content: space-around;
+      background:
+      url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat,
+      // url(../imgs/growth_2.jpg) top left 50% / cover no-repeat
+      ;
 
       .text {
-        // z-index: 100;
-        font-size: 130%;
-
         margin: 0 auto;
-        min-height: 400px;
         padding: 5%;
-        width: clamp(230px, 500px, 90vw);
+
+        @media (min-width:500px) {
+          font-size: 160%;
+          min-height: 400px;
+        }
 
         p {
           text-align: center;
           line-height: 4;
+          margin: 0;
         }
 
         em {
@@ -333,10 +323,19 @@ main {
           color: $Orange;
         }
       }
+      .blank{
+        width: 300px;
+      }
     }
   }
+section{
 
+  background: #e9e6e0ea;
+  border-radius: 5px;
+  border: 1px solid $darkBlue;
+}
   .sectionArea {
+
     margin: 50px 0;
 
     img {
@@ -355,8 +354,6 @@ main {
 
     .desc {
       padding: 50px 10px;
-      // margin: 50px 0;
-      // height: 100vh;
 
       a {
         width: 50%;
@@ -389,17 +386,16 @@ main {
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 50px 0;
-        // min-height: 50vh;
-
       
         a{
           height:200px;
           width: 200px;
           line-height: 200px;
           border-radius: 50%;
-          background: $night;
-          color:white;
-          text-shadow: 1px 1px 1px $grege,-1px -1px 1px $grege;
+          // background: rgba(252, 255, 223, 0.2);
+    background: $grege;
+
+          border:1px solid $darkBlue;
           font-weight: bold;
           text-align: center;
           box-shadow: $shadow;
@@ -409,7 +405,7 @@ main {
         @media (max-width:700px) {
   
           a {
-            border: 1px solid #63413070;
+            border:1px solid $darkBlue;
             border-radius: 10px;
             box-shadow: $shadow;
             margin: 10px auto;
@@ -419,13 +415,27 @@ main {
             font-size: 150%;
             line-height: 3em;
             // background: white;
-            background: $night;
-            color:white;
+            background: $grege;
             height: fit-content;
           }
         }
 
       }
+    }
+  }
+  
+  .content {
+    width: clamp(320px, 100%, 100vw);
+    margin: 50px auto;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    padding: 0;
+    background: $grege;
+    // background: rgba(255, 255, 240, 0.5);
+
+
+    h3 {
+      width: 95%;
     }
   }
 
@@ -435,21 +445,9 @@ main {
       border-radius: 10px;
       box-shadow: $shadow;
       margin: 30px auto;
-      padding: 15px;
       display: block;
     }
 
-    .content {
-      width: clamp(320px, 90%, 95vw);
-      margin: 50px auto;
-      box-shadow: $shadow;
-      border-radius: 5px;
-      padding: 1% 0;
-
-      h3 {
-        width: 95%;
-      }
-    }
 
     .contentOuter {
       display: flex;
@@ -462,8 +460,6 @@ main {
         flex-grow: 1;
         box-shadow: $shadow;
         border-radius: 5px;
-        // background: #8b877b20;
-        box-shadow: $shadow;
         padding: 1% 0;
         min-height: 30vh;
       }
@@ -522,6 +518,7 @@ main {
       flex-basis: 280px;
       margin: 0 auto;
       padding: 0 3%;
+      text-align: center;
       flex-grow: 1;
     }
 
@@ -555,6 +552,34 @@ main {
   }
 }
 
+.chara,
+.backBone,
+.blackApron,
+.hobby{
+  height: 200px;
+  background:white;
+  font-size: 200%;
+  max-width: 700px;
+  color: white;
+  text-shadow: 1px 1px 1px dimgrey;
+
+}
+.chara{
+  background: url(../imgs/thinkType.png) 20%  / 100% content-box no-repeat;
+  
+}
+.backBone{
+  background: url(../imgs/manequin_2.jpg) 20%  / 100% content-box no-repeat;
+
+}
+.blackApron{
+  background: url(../imgs/B_A_2.png) 20%  / 100% content-box no-repeat;
+
+}
+.hobby{
+  background: url(../imgs/IMG_3214.JPG) 20%  / 100% content-box no-repeat;
+
+}
 
 
 .jsTest {

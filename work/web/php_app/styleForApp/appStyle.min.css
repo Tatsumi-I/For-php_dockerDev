@@ -1,4 +1,4 @@
-html { background: #b4ad9b27; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; text-align: center; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; background: rgba(255, 255, 255, 0.5); }
+html { background: #b4ad9b27; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; text-align: center; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; background: rgba(255, 255, 255, 0.5); width: 100vw; }
 
 header, footer { background: #b4ad9b27; margin: 0; padding: 10px; }
 
@@ -6,33 +6,31 @@ header a, footer a { text-decoration: none; color: #966432; margin: 10px; }
 
 header a:visited, header a:link, footer a:visited, footer a:link { color: #966432; }
 
-body { margin: 0 auto; }
+body { background: url(/imgs/keep.jpg) left 50%/cover no-repeat; margin: 0 auto; }
 
 .linkBar { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 .linkBar a { display: block; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; border-radius: 5%; }
 
-table { margin: 0 auto; border-spacing: 0; min-width: 350px; overflow: scroll; }
+table { margin: 0 auto; border-spacing: 0; min-width: 250px; overflow: scroll; }
 
 table th, table td, table tr { padding: 1em 5px; white-space: nowrap; border-bottom: 1px solid #966432; }
 
-table th a, table td a, table tr a { display: inline; }
+table th a, table td a, table tr a { display: block; }
 
-main { width: -webkit-max-content; width: -moz-max-content; width: max-content; margin: 0 auto; min-height: 80vh; }
+main { width: clamp(300px, 500px, 100vw); background: rgba(255, 255, 255, 0.8); margin: 0 auto; min-height: 80vh; }
 
 main h1 { margin: 10px; padding: 10px; line-break: 18px; }
 
-main a { text-decoration: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); width: 95%; display: block; margin: 3% auto; }
+main a { text-decoration: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); display: block; margin: 3% auto; }
 
-main .title { font-size: 120%; background: url(/imgs/keep.jpg) no-repeat top 0 left 50%; background-size: contain; margin-bottom: 50px; }
+main .title { font-size: 120%; }
 
 main .title h1, main .title h2, main .title p { padding: 0; margin: 0; }
 
-main .title h1 { margin-bottom: 250px; }
+main .title h1 span { display: block; min-width: 300px; background: #213a63de; color: whitesmoke; padding: 0; margin: auto; }
 
-main .title h1 span { display: block; width: 350px; background: #213a63de; color: whitesmoke; padding: 0 1em; margin: auto; }
-
-.all { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; margin: 0 auto; padding: 0; min-height: 68vh; }
+.all { margin: 0 auto; padding: 0; min-height: 68vh; }
 
 nav { margin: 10px auto 0; min-width: -webkit-max-content; min-width: -moz-max-content; min-width: max-content; color: #966432; }
 

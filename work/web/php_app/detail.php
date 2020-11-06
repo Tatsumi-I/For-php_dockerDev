@@ -1,6 +1,7 @@
 <?php 
   require_once('/work/app/function.php');
   require_once('/work/app/db_cnf.php');
+  $pageName = '詳細ページ';
   require_once('_appHeader.php');
 ?>
 

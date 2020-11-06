@@ -3,7 +3,8 @@
 
 $textColor: rgb(109, 109, 109);
 $line: rgba(206, 206, 206, 0.322);
-$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
+$shadow: 1px 1px 2px rgba(180, 180, 180, 0.5),
+-1px -1px 1px rgb(221, 221, 221);
 $myBlack: rgb(30, 30, 30);
 $Orange: rgb(150, 100, 50);
 $darkBlue: rgba(27, 37, 73, 0.8);
@@ -13,8 +14,9 @@ $beige: #634130;
 
 header,
 footer {
-  background: url(/imgs/sky.jpg) no-repeat;
-  background-size: cover;
+  // background: url(/imgs/sky.jpg) no-repeat;
+  // url(../imgs/growth_2.jpg) top left 50% / cover no-repeat
+  background: $grege;
 
   .icons {
     padding: 20px;
@@ -27,6 +29,7 @@ footer {
 
     .homeGroup {
       padding: 3%;
+      // background: $grege;
 
       .copy {
         font-family: itc-american-typewriter, sans-serif;
@@ -105,9 +108,7 @@ footer {
       .logo {
 
         img {
-          filter: opacity(0.5);
-          opacity: 0;
-          width: 160px;
+          width: 200px;
           max-width: 50%;
           // height:20px;
           height: auto;
@@ -115,6 +116,7 @@ footer {
           margin: 5% auto;
           animation: flash 12s infinite;
           display: block;
+          filter: drop-shadow(2px 4px 6px $myBlack);
         }
 
         .nameBar {
@@ -155,55 +157,57 @@ footer {
         }
       }
     }
+  }
 
-    img {
-      opacity: 0;
-      margin: 0 auto;
-      display: block;
-      animation: flash 10s infinite;
+  .logoImg {
+    width: 100px;
+    opacity: 1;
+    padding: 3%;
+    filter: drop-shadow(2px 4px 6px grey);
+    animation: flash 10s infinite;
+    margin:0 auto;
+    display: block;
+  }
+
+  .inHeader {
+    margin: auto;
+    animation: toDown 5s forwards;
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      animation: rum-col 30s infinite;
     }
 
-    .inHeader {
-      margin: auto;
-      animation: toDown 5s forwards;
-
-      h1 {
-        text-align: center;
-        // margin: ;
-        font-size: 50px;
-        animation: rum-col 30s infinite;
-      }
-
-      h2 {
-        color: rgba(255, 255, 240, 0.5);
-        font-size: 6px;
-        letter-spacing: 0.9em;
-        text-align: center;
-        transform: translateY(-20px);
-      }
+    h2 {
+      color: rgba(255, 255, 240, 0.5);
+      font-size: 6px;
+      letter-spacing: 0.9em;
+      text-align: center;
+      transform: translateY(-20px);
     }
+  }
 
-    a {
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:visited {
       color: white;
-      text-decoration: none;
+    }
 
-      &:visited {
-        color: white;
-      }
-
-      &:hover {
-        transform: scale(0.98);
-      }
+    &:hover {
+      transform: scale(0.98);
     }
   }
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 100px;
 
   // background: $grege;
-  p.toTop {
-    // background: $grege;
+  .toTop {
+    background: $grege;
     margin: 0;
     color: $Orange;
     text-align: center;
@@ -214,7 +218,7 @@ footer {
     }
   }
 
-  p.copyLight {
+  .copyLight {
     margin: 0;
     color: $Orange;
     text-align: center;
@@ -235,19 +239,26 @@ footer {
       display: none;
     }
   }
-}
 
-address {
-  text-align: right;
-  margin: 0 50px;
+  address {
+    text-align: right;
+    margin: 0 50px;
 
-  &:hover {
-    text-shadow: 0 0 2px 20px white;
+    p a {
+      background: $grege;
+      border-radius: 5px;
+      padding: 1em;
+      margin: 20px;
+
+      &:hover {
+        text-shadow: 0 0 2px 20px white;
+      }
+    }
   }
 }
 
 .headFootOpenMenu {
-  background: $grege;
+  // background: $grege;
 
   summary {
     transition-duration: 1s;
@@ -255,7 +266,16 @@ address {
     padding: 20px;
     font-size: 20px;
     outline: 1px solid silver;
-    // background: $grege;
+    color: $Orange;
+    span{
+      background: $grege;
+      margin-left: 2em;
+      border-radius: 5px;
+      color: white;
+      padding: 5px 12px;
+      // margin: 1em;
+      
+    }
 
     &:hover {
       cursor: pointer;
@@ -279,13 +299,6 @@ address {
     text-indent: 3em;
   }
 
-  span {
-    border-radius: 5px;
-    background: $beige;
-    color: white;
-    padding: 5px 12px;
-    // margin: 1em;
-  }
 
   a {
     &:hover {
@@ -297,7 +310,7 @@ address {
     &:link,
     &:visited {
       color: $Orange;
-      animation: flash 12s infinite;
+      // animation: flash 12s infinite;
     }
   }
 
@@ -315,6 +328,13 @@ address {
       display: flex;
       flex-wrap: wrap;
       width: fit-content;
+      span {
+        background: $Orange;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 12px;
+        // margin: 1em;
+      }
     }
 
     // justify-content: space-around;
@@ -331,13 +351,15 @@ address {
     text-align: center;
     color: $Orange;
     height: fit-content;
-    // font-size: 70%;
     border-radius: 5px;
+    filter: drop-shadow(0px 0px 6px grey);
 
     a {
       img {
         padding: 10px;
         width: 100px;
+        filter: drop-shadow(2px 4px 6px grey);
+
       }
 
       h1 {
@@ -350,7 +372,9 @@ address {
     cursor: initial;
 
     summary {
-      filter: opacity(1);
+      span {
+        display: none;
+      }
 
       &:hover {
         cursor: pointer;
@@ -358,7 +382,11 @@ address {
 
       &::after {
         content: "close";
+        background: $grege;
         margin-left: 2em;
+        border-radius: 5px;
+        padding: 5px 12px;
+        
       }
     }
   }

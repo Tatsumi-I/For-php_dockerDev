@@ -1,37 +1,40 @@
-<?php 
+<?php
 
-  $pageName = ' -';
-  $menuList = '';
-  require_once('../app/function.php');
-  
+require_once('../app/function.php');
+
 ?>
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<title><?php h($pageName);?>tatsumi's_portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./css/home.min.css">
-<meta name="description" content="たつみのポートフォリオサイト">
-<link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
+  <meta charset="utf-8">
+  <title><?php echo $pageName; ?>tatsumi's_portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/home.min.css">
+  <meta name="description" content="たつみのポートフォリオサイト">
+  <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
 
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
-<!-- <script src="./js/ellipse.js"></script> -->
-<!-- <script src="./js/processing.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
+  <!-- <script src="./js/ellipse.js"></script> -->
+  <!-- <script src="./js/processing.min.js"></script> -->
 
-<style>
-</style>
+  <style>
+  </style>
 </head>
 
 <!-- <canvas id="app" data-processing-sources="./js/ellpse.js"></canvas> -->
+
 <body>
 
-<header>
-  <div id="header" class="headerContainer">
+  <header>
 
+    <?php if ($pageName == 'Home - ') {
+      echo
+        <<< __header
+  <div id="header" class="headerContainer">
     <div class="homeGroup">
       <div class="copy">
         <a href="home.php">
@@ -45,51 +48,65 @@
       </div>
       <div class="logo">
         
-          <a href="home.php"><img src="imgs/logo.png"></img></a>
+          <a href="home.php"><img src="./imgs/logo.png"></a>
       
         <div class="nameBar">
           <h1>石川達実  ポートフォリオサイト</h1>
-          <h2 class="item5"><?= h($myName);?> _ Portfolio</h2>
+          <h2 class="item5">$myName _ Portfolio</h2>
         </div>
       </div>
     </div>
 
-    <!-- <a href="index.php"><img src="imgs/logo.png"></a>
-    <div class="inHeader">
-      <a href="home.php">
-        <h1><//?= h($myName);?> _ Portofolio</h1>
-        <h2>石川達実  ポートフォリオサイト</h2>
-      </a>
-    </div> -->
-    
     <div id="globalMenu" class="headFootOpenMenu">
       <details open>
-        <summary>Global Menu</summary>
-        <?= $globalMenu; ?>
+        <summary>Global Menu<span>Open</span></summary>
+        $globalMenu
       </details>
-      <?= $icon;?>
+      $icon
     </div>
   </div>
-</header>
+  
 
-<main>
-  <nav id="del">
-    <img src="./imgs/myLogoWhite.png" alt="">
-    <p class="nav"><i class="fas fa-home"></i>HOME<?= $menuList;?></p>
-    <a class="globalMenu" href="#globalMenu">Global menu</a>
-    <p><?php echo date($date); ?></p>
-    <a class="app" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
-  </nav>
-<article>
-  <script>
+  __header;
 
-    (function(){
-      document.addEventListener('DOMContentLoaded' , function(){
-        const del = document.querySelector('#del');
-        del.addEventListener('click' , function(event){
-          alert('Delete?');
-        });
-    });
-  })();
+    } else {
 
-  </script>
+      echo
+        <<< __header_2
+        
+      <a href="home.php">
+        <img class="logoImg" src="./imgs/myLogowhite.png">
+      </a>
+      <div class="inHeader">
+        <a href="home.php">
+          <h1>$myName _ Portofolio</h1>
+          <h2>石川達実  ポートフォリオサイト</h2>
+        </a>
+      </div>
+      <div id="globalMenu" class="headFootOpenMenu">
+      <details>
+        <summary>Global Menu<span>Open</span></summary>
+        $globalMenu
+      </details>
+    </div>
+
+    __header_2;
+    }
+
+    ?>
+
+
+  </header>
+
+  <main>
+    <nav>
+      <a href="home.php" class="miniLogo">
+        <img src="./imgs/myLogoWhite.png" alt="">
+      </a>
+      <p class="nav"><a href="home.php"><i class="fas fa-home"></i>HOME</a>
+        <?= $menuList; ?>
+      </p>
+      <a class="globalMenu" href="#globalMenu">Global menu</a>
+      <a id="appConect" class="app" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+    </nav>
+    <article>

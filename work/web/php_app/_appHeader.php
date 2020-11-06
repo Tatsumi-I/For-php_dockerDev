@@ -2,9 +2,17 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./styleForApp/appStyle.min.css">
-<title><?php h($pageName);?></title>
+  <title><?php 
+    if (!empty($pageName)) {
+      echo $pageName;
+    } else{
+      echo 'Hoz_on';
+    }
+    ?>
+  </title>
 <style>
 </style>
 </head>

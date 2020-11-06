@@ -5,37 +5,40 @@
 
 ?>
 
+</article>
 
 <section>
   <div class="sectionArea">
     <div class="desc">
-      <h3>このサイトの他のページを見る</h3>
+      <h3>このサイトの他のページも見る</h3>
       <div class="gaiyou">
-        <a href="#area_1">skill</a>
-        <a href="#area_2">profile</a>
-        <a href="#area_3">other</a>
+        <?php if(isset($links)){
+                echo $links;
+              }else{
+                echo '<a href="home.php">Toppページに戻る</a>';
+        }
+        ?>
       </div>
     </div>
   </div>
 </section>
 
 </main>
-</article>
 
 <footer>
   <p class="toTop"><a href="#area_0">PageTopへ</a></p>
+  
   <div id="footer" class="headFootOpenMenu">
     <details open>
       <summary>Global Menu</summary>
         <?= $globalMenu; ?>
     </details>
-      <address>
-        <p><a href="tel:090-****-****">TEL</a></p>
-        <p><a href="mailto:t.tsumi02@gmail.com">MAIL</a></p>
-        <p>各種アカウント</p>
-      </address>
-    <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
   </div>
+  <address>
+    <p><a href="https://github.com/Tatsumi-I/">GitHub</a></p>
+    <p><a href="mailto:t.tsumi02@gmail.com">MAILで問い合わせる</a></p>
+  </address>
+  <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
 </footer>
 
 <!-- google.noto-sun日本語 -->
@@ -53,6 +56,18 @@
 </script>
 
 <script src="js/myPortfolio.js"></script>
+<script>
+
+(function(){
+  document.addEventListener('DOMContentLoaded' , function(){
+    const appConect = document.querySelector('#appConect');
+    appConect.addEventListener('click' , function(event){
+      confirm('Hoz_onを使いますか？');
+    });
+});
+})();
+
+</script>
 
 </body>
 </html>

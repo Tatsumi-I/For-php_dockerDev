@@ -100,30 +100,35 @@ $grege: #80786630;
         rgb(0, 0, 0));
   }
 
-  40% {
+  60% {
     background: radial-gradient(circle at center top,
         rgba(68, 68, 68, 0.8) 4%,
         rgb(27, 27, 27) 50%,
         rgb(22, 22, 22));
   }
 
-  80% {
+  70% {
     background: radial-gradient(circle at center top,
         rgba(117, 117, 117, 0.6) 4%,
         rgba(10, 10, 10, 0.6) 50%,
         rgba(0, 0, 0, 0.6));
   }
 
-  100% {
+  80% {
     background: radial-gradient(circle at center top,
         #afaaa385 4%,
         #66625977 50%,
         #5e594d30);
   }
-  // 100% {
-  //   background:
-  //   transparent;
-  // }
+  90% {
+    background: radial-gradient(circle at center top,
+        #afaaa32d 4%,
+        #66625923 50%,
+        #5e594d1c);
+  }
+  100% {
+    background: transparent;
+  }
 }
 
 @keyframes rum-col {
