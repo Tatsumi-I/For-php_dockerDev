@@ -15,7 +15,7 @@ $links =
     <legend>
       ご意見フォーム
     </legend>
-    <form action="home.php" id="testForm" name="testForm">
+    <form action="index.php" id="testForm" name="testForm">
       <div>
         <label for="title">題名<br></label>
         <input id="title" name="title" type="text" required>

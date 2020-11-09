@@ -1,7 +1,7 @@
 <?php
 
 $pageName = 'Character - ';
-$menuList = '>' . '<a href="home.php#area_3">Profile</a>' . '>Character';
+$menuList = '>' . '<a href="index.php#area_3">Profile</a>' . '>Character';
 require_once('../app/function.php');
 include_once('_header.php');
 $links =

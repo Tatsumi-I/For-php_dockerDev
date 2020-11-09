@@ -2,6 +2,30 @@
 
 require_once('../app/function.php');
 
+$rand = rand(1, 6);
+
+switch ($rand) {
+  case 1:
+    $bgi = 'forest';
+    break;
+  case 2:
+    $bgi = 'cherry';
+    break;
+  case 3:
+    $bgi = 'growth_2';
+    break;
+  case 4:
+    $bgi = 'sky';
+    break;
+  case 5:
+    $bgi = 'pink';
+    break;
+  case 6:
+    $bgi = 'mountain';
+    break;
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +35,7 @@ require_once('../app/function.php');
   <meta charset="utf-8">
   <title><?php echo $pageName; ?>tatsumi's_portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./css/home.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.min.css">
   <meta name="description" content="たつみのポートフォリオサイト">
   <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -22,6 +46,8 @@ require_once('../app/function.php');
   <!-- <script src="./js/processing.min.js"></script> -->
 
   <style>
+    <?php echo
+      'html{background: url(../imgs/' . $bgi . '.jpg) top left 50% / cover no-repeat;}'; ?>
   </style>
 </head>
 
@@ -30,14 +56,14 @@ require_once('../app/function.php');
 <body>
 
   <header>
+    <div id="header" class="headerContainer">
 
-    <?php if ($pageName == 'Home - ') {
-      echo
-        <<< __header
-  <div id="header" class="headerContainer">
+      <?php if ($pageName == 'Home - ') {
+        echo
+          <<< __header
     <div class="homeGroup">
       <div class="copy">
-        <a href="home.php">
+        <a href="index.php">
           <p class="item0">"Feel"</p>
           <p class="item1">Create</p>
           <p class="item2">a</p>
@@ -48,7 +74,7 @@ require_once('../app/function.php');
       </div>
       <div class="logo">
         
-          <a href="home.php"><img src="./imgs/logo.png"></a>
+          <a href="index.php"><img src="./imgs/logo.png"></a>
       
         <div class="nameBar">
           <h1>石川達実  ポートフォリオサイト</h1>
@@ -64,46 +90,47 @@ require_once('../app/function.php');
       </details>
       $icon
     </div>
-  </div>
+    
   
 
   __header;
+      } else {
 
-    } else {
-
-      echo
-        <<< __header_2
+        echo
+          <<< __header_2
         
-      <a href="home.php">
+      <a href="index.php">
         <img class="logoImg" src="./imgs/myLogowhite.png">
       </a>
       <div class="inHeader">
-        <a href="home.php">
+        <a href="index.php">
           <h1>$myName _ Portofolio</h1>
           <h2>石川達実  ポートフォリオサイト</h2>
         </a>
       </div>
       <div id="globalMenu" class="headFootOpenMenu">
-      <details>
-        <summary>Global Menu<span>Open</span></summary>
-        $globalMenu
-      </details>
-    </div>
+        <details>
+          <summary>Global Menu<span>Open</span></summary>
+          $globalMenu
+        </details>
+       
+      </div>
 
     __header_2;
-    }
+      }
 
-    ?>
+      ?>
 
 
+    </div>
   </header>
 
   <main>
-    <nav>
-      <a href="home.php" class="miniLogo">
+    <nav class="top_nav">
+      <a href="index.php" class="miniLogo">
         <img src="./imgs/myLogoWhite.png" alt="">
       </a>
-      <p class="nav"><a href="home.php"><i class="fas fa-home"></i>HOME</a>
+      <p class="nav"><a href="index.php"><i class="fas fa-home"></i>HOME</a>
         <?= $menuList; ?>
       </p>
       <a class="globalMenu" href="#globalMenu">Global menu</a>

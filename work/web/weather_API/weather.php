@@ -83,8 +83,53 @@ echo '</div><hr>';
 echo '<h2>' . $city . ' 24時間天気予報</h2>';
 
 // echo '<div class="tables">';
+  $i = 0;
+    $weather_dt = $list[$i]['dt'];
+    $time = date('Y.m.d. H時頃',$weather_dt);
+    $weather = $list[$i]['weather'][0]['main'];
+    $weather_icon = $list[$i]['weather'][0]['icon'];
+    $weather_desc = $list[$i]['weather'][0]['description'];
+    $humidity = $list[$i]['main']['humidity'];
+    $temp_max = $list[$i]['main']['temp_max'];
+    $temp_min = $list[$i]['main']['temp_min'];
+    $feels = $list[$i]['main']['feels_like'];
+    $rains = $list[$i]['pop'] * 100;
 
-  for($i = 0; $i < 10; $i++){
+    $bg_color = 'none';
+      switch ($feels){
+        case (($feels > -10) && ($feels < 0)): $bg_color = 'blue';
+        break;
+        case (($feels > 0) && ($feels < 5)) : $bg_color = 'skyblue';
+        break;
+        case (($feels > 25) && ($feels < 30)): $bg_color = 'pink';
+        break;
+        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orangered';
+        break;
+        case ($feels >= 35): $bg_color = 'red';
+        break;
+      }
+
+    echo 
+    <<< __deta__
+    <details open>
+      <summary>
+        <span>
+          <h3>$time</h3>
+          <img src='https://openweathermap.org/img/w/$weather_icon.png' style='width:50px'>
+          <p style="background-color:$bg_color">体感気温：$feels ℃</p>
+          <i class="fas fa-angle-double-down"></i>
+        </span>
+      </summary>
+        <p>概況：$weather_desc</p>
+        <p>降水確率$rains ％</p>
+        <p>湿度：$humidity %</p>
+        <p>最高気温：$temp_max ℃</p>
+        <p>最低気温：$temp_min ℃</p>
+    </details>
+
+    __deta__;
+
+  for($i = 1; $i < 10; $i++){
     $weather_dt = $list[$i]['dt'];
     $time = date('Y.m.d. H時頃',$weather_dt);
     $weather = $list[$i]['weather'][0]['main'];

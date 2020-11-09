@@ -34,7 +34,7 @@ details { width: clamp(300px, 500px, 90vw); display: block; margin: 30px auto; b
 
 details h3, details p, details i { margin: auto; border-radius: 5px; }
 
-details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; }
+details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; margin: 14px; }
 
 details summary { color: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: rgba(135, 207, 235, 0.8); border-radius: 10px; }
 
