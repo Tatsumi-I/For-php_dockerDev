@@ -14,11 +14,10 @@
  if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $title = $_POST['title'];
-
     $category = (int) $_POST['category'];
-    $checked = (int) (!empty($_POST['checked']));
+    $checked = (int) $_POST['checked'];
     $comments = $_POST['comments'];
-    $time = date('Y-m-d h:m;s');
+    $time = date('Y-m-d H:i;s');
 
 
     try{
@@ -40,14 +39,14 @@
       $stmt->bindValue(6, $id, PDO::PARAM_INT);
       $stmt->execute();
       $dbh = null;
-      echo "No. " . h($id, ENT_QUOTES, 'UTF-8') . ":"; 
+      echo "<div class=\"desc\"><p>No. " . h($id, ENT_QUOTES, 'UTF-8') . ":"; 
 
         if (empty($title)){
           echo "No-title";
         } else {
           echo h($title, ENT_QUOTES, 'UTF-8');
           }
-      echo "の情報を更新しました。" ;
+      echo "の情報を更新しました。</p></div>" ;
       
 
     } catch (Exception $e) {
@@ -57,6 +56,7 @@
  } 
 ?>
 
+<p><a href="list_table.php">一覧を見る</a></p>
   
 
 <?php

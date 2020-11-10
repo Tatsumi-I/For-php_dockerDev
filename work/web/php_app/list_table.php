@@ -5,10 +5,10 @@
 ?>
 
     <h1>Hoz_on リスト</h1>
-    
-    
+  
 <?php 
-
+  
+  
 // 以下、DBとの接続
 try {
   $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
@@ -17,8 +17,9 @@ try {
   $stmt = $dbh->query($sql);
   $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-  echo "<table>\n";
-  echo "<caption>最新Hoz_on 10件</caption>";
+
+  echo "<div class=\"list_table\"><table>\n";
+  echo "<caption><strong>最新Hoz_on 10件</strong></caption>";
     echo "<colgroup span=\"3\"><col span=\"3\"></colgroup>";
       echo "<thead>\n";
         echo "<tr>\n";
@@ -33,6 +34,10 @@ try {
       break;
     }
     $tr++;
+    $time_f = $row['time_now'];
+    $time_create  = date_create($time_f);
+    $time_format = $time_create -> format('m/d H:i');
+
 
     echo "<tr>\n";
       echo "<td>" ;
@@ -63,7 +68,7 @@ try {
           echo "<td>" . '未選択' . "</td>\n";
         };
 
-        echo "<td>" . h($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
+        echo "<td>" . $time_format . "</td>\n";
         echo "<td colspan=\"3\">\n";
           // echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">詳細</a>\n";
           echo "<a href=edit.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
@@ -72,7 +77,7 @@ try {
         echo "</tr>\n";
       }
     echo "</tbody>\n";
-  echo "</table>\n";
+  echo "</table></div>\n";
 
   $dbh = null;
 
@@ -80,11 +85,14 @@ try {
     echo "ERROR:" . h($e->getMessage(),ENT_QUOTES,'UTF-8') . "<br>";
     die();
   }
+
 ?>
+
 <details>
   <summary>全てのHoz_onを見る</summary>
     <?php
-      echo "<table>\n";
+      echo "<div class=\"list_table\"><table>\n";
+
 
         echo "<colgroup span=\"3\"><col span=\"3\"></colgroup>";
           echo "<thead>\n";
@@ -95,6 +103,11 @@ try {
 
           echo "<tbody>\n";
           foreach (array_reverse($result) as $row){
+            $time_f = $row['time_now'];
+            $time_create  = date_create($time_f);
+            $time_format = $time_create -> format('m/d H:i');
+
+
               echo "<tr>\n";
                 echo "<td>" ;
                 echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">";
@@ -125,7 +138,7 @@ try {
                   echo "<td>" . '未選択' . "</td>\n";
                 };
               
-                echo "<td>" . h($row['time_now'],ENT_QUOTES,'UTF-8') . "</td>\n";
+                echo "<td>" . $time_format . "</td>\n";
                       
                 echo "<td>\n";
                   echo "<a href=edit.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">変更</a>\n";
@@ -134,8 +147,10 @@ try {
               echo "</tr>\n";
           }
         echo "</tbody>\n";
-      echo "</table>\n";
-      ?>
+      echo "</table></div>\n";
+    ?>
+
 </details>
+
 <?php
   require_once('_appFooter.php');

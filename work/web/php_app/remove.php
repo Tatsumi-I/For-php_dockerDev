@@ -27,13 +27,13 @@ try{
     $stmt->bindValue(2, $title, PDO::PARAM_STR);
     $stmt->execute();
     $dbh = null;
-    echo "No." . h($id, ENT_QUOTES, 'UTF-8') . ":";
+    echo "<div class=\"desc\"><p>No." . h($id, ENT_QUOTES, 'UTF-8') . ":";
       // if (!empty($title)){
     echo h($title, ENT_QUOTES, 'UTF-8');
       // } elseif ($title) {
       //   echo "No-title";
       // }
-    echo "を削除しました。";
+    echo "を削除しました。</p></div>";
   } catch (Exception $e) {
     echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
     die();
@@ -41,6 +41,7 @@ try{
 ?>
 
 
+<p><a href="list_table.php">一覧を見る</a></p>
 
 
 

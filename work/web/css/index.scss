@@ -8,7 +8,7 @@ $line: rgba(206, 206, 206, 0.322);
 $shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
 $myBlack: rgb(30, 30, 30);
 $Orange: rgb(150, 100, 50);
-$darkBlue: rgba(27, 37, 73, 0.8);
+$darkBlue: rgb(37, 49, 88);
 $night: #1a3664;
 $grege: #80786630;
 $beige: #634130;
@@ -206,9 +206,11 @@ main {
       padding: 0;
       opacity: 0;
       animation: delay 1s 5s forwards;
-      border: 1px solid #978e8970;
+      border: 1px solid $darkBlue;
       // border-radius: 10px;
-      background: #978e8970;
+      color:white;
+
+      background: #978e8940;
       text-align: center;
       width: 50px;
       height: 50px;
@@ -262,7 +264,7 @@ main {
   }
 
   strong {
-    font-family: vdl-v7gothic, sans-serif;
+    font-family: adobe-text-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
@@ -320,7 +322,7 @@ main {
         }
       }
       .blank {
-        width: 200px;
+        max-width: 100px;
       }
     }
   }
@@ -329,6 +331,24 @@ main {
     background: #e9e6e0;
   // background: $grege;
 
+  }
+  .hoz_on{
+    margin: auto;
+    padding: 0;
+    // opacity: 0;
+    // animation: delay 1s 5s forwards;
+    border: 1px solid $darkBlue;
+    // border-radius: 10px;
+    color:white;
+    background: #978e8940;
+    text-align: center;
+    font-size: 170%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    box-shadow: $shadow;
+    border-radius: 50%;
+    display: block;
   }
   .sectionArea {
 
@@ -349,11 +369,6 @@ main {
 
     .desc {
       padding: 50px 10px;
-
-      a {
-        width: 50%;
-        animation: flash 5s infinite;
-      }
 
       p {
         text-align: center;
@@ -380,10 +395,10 @@ main {
           width: 200px;
           line-height: 200px;
           border-radius: 50%;
-          // background: rgba(252, 255, 223, 0.2);
-          background: $beige;
+          background: rgb(252, 255, 223);
+          // background: $grege;
           font-size: 110%;
-          color:white;
+          // color: ivory;
           border: 1px solid $darkBlue;
           font-weight: bold;
           text-align: center;
@@ -608,4 +623,40 @@ fieldset {
 }
 summary {
   text-align: center;
+}
+
+.learningTable{
+  margin: 0 auto;
+  max-width: 95vw;
+  overflow-x: scroll;
+  table{
+    font-size: 80%;
+
+  }
+  tr{
+    border:1px solid grey;
+    background: $grege;
+    height: 80px;
+  }
+  th,
+  td{
+    padding:0 1em;
+    margin: 0;
+  }
+  th{
+    text-align: center;
+
+  }
+  .data{
+    text-align: right;
+    width: 150px;
+
+  }
+  .coad{
+    background: rgb(40, 38, 56);
+    color:rgba(255, 255, 255, 0.685);
+    display: block;
+    height: 100px;
+    overflow-y: scroll;
+  }
 }

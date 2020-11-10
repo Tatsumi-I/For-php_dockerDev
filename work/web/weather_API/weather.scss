@@ -11,7 +11,7 @@ body{
   padding: 0;
   // width: clamp(300px,100vw,100%);
   // width: 100vw;
-  width: max-content;
+  // width: max-content;
   font-family: adobe-text-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -40,12 +40,12 @@ footer{
   // font-size: 200%;
   background: rgba(69, 151, 206, 0.7);
   padding: 3%;
-  div{
+  .logo{
     margin: 0 auto;
     display: flex;
     max-width: 500px;
   }
-  .logo{
+  .img{
     width: 60px;
   }
   .api{
@@ -55,11 +55,13 @@ footer{
 
 }
   h1{
-    margin: auto;
+    margin: 20px auto;
     text-shadow: 1px 1px 1px grey,-1px -1px 1px grey;
   }
   h2{
     text-align: center;
+    margin: 30px auto 0;
+
   }
   b{
     background: white;
@@ -79,7 +81,7 @@ main{
 }
 fieldset{
   max-width: 500px;
-  margin: 20px auto;
+  margin: 20px auto 50px;
   background:rgba(225, 225, 225, 0.8);
   padding: 2%;
   border-radius: 5px;
@@ -124,7 +126,7 @@ fieldset{
 details{
   width: clamp(300px, 500px, 90vw);
   display: block;
-  margin: 30px auto;
+  margin: 3px auto;
   background:rgba(225, 225, 225, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(5, 5, 5, 0.5);
@@ -169,6 +171,56 @@ details{
   }
   
 }
+.desc{
+  // color:white;
+  // max-width: 300px;
+  margin: auto;
+  display: flex;
+  padding: 1em;
+  flex-wrap: wrap;
+  .memo{
+    justify-content: space-between;
+    // display: block;
+    margin: auto;
+    text-shadow: 0 0 1px rgb(128, 128, 128) ;
+    max-width: 300px;
+    height: 200px;
+
+  }
+  .text{
+    color: rgb(0, 218, 218);
+  }
+  .blue{
+    background: blue;
+    max-width: 200px;
+    margin: auto;
+  }
+  .skyblue{
+    background: rgb(32, 179, 236);
+    max-width: 200px;
+    margin: auto;
+    
+  }
+  .pink{
+    background: pink;
+    max-width: 200px;
+    margin: auto;
+
+  }
+  .orange{
+    background:orange;
+    max-width: 200px;
+    margin: auto;
+    
+  }
+  .red{
+    background: red;
+    max-width: 200px;
+    margin: auto;
+
+  }
+}
+
 button{
   display:block;
   margin:10px auto;

@@ -60,7 +60,7 @@ $globalMenu =
         </ul>
       </div>
       <div>
-        <p class="indent1"><span>経歴</span></p>
+        <p class="indent1"><span>過去</span></p>
         <p class="indent2">詳解ページ</p>
         <ul class="indent2">
           <li><a href="backBone.php">Backbone</a></li>
@@ -82,4 +82,6 @@ $globalMenu =
   ';
 
 
-$apiKey = 'e446264b25946d417b1277c00910b88e';
+$apiKey = 'e446264b25946d417b1277c00910b88e';//weather用
+
+$talk_apiKey = 'DZZlkvEYj5fcbvCwPozV96pHEpx4nbNe';//talk用

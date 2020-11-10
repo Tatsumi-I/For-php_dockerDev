@@ -56,44 +56,45 @@ switch ($rand) {
 <body>
 
   <header>
-    <div id="header" class="headerContainer">
+    
+    <?php if ($pageName == 'Home - ') {
+      echo
+      <<< __header
+      <div id="header" class="headerContainer">
+        <div class="homeGroup">
+          <div class="copy">
+            <a href="index.php">
+              <p class="item0">"Feel"</p>
+              <p class="item1">Create</p>
+              <p class="item2">a</p>
+              <p class="item3">New</p>
+              <p class="item4">Experience</p>
+              <p class="item5">with　your　mind.</p>
+            </a>
+          </div>
+          <div class="logo">
+            
+              <a href="index.php"><img src="./imgs/logo.png"></a>
+          
+            <div class="nameBar">
+              <h1>石川達実  ポートフォリオサイト</h1>
+              <h2 class="item5">$myName _ Portfolio</h2>
+            </div>
+          </div>
+        </div>
 
-      <?php if ($pageName == 'Home - ') {
-        echo
-          <<< __header
-    <div class="homeGroup">
-      <div class="copy">
-        <a href="index.php">
-          <p class="item0">"Feel"</p>
-          <p class="item1">Create</p>
-          <p class="item2">a</p>
-          <p class="item3">New</p>
-          <p class="item4">Experience</p>
-          <p class="item5">with　your　mind.</p>
-        </a>
-      </div>
-      <div class="logo">
-        
-          <a href="index.php"><img src="./imgs/logo.png"></a>
-      
-        <div class="nameBar">
-          <h1>石川達実  ポートフォリオサイト</h1>
-          <h2 class="item5">$myName _ Portfolio</h2>
+        <div id="globalMenu" class="headFootOpenMenu">
+          <details open>
+            <summary>Global Menu<span>Open</span></summary>
+            $globalMenu
+          </details>
+          $icon
         </div>
       </div>
-    </div>
+        
+      
 
-    <div id="globalMenu" class="headFootOpenMenu">
-      <details open>
-        <summary>Global Menu<span>Open</span></summary>
-        $globalMenu
-      </details>
-      $icon
-    </div>
-    
-  
-
-  __header;
+      __header;
       } else {
 
         echo
@@ -114,7 +115,6 @@ switch ($rand) {
           $globalMenu
         </details>
        
-      </div>
 
     __header_2;
       }

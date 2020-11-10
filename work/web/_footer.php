@@ -14,7 +14,7 @@ require_once('../app/function.php')
     <div class="container2">
       <div class="text">
         <!-- <p>是非ご参照下さい！ -->
-        <a href="chara.php" class="chara">性格と働き方</a>
+        <a href="chara.php" class="chara">性格と思考</a>
         <a href="backBone.php" class="backBone">過去/Backbone</a>
         <a href="blackApron.php" class="blackApron">ブラックエプロンとは?</a>
         <a href="hobby.php" class="hobby">趣味や嗜好</a>

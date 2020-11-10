@@ -8,13 +8,14 @@
 
     <h1>新規Hoz_on情報</h1>
 
+
 <?php
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     
     $title = $_POST['title'];
-    $category = (int) (!empty($_POST['category']));
-    $checked = (int) (!empty($_POST['checked']));
+    $category = (int) $_POST['category'];
+    $checked = (int) (isset($_POST['checked']));
     $comments = $_POST['comments'];
     $time = date('Y-m-d H:i:s');
   
@@ -38,6 +39,8 @@
       die();
     } 
 ?>
+<div class="desc">
+
   <p>
     <?php
       echo "Title/タイトル : ";
@@ -93,6 +96,8 @@
       echo 'DateTime/更新時間 : ' . $time ;
     ?>
   </p>
+  
+  </div>
 
 <?php
   } else {

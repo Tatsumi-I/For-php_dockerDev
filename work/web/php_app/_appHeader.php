@@ -19,6 +19,7 @@
 
 <body>
   <header>
+    <img src="/imgs/myLogoWhite.png" alt="">
     <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
   </header>
   <main>

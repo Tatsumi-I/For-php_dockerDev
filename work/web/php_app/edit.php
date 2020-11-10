@@ -36,10 +36,7 @@
       echo "ERROR: " . h($e->getMessage(), ENT_QUOTES,'UTF-8') . "<br>";
       die();
     } 
-  // }else {
-  //     echo 'modoru';
-  //   }
-      // require_once('_appFooter.php');
+
   
 ?>
 
@@ -54,12 +51,17 @@
   </p>
 
   <form method="POST" action="update.php">
+    <div>
+
     <label for="title">Title/タイトル<input type="text" class="textInput" name="title" value="<?php
             if (!empty($result['title'])){
               echo h($result['title'], ENT_QUOTES, 'UTF-8');
             }
           ?>"></label>
     <br>
+    </div>
+    <div>
+
     <label for="category">Category
       <select name="category">
         <option value="0"
@@ -88,7 +90,9 @@
         Design</option>
       </select>
     </label>
-    <br>
+  </div>
+  <div>
+
     <label for="radio">評価
       <br>
       <label><input type="radio" name="checked" value="1"
@@ -113,7 +117,10 @@
           ?>
       >What's?!</label>
   </label>
-  <br>
+
+  </div>
+  <div>
+
     <label for="textarea">コメント
       <br>
       <textarea name="comments" col="20" row="5" maxlength="100"><?php 
@@ -123,6 +130,7 @@
         ?></textarea>
       <br>
     </label>
+  </div>
     <input type="hidden" name="id" value="
       <?php echo h($result['id'],ENT_QUOTES,'UTF-8'); ?>
     ">

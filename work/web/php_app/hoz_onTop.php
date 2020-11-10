@@ -8,17 +8,21 @@
   
   <fieldset>
     <legend><strong>What's Hoz_on?!</strong></legend>
+    <p>Hoz_on(ホゾン)とは?</p>
+      <img src="/imgs/idea.jpg" alt="">
       <ul>
-        <p>Hoz_onとは?</p>
-        <li>Hoz_on(ホゾン,仮称)は、<strong>その時感じたことをすぐに保存できる</strong>アプリです。</li>
+        <li><strong>感じたことをすぐに保存できる</strong>アプリです。</li>
         <li>Hoz_on = (Hands-on"実践" + Hozon"保存")</li>
       </ul>
   </fieldset>
   <fieldset>
     <legend><strong>Why Hoz_on?!</strong></legend>
+    <p><strong>面白い発見や、後でもう少し調べたいこと</strong></p>
+    <p>いつの間にか忘れてしまうことはありませんか？</p>
+    <img src="/imgs/writing.jpg" alt="">
+
       <ul>
-        <p>Web上で見つけた<strong>面白い発見や、後でもう少し調べたいこと</strong>をいつの間にか忘れてしまうことはありませんか？</p>
-        <li>Hoz_onをあなたのinspirationのために活用してください。</li>
+        <li>Hoz_onを活用してください。</li>
         <li>Hoz_onなら、<strong>あとでもう一度見たいことを”保存”</strong>しておくことができます。</li>
         <li>Hoz_onなら、あなたが遭難するのを防いでくれます。</li>
       </ul>

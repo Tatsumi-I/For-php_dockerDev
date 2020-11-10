@@ -54,10 +54,10 @@ $links =
         </legend>
         <div class="gaiyou">
           <a href="skills.php">スキルと知識</a>
-          <a href="backBone.php">経歴</a>
+          <a href="backBone.php">過去</a>
           <a href="chara.php">人物像</a>
         </div>
-        <p>このポートフォリオサイトは、上記3点について正しく知っていただくために作られました。</p>
+        <b>このポートフォリオサイトは、この3点について正しく知っていただくために作られました。</b>
       </fieldset>
 
       <h3>3つの柱別！ 手っ取り早く結論を得るためのリンク集</h3>
@@ -65,18 +65,17 @@ $links =
         <div class="notes">
           <h4>スキルと知識</h4>
           <ul>
-            <li><a href="#iconList">スキルと知識一覧</a></li>
-            <li><a href="#area_1">CoadingとDesignの成果物</a></li>
-            <li><a href="https://github.com/Tatsumi-I/For-php_dockerDev/tree/tougou/work/web" target="_github">このサイトのコードや管理をGithubで見る</a></li>
-            <li><a href="hoz_onTop.php">"CRUD","db連携" によるアプリ</a></li>
+            <li><a href="skills.php">得意なこと、伸ばしたいことは何か？</a></li>
+            <li><a href="skills.php">累積学習時間やインプットした具体的内容は？</a></li>
             <li><a href="weather.php">"Web_API" によるお天気アプリ</a></li>
-            <li><a href="skill.php">得意なこと、伸ばしたいことは何か？</a></li>
-            <li>累積学習時間は？</li>
+            <li><a href="hoz_onTop.php">"CRUD","db連携" によるアプリ</a></li>
+            <li><a href="https://github.com/Tatsumi-I/For-php_dockerDev/tree/tougou/work/web" target="_github">このサイトのコードや管理をGithubで見る</a></li>
+            <li><a href="#iconList">スキルと知識一覧</a></li>
           </ul>
         </div>
         <div class="notes">
 
-          <h4>経歴</h4>
+          <h4>過去</h4>
           <ul>
             <li><a href="backBone.php">生い立ち</a></li>
             <li><a href="blackApron.php">前職ブラックエプロンとは？</a></li>
@@ -87,9 +86,24 @@ $links =
 
           <h4>人物像</h4>
           <ul>
-            <li><a href="chara.php">性格と働き方</a></li>
+            <li><a href="chara.php">性格と思考</a></li>
             <li><a href="hobby.php">趣味</a></li>
           </ul>
+        </div>
+      </div>
+      <h3>お気づきのことは…</h3>
+      <div class="container1">
+        <div class="contentImg">
+          <a class="hoz_on" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+        </div>
+        <div class="text">
+          <h4>このアプリに保存して下さい！！</h4>
+          <p><strong>あなたの感想やフィードバック、コメント</strong>…</p>
+          <p><strong>後からもう一度チェックしたい内容</strong>…</p>
+          <p><strong>思いついたその瞬間に！</strong></p>
+          <p>とりあえず<strong>”Hoz_on”（保存）</strong>しませんか？ </p>
+          <p>オリジナルアプリを是非体感して下さい！</p>
+          <p>画面右上からいつでも”Hoz_on”できます！</p>
         </div>
       </div>
     </div>
@@ -109,7 +123,7 @@ $links =
         </div> -->
       <div class="contentOuter">
         <div class="content">
-          <h3>アプリケーション</h3>
+          <h3>DB連携アプリ</h3>
           <div class="icons">
             <i class="fab fa-docker fa-fw docker"></i>
             <i class="fab fa-php fa-fw php"></i>
@@ -124,6 +138,64 @@ $links =
               <h4>初めてのApp - ”Hoz_on”</h4>
               <p>是非お使い下さい！</p>
               <a href="../php_app/eva.php" target="_Hoz_on">Hoz_onを使ってみる</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>Web_APIアプリ</h3>
+          <div class="icons">
+            <img src="imgs/api.jpg" alt="">
+            <i class="fab fa-docker fa-fw docker"></i>
+            <i class="fab fa-php fa-fw php"></i>
+            <i class="fab fa-github git" title="Git/GitHub"></i>
+          </div>
+          <div class="container2">
+            <div class="contentImg">
+              <img src="imgs/weather_app.png" title="">
+            </div>
+            <div class="text">
+              <p>Webサービスの可能性を広げる<strong>API</strong></p>
+              <p>Web APIによる天気予報アプリです</p>
+              <a href="/weather_API/weather.php" target="_api">使ってみる</a>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>計算の自動化</h3>
+          <div class="icons">
+            <i class="fab fa-docker fa-fw docker"></i>
+            <i class="fab fa-php fa-fw php"></i>
+            <i class="fab fa-github git" title="Git/GitHub"></i>
+          </div>
+          <div class="container2">
+            <div class="contentImg">
+              <img src="imgs/auto_calc.png" alt="">
+            </div>
+            <div class="text">
+              <p>自分の学習時間の記録です</p>
+              <p>せっかくなので<strong>自動計算機能を付けました</strong></p>
+              <a href="skills.php">使ってみる</a>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>クリエイティブコーディング</h3>
+          <div class="icons">
+            <i class="fab fa-js fa-fw js"></i>
+            <!-- <i class="p5"></i> -->
+            <img src="imgs/p5.png" alt="">
+          </div>
+          <div class="container2">
+            <iframe src="sketch_1.php" frameborder="0"></iframe>
+            <iframe src="sketch_2.php" frameborder="0"></iframe>
+            <div class="text">
+              <p>学習開始初期から関心のある<strong>Processing</strong></p>
+              <p><strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>
             </div>
           </div>
         </div>
@@ -168,45 +240,6 @@ $links =
             </div>
           </div>
         </div>
-
-        <div class="content">
-          <h3>クリエイティブコーディング</h3>
-          <div class="icons">
-            <i class="fab fa-js fa-fw js"></i>
-            <!-- <i class="p5"></i> -->
-            <img src="imgs/p5.png" alt="">
-          </div>
-          <div class="container2">
-            <iframe src="sketch_1.php" frameborder="0"></iframe>
-            <iframe src="sketch_2.php" frameborder="0"></iframe>
-            <div class="text">
-              <p>学習開始初期から関心のある<strong>Processing</strong></p>
-              <p><strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>
-            </div>
-          </div>
-        </div>
-        <div class="content">
-          <h3>Web_API</h3>
-          <div class="icons">
-            <img src="imgs/api.jpg" alt="">
-            <i class="fab fa-docker fa-fw docker"></i>
-            <i class="fab fa-php fa-fw php"></i>
-            <i class="fab fa-github git" title="Git/GitHub"></i>
-          </div>
-          <div class="container2">
-            <div class="contentImg">
-              <img src="imgs/weather_app.png" title="">
-            </div>
-            <div class="text">
-              <p>Webサービスの可能性を広げる<strong>API</strong></p>
-              <p>Web APIによる天気予報アプリです。</p>
-              <p><strong>フルスクラッチ</strong></p>
-              <a href="/weather_API/weather.php" target="_api">使う</a>
-              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -330,10 +363,10 @@ $links =
         </div>
       </div>
       <div class="content">
-        <h3>Knowledgeable about...(このポートフォリオに含まれている要素一覧です)</h3>
+        <h3 id="iconList">Knowledgeable about...(このポートフォリオに含まれている要素一覧です)</h3>
         <div class="container1">
           <div class="text">
-            <div class="icons" id="iconList">
+            <div class="icons">
               <div>
                 <p><i class="fab fa-html5 fa-fw html5"></i>HTML5</p>
                 <p><i class="fab fa-css3 fa-fw css3"></i>CSS3/animation</p>

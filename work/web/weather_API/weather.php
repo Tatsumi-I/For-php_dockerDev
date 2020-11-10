@@ -11,39 +11,37 @@
 <body>
   
 <header>
-  <div>
-    <img class="logo" src="/imgs/logo.png" alt="">
+  <div class="logo">
+    <img class="img" src="/imgs/logo.png" alt="">
     <h1>OpenWeatherMap_API</h1>
   </div>
   <!-- <img src="/imgs/sun.jpg"> -->
   <img class="api" src="/imgs/api.jpg" alt="">
   <p>phpによる、Web APIを使用した天気アプリです</p>
+  <hr>
+
+  <h2>3つの”分かる！”が詰まった お天気アプリです</h2>
+<div class="desc">
+  <div class="memo">
+    <h2 class="text">背景色で体感気温がすぐ分かる！</h2>
+    <p class="red">体感気温 35 ~  ℃</p>
+    <p class="orange">体感気温 30 ~ 35 ℃</p>
+    <p class="pink">体感気温 25 ~ 30 ℃</p>
+    <p class="skyblue">体感気温 0 ~ 5 ℃</p>
+    <p class="blue">体感気温 -10 ~ 0 ℃</p>
+  </div>
+  <div class="memo">
+    <h2 class="text">世界中の今が分かる！</h2>
+    <p>都市を変更する ボタンから世界12都市を選択可能</p>
+  </div>
+  <div class="memo">
+    <h2 class="text">5日先の天気まで分かる！</h2>
+    <p>24時間天気はもちろん、5日先の天気まで分かっちゃう</p>
+  </div>
+</div>
 </header>
 
 <main>
-<fieldset>
-  <legend><h2>都市を選んでください</h2></legend>
-  <form action="" method="GET">
-    <div>
-      <label><input type="radio" name="area" value="2643744">London(GB)</label>
-      <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
-      <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
-      <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
-      <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
-      <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
-    </div>
-    <div>
-      <label><input type="radio" name="area" value="2130037">北海道</label>
-      <label><input type="radio" name="area" value="1850147">東京</label>
-      <label><input type="radio" name="area" value="1856057">名古屋</label>
-      <label><input type="radio" name="area" value="1853909">大阪</label>
-      <label><input type="radio" name="area" value="1863967">福岡</label>
-      <label><input type="radio" name="area" value="1854345">沖縄</label>
-    </div>
-    <button>Chenge!</button>
-  </form>
-</fieldset>
-
 <?php
 
 require_once('/work/app/function.php');
@@ -76,11 +74,38 @@ echo '<h3>' . $city_now . ' ' . $time_now . '現在の天気</h3>';
 echo $weather_now['main'] . '/';
 echo $weather_now['description'] . '<br>';
 echo '体感気温' . $feels_now . '℃';
-echo '</div><hr>';
+echo '</div>';
 
 
 
-echo '<h2>' . $city . ' 24時間天気予報</h2>';
+?>
+<fieldset>
+  <legend>都市を選ぶことができます</legend>
+    <!-- <summary><span>都市を変更する</span></summary> -->
+  <form action="" method="GET">
+    <div>
+      <label><input type="radio" name="area" value="2643744">London(GB)</label>
+      <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
+      <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
+      <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
+      <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
+      <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
+    </div>
+    <div>
+      <label><input type="radio" name="area" value="2130037">北海道</label>
+      <label><input type="radio" name="area" value="1850147">東京</label>
+      <label><input type="radio" name="area" value="1856057">名古屋</label>
+      <label><input type="radio" name="area" value="1853909">大阪</label>
+      <label><input type="radio" name="area" value="1863967">福岡</label>
+      <label><input type="radio" name="area" value="1854345">沖縄</label>
+    </div>
+    <button>Click or Enter!</button>
+  </form>
+</fieldset>
+<hr>
+
+<?php
+echo '<h1>' . $city . ' 24時間天気予報</h1>';
 
 // echo '<div class="tables">';
   $i = 0;
@@ -97,15 +122,15 @@ echo '<h2>' . $city . ' 24時間天気予報</h2>';
 
     $bg_color = 'none';
       switch ($feels){
-        case (($feels > -10) && ($feels < 0)): $bg_color = 'blue';
-        break;
-        case (($feels > 0) && ($feels < 5)) : $bg_color = 'skyblue';
-        break;
-        case (($feels > 25) && ($feels < 30)): $bg_color = 'pink';
-        break;
-        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orangered';
-        break;
         case ($feels >= 35): $bg_color = 'red';
+        break;
+        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orange';
+        break;
+        case (($feels >= 25) && ($feels < 30)): $bg_color = 'pink';
+        break;
+        case (($feels > 0) && ($feels <= 5)) : $bg_color = 'skyblue';
+        break;
+        case (($feels > -10) && ($feels <= 0)): $bg_color = 'blue';
         break;
       }
 
@@ -149,7 +174,7 @@ echo '<h2>' . $city . ' 24時間天気予報</h2>';
         break;
         case (($feels > 25) && ($feels < 30)): $bg_color = 'pink';
         break;
-        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orangered';
+        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orange';
         break;
         case ($feels >= 35): $bg_color = 'red';
         break;
@@ -212,7 +237,7 @@ echo '<summary>
         break;
         case (($feels > 25) && ($feels < 30)): $bg_color = 'pink';
         break;
-        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orangered';
+        case (($feels >= 30) && ($feels < 35)): $bg_color = 'orange';
         break;
         case ($feels >= 35): $bg_color = 'red';
         break;
