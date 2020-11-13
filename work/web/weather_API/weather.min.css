@@ -1,10 +1,10 @@
-html, body { scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; background: url(/imgs/view.jpg) no-repeat; }
+html, body { scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; background: url(/imgs/view.jpg) no-repeat; }
 
 header, footer { min-height: 100px; margin: 0 auto; color: white; text-align: center; background: rgba(69, 151, 206, 0.7); padding: 3%; }
 
-header .logo, footer .logo { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; max-width: 500px; }
+header .logo, footer .logo { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 500px; }
 
-header .img, footer .img { width: 60px; }
+header .img, footer .img { width: 60px; margin: 20px auto 0; }
 
 header .api, footer .api { width: 200px; -webkit-filter: saturate(3); filter: saturate(3); }
 

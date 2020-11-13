@@ -1,0 +1,129 @@
+@charset 'utf-8';
+
+p{
+  line-height: 2em;
+}
+h1{
+  color:snow;
+  filter: drop-shadow(0 0 1px dimgrey);
+  margin: 10px auto;
+  text-align: center;
+}
+.base{
+  width: fit-content;
+  min-width: 300px;
+  background: rgb(235, 179, 95);
+  padding: 5px 20px;
+  margin: auto;
+  border-radius: 5px;
+
+  
+}
+.header{
+  display: flex;
+  filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5));
+
+  i,
+  img{
+    min-width: 50px;
+    max-width: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  i{
+    font-size: 200%;
+    color:snow;
+    filter: drop-shadow(0 0 1px dimgrey);
+  }
+}
+form{
+  width: fit-content;
+  display: block;
+  min-width: 300px;
+  padding: 10px 30px;
+  background: snow;
+  margin: 10px auto;
+  text-align: right;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 1px grey);
+  input{
+    border-radius: 5px;
+    // color:snow;
+    width: 200px;
+    // padding: 3px 2em;
+    margin: auto;
+  }
+}
+.container{
+  display: flex;
+  padding: 60px 0;
+  filter: drop-shadow(0 0 1px grey);
+
+}
+.triangle_left{
+  width: 0;
+  margin-top: 20px;
+  height: 0;
+  border:5px solid transparent;
+  border-right-color: rgb(18, 149, 209);;
+
+
+}
+.triangle_right{
+  width: 0;
+  margin-top: 20px;
+  height: 0;
+  border:5px solid  transparent;
+  border-left-color:  rgb(18, 149, 209);;
+}
+.bot{
+  background: snow;
+  color: darkslategrey;
+  width: fit-content;
+  text-align: left;
+  margin: 0 auto 0 0;
+  // height: 100px;
+  border-radius: 5px;
+  padding: 0 30px;
+  color:ivory;
+  background: rgb(18, 149, 209);
+  
+}
+.human{
+  // background: snow;
+  // color: darkslategrey;
+  width: fit-content;
+  color:ivory;
+  background: rgb(18, 149, 209);
+  text-align: right;
+  margin: 0 0 0 auto;
+  // height: 100px;
+  border-radius: 5px;
+  padding: 0 30px;
+
+}
+.acount{
+  border-radius: 50%;
+  color:ivory;
+  background: rgb(18, 149, 209);
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  border:1px solid snow;
+}
+.wall_color{
+  background: snow;
+  border-radius: 5px;
+
+}
+
+button{
+  background: rgb(18, 149, 209);
+  color:snow;
+  padding: 0 1em;
+  border-radius: 5px;
+
+}

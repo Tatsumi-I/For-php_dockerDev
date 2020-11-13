@@ -300,7 +300,6 @@ main {
       // width: 100vw;
       justify-content: space-around;
       background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat;
-
       .text {
         margin: 0 auto;
         padding: 5% ;
@@ -395,11 +394,10 @@ main {
           width: 200px;
           line-height: 200px;
           border-radius: 50%;
-          background: rgb(252, 255, 223);
-          // background: $grege;
-          font-size: 110%;
-          // color: ivory;
-          border: 1px solid $darkBlue;
+          background:darkslategrey;
+          font-size: 130%;
+          color: antiquewhite;
+          // border: 1px solid $darkBlue;
           font-weight: bold;
           text-align: center;
           box-shadow: $shadow;
@@ -414,10 +412,7 @@ main {
             padding: 5px;
             display: block;
             min-width: 280px;
-            font-size: 150%;
             line-height: 3em;
-            // background: white;
-            background: $grege;
             height: fit-content;
           }
         }
@@ -529,6 +524,9 @@ main {
     box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
     border-radius: 6px;
     background: $grege;
+    ul{
+      min-width: 300px;
+    }
   }
 
   .sum {
@@ -655,8 +653,30 @@ summary {
   .coad{
     background: rgb(40, 38, 56);
     color:rgba(255, 255, 255, 0.685);
+    // display: block;
+    // height: 100px;
+    // overflow-y: scroll;
+  }
+}
+.hobbyImg{
+  margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  img{
+    width: 150px;
     display: block;
-    height: 100px;
-    overflow-y: scroll;
+
+  }
+}
+.toTop {
+  background: $grege;
+  margin: 100px auto 0;
+  color: $Orange;
+  text-align: center;
+  padding: 20px;
+
+  a {
+    padding: 20px;
   }
 }

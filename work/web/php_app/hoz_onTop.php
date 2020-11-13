@@ -11,7 +11,7 @@
     <p>Hoz_on(ホゾン)とは?</p>
       <img src="/imgs/idea.jpg" alt="">
       <ul>
-        <li><strong>感じたことをすぐに保存できる</strong>アプリです。</li>
+        <li><strong>感じたことをすぐに保存できる</strong>です。</li>
         <li>Hoz_on = (Hands-on"実践" + Hozon"保存")</li>
       </ul>
   </fieldset>

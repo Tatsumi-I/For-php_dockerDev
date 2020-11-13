@@ -76,7 +76,14 @@ $globalMenu =
           <li><a href="hobby.php">Hobby</a></li>
         </ul>
       </div>
+      <div>
       <p class="indent1"><a href="contact.php"><span>Contact</span></a></p>
+      <p class="indent2">各種アカウントはこちら</p>
+        <ul class="indent2">
+          <li><a href="https://github.com/Tatsumi-I/">GitHub</a></li>
+          <li><a href="mailto:t.tsumi02@gmail.com">MAILで問い合わせる</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   ';

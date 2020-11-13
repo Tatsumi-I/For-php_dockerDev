@@ -8,6 +8,8 @@ header a, footer a { text-decoration: none; color: #966432; margin: 10px; }
 
 header a:visited, header a:link, footer a:visited, footer a:link { color: #966432; }
 
+header p, footer p { margin: 0 auto; }
+
 p { font-size: 130%; font-weight: 700; text-align: left; }
 
 body { margin: 0 auto; }
@@ -30,13 +32,13 @@ main { background: rgba(255, 255, 255, 0.8); margin: 0 auto; min-height: 80vh; }
 
 main h1 { margin: 10px; padding: 10px; line-break: 18px; }
 
-main a { text-decoration: none; background: #213a63de; color: whitesmoke; padding: 1em 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); display: block; margin: 3% auto; }
+main a { text-decoration: none; background: #213a63de; color: whitesmoke; padding: 0 2em; border-radius: 5px; cursor: pointer; -webkit-box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.281), -1px -1px 1px rgba(255, 255, 255, 0.9); display: block; margin: 1% auto; }
 
-main .title { background: url(/imgs/keep.jpg) left 0%/cover no-repeat; min-height: 50vh; font-size: 120%; }
+main .title { background: url(/imgs/keep.jpg) left 0%/cover no-repeat; font-size: 120%; }
 
 main .title h1, main .title h2, main .title p { padding: 0; margin: 0; }
 
-main .title p { margin: 150px auto; -webkit-filter: drop-shadow(0 0 1px rgba(27, 37, 73, 0.8)); filter: drop-shadow(0 0 1px rgba(27, 37, 73, 0.8)); color: white; }
+main .title p { margin: 50px auto 0; -webkit-filter: drop-shadow(0 0 1px rgba(27, 37, 73, 0.8)); filter: drop-shadow(0 0 1px rgba(27, 37, 73, 0.8)); color: white; }
 
 main .title h1 span { display: block; min-width: 300px; background: #213a63de; color: whitesmoke; padding: 0; font-size: 80%; margin: auto; }
 
@@ -73,4 +75,6 @@ fieldset img { width: 100%; }
 fieldset legend { font-size: 300%; }
 
 fieldset ul, fieldset li { padding: 0; margin: 0; list-style: none; }
+
+.cancel { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; padding: 0 1em; display: block; text-align: center; }
 /*# sourceMappingURL=appStyle.min.css.map */

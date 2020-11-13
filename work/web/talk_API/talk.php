@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>APIによるチャットボット</title>
+  <link rel="stylesheet" href="talk.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
 
@@ -42,29 +44,55 @@ $response_arr = json_decode($response_json, true);
 
 // 表示処理
 $response = $response_arr['results'][0]['reply'];
-echo $text . '<br>';
-echo $response;
+// echo $text . '<br>';
+// echo $response;
 $reque = $request['query'];
-echo $reque;
+// echo $reque;
 
 // curl_close($ch);
 echo 
 <<< body
-    <div class="base">
-      <div class="bot">
-        <p>$response</p>
-
-      </div>
-      <div class="human">
-        <p></p>
-      </div>
-    </div>
-    <form action="" method="POST" autocomplete="off">
-      <input type="text" name="text">
-      <button>done</button>
-    </form>
-
+ 
   body;
 ?>
+
+<div class="base">
+    <div class="header">
+      <img src="/imgs/logo.png" alt="">
+      <i class="fas fa-times"></i>
+      <img src="/imgs/api.jpg" alt="">
+    </div>
+
+    <h1>TALK APIによるチャットボット</h1>
+    <hr>
+    <div class="wall_color">
+      <div class="container">
+        <div class="human">
+          <p><?php echo $text;?></p>
+        </div>
+        <div class="triangle_right">
+        </div>
+        <div class="acount">
+          <i class="fas fa-user-alt"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="acount">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="triangle_left">
+        </div>
+        <div class="bot">
+          <p><?php echo $response; ?>!</p>
+        </div>
+      </div>
+    </div>
+
+    <form action="" method="POST" autocomplete="off">
+    <input type="text" name="text" autofocus>
+    <button><i class="far fa-paper-plane"></i></button>
+    </form>
+  </div>
+
   </body>
   </html>

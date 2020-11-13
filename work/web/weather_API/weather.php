@@ -23,7 +23,7 @@
   <h2>3つの”分かる！”が詰まった お天気アプリです</h2>
 <div class="desc">
   <div class="memo">
-    <h2 class="text">背景色で体感気温がすぐ分かる！</h2>
+    <h2 class="text">体感気温がすぐ分かる！</h2>
     <p class="red">体感気温 35 ~  ℃</p>
     <p class="orange">体感気温 30 ~ 35 ℃</p>
     <p class="pink">体感気温 25 ~ 30 ℃</p>
@@ -32,11 +32,11 @@
   </div>
   <div class="memo">
     <h2 class="text">世界中の今が分かる！</h2>
-    <p>都市を変更する ボタンから世界12都市を選択可能</p>
+    <p>都市を変更するボタンから<br>世界12都市を選択可能</p>
   </div>
   <div class="memo">
     <h2 class="text">5日先の天気まで分かる！</h2>
-    <p>24時間天気はもちろん、5日先の天気まで分かっちゃう</p>
+    <p>24時間天気はもちろん、<br>5日先の天気まで分かっちゃう</p>
   </div>
 </div>
 </header>

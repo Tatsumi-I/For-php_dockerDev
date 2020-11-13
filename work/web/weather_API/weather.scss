@@ -9,18 +9,10 @@ body{
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  // width: clamp(300px,100vw,100%);
-  // width: 100vw;
-  // width: max-content;
   font-family: adobe-text-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0.1em;
-  // line-height: 1.5;
-  font-feature-settings: "palt"1, "swsh"1;
-  transform-style: preserve-3d;
-  perspective: 10px;
-  // display: flex;
   // flex-wrap: wrap;
   background: url(/imgs/view.jpg) no-repeat;
   // background-size: cover;
@@ -43,10 +35,12 @@ footer{
   .logo{
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     max-width: 500px;
   }
   .img{
     width: 60px;
+    margin: 20px auto 0;
   }
   .api{
     width: 200px;

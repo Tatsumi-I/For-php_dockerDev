@@ -26,6 +26,7 @@ footer {
 
   .headerContainer {
     animation: bgcolor 12s forwards;
+    
 
     .homeGroup {
       padding: 3%;
@@ -113,7 +114,7 @@ footer {
           height: auto;
           padding: 0;
           margin: 5% auto;
-          animation: flash 12s infinite;
+          animation: flash 8s infinite;
           display: block;
           filter: drop-shadow(2px 4px 6px $myBlack);
         }
@@ -204,20 +205,9 @@ footer {
 
 
 footer {
-  margin-top: 100px;
 
   // background: $grege;
-  .toTop {
-    background: $grege;
-    margin: 0;
-    color: $Orange;
-    text-align: center;
-    padding: 20px;
-
-    a {
-      padding: 20px;
-    }
-  }
+  
 
   .copyLight {
     margin: 0;

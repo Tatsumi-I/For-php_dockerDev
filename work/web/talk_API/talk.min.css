@@ -1,0 +1,32 @@
+p { line-height: 2em; }
+
+h1 { color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); margin: 10px auto; text-align: center; }
+
+.base { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; min-width: 300px; background: #ebb35f; padding: 5px 20px; margin: auto; border-radius: 5px; }
+
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); }
+
+.header i, .header img { min-width: 50px; max-width: 100px; display: block; margin: auto; text-align: center; }
+
+.header i { font-size: 200%; color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); }
+
+form { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: block; min-width: 300px; padding: 10px 30px; background: snow; margin: 10px auto; text-align: right; border-radius: 5px; -webkit-filter: drop-shadow(0 0 1px grey); filter: drop-shadow(0 0 1px grey); }
+
+form input { border-radius: 5px; width: 200px; margin: auto; }
+
+.container { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 60px 0; -webkit-filter: drop-shadow(0 0 1px grey); filter: drop-shadow(0 0 1px grey); }
+
+.triangle_left { width: 0; margin-top: 20px; height: 0; border: 5px solid transparent; border-right-color: #1295d1; }
+
+.triangle_right { width: 0; margin-top: 20px; height: 0; border: 5px solid  transparent; border-left-color: #1295d1; }
+
+.bot { background: snow; color: darkslategrey; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; text-align: left; margin: 0 auto 0 0; border-radius: 5px; padding: 0 30px; color: ivory; background: #1295d1; }
+
+.human { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; color: ivory; background: #1295d1; text-align: right; margin: 0 0 0 auto; border-radius: 5px; padding: 0 30px; }
+
+.acount { border-radius: 50%; color: ivory; background: #1295d1; height: 40px; width: 40px; line-height: 40px; text-align: center; margin: 5px; border: 1px solid snow; }
+
+.wall_color { background: snow; border-radius: 5px; }
+
+button { background: #1295d1; color: snow; padding: 0 1em; border-radius: 5px; }
+/*# sourceMappingURL=talk.min.css.map */

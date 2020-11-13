@@ -22,11 +22,11 @@ require_once('../app/function.php')
       </div>
     </div>
   </div>
+  <p class="toTop"><a href="#area_0">PageTopへ</a></p>
 </section>
 </main>
 
 <footer>
-  <p class="toTop"><a href="#area_0">PageTopへ</a></p>
 
   <div id="footer" class="headFootOpenMenu">
     <details>
@@ -45,8 +45,7 @@ require_once('../app/function.php')
     </a>
   </div>
   <address>
-    <p><a href="https://github.com/Tatsumi-I/">GitHub</a></p>
-    <p><a href="mailto:t.tsumi02@gmail.com">MAILで問い合わせる</a></p>
+
   </address>
   <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
 </footer>

@@ -65,20 +65,20 @@ $links =
         <div class="notes">
           <h4>スキルと知識</h4>
           <ul>
-            <li><a href="skills.php">得意なこと、伸ばしたいことは何か？</a></li>
-            <li><a href="skills.php">累積学習時間やインプットした具体的内容は？</a></li>
-            <li><a href="weather.php">"Web_API" によるお天気アプリ</a></li>
-            <li><a href="hoz_onTop.php">"CRUD","db連携" によるアプリ</a></li>
+            <li><a href="skills.php"><strong>得意なこと、伸ばしたいこと</strong>は？</a></li>
+            <li><a href="skills.php"><strong>累積学習時間とインプット</strong>内容は？</a></li>
+            <li><a href="weather.php">"Web_<strong>API</strong>" アプリ</a></li>
+            <li><a href="hoz_onTop.php">"CRUD","<strong>DB</strong>連携" アプリ</a></li>
             <li><a href="https://github.com/Tatsumi-I/For-php_dockerDev/tree/tougou/work/web" target="_github">このサイトのコードや管理をGithubで見る</a></li>
-            <li><a href="#iconList">スキルと知識一覧</a></li>
+            <li><a href="#iconList">スキルと知識<strong>一覧</strong></a></li>
           </ul>
         </div>
         <div class="notes">
 
           <h4>過去</h4>
           <ul>
-            <li><a href="backBone.php">生い立ち</a></li>
-            <li><a href="blackApron.php">前職ブラックエプロンとは？</a></li>
+            <li><a href="backBone.php">一風変わった<strong>生い立ち</strong>とは？</a></li>
+            <li><a href="blackApron.php"><strong>前職</strong>ブラックエプロンとは？</a></li>
           </ul>
         </div>
 
@@ -86,8 +86,8 @@ $links =
 
           <h4>人物像</h4>
           <ul>
-            <li><a href="chara.php">性格と思考</a></li>
-            <li><a href="hobby.php">趣味</a></li>
+            <li><a href="chara.php"><strong>"採用後担当者必見！"</strong>石川達実の性格や思考の型</a></li>
+            <li><a href="hobby.php"><strong>”人となりが分かる！”</strong>趣味紹介ページ</a></li>
           </ul>
         </div>
       </div>
@@ -137,7 +137,7 @@ $links =
             <div class="text">
               <h4>初めてのApp - ”Hoz_on”</h4>
               <p>是非お使い下さい！</p>
-              <a href="../php_app/eva.php" target="_Hoz_on">Hoz_onを使ってみる</a>
+              <a href="../php_app/eva.php" target="_Hoz_on">使ってみる</a>
             </div>
           </div>
         </div>
@@ -183,6 +183,26 @@ $links =
           </div>
         </div>
 
+        <div class="content">
+          <h3>チャットボット</h3>
+          <div class="icons">
+            <img src="imgs/api.jpg" alt="">
+            <i class="fab fa-docker fa-fw docker"></i>
+            <i class="fab fa-php fa-fw php"></i>
+            <i class="fab fa-github git" title="Git/GitHub"></i>
+          </div>
+          <div class="container2">
+          <div class="contentImg">
+              <img src="imgs/bot.png" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Web_API</strong>による</p>
+              <p><strong>チャットボット</strong></p>
+              <a href="/talk_API/talk.php">使ってみる</a>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
+            </div>
+          </div>
+        </div>
         <div class="content">
           <h3>クリエイティブコーディング</h3>
           <div class="icons">

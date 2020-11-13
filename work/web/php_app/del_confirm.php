@@ -55,7 +55,7 @@
   <?php echo h($result['title'],ENT_QUOTES,'UTF-8'); 
     ?>
   ">
-  <p><a href="list_table.php">キャンセル</a></p>
+  <a href="list_table.php" class="cancel">キャンセル</a>
   <button>
     削除する
   </button>

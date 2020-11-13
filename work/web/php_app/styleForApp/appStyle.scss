@@ -47,6 +47,9 @@ footer {
       color: $Orange;
     }
   }
+  p{
+    margin: 0 auto;
+  }
 }
 p{
   font-size: 130%;
@@ -109,17 +112,16 @@ main{
     text-decoration: none;
     background: $night;
     color: whitesmoke;
-    padding: 1em 2em;
+    padding: 0 2em;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: $shadow;
     // width: 90vw;
     display:block;
-    margin: 3% auto;
+    margin: 1% auto;
   }
   .title{
     background: url(/imgs/keep.jpg) left 0% / cover no-repeat ;
-    min-height: 50vh;
     font-size: 120%;
     h1,
     h2,
@@ -128,7 +130,7 @@ main{
       margin: 0;
     }
     p{
-      margin: 150px auto;
+      margin: 50px auto 0;
       filter: drop-shadow(0 0 1px $darkBlue);
       color:white;
     }
@@ -276,3 +278,9 @@ fieldset {
 }
 
 
+.cancel{
+  width: fit-content;
+  padding: 0 1em;
+  display: block;
+  text-align: center;
+}

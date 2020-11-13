@@ -192,7 +192,7 @@ $links =
         <h3>転職の動機は何なのか?</h3>
         <div class="container2">
           <div class="contentImg">
-            <img src="imgs/joy.jpg">
+            <img src="imgs/growth.jpg">
             <b>転職は"自分の能力を活かして感動体験を提供したい"という願いの表れ</b>
           </div>
           <div class="text">

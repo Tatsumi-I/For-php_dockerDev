@@ -47,17 +47,17 @@
   100% { opacity: 1; } }
 
 @-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
-  30% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
-  50% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
-  70% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
-  85% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
+  90% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  93% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  96% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
+  98% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
   100% { background: transparent; } }
 
 @keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
-  30% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
-  50% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
-  70% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
-  85% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
+  90% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  93% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  96% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
+  98% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
   100% { background: transparent; } }
 
 @-webkit-keyframes rum-col { 0% { color: #c88c50; }
@@ -143,7 +143,7 @@ header .headerContainer .homeGroup .copy a:hover .item1, header .headerContainer
 
 header .headerContainer .homeGroup .copy a:hover .item0, header .headerContainer .homeGroup .copy a:hover .item5, header .headerContainer .homeGroup .copy a:active .item0, header .headerContainer .homeGroup .copy a:active .item5, header .headerContainer .homeGroup .copy a:visited .item0, header .headerContainer .homeGroup .copy a:visited .item5, footer .headerContainer .homeGroup .copy a:hover .item0, footer .headerContainer .homeGroup .copy a:hover .item5, footer .headerContainer .homeGroup .copy a:active .item0, footer .headerContainer .homeGroup .copy a:active .item5, footer .headerContainer .homeGroup .copy a:visited .item0, footer .headerContainer .homeGroup .copy a:visited .item5 { display: inline-block; }
 
-header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 5% auto; -webkit-animation: flash 12s infinite; animation: flash 12s infinite; display: block; -webkit-filter: drop-shadow(2px 4px 6px #1e1e1e); filter: drop-shadow(2px 4px 6px #1e1e1e); }
+header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 5% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; -webkit-filter: drop-shadow(2px 4px 6px #1e1e1e); filter: drop-shadow(2px 4px 6px #1e1e1e); }
 
 header .headerContainer .homeGroup .logo .nameBar, footer .headerContainer .homeGroup .logo .nameBar { display: block; margin: 0 auto; text-align: center; text-shadow: 0 0 15px rgba(245, 245, 245, 0.3); -webkit-transition: text-shadow 3s ease 8s; transition: text-shadow 3s ease 8s; }
 
@@ -166,12 +166,6 @@ header a, footer a { color: white; text-decoration: none; }
 header a:visited, footer a:visited { color: white; }
 
 header a:hover, footer a:hover { -webkit-transform: scale(0.98); transform: scale(0.98); }
-
-footer { margin-top: 100px; }
-
-footer .toTop { background: #80786630; margin: 0; color: #966432; text-align: center; padding: 20px; }
-
-footer .toTop a { padding: 20px; }
 
 footer .copyLight { margin: 0; color: #966432; text-align: center; padding: 20px; }
 
