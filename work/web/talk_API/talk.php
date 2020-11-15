@@ -42,14 +42,16 @@ $response_json = file_get_contents($url, false, $context);
 // JSON を 配列に変換
 $response_arr = json_decode($response_json, true);
 
-// 表示処理
-$response = $response_arr['results'][0]['reply'];
-// echo $text . '<br>';
-// echo $response;
-$reque = $request['query'];
-// echo $reque;
+if(empty($response_arr['results'][0]['reply'])){
+    $response ='ちょっとわかりません…';
+  } else{
+  $response = $response_arr['results'][0]['reply'];
+}
+  var_dump($response_arr);
 
-// curl_close($ch);
+
+  $reque = $request['query'];
+
 echo 
 <<< body
  

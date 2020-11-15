@@ -153,7 +153,7 @@ header .headerContainer .homeGroup .logo .nameBar h1, footer .headerContainer .h
 
 header .headerContainer .homeGroup .logo .nameBar h2, footer .headerContainer .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s, rum-col 10s infinite 12s; animation: fade 8s forwards 5s, rum-col 10s infinite 12s; letter-spacing: 0.2; font-family: adobe-text-pro, serif; font-weight: 300; font-style: normal; font-size: 4em; margin-top: 3%; }
 
-header .logoImg, footer .logoImg { width: 100px; opacity: 1; padding: 3%; -webkit-filter: drop-shadow(2px 4px 6px grey); filter: drop-shadow(2px 4px 6px grey); -webkit-animation: flash 10s infinite; animation: flash 10s infinite; margin: 0 auto; display: block; }
+header .logoImg, footer .logoImg { width: 180px; -webkit-filter: drop-shadow(2px 4px 6px grey); filter: drop-shadow(2px 4px 6px grey); -webkit-animation: flash 10s infinite; animation: flash 10s infinite; margin: 0 auto; display: block; }
 
 header .inHeader, footer .inHeader { margin: auto; -webkit-animation: toDown 5s forwards; animation: toDown 5s forwards; }
 

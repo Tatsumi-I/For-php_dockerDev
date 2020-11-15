@@ -26,7 +26,7 @@ footer {
 
   .headerContainer {
     animation: bgcolor 12s forwards;
-    
+
 
     .homeGroup {
       padding: 3%;
@@ -160,9 +160,7 @@ footer {
   }
 
   .logoImg {
-    width: 100px;
-    opacity: 1;
-    padding: 3%;
+    width: 180px;
     filter: drop-shadow(2px 4px 6px grey);
     animation: flash 10s infinite;
     margin:0 auto;
