@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather_API</title>
   <link rel="stylesheet" type="text/css" href="weather.min.css">
+  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
+
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
@@ -153,6 +155,37 @@ echo '<h1>' . $city . ' 24時間天気予報</h1>';
     </details>
 
     __deta__;
+    
+    echo
+    <<< mail_form
+    <form action="" method="POST">
+    <label>Mail<input type="email" name="address" autocomplete="off"></label>
+    <button>Done!</button>
+    </form>
+
+
+    mail_form;
+
+  
+    $message = $time . $city .$feels . '℃';
+     // $headers = "From: t.tsumi02@gmail.com";
+    
+    if(isset($_POST['address'])){
+      $address = ($_POST['address']);
+      var_dump($address);
+      echo 'OK';
+    } else{
+      $address = "";
+      echo 'emptyAddress';
+    }
+    mb_send_mail($address, '[Forecast]', $message);
+
+    if(mb_send_mail($address, '[Forecast]', $message) === true){
+      echo 'true';
+    }else{
+      echo 'false';
+    }
+    
 
   for($i = 1; $i < 10; $i++){
     $weather_dt = $list[$i]['dt'];
@@ -207,10 +240,10 @@ echo '<h1>' . $city . ' 24時間天気予報</h1>';
 
 
 
-echo '<details style="background:none;box-shadow: none;">';
+echo '<details  class="five_days" style="background:none;box-shadow: none;">';
 echo '<summary>
         <span>
-          <h2>' . $city . 'の向こう5日間の天気</h2>
+          <h1>' . $city . 'の向こう5日間の天気</h1>
           <i class="fas fa-angle-double-down"></i>
         </span>
       </summary>';

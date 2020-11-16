@@ -35,23 +35,19 @@ switch ($rand) {
   <meta charset="utf-8">
   <title><?php echo $pageName; ?>tatsumi's_portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./css/index.min.css">
   <meta name="description" content="たつみのポートフォリオサイト">
-  <link rel="shortcut icon" href="imgs/myLogoBlack.png" type="image/png" sizes="16*16">
+  <link rel="stylesheet" type="text/css" href="./css/index.min.css">
+  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
-
+  
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
-  <!-- <script src="./js/ellipse.js"></script> -->
-  <!-- <script src="./js/processing.min.js"></script> -->
 
   <style>
     <?php echo
       'html{background: url(../imgs/' . $bgi . '.jpg) top left 50% / cover no-repeat;}'; ?>
   </style>
 </head>
-
-<!-- <canvas id="app" data-processing-sources="./js/ellpse.js"></canvas> -->
 
 <body>
 

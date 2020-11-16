@@ -8,19 +8,6 @@ $myName = 'Tatsumi-Ishikawa';
 
 $date = 'Y/m/d (D) H:i:s';
 
-$n = mt_rand(1, 5); //乱数とランダム表示
-if ($n === 1) {
-  $message = 'php & MySQL';
-} elseif ($n === 2) {
-  $message = '…';
-} elseif ($n === 3) {
-  $message = 'Docker';
-} elseif ($n === 4) {
-  $message = 'え?';
-} elseif ($n === 5) {
-  $message = 'Hoz_onの感想もHoz_onしてね！';
-}
-
 $icon =
   '
     <div class="icons">
@@ -38,6 +25,8 @@ $icon =
       <i class="fab fa-php fa-fw php" title="PHP"></i>
       <i class="fas fa-database db" title="MYSQL"></i>
       <img src="imgs/api.jpg" alt="" title="">
+      <i class="fas fa-cloud"></i>
+      <i class="fas fa-network-wired"></i>
     </div>
   ';
 

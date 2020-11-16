@@ -9,9 +9,6 @@ $links =
   '<a href="">profile</a>' .
   '<a href="blackApron.php">other</a>';
 
-
-
-
 ?>
 
 <section id="area_0">
@@ -67,6 +64,9 @@ $links =
           $date = date('Y/m/d');
 
             if (!empty($_GET['form_date']) && ($get_date = date_create(h($_GET['form_date'])))){
+              $start_get_gap = date_diff($start, $get_date);
+              $sg_gap = $start_get_gap->format('%a');
+              $gap_month = round(($sg_gap / 30),2) . 'ヶ月'; 
               $form_date =  $get_date -> format('Y/m/d') . '時点で<br>';
               $today_form_gap = date_diff($today, $get_date);
               $tg_gap = $today_form_gap->format('%R%a');
@@ -98,11 +98,11 @@ $links =
                     <tr>
                       <th>未来の学習累積時間を計算する（自動計算）
                         <form action="" method="GET">
-                          <input type="date" name="form_date">
+                          <input type="date" name="form_date" autofocus>
                           <button>Done</button>
                         </form>
                       </th>
-                      <td>$error $form_date<strong>$future_hour</strong></td>
+                      <td>$error $form_date $gap_month<strong>$future_hour</strong></td>
                       <td class="coad"><pre>
                         if (!empty($ _GET['form_date']) 
                             && ($ get_date = date_create(h($ _GET['form_date'])))){

@@ -9,7 +9,6 @@ $links =
   '<a href="chara.php">profile</a>' .
   '<a href="blackApron.php">other</a>';
 
-
 ?>
 
 
@@ -53,9 +52,9 @@ $links =
           <p><strong>サイトを構成する3つの柱</strong></p>
         </legend>
         <div class="gaiyou">
-          <a href="skills.php">スキルと知識</a>
-          <a href="backBone.php">過去</a>
-          <a href="chara.php">人物像</a>
+          <a href="skills.php" target="">スキルと知識</a>
+          <a href="backBone.php" target="">過去</a>
+          <a href="chara.php" target="">人物像</a>
         </div>
         <b>このポートフォリオサイトは、この3点について正しく知っていただくために作られました。</b>
       </fieldset>
@@ -86,7 +85,7 @@ $links =
 
           <h4>人物像</h4>
           <ul>
-            <li><a href="chara.php"><strong>"採用後担当者必見！"</strong>石川達実の性格や思考の型</a></li>
+            <li><a href="chara.php"><strong>"採用御担当者必見！"</strong>石川達実の性格や思考の型</a></li>
             <li><a href="hobby.php"><strong>”人となりが分かる！”</strong>趣味紹介ページ</a></li>
           </ul>
         </div>
@@ -137,7 +136,9 @@ $links =
             <div class="text">
               <h4>初めてのApp - ”Hoz_on”</h4>
               <p>是非お使い下さい！</p>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/php_app/list_table.php">GitHubでコードを見る</a>
               <a href="../php_app/eva.php" target="_Hoz_on">使ってみる</a>
+
             </div>
           </div>
         </div>
@@ -157,7 +158,7 @@ $links =
             <div class="text">
               <p>Webサービスの可能性を広げる<strong>API</strong></p>
               <p>Web APIによる天気予報アプリです</p>
-              <a href="/weather_API/weather.php" target="_api">使ってみる</a>
+              <a href="/weather_API/weather.php" target="_weather">使ってみる</a>
               <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
             </div>
           </div>
@@ -177,8 +178,8 @@ $links =
             <div class="text">
               <p>自分の学習時間の記録です</p>
               <p>せっかくなので<strong>自動計算機能を付けました</strong></p>
-              <a href="skills.php">使ってみる</a>
-              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
+              <a href="skills.php" target="">使ってみる</a>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/skills.php">GitHubでコードを見る</a>
             </div>
           </div>
         </div>
@@ -198,8 +199,8 @@ $links =
             <div class="text">
               <p><strong>Web_API</strong>による</p>
               <p><strong>チャットボット</strong></p>
-              <a href="/talk_API/talk.php">使ってみる</a>
-              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
+              <a href="/talk_API/talk.php" target="_bot">使ってみる</a>
+              <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/talk_API/talk.php">GitHubでコードを見る</a>
             </div>
           </div>
         </div>
@@ -405,6 +406,7 @@ $links =
                 <p><i class="fab fa-php fa-fw php"></i>php</p>
                 <p><i class="fas fa-database db"></i>SQL,RDB</p>
                 <p><img class="api" src="imgs/api.jpg" alt="">Web_API</p>
+                <p><i class="fas fa-cloud"></i><i class="fas fa-network-wired"></i>クラウド(インフラ)</p>
               </div>
             </div>
             <p><a href="skills.php">More about...</a></p>

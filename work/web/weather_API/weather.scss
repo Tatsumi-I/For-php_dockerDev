@@ -14,8 +14,8 @@ body{
   font-style: normal;
   letter-spacing: 0.1em;
   // flex-wrap: wrap;
-  background: url(/imgs/view.jpg) no-repeat;
-  // background-size: cover;
+  background: url(/imgs/clear_sky.jpg) no-repeat;
+  background-size: cover;
 
 
 }
@@ -124,6 +124,10 @@ details{
   background:rgba(225, 225, 225, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(5, 5, 5, 0.5);
+  .five_days{
+    width: 90vw;
+  }
+
   h3,
   p,
   i{
@@ -148,20 +152,19 @@ details{
     // background: rgba(135, 207, 235, 0.3);
     background:rgba(135, 207, 235, 0.8);
     border-radius: 10px;
-
-
+    
     
     span{
       padding: 0;
       display: flex;
       flex-wrap: wrap;
       color:white;
-
       cursor: pointer;
       margin: 0 auto;
       justify-content: space-around;
-
     }
+    
+
   }
   
 }

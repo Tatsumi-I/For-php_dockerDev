@@ -5,9 +5,9 @@ $menuList = '>' . '<a href="index.php#area_3">Profile</a>' . '>Character';
 require_once('../app/function.php');
 include_once('_header.php');
 $links =
-  '<a href="skills.php">skill</a>' .
-  '<a href="">profile</a>' .
-  '<a href="blackApron.php">other</a>';
+  '<a href="#area_2">地頭(ポテンシャル)</a>' .
+  '<a href="#area_3">特性まとめ</a>' .
+  '<a href="#area_4">チーム貢献性</a>';
 
 ?>
 
@@ -40,9 +40,9 @@ $links =
     <div class="desc">
       <h3>このページでわかること</h3>
       <div class="gaiyou">
-        <a href="#area_1">Coading成果物</a>
-        <a href="#area_2">Design成果物</a>
-        <a href="#area_3">プロフィール</a>
+        <?php 
+          echo $links;
+        ?>
       </div>
     </div>
   </div>
@@ -55,14 +55,14 @@ $links =
 
     <div class="contentsArea">
       <div class="desc">
-        <p>ここではINTP"の<strong>概要について</strong>紹介します。</p>
+        <p>ここではINTPの<strong>概要について</strong>紹介します。</p>
         <p><strong>長所だけを取り上げることは</strong>私のポリシーに反します。</p>
-        <p>詳細や結論につきましては、<strong>是非リンクをご参照いただき</strong>、総合的にご判断下さいませ。</p>
+        <p>詳細や結論は、是非<strong>リンクをご参照いただき</strong>、総合的にご判断下さい。</p>
       </div>
       <div class="content">
         <h3>INTP型の人は…</h3>
         <div class="container1">
-          <div class="text">
+          <div class="text" id="area_2">
             <ul>
               <li><strong>想像力と独創性</strong>に富み、<strong>分析と抽象化</strong>が得意</li>
               <li><strong>知識欲と向上心</strong>が強く、関心のあることに没頭する</li>
@@ -117,11 +117,10 @@ $links =
           </div>
         </div>
       </div>
-      <div class="content" id="area_2">
-        <h3>INTP型まとめ</h3>
+      <div class="content" id="area_3">
+        <h3>石川達実 - INTP型まとめ</h3>
         <div class="container2">
           <div class="text">
-            <h4>INTPまとめ</h4>
 
             <div class="sum">
               <p>独創的・論理的・客観的思考</p>
@@ -140,7 +139,7 @@ $links =
   </div>
 </section>
 
-<section id="area_3">
+<section id="area_4">
   <div class="sectionArea">
     <h2>石川達実をチームに迎えるべきか?</h2>
 
@@ -193,14 +192,13 @@ $links =
         <div class="container2">
           <div class="contentImg">
             <img src="imgs/growth.jpg">
-            <b>転職は"自分の能力を活かして感動体験を提供したい"という願いの表れ</b>
+            <b>転職は成長意欲の表れ</b>
           </div>
           <div class="text">
-          <h4><strong>自分の能力を本当に活かせる仕事を通して、</strong>お客様やユーザーにとって価値のある体験を提供することが私の望みだからです。</h4>
-            <h4>"感動体験 = Experence"を提供する者として成長し続けたい</h4>
+          <h4><strong>自分の能力を本当に活かせる仕事を通して、</strong>常に成長したいからです。</h4>
               <p>私は<strong>本当に価値のある仕事</strong>をしたいと考えています。</p>
               <p>私の考える”価値のある仕事”とは、<strong>”価値のある体験”</strong>を提供できる仕事のことです。</p>
-              <p>スターバックスでバリスタとして、コーヒーカップを通して感動体験を提供することも貴重な機会でした。</p>
+              <p>バリスタも、感動体験を提供するための貴重な機会でした。</p>
               <p>それでも、私は<strong>引き続き成長し続けたい</strong>と決意しています。</p>
           </div>
         </div>

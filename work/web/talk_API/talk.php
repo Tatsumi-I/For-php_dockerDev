@@ -7,6 +7,8 @@
   <title>APIによるチャットボット</title>
   <link rel="stylesheet" href="talk.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
+
 </head>
 <body>
 
@@ -47,7 +49,7 @@ if(empty($response_arr['results'][0]['reply'])){
   } else{
   $response = $response_arr['results'][0]['reply'];
 }
-  var_dump($response_arr);
+  // var_dump($response_arr);
 
 
   $reque = $request['query'];
