@@ -5,9 +5,9 @@ $menuList = '';
 require_once('../app/function.php');
 include_once('_header.php');
 $links =
-  '<a href="skills.php">skill</a>' .
-  '<a href="">profile</a>' .
-  '<a href="blackApron.php">other</a>';
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>';
 ?>
 
 <section id="area_">

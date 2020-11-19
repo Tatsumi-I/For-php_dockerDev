@@ -43,7 +43,7 @@ footer{
     margin: 20px auto 0;
   }
   .api{
-    width: 200px;
+    width: 100px;
     filter:saturate(3);
   }
 
@@ -57,15 +57,15 @@ footer{
     margin: 30px auto 0;
 
   }
-  b{
-    background: white;
-    margin: 0;
-    padding: 2em;
-    width: 300px;
-    border-radius: 10px;
-    margin: 0 auto;
+  // b{
+  //   background: white;
+  //   margin: 0;
+  //   padding: 2em;
+  //   width: 300px;
+  //   border-radius: 10px;
+  //   margin: 0 auto;
 
-  }
+  // }
 main{
   // width: max-content;
 
@@ -75,27 +75,34 @@ main{
 }
 fieldset{
   max-width: 500px;
-  margin: 20px auto 50px;
-  background:rgba(225, 225, 225, 0.8);
-  padding: 2%;
+  min-width: 300px;
+  margin: 20px auto;
+  padding: 3%;
   border-radius: 5px;
-  font-weight: bold;
+  
+  // font-weight: bold;;
   legend{
-    // background:skyblue;
+    padding: 0 1em;
+    font-size: large;
+    border-radius: 2px;
     text-shadow: 1px 1px 1px grey,-1px -1px 1px grey;
-    color:white;
+    // color:white;
     border-radius: 5px;
 
   }
   div{
-    margin: 0 auto;
+    margin: 30px auto;
   }
   label{
     border:transparent;
     padding: 1em;
     cursor: pointer;
     white-space: nowrap;
-    display: inline-block;
+    display: block;
+  }
+  form{
+    display: flex;
+    flex-wrap: wrap;
   }
   button{
     background:skyblue;
@@ -104,16 +111,18 @@ fieldset{
     padding: 1em;
     cursor: pointer;
     border-radius: 5px;
-    margin: 2% auto 0;
+    margin: auto;
   }
 }
 .weather_now{
-  background:rgba(135, 207, 235, 0.74);
-  max-width: 500px;
-  margin: 20px auto;
+  border: 1px solid grey;
+  // max-width: 500px;
+  width: 90vw;
+  margin: 30px auto;
   padding: 2%;
   border-radius: 5px;
-  h3{
+
+  h1{
     margin: 0;
   }
 }
@@ -121,6 +130,7 @@ details{
   width: clamp(300px, 500px, 90vw);
   display: block;
   margin: 3px auto;
+  padding: 0 0 10px;
   background:rgba(225, 225, 225, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(5, 5, 5, 0.5);
@@ -184,6 +194,17 @@ details{
     height: 200px;
 
   }
+  p{
+    margin: 20px;
+  }
+  ul{
+    padding: 0;
+    margin: 50px auto;
+    text-align: left;
+    li{
+      margin: 20px;
+    }
+  }
   .text{
     color: rgb(0, 218, 218);
   }
@@ -220,6 +241,6 @@ details{
 
 button{
   display:block;
-  margin:10px auto;
+  margin: auto;
 }
 

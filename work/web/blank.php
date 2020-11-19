@@ -5,9 +5,9 @@ $menuList = '';
 require_once('../app/function.php');
 include_once('_header.php');
 $links =
-  '<a href="skills.php">skill</a>' .
-  '<a href="">profile</a>' .
-  '<a href="blackApron.php">other</a>';
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>';
 
 ?>
 
@@ -73,9 +73,7 @@ $links =
     <div class="desc">
       <h3>このページでわかること</h3>
       <div class="gaiyou">
-        <a href="#area_1">Coading成果物</a>
-        <a href="#area_2">Design成果物</a>
-        <a href="#area_3">プロフィール</a>
+        <?php echo $links; ?>
       </div>
     </div>
   </div>

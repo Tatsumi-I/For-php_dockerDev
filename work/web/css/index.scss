@@ -2,7 +2,6 @@
 @import "anime.scss";
 @import "headerFooterStyle.scss";
 
-
 $textColor: rgb(109, 109, 109);
 $line: rgba(206, 206, 206, 0.322);
 $shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px rgb(221, 221, 221);
@@ -57,7 +56,7 @@ body {
     margin: auto;
     width: 80%;
     transform: scale(1.2);
-    li{
+    li {
       text-align: initial;
     }
 
@@ -169,7 +168,6 @@ main {
   margin: 0 auto;
   line-height: 3;
 
-
   .top_nav {
     font-size: 70%;
     position: sticky;
@@ -181,7 +179,6 @@ main {
     z-index: 200;
     padding: 5px;
     margin: 0 auto;
-
 
     img {
       width: 45px;
@@ -208,7 +205,7 @@ main {
       animation: delay 1s 5s forwards;
       border: 1px solid $darkBlue;
       // border-radius: 10px;
-      color:white;
+      color: white;
 
       background: #978e8940;
       text-align: center;
@@ -219,7 +216,6 @@ main {
       border-radius: 50%;
     }
   }
-
 
   a {
     color: #634130dc;
@@ -291,7 +287,10 @@ main {
       margin: 0 auto;
       max-width: 300px;
     }
-
+    .filterDeg {
+      // filter: filterDeg(90%);
+      filter: hue-rotate(190deg);
+    }
     .concept {
       display: flex;
       flex-wrap: wrap;
@@ -299,10 +298,11 @@ main {
       z-index: 100;
       // width: 100vw;
       justify-content: space-around;
-      background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20% content-box no-repeat;
+      background: url(../imgs/myLogoWhite.png) top 100% left 100% / 20%
+        content-box no-repeat;
       .text {
         margin: 0 auto;
-        padding: 5% ;
+        padding: 5%;
 
         @media (min-width: 500px) {
           font-size: 130%;
@@ -328,17 +328,16 @@ main {
   section {
     padding-bottom: 50px;
     background: #e9e6e0;
-  // background: $grege;
-
+    // background: $grege;
   }
-  .hoz_on{
+  .hoz_on {
     margin: auto;
     padding: 0;
     // opacity: 0;
     // animation: delay 1s 5s forwards;
     border: 1px solid $darkBlue;
     // border-radius: 10px;
-    color:white;
+    color: white;
     background: #978e8940;
     text-align: center;
     font-size: 170%;
@@ -350,7 +349,6 @@ main {
     display: block;
   }
   .sectionArea {
-
     img {
       width: 100%;
       max-width: 500px;
@@ -394,7 +392,7 @@ main {
           width: 200px;
           line-height: 200px;
           border-radius: 50%;
-          background:darkslategrey;
+          background: darkslategrey;
           font-size: 130%;
           color: antiquewhite;
           // border: 1px solid $darkBlue;
@@ -458,7 +456,7 @@ main {
       min-height: 30vh;
     }
   }
-  
+
   .container1 {
     flex-wrap: wrap-reverse;
   }
@@ -482,9 +480,8 @@ main {
       margin: auto;
       width: clamp(300px, 50%, 50vw);
       z-index: 99;
-      img{
+      img {
         display: block;
-
       }
     }
 
@@ -513,18 +510,26 @@ main {
     padding: 0 3%;
     text-align: center;
     flex-grow: 1;
- 
+    transition-duration: 1s;
+    a {
+      &:hover {
+        filter: blur(2px);
+      }
+    }
   }
 
   .notes {
     padding: clamp(0px, 20px, 3%);
-    margin: 0px auto;
+    margin: 3% auto;
     min-width: 300px;
     text-align: initial;
     box-shadow: 0 0 10px rgba(245, 245, 245, 0.5);
     border-radius: 6px;
     background: $grege;
-    ul{
+    h1 {
+      text-align: center;
+    }
+    ul {
       min-width: 300px;
     }
   }
@@ -623,50 +628,46 @@ summary {
   text-align: center;
 }
 
-.learningTable{
+.learningTable {
   margin: 0 auto;
   max-width: 95vw;
   overflow-x: scroll;
-  table{
+  table {
     font-size: 80%;
-
   }
-  tr{
-    border:1px solid grey;
+  tr {
+    border: 1px solid grey;
     background: $grege;
     height: 80px;
   }
   th,
-  td{
-    padding:0 1em;
+  td {
+    padding: 0 1em;
     margin: 0;
   }
-  th{
+  th {
     text-align: center;
-
   }
-  .data{
+  .data {
     text-align: right;
     width: 150px;
-
   }
-  .coad{
+  .coad {
     background: rgb(40, 38, 56);
-    color:rgba(255, 255, 255, 0.685);
+    color: rgba(255, 255, 255, 0.685);
     // display: block;
     // height: 100px;
     // overflow-y: scroll;
   }
 }
-.hobbyImg{
+.hobbyImg {
   margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
     width: 150px;
     display: block;
-
   }
 }
 .toTop {

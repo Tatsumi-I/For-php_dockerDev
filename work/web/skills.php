@@ -5,9 +5,9 @@ $menuList = '';
 require_once('../app/function.php');
 include_once('_header.php');
 $links =
-  '<a href="skills.php">skill</a>' .
-  '<a href="">profile</a>' .
-  '<a href="blackApron.php">other</a>';
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>' .
+  '<a href="area_"></a>';
 
 ?>
 
@@ -34,12 +34,12 @@ $links =
 
           //システム登録日
           $origin = date_create('2020-11-11');
-          $origin_day = $origin -> format('Y/m/d');
+          $origin_day = $origin->format('Y/m/d');
 
           // 学習開始日からの経過日数と日平均の計算
           $start = date_create('2020-05-23');
-          $start_day = $start -> format('Y/m/d');
-          
+          $start_day = $start->format('Y/m/d');
+
           $today = date_create(date('Y-m-d'));
           // 変動する経過日
           $start_today_gap = date_diff($start, $today);
@@ -63,23 +63,23 @@ $links =
           $total_hour =  round(($lean_hour + $add_hour), 2);
           $date = date('Y/m/d');
 
-            if (!empty($_GET['form_date']) && ($get_date = date_create(h($_GET['form_date'])))){
-              $start_get_gap = date_diff($start, $get_date);
-              $sg_gap = $start_get_gap->format('%a');
-              $gap_month = round(($sg_gap / 30),2) . 'ヶ月'; 
-              $form_date =  $get_date -> format('Y/m/d') . '時点で<br>';
-              $today_form_gap = date_diff($today, $get_date);
-              $tg_gap = $today_form_gap->format('%R%a');
-              $tf_hour = $tg_gap * $day_ave;
-              $future_hour = $total_hour + $tf_hour . '時間（自動計算）';
-              $error = '';
-            } else {
-              $error = 'カレンダーから日付を指定して下さい';
-              $form_date = '';
-              $future_hour = '';
-            }
+          if (!empty($_GET['form_date']) && ($get_date = date_create(h($_GET['form_date'])))) {
+            $start_get_gap = date_diff($start, $get_date);
+            $sg_gap = $start_get_gap->format('%a');
+            $gap_month = round(($sg_gap / 30), 2) . 'ヶ月';
+            $form_date =  $get_date->format('Y/m/d') . '時点で<br>';
+            $today_form_gap = date_diff($today, $get_date);
+            $tg_gap = $today_form_gap->format('%R%a');
+            $tf_hour = $tg_gap * $day_ave;
+            $future_hour = $total_hour + $tf_hour . '時間（自動計算）';
+            $error = '';
+          } else {
+            $error = 'カレンダーから日付を指定して下さい';
+            $form_date = '';
+            $future_hour = '';
+          }
 
-          
+
           echo
             <<< learning_time
               <div class="learningTable">
@@ -192,9 +192,7 @@ $links =
     <div class="desc">
       <h3>このページでわかること</h3>
       <div class="gaiyou">
-        <a href="#area_1">Coading成果物</a>
-        <a href="#area_2">Design成果物</a>
-        <a href="#area_3">プロフィール</a>
+        <?php echo $links; ?>
       </div>
     </div>
   </div>

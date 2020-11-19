@@ -12,7 +12,7 @@ switch ($rand) {
     $bgi = 'cherry';
     break;
   case 3:
-    $bgi = 'growth_2';
+    $bgi = 'whiteFlower';
     break;
   case 4:
     $bgi = 'sky';
@@ -22,6 +22,9 @@ switch ($rand) {
     break;
   case 6:
     $bgi = 'mountain';
+    break;
+  case 7:
+    $bgi = 'flower';
     break;
 }
 
@@ -102,7 +105,6 @@ switch ($rand) {
       <div class="inHeader">
         <a href="index.php">
           <h1>$myName _ Portofolio</h1>
-          <h2>石川達実  ポートフォリオサイト</h2>
         </a>
       </div>
       <div id="globalMenu" class="headFootOpenMenu">
