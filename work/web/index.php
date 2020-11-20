@@ -93,7 +93,7 @@ $links =
       <h3>お気づきのことは…</h3>
       <div class="container1">
         <div class="contentImg">
-          <a class="hoz_on" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+          <a class="hoz_on" href="../web/php_app/eva.php" target="_Hoz_on">Hoz_on</a>
         </div>
         <div class="text">
           <h4>このアプリに保存して下さい！！</h4>
@@ -136,8 +136,8 @@ $links =
             <div class="text">
               <h4>初めてのApp - ”Hoz_on”</h4>
               <p>是非お使い下さい！</p>
+              <a href="../web/php_app/eva.php" target="_Hoz_on">使ってみる</a>
               <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/php_app/list_table.php">GitHubでコードを見る</a>
-              <a href="../php_app/eva.php" target="_Hoz_on">使ってみる</a>
 
             </div>
           </div>
@@ -158,7 +158,7 @@ $links =
             <div class="text">
               <p>Webサービスの可能性を広げる<strong>API</strong></p>
               <p>Web APIによる天気予報アプリです</p>
-              <a href="/weather_API/weather.php" target="_weather">使ってみる</a>
+              <a href="../web/weather_API/weather.php" target="_weather">使ってみる</a>
               <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/weather_API/weather.php">GitHubでコードを見る</a>
             </div>
           </div>
@@ -199,7 +199,7 @@ $links =
             <div class="text">
               <p><strong>Web_API</strong>による</p>
               <p><strong>チャットボット</strong></p>
-              <a href="/talk_API/talk.php" target="_bot">使ってみる</a>
+              <a href="../web/talk_API/talk.php" target="_bot">使ってみる</a>
               <a href="https://github.com/Tatsumi-I/For-php_dockerDev/blob/tougou/work/web/talk_API/talk.php">GitHubでコードを見る</a>
             </div>
           </div>
@@ -329,7 +329,7 @@ $links =
           </div>
           <div class="container2">
             <div class="contentImg">
-              <img src="imgs/Gentlestyle.png">
+              <img src="imgs/GentleStyle.png">
             </div>
             <div class=text>
               <p>このデザインは、40-50代男性向けWebマガジンをイメージしています。</p>

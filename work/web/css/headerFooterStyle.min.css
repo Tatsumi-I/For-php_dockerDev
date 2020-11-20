@@ -115,7 +115,7 @@ header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: del
 
 header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
 
-header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 3%; }
+header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 10%; }
 
 header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 600; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
 
@@ -143,7 +143,7 @@ header .headerContainer .homeGroup .copy a:hover .item1, header .headerContainer
 
 header .headerContainer .homeGroup .copy a:hover .item0, header .headerContainer .homeGroup .copy a:hover .item5, header .headerContainer .homeGroup .copy a:active .item0, header .headerContainer .homeGroup .copy a:active .item5, header .headerContainer .homeGroup .copy a:visited .item0, header .headerContainer .homeGroup .copy a:visited .item5, footer .headerContainer .homeGroup .copy a:hover .item0, footer .headerContainer .homeGroup .copy a:hover .item5, footer .headerContainer .homeGroup .copy a:active .item0, footer .headerContainer .homeGroup .copy a:active .item5, footer .headerContainer .homeGroup .copy a:visited .item0, footer .headerContainer .homeGroup .copy a:visited .item5 { display: inline-block; }
 
-header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 5% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
+header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 10% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
 
 header .headerContainer .homeGroup .logo .nameBar, footer .headerContainer .homeGroup .logo .nameBar { display: block; margin: 0 auto; text-align: center; text-shadow: 0 0 15px rgba(245, 245, 245, 0.3); -webkit-transition: text-shadow 3s ease 8s; transition: text-shadow 3s ease 8s; }
 
@@ -212,4 +212,6 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 .headFootOpenMenu details[open] summary:hover { cursor: pointer; }
 
 .headFootOpenMenu details[open] summary::after { content: "close"; background: #80786630; margin-left: 2em; border-radius: 5px; padding: 5px 12px; }
+
+.homeGroup { padding: 10%; }
 /*# sourceMappingURL=headerFooterStyle.min.css.map */

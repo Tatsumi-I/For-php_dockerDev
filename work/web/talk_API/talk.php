@@ -7,7 +7,7 @@
   <title>APIによるチャットボット</title>
   <link rel="stylesheet" href="talk.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
+  <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
 
 </head>
 <body>
@@ -15,7 +15,7 @@
 
 <?php
 
-require_once('/work/app/function.php');
+require_once('../../app/function.php');
 
 
 if(!empty($_POST['text'])){
@@ -62,9 +62,9 @@ echo
 
 <div class="base">
     <div class="header">
-      <img src="/imgs/logo.png" alt="">
+      <img src="../imgs/logo.png" alt="">
       <i class="fas fa-times"></i>
-      <img src="/imgs/api.jpg" alt="">
+      <img src="../imgs/api.jpg" alt="">
     </div>
 
     <h1>TALK APIによるチャットボット</h1>

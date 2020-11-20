@@ -10,7 +10,7 @@ h1{
   text-align: center;
 }
 .base{
-  width: fit-content;
+  max-width: 700px;
   min-width: 300px;
   background: rgb(235, 179, 95);
   padding: 5px 20px;
@@ -117,6 +117,7 @@ form{
 .wall_color{
   background: snow;
   border-radius: 5px;
+  height: 50vh;
 
 }
 

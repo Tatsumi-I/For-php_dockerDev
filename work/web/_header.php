@@ -40,27 +40,28 @@ switch ($rand) {
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="たつみのポートフォリオサイト">
   <link rel="stylesheet" type="text/css" href="./css/index.min.css">
-  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
+  <link rel="shortcut icon" href="./imgs/logo.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
-  
+
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
 
   <style>
     <?php echo
-      'html{background: url(../imgs/' . $bgi . '.jpg) top left 50% / cover no-repeat;}'; ?>
+      'html{background: url(./imgs/' . $bgi . '.jpg) top left 50% / cover no-repeat;}'; ?>
   </style>
 </head>
 
 <body>
 
   <header>
-    
-    <?php if ($pageName == 'Home - ') {
-      echo
-      <<< __header
-      <div id="header" class="headerContainer">
+    <div id="header" class="headerContainer">
+
+        <?php if ($pageName == 'Home - ') {
+          echo
+            <<< __header
         <div class="homeGroup">
+        
           <div class="copy">
             <a href="index.php">
               <p class="item0">"Feel"</p>
@@ -89,35 +90,37 @@ switch ($rand) {
           </details>
           $icon
         </div>
-      </div>
         
       
 
       __header;
-      } else {
+        } else {
 
-        echo
-          <<< __header_2
-        
-      <a href="index.php">
-        <img class="logoImg" src="./imgs/myLogowhite.png">
-      </a>
-      <div class="inHeader">
+          echo
+            <<< __header_2
+      <div class="homeGroup">
+      
         <a href="index.php">
-          <h1>$myName _ Portofolio</h1>
+          <img class="logoImg" src="./imgs/myLogoWhite.png">
         </a>
+        <div class="inHeader">
+          <a href="index.php">
+            <h1>$myName _ Portofolio</h1>
+          </a>
+        </div>
+        <div id="globalMenu" class="headFootOpenMenu">
+          <details>
+            <summary>Global Menu<span>Open</span></summary>
+            $globalMenu
+          </details>
+        </div>
       </div>
-      <div id="globalMenu" class="headFootOpenMenu">
-        <details>
-          <summary>Global Menu<span>Open</span></summary>
-          $globalMenu
-        </details>
        
 
     __header_2;
-      }
+        }
 
-      ?>
+        ?>
 
 
     </div>
@@ -132,6 +135,6 @@ switch ($rand) {
         <?= $menuList; ?>
       </p>
       <a class="globalMenu" href="#globalMenu">Global menu</a>
-      <a id="appConect" class="app" href="../php_app/eva.php" target="_Hoz_on">Hoz_on</a>
+      <a id="appConect" class="app" href="./php_app/eva.php" target="_Hoz_on">Hoz_on</a>
     </nav>
     <article>

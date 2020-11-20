@@ -2,7 +2,6 @@
 
 ini_set("iog_errors", "on");
 ini_set("error_iog", "./php_error.log");
-error_log(print_r($area_name, true));
 
 ?>
 
@@ -14,7 +13,7 @@ error_log(print_r($area_name, true));
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather_API</title>
   <link rel="stylesheet" type="text/css" href="weather.min.css">
-  <link rel="shortcut icon" href="/imgs/logo.png" type="image/png" sizes="16*16">
+  <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
 
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
@@ -24,11 +23,11 @@ error_log(print_r($area_name, true));
 
   <header>
     <div class="logo">
-      <img class="img" src="/imgs/logo.png" alt="">
+      <img class="img" src="../imgs/logo.png" alt="">
       <h1>OpenWeatherMap_API</h1>
     </div>
     <!-- <img src="/imgs/sun.jpg"> -->
-    <img class="api" src="/imgs/api.jpg" alt="">
+    <img class="api" src="../imgs/api.jpg" alt="">
     <p>phpによる、Web APIを使用した天気アプリです</p>
     <hr>
 
@@ -54,7 +53,7 @@ error_log(print_r($area_name, true));
 
     <?php
 
-    require_once('/work/app/function.php');
+    require_once('../../app/function.php');
     $city_info = json_decode(file_get_contents('city.list.min.json'), true);
     $length = count($city_info);
 
@@ -375,7 +374,7 @@ error_log(print_r($area_name, true));
 
   </main>
   <footer>
-    <img class="api" src="/imgs/api.jpg" alt="" width="200px">
+    <img class="api" src="../imgs/api.jpg" alt="" width="200px">
     <h1>OpenWeatherMap_API</h1>
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
 
