@@ -42,9 +42,9 @@ details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; d
 
 details .box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-details .box .key { text-align: right; width: 45%; margin: 10px; display: block; }
+details .box .key { text-align: right; width: 40%; margin: 10px; display: block; }
 
-details .box .value { text-align: left; width: 45%; margin: 10px; display: block; }
+details .box .value { text-align: left; width: 40%; margin: 10px; display: block; }
 
 .desc { margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1em; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 

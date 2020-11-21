@@ -157,7 +157,7 @@ ini_set("error_iog", "./php_error.log");
     <?php
 
     echo '<div class="weather_now">';
-    echo '<h1>' . $city_now . ' ' . $time_now . '現在の天気</h1>';
+    echo '<p>' . $city_now . ' ' . $time_now . '現在の天気</p>';
     echo $weather_now['main'] . '/';
     echo $weather_now['description'] . '<br>';
     echo '体感気温' . $feels_now . '℃';
@@ -206,7 +206,7 @@ ini_set("error_iog", "./php_error.log");
     <details open>
       <summary>
         <span>
-          <h3>$time</h3>
+          <p>$time</p>
           <img src='https://openweathermap.org/img/w/$weather_icon.png' style='width:50px'>
           <p style="background-color:$bg_color">体感気温：$feels ℃</p>
           <i class="fas fa-angle-double-down"></i>
@@ -299,7 +299,7 @@ ini_set("error_iog", "./php_error.log");
     <details>
       <summary>
         <span>
-          <h3>$time</h3>
+          <p>$time</p>
           <img src='https://openweathermap.org/img/w/$weather_icon.png' style='width:50px'>
           <p style="background-color:$bg_color">体感気温：$feels ℃</p>
           <i class="fas fa-angle-double-down"></i>
@@ -378,17 +378,28 @@ ini_set("error_iog", "./php_error.log");
     <details>
       <summary>
         <span>
-          <h3>$time</h3>
+          <p>$time</p>
           <img src='https://openweathermap.org/img/w/$weather_icon.png' style='width:50px'>
           <p style="background-color:$bg_color">体感気温：$feels ℃</p>
           <i class="fas fa-angle-double-down"></i>
         </span>
       </summary>
-        <p>概況：$weather_desc</p>
-        <p>降水確率$rains ％</p>
-        <p>湿度：$humidity %</p>
-        <p>最高気温：$temp_max ℃</p>
-        <p>最低気温：$temp_min ℃</p>
+      <div class="box">
+        <div class="key">
+          <p>概況：</p>
+          <p>降水確率：</p>
+          <p>湿度：</p>
+          <p>最高気温：</p>
+          <p>最低気温：</p>
+        </div>
+        <div class="value">
+          <p>$weather_desc</p>
+          <p>$rains ％</p>
+          <p>$humidity %</p>
+          <p>$temp_max ℃</p>
+          <p>$temp_min ℃</p>
+        </div>
+      </div>
     </details>
 
     __deta__;
