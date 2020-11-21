@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ini_set("iog_errors", "on");
 ini_set("error_iog", "./php_error.log");
@@ -22,13 +22,13 @@ ini_set("error_iog", "./php_error.log");
 <body>
 
   <header>
-    <div class="logo">
-      <img class="img" src="../imgs/logo.png" alt="">
-      <h1>OpenWeatherMap_API</h1>
+    <div class="header">
+      <img src="../imgs/logo.png" alt="">
+      <i class="fas fa-times"></i>
+      <img src="../imgs/api.jpg" alt="">
     </div>
-    <!-- <img src="/imgs/sun.jpg"> -->
-    <img class="api" src="../imgs/api.jpg" alt="">
-    <p>phpによる、Web APIを使用した天気アプリです</p>
+
+    <p>OpenWeatherMapのWeb APIを使用した天気アプリです</p>
     <hr>
 
     <h2>3つの”分かる！”が詰まった お天気アプリです</h2>
@@ -94,7 +94,7 @@ ini_set("error_iog", "./php_error.log");
     $response_now = json_decode(file_get_contents($api_url_now), true);
     $weather_now = $response_now['weather'][0];
     $unix_time = $response_now['dt'];
-    $time_now = date('m/d - H時', $unix_time);
+    $time_now = date('m/d(D) . H時', $unix_time);
     $city_now = $response_now['name'];
     $feels_now = $response_now['main']['feels_like'];
 
@@ -103,31 +103,33 @@ ini_set("error_iog", "./php_error.log");
     ?>
     <div class="desc">
 
-      <fieldset>
-        <legend>20万を超える地域から指定する</legend>
-        <!-- <summary><span>都市を変更する</span></summary> -->
+      <details>
+        <summary><span>
+            <h3>20万を超える地域から指定する</h3><i class="fas fa-angle-double-down"></i>
+          </span></summary>
         <form action="" method="GET">
           <div>
             <form action="" method="GET">
               <h1>例)."京都"の場合 → "Kyouto"</h1>
               <label>地域名を入力して表示<br><input type="text" name="area_in" value=""></label>
+              <button>Click or Enter!</button>
               <ul>
                 <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
                 <li>最小単位は"市"です（町名では検索できません）</li>
                 <li>一部サポートされていない地域があります</li>
                 <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
               </ul>
-              <button>Click or Enter!</button>
             </form>
           </div>
         </form>
-      </fieldset>
+      </details>
 
-      <fieldset>
-        <legend>ボタンで選択する</legend>
-        <!-- <summary><span>都市を変更する</span></summary> -->
+      <details>
+        <summary><span>
+            <h3>ボタンで選択する</h3><i class="fas fa-angle-double-down"></i>
+          </span></summary>
         <form action="" method="GET">
-        <div>
+          <div>
             <label><input type="radio" name="area" value="2130037">北海道</label>
             <label><input type="radio" name="area" value="1850147">東京</label>
             <label><input type="radio" name="area" value="1856057">名古屋</label>
@@ -146,7 +148,7 @@ ini_set("error_iog", "./php_error.log");
           <button>Click or Enter!</button>
 
         </form>
-      </fieldset>
+      </details>
 
     </div>
   </header>
@@ -169,7 +171,8 @@ ini_set("error_iog", "./php_error.log");
     // echo '<div class="tables">';
     $i = 0;
     $weather_dt = $list[$i]['dt'];
-    $time = date('m/d - H時頃', $weather_dt);
+    $time = date('m/d(D) . H時頃', $weather_dt);
+
     $weather = $list[$i]['weather'][0]['main'];
     $weather_icon = $list[$i]['weather'][0]['icon'];
     $weather_desc = $list[$i]['weather'][0]['description'];
@@ -209,11 +212,22 @@ ini_set("error_iog", "./php_error.log");
           <i class="fas fa-angle-double-down"></i>
         </span>
       </summary>
-        <p>概況：$weather_desc</p>
-        <p>降水確率$rains ％</p>
-        <p>湿度：$humidity %</p>
-        <p>最高気温：$temp_max ℃</p>
-        <p>最低気温：$temp_min ℃</p>
+      <div class="box">
+        <div class="key">
+          <p>概況：</p>
+          <p>降水確率：</p>
+          <p>湿度：</p>
+          <p>最高気温：</p>
+          <p>最低気温：</p>
+        </div>
+        <div class="value">
+          <p>$weather_desc</p>
+          <p>$rains ％</p>
+          <p>$humidity %</p>
+          <p>$temp_max ℃</p>
+          <p>$temp_min ℃</p>
+        </div>
+      </div>
     </details>
 
     __deta__;
@@ -229,12 +243,11 @@ ini_set("error_iog", "./php_error.log");
     // mail_form;
 
 
-    $message = $time . $city . $feels . '℃';
-    // $headers = "From: t.tsumi02@gmail.com";
+    // $message = $time . $city . $feels . '℃';
+    // // $headers = "From: t.tsumi02@gmail.com";
 
     // if (isset($_POST['address'])) {
     //   $address = ($_POST['address']);
-    //   var_dump($address);
     //   echo 'OK';
     // } else {
     //   $address = "";
@@ -251,7 +264,8 @@ ini_set("error_iog", "./php_error.log");
 
     for ($i = 1; $i < 10; $i++) {
       $weather_dt = $list[$i]['dt'];
-      $time = date('m/d - H時頃', $weather_dt);
+      $time = date('m/d(D) . H時頃', $weather_dt);
+
       $weather = $list[$i]['weather'][0]['main'];
       $weather_icon = $list[$i]['weather'][0]['icon'];
       $weather_desc = $list[$i]['weather'][0]['description'];
@@ -292,11 +306,22 @@ ini_set("error_iog", "./php_error.log");
         </span>
         
       </summary>
-        <p>概況：$weather_desc</p>
-        <p>降水確率$rains ％</p>
-        <p>湿度：$humidity %</p>
-        <p>最高気温：$temp_max ℃</p>
-        <p>最低気温：$temp_min ℃</p>
+      <div class="box">
+        <div class="key">
+          <p>概況：</p>
+          <p>降水確率：</p>
+          <p>湿度：</p>
+          <p>最高気温：</p>
+          <p>最低気温：</p>
+        </div>
+        <div class="value">
+          <p>$weather_desc</p>
+          <p>$rains ％</p>
+          <p>$humidity %</p>
+          <p>$temp_max ℃</p>
+          <p>$temp_min ℃</p>
+        </div>
+      </div>
     </details>
 
     __deta__;
@@ -318,7 +343,8 @@ ini_set("error_iog", "./php_error.log");
     for ($i = 10; $i < $leng; $i++) {
 
       $weather_dt = $list[$i]['dt'];
-      $time = date('m/d - H時頃', $weather_dt);
+      $time = date('m/d(D) . H時頃', $weather_dt);
+
       $weather = $list[$i]['weather'][0]['main'];
       $weather_icon = $list[$i]['weather'][0]['icon'];
       $weather_desc = $list[$i]['weather'][0]['description'];

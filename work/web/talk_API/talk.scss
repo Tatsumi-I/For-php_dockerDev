@@ -6,7 +6,7 @@ p{
 h1{
   color:snow;
   filter: drop-shadow(0 0 1px dimgrey);
-  margin: 10px auto;
+  margin: auto;
   text-align: center;
 }
 .base{
@@ -40,7 +40,6 @@ h1{
 form{
   width: fit-content;
   display: block;
-  min-width: 300px;
   padding: 10px 30px;
   background: snow;
   margin: 10px auto;

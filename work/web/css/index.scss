@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
   font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
   font-weight: 200;
-  font-size: 110%;
+  // font-size: 90%;
   font-style: normal;
   letter-spacing: 0.1em;
   // line-height: 1.5;
@@ -167,6 +167,18 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   line-height: 3;
+  fieldset {
+    max-width: 700px;
+    text-align: center;
+    margin: 50px auto;
+    list-style: none;
+    padding: 3%;
+    border-radius: 5px;
+  
+    p {
+      display: list-item;
+    }
+  }
 
   .top_nav {
     font-size: 70%;
@@ -194,9 +206,9 @@ main {
     }
     .globalMenu {
       margin: auto;
-      background: $grege;
+      // background: $grege;
       border-radius: 5px;
-      padding: 2px;
+      // padding: 2em;
     }
     .app {
       margin: 0;
@@ -557,7 +569,7 @@ main {
 .backBone,
 .blackApron,
 .hobby {
-  height: 200px;
+  height: 100px;
   background: white;
   font-size: 200%;
   max-width: 700px;
@@ -591,18 +603,7 @@ main {
   border-radius: 50%;
 }
 
-fieldset {
-  padding: 3%;
-  max-width: 700px;
-  text-align: center;
-  margin: 50px auto;
-  list-style: none;
-  border-radius: 5px;
 
-  p {
-    display: list-item;
-  }
-}
 
 .tra3d {
   transform: translateZ(-20px);

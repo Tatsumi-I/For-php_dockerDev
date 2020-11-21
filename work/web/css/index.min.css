@@ -173,7 +173,7 @@ header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: del
 
 header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
 
-header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 3%; }
+header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 10%; }
 
 header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 600; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
 
@@ -201,7 +201,7 @@ header .headerContainer .homeGroup .copy a:hover .item1, header .headerContainer
 
 header .headerContainer .homeGroup .copy a:hover .item0, header .headerContainer .homeGroup .copy a:hover .item5, header .headerContainer .homeGroup .copy a:active .item0, header .headerContainer .homeGroup .copy a:active .item5, header .headerContainer .homeGroup .copy a:visited .item0, header .headerContainer .homeGroup .copy a:visited .item5, footer .headerContainer .homeGroup .copy a:hover .item0, footer .headerContainer .homeGroup .copy a:hover .item5, footer .headerContainer .homeGroup .copy a:active .item0, footer .headerContainer .homeGroup .copy a:active .item5, footer .headerContainer .homeGroup .copy a:visited .item0, footer .headerContainer .homeGroup .copy a:visited .item5 { display: inline-block; }
 
-header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 5% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
+header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 10% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
 
 header .headerContainer .homeGroup .logo .nameBar, footer .headerContainer .homeGroup .logo .nameBar { display: block; margin: 0 auto; text-align: center; text-shadow: 0 0 15px rgba(245, 245, 245, 0.3); -webkit-transition: text-shadow 3s ease 8s; transition: text-shadow 3s ease 8s; }
 
@@ -237,7 +237,7 @@ footer address p a { background: #80786630; border-radius: 5px; padding: 1em; ma
 
 footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
-.headFootOpenMenu { font-size: 110%; background: #80786630; }
+.headFootOpenMenu { font-size: 110%; background: whitesmoke; }
 
 .headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; padding: 20px; font-size: 20px; outline: 1px solid silver; color: #966432; }
 
@@ -257,6 +257,8 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .headFootOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 5% 1%; border-radius: 10px; }
 
+.headFootOpenMenu .fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 280px; margin: 10px auto; }
+
 .headFootOpenMenu .fl .inner { margin: 0 auto; padding: clamp(0 10px, 0 30px, 0 50px); border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 
 .headFootOpenMenu .fl .inner span { background: #966432; border-radius: 5px; color: white; padding: 5px 12px; }
@@ -271,7 +273,9 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .headFootOpenMenu details[open] summary::after { content: "close"; background: #80786630; margin-left: 2em; border-radius: 5px; padding: 5px 12px; }
 
-html, body { color: #634130; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 200; font-size: 110%; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
+.homeGroup { padding: 10%; }
+
+html, body { color: #634130; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
 
 html a, body a { text-decoration: none; color: darkgreen; cursor: pointer; -webkit-filter: drop-shadow(0px 0px 2px dimgrey); filter: drop-shadow(0px 0px 2px dimgrey); }
 
@@ -323,6 +327,10 @@ html .icons .mamp::before, body .icons .mamp::before { content: "MAMP"; letter-s
 
 main { max-width: 1500px; margin: 0 auto; line-height: 3; }
 
+main fieldset { max-width: 700px; text-align: center; margin: 50px auto; list-style: none; padding: 3%; border-radius: 5px; }
+
+main fieldset p { display: list-item; }
+
 main .top_nav { font-size: 70%; position: -webkit-sticky; position: sticky; top: 0; background: #e9e6e0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; z-index: 200; padding: 5px; margin: 0 auto; }
 
 main .top_nav img { width: 45px; height: 50px; margin: 0; }
@@ -331,7 +339,7 @@ main .top_nav p { margin: auto; }
 
 main .top_nav .miniLogo { margin: 0; }
 
-main .top_nav .globalMenu { margin: auto; background: #80786630; border-radius: 5px; padding: 2px; }
+main .top_nav .globalMenu { margin: auto; border-radius: 5px; }
 
 main .top_nav .app { margin: 0; padding: 0; opacity: 0; -webkit-animation: delay 1s 5s forwards; animation: delay 1s 5s forwards; border: 1px solid #253158; color: white; background: #978e8940; text-align: center; width: 50px; height: 50px; line-height: 50px; -webkit-box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px #dddddd; box-shadow: 1px 1px 2px rgba(180, 180, 180, 0.5), -1px -1px 1px #dddddd; border-radius: 50%; }
 
@@ -433,7 +441,7 @@ main .sum { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display:
 
 main .sum p { font-size: 120%; font-weight: bold; width: clamp(300px, 40%, 50vw); background: #80786630; text-align: center; margin: 10px auto; padding: 20px; border-radius: 20px; }
 
-.chara, .backBone, .blackApron, .hobby { height: 200px; background: white; font-size: 200%; max-width: 700px; color: white; text-shadow: 1px 1px 1px dimgrey; display: block; margin: 30px auto; border-radius: 5px; border: 1px solid dimgrey; }
+.chara, .backBone, .blackApron, .hobby { height: 100px; background: white; font-size: 200%; max-width: 700px; color: white; text-shadow: 1px 1px 1px dimgrey; display: block; margin: 30px auto; border-radius: 5px; border: 1px solid dimgrey; }
 
 .chara { background: url(../imgs/thinkType.png) 20%/100% content-box no-repeat; }
 
@@ -444,10 +452,6 @@ main .sum p { font-size: 120%; font-weight: bold; width: clamp(300px, 40%, 50vw)
 .hobby { background: url(../imgs/IMG_3214.JPG) 20%/100% content-box no-repeat; }
 
 .jsTest { background: pink; opacity: 0.9; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-radius: 50%; }
-
-fieldset { padding: 3%; max-width: 700px; text-align: center; margin: 50px auto; list-style: none; border-radius: 5px; }
-
-fieldset p { display: list-item; }
 
 .tra3d { -webkit-transform: translateZ(-20px); transform: translateZ(-20px); font-size: 400px; height: 0; z-index: 1; text-align: center; white-space: nowrap; opacity: 0.1; color: #63413070; }
 

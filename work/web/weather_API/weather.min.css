@@ -1,50 +1,60 @@
-html, body { scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; background: url("../imgs/clear_sky.jpg") no-repeat; background-size: cover; }
+html, body { scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; }
 
-header, footer { min-height: 100px; margin: 0 auto; color: white; text-align: center; background: rgba(69, 151, 206, 0.7); padding: 3%; }
+header, footer { background: url("../imgs/clear_sky.jpg") no-repeat; background-size: cover; min-height: 100px; margin: 0 auto; color: white; text-align: center; padding: 3%; }
 
 header .logo, footer .logo { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 500px; }
 
-header .img, footer .img { width: 60px; margin: 20px auto 0; }
+header .img, footer .img { width: 60px; height: auto; margin: 20px auto 0; }
 
 header .api, footer .api { width: 100px; -webkit-filter: saturate(3); filter: saturate(3); }
 
-h1 { margin: 20px auto; text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; }
+h1 { margin: 10% auto; }
 
 h2 { text-align: center; margin: 30px auto 0; }
 
-main { margin: 0 auto; text-align: center; width: 100vw; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); }
 
-fieldset { max-width: 500px; min-width: 300px; margin: 20px auto; padding: 3%; border-radius: 5px; }
+.header i, .header img { min-width: 50px; max-width: 100px; display: block; margin: auto; text-align: center; }
 
-fieldset legend { padding: 0 1em; font-size: large; border-radius: 2px; text-shadow: 1px 1px 1px grey,-1px -1px 1px grey; border-radius: 5px; }
+.header i { font-size: 200%; color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); }
 
-fieldset div { margin: 30px auto; }
+main { margin: 10% auto; text-align: center; width: 100vw; }
 
-fieldset label { border: transparent; padding: 1em; cursor: pointer; white-space: nowrap; display: block; }
+label { border: transparent; padding: 1em; cursor: pointer; white-space: nowrap; display: block; width: 100%; }
 
-fieldset form { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+form { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-fieldset button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: auto; }
+button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: auto; }
 
 .weather_now { border: 1px solid grey; width: 90vw; margin: 30px auto; padding: 2%; border-radius: 5px; }
 
 .weather_now h1 { margin: 0; }
 
-details { width: clamp(300px, 500px, 90vw); display: block; margin: 3px auto; padding: 0 0 10px; background: rgba(225, 225, 225, 0.8); border-radius: 10px; -webkit-box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); }
-
-details .five_days { width: 90vw; }
+details { width: clamp(300px, 500px, 90vw); display: block; margin: 3px auto; padding: 0; border-radius: 10px; -webkit-box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); }
 
 details h3, details p, details i { margin: auto; border-radius: 5px; }
 
-details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; margin: 14px; }
+details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; margin: auto; }
 
-details summary { color: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: rgba(135, 207, 235, 0.8); border-radius: 10px; }
+details summary { color: transparent; background: midnightblue; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; border-radius: 10px; }
 
-details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: white; cursor: pointer; margin: 0 auto; -ms-flex-pack: distribute; justify-content: space-around; }
+details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: grey; cursor: pointer; margin: 0 0 5px; width: 100%; -ms-flex-pack: distribute; justify-content: space-around; }
+
+details .box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+details .box .key { text-align: right; width: 45%; margin: 10px; display: block; }
+
+details .box .value { text-align: left; width: 45%; margin: 10px; display: block; }
 
 .desc { margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1em; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.desc .memo { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: auto; text-shadow: 0 0 1px gray; max-width: 300px; height: 200px; }
+.desc .memo { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: auto; text-shadow: 0 0 1px gray; max-width: 300px; }
+
+.desc details { background: lightblue; }
+
+.desc details summary { background: whitesmoke; }
+
+.desc details span { width: 100%; }
 
 .desc p { margin: 20px; }
 
@@ -52,7 +62,7 @@ details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; d
 
 .desc ul li { margin: 20px; }
 
-.desc .text { color: #00dada; }
+.desc .text { color: #00b9da; }
 
 .desc .blue { background: blue; max-width: 200px; margin: auto; }
 
@@ -65,4 +75,8 @@ details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; d
 .desc .red { background: red; max-width: 200px; margin: auto; }
 
 button { display: block; margin: auto; }
+
+.five_days { margin: 10% auto; width: 90vw; }
+
+.five_days summary { background-color: whitesmoke; }
 /*# sourceMappingURL=weather.min.css.map */

@@ -246,7 +246,7 @@ footer {
 .headFootOpenMenu {
   font-size: 110%;
 
-  background: $grege;
+  background: whitesmoke;
   summary {
     transition-duration: 1s;
     // filter: opacity(0);
@@ -287,6 +287,7 @@ footer {
     padding: 0;
   }
 
+  
 
   a {
     &:hover {
@@ -308,6 +309,15 @@ footer {
     // flex-wrap: wrap;
     padding: 5% 1%;
     border-radius: 10px;
+
+    fieldset{
+      text-align: left;
+      list-style: none;
+      padding: 3%;
+      border-radius: 5px;
+      max-width: 280px;
+      margin: 10px auto;
+    }
 
     .inner {
       margin: 0 auto;

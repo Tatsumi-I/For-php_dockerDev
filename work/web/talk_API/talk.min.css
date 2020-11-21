@@ -1,6 +1,6 @@
 p { line-height: 2em; }
 
-h1 { color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); margin: 10px auto; text-align: center; }
+h1 { color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); margin: auto; text-align: center; }
 
 .base { max-width: 700px; min-width: 300px; background: #ebb35f; padding: 5px 20px; margin: auto; border-radius: 5px; }
 
@@ -10,7 +10,7 @@ h1 { color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-sha
 
 .header i { font-size: 200%; color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); }
 
-form { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: block; min-width: 300px; padding: 10px 30px; background: snow; margin: 10px auto; text-align: right; border-radius: 5px; -webkit-filter: drop-shadow(0 0 1px grey); filter: drop-shadow(0 0 1px grey); }
+form { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: block; padding: 10px 30px; background: snow; margin: 10px auto; text-align: right; border-radius: 5px; -webkit-filter: drop-shadow(0 0 1px grey); filter: drop-shadow(0 0 1px grey); }
 
 form input { border-radius: 5px; width: 200px; margin: auto; }
 

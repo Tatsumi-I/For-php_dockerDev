@@ -179,7 +179,7 @@ footer address p a { background: #80786630; border-radius: 5px; padding: 1em; ma
 
 footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
-.headFootOpenMenu { font-size: 110%; background: #80786630; }
+.headFootOpenMenu { font-size: 110%; background: whitesmoke; }
 
 .headFootOpenMenu summary { -webkit-transition-duration: 1s; transition-duration: 1s; padding: 20px; font-size: 20px; outline: 1px solid silver; color: #966432; }
 
@@ -198,6 +198,8 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 .headFootOpenMenu a:link, .headFootOpenMenu a:visited { color: #966432; }
 
 .headFootOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 5% 1%; border-radius: 10px; }
+
+.headFootOpenMenu .fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 280px; margin: 10px auto; }
 
 .headFootOpenMenu .fl .inner { margin: 0 auto; padding: clamp(0 10px, 0 30px, 0 50px); border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 

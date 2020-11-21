@@ -84,7 +84,7 @@ switch ($rand) {
         </div>
 
         <div id="globalMenu" class="headFootOpenMenu">
-          <details open>
+          <details>
             <summary>Global Menu<span>Open</span></summary>
             $globalMenu
           </details>
@@ -131,10 +131,10 @@ switch ($rand) {
       <a href="index.php" class="miniLogo">
         <img src="./imgs/myLogoWhite.png" alt="">
       </a>
+      <a class="globalMenu" href="#globalMenu">Global menu</a>
       <p class="nav"><a href="index.php"><i class="fas fa-home"></i>HOME</a>
         <?= $menuList; ?>
       </p>
-      <a class="globalMenu" href="#globalMenu">Global menu</a>
       <a id="appConect" class="app" href="./php_app/eva.php" target="_Hoz_on">Hoz_on</a>
     </nav>
     <article>

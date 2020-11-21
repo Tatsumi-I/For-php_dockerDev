@@ -34,11 +34,10 @@ $icon =
 $globalMenu =
   '
   <div class="fl">
-    <div class="inner">
-      <p><a href="index.php"><span>HOME</span></a></p>
-      <div>
-        <p class="indent1"><span>スキルと知識</span></p>
-        <p class="indent2">詳解ページ</p>
+    <fieldset><legend>HOME</legend>
+      <p><a href="index.php"></a></p>
+      <fieldset><legend>スキルと知識</legend>
+        <p class="indent1">ページ一覧</p>
         <ul class="indent2">
           <li><a href="include.php">This site</a></li>
           <li><a href="include.php">My first code</a></li>
@@ -47,37 +46,36 @@ $globalMenu =
           <li><a href="include.php">Web_API</a></li>
           <li><a href="design.php">Design</a></li>
         </ul>
-      </div>
-      <div>
-        <p class="indent1"><span>過去</span></p>
-        <p class="indent2">詳解ページ</p>
+      </fieldset>
+      <fieldset><legend>過去</legend>
+        <p class="indent1">ページ一覧</p>
         <ul class="indent2">
           <li><a href="backBone.php">Backbone</a></li>
           <li><a href="blackApron.php">What is Black Apron?</a></li>
           <li class="indent2"><a href="tatsumi-jyuku.php">社内試験対策テキスト</a></li>
         </ul>
-      </div>
-      <div>
-        <p class="indent1"><span>人物像</span></p>
-        <p class="indent2">詳解ページ</p>
+      </fieldset>
+      <fieldset><legend>人物像</legend>
+        <p class="indent1">ページ一覧</p>
         <ul class="indent2">
           <li><a href="chara.php">Character</a></li>
           <li><a href="hobby.php">Hobby</a></li>
         </ul>
-      </div>
-      <div>
-      <p class="indent1"><a href="contact.php"><span>Contact</span></a></p>
+      </fieldset>
+      <fieldset><legend>Contact</legend>
+      <p class="indent1">ページ一覧</p>
       <p class="indent2">各種アカウントはこちら</p>
         <ul class="indent2">
           <li><a href="https://github.com/Tatsumi-I/">GitHub</a></li>
           <li><a href="mailto:t.tsumi02@gmail.com">MAILで問い合わせる</a></li>
         </ul>
-      </div>
-    </div>
+      </fieldset>
+    </fieldset>
+    
   </div>
   ';
 
 
-$apiKey = 'e446264b25946d417b1277c00910b88e';//weather用
+$apiKey = 'e446264b25946d417b1277c00910b88e'; //weather用
 
 $talk_apiKey = 'DZZlkvEYj5fcbvCwPozV96pHEpx4nbNe';//talk用
