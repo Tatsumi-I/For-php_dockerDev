@@ -4,8 +4,8 @@ $grege: #80786630;
 
 html,
 body {
-  // color: $beige;
-
+  font-size: 90%;
+  // line-height: 3em;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -28,6 +28,13 @@ footer {
   color: white;
   text-align: center;
   padding: 3%;
+  h1 {
+    margin: 0;
+    color: midnightblue;
+    border-radius: 3px;
+    background: whitesmoke;
+    padding: 1em;
+  }
   .logo {
     margin: 0 auto;
     display: flex;
@@ -44,12 +51,10 @@ footer {
     filter: saturate(3);
   }
 }
-h1 {
-  margin: 10% auto;
-}
+
 h2 {
   text-align: center;
-  margin: 30px auto 0;
+  margin: 20px auto;
 }
 
 .header {
@@ -70,6 +75,18 @@ h2 {
     filter: drop-shadow(0 0 1px dimgrey);
   }
 }
+.city {
+  background: midnightblue;
+  border-radius: 10px;
+  padding: 0 1em;
+  color: grey;
+  max-width: 700px;
+  width: 90%;
+  margin: 30px auto;
+}
+span {
+  color: white;
+}
 // b{
 //   background: white;
 //   margin: 0;
@@ -78,26 +95,28 @@ h2 {
 //   border-radius: 10px;
 //   margin: 0 auto;
 
+fieldset {
+  min-width: 270px;
+  min-height: 200px;
+  border-radius: 5px;
+}
+
 // }
 main {
   // width: max-content;
 
-  margin: 10% auto;
+  margin: auto;
   text-align: center;
   width: 100vw;
 }
 
-label {
-  border: transparent;
-  padding: 1em;
-  cursor: pointer;
-  white-space: nowrap;
-  display: block;
-  width: 100%;
-}
 form {
-  display: flex;
-  flex-wrap: wrap;
+  div {
+    margin: auto;
+  }
+  label {
+    display: inline-flex;
+  }
 }
 button {
   background: skyblue;
@@ -106,7 +125,7 @@ button {
   padding: 1em;
   cursor: pointer;
   border-radius: 5px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .weather_now {
@@ -120,11 +139,16 @@ button {
   h1 {
     margin: 0;
   }
+  img {
+    width: 40px;
+    display: block;
+    margin: auto;
+  }
 }
 details {
-  width: clamp(300px, 500px, 90vw);
+  max-width: 500px;
   display: block;
-  margin: 3px auto;
+  margin: 6px auto;
   padding: 0;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(5, 5, 5, 0.5);
@@ -134,6 +158,7 @@ details {
   i {
     margin: auto;
     border-radius: 5px;
+    
   }
   i {
     border: 1px solid grey;
@@ -146,11 +171,10 @@ details {
   }
   summary {
     color: transparent;
-    background: midnightblue;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background: midnightblue;
     border-radius: 10px;
+    height: 40px;
 
     span {
       padding: 0;
@@ -158,9 +182,25 @@ details {
       flex-wrap: wrap;
       color: grey;
       cursor: pointer;
-      margin: 0 0 5px;
+      // margin: 0 5px 5px;
       width: 100%;
-      justify-content: space-around;
+    }
+    h1 {
+      margin: auto;
+      width: 70%;
+    }
+    p {
+      padding: 0;
+      width: 47%;
+      span{
+        color: whitesmoke;
+      }
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      filter: brightness(3);
+      margin: auto;
     }
   }
   .box {
@@ -181,32 +221,51 @@ details {
   }
 }
 
+.feel_box {
+  width: 30%;
+}
+
 .desc {
   // color:white;
   // max-width: 300px;
   margin: auto;
   display: flex;
-  padding: 1em;
+  // padding: 1em;
   flex-wrap: wrap;
   .memo {
     justify-content: space-between;
     // display: block;
-    margin: auto;
+    max-width: 380px;
+    width: 100%;
+    margin: 20px auto;
     text-shadow: 0 0 1px rgb(128, 128, 128);
-    max-width: 300px;
+    // max-width: 300px;
+  }
+  fieldset {
+    // width: 100%;
+    // max-width: 90vw;
+  }
+  label {
+    display: block;
   }
   details {
-    background: lightblue;
-
+    width: 100%;
     summary {
-      background: whitesmoke;
+      // background: whitesmoke;
     }
     span {
       width: 100%;
     }
   }
-  p {
-    margin: 20px;
+  input {
+    display: block;
+    margin: auto;
+  }
+  .radio {
+    label {
+      display: inline-flex;
+      margin: 5px;
+    }
   }
   ul {
     padding: 0;
@@ -219,42 +278,61 @@ details {
   .text {
     color: rgb(0, 185, 218);
   }
-  .blue {
-    background: blue;
+  .white {
+    background: white;
     max-width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
   }
   .skyblue {
     background: rgb(32, 179, 236);
     max-width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+  }
+  .blue {
+    background: rgb(0, 60, 139);
+    max-width: 200px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
   }
   .pink {
     background: pink;
     max-width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
   }
   .orange {
     background: orange;
     max-width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
   }
   .red {
     background: red;
     max-width: 200px;
-    margin: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
   }
 }
 
 button {
   display: block;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .five_days {
-  margin: 10% auto;
+  margin: 20px auto;
   width: 90vw;
   summary {
     background-color: whitesmoke;
+    flex-wrap: wrap;
+    height: fit-content;
   }
 }

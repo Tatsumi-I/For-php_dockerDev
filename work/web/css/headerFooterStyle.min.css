@@ -121,7 +121,7 @@ header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .co
 
 header .headerContainer .homeGroup .copy a, footer .headerContainer .homeGroup .copy a { color: #966432; }
 
-header .headerContainer .homeGroup .copy a p, footer .headerContainer .homeGroup .copy a p { color: #966432; font-size: 5ch; display: inline-block; margin: 0 3%; }
+header .headerContainer .homeGroup .copy a p, footer .headerContainer .homeGroup .copy a p { color: #966432; display: inline-block; margin: 0 3%; }
 
 header .headerContainer .homeGroup .copy a .item0, footer .headerContainer .homeGroup .copy a .item0 { display: none; -webkit-animation: fade 3s forwards; animation: fade 3s forwards; opacity: 0; }
 
@@ -151,7 +151,7 @@ header .headerContainer .homeGroup .logo .nameBar:hover, footer .headerContainer
 
 header .headerContainer .homeGroup .logo .nameBar h1, footer .headerContainer .homeGroup .logo .nameBar h1 { -webkit-animation: fade 9s forwards 6s; animation: fade 9s forwards 6s; opacity: 0; margin: 0 auto; font-size: 0.5em; font-weight: 200; letter-spacing: 0.9em; color: rgba(255, 255, 255, 0.5); text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); text-align: center; }
 
-header .headerContainer .homeGroup .logo .nameBar h2, footer .headerContainer .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s, rum-col 10s infinite 12s; animation: fade 8s forwards 5s, rum-col 10s infinite 12s; letter-spacing: 0.2; font-family: adobe-text-pro, serif; font-weight: 300; font-style: normal; font-size: 4em; margin-top: 3%; }
+header .headerContainer .homeGroup .logo .nameBar h2, footer .headerContainer .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s, rum-col 10s infinite 12s; animation: fade 8s forwards 5s, rum-col 10s infinite 12s; letter-spacing: 0.2; font-family: adobe-text-pro, serif; font-weight: 300; font-style: normal; font-size: 120%; margin-top: 3%; }
 
 header .logoImg, footer .logoImg { width: 130px; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; margin: 0 auto; display: block; }
 
@@ -187,7 +187,7 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .headFootOpenMenu summary:hover { cursor: pointer; }
 
-.headFootOpenMenu h1, .headFootOpenMenu p, .headFootOpenMenu a, .headFootOpenMenu li { color: #966432; margin: 5px 0; }
+.headFootOpenMenu h1, .headFootOpenMenu p, .headFootOpenMenu a, .headFootOpenMenu li { color: #966432; margin: 10px 0; }
 
 .headFootOpenMenu .indent1 { text-indent: 1em; }
 
@@ -199,7 +199,7 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .headFootOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 5% 1%; border-radius: 10px; }
 
-.headFootOpenMenu .fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 280px; margin: 10px auto; }
+.headFootOpenMenu .fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 500px; width: 90%; margin: 10px auto; }
 
 .headFootOpenMenu .fl .inner { margin: 0 auto; padding: clamp(0 10px, 0 30px, 0 50px); border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
 

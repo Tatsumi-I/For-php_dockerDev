@@ -35,6 +35,18 @@ switch ($rand) {
 <html lang="ja">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE5M164E5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VE5M164E5N');
+  </script>
   <meta charset="utf-8">
   <title><?php echo $pageName; ?>tatsumi's_portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -43,8 +55,6 @@ switch ($rand) {
   <link rel="shortcut icon" href="./imgs/logo.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script> -->
 
   <style>
     <?php echo
@@ -55,11 +65,12 @@ switch ($rand) {
 <body>
 
   <header>
-    <div id="header" class="headerContainer">
 
-        <?php if ($pageName == 'Home - ') {
-          echo
-            <<< __header
+    <?php if ($pageName == 'Home - ') {
+      echo
+        <<< __header
+      <div id="header" class="headerContainer">
+
         <div class="homeGroup">
         
           <div class="copy">
@@ -90,15 +101,16 @@ switch ($rand) {
           </details>
           $icon
         </div>
+      </div>
         
       
 
       __header;
-        } else {
+    } else {
 
-          echo
-            <<< __header_2
-      <div class="homeGroup">
+      echo
+        <<< __header_2
+
       
         <a href="index.php">
           <img class="logoImg" src="./imgs/myLogoWhite.png">
@@ -114,16 +126,16 @@ switch ($rand) {
             $globalMenu
           </details>
         </div>
-      </div>
+
        
 
     __header_2;
-        }
+    }
 
-        ?>
+    ?>
 
 
-    </div>
+    <!-- </div> -->
   </header>
 
   <main>

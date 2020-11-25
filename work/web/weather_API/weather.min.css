@@ -1,6 +1,8 @@
-html, body { scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; }
+html, body { font-size: 90%; scroll-behavior: smooth; margin: 0; padding: 0; font-family: adobe-text-pro, sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; }
 
 header, footer { background: url("../imgs/clear_sky.jpg") no-repeat; background-size: cover; min-height: 100px; margin: 0 auto; color: white; text-align: center; padding: 3%; }
+
+header h1, footer h1 { margin: 0; color: midnightblue; border-radius: 3px; background: whitesmoke; padding: 1em; }
 
 header .logo, footer .logo { margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 500px; }
 
@@ -8,9 +10,7 @@ header .img, footer .img { width: 60px; height: auto; margin: 20px auto 0; }
 
 header .api, footer .api { width: 100px; -webkit-filter: saturate(3); filter: saturate(3); }
 
-h1 { margin: 10% auto; }
-
-h2 { text-align: center; margin: 30px auto 0; }
+h2 { text-align: center; margin: 20px auto; }
 
 .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); }
 
@@ -18,27 +18,43 @@ h2 { text-align: center; margin: 30px auto 0; }
 
 .header i { font-size: 200%; color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); }
 
-main { margin: 10% auto; text-align: center; width: 100vw; }
+.city { background: midnightblue; border-radius: 10px; padding: 0 1em; color: grey; max-width: 700px; width: 90%; margin: 30px auto; }
 
-label { border: transparent; padding: 1em; cursor: pointer; white-space: nowrap; display: block; width: 100%; }
+span { color: white; }
 
-form { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+fieldset { min-width: 270px; min-height: 200px; border-radius: 5px; }
 
-button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: auto; }
+main { margin: auto; text-align: center; width: 100vw; }
+
+form div { margin: auto; }
+
+form label { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+
+button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: 20px auto; }
 
 .weather_now { border: 1px solid grey; width: 90vw; margin: 30px auto; padding: 2%; border-radius: 5px; }
 
 .weather_now h1 { margin: 0; }
 
-details { width: clamp(300px, 500px, 90vw); display: block; margin: 3px auto; padding: 0; border-radius: 10px; -webkit-box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); }
+.weather_now img { width: 40px; display: block; margin: auto; }
+
+details { max-width: 500px; display: block; margin: 6px auto; padding: 0; border-radius: 10px; -webkit-box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); box-shadow: 0 0 15px rgba(5, 5, 5, 0.5); }
 
 details h3, details p, details i { margin: auto; border-radius: 5px; }
 
 details i { border: 1px solid grey; border-radius: 50%; width: 10px; height: 10px; padding: 5px; text-align: right; margin: auto; }
 
-details summary { color: transparent; background: midnightblue; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; border-radius: 10px; }
+details summary { color: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; background: midnightblue; border-radius: 10px; height: 40px; }
 
-details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: grey; cursor: pointer; margin: 0 0 5px; width: 100%; -ms-flex-pack: distribute; justify-content: space-around; }
+details summary span { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; color: grey; cursor: pointer; width: 100%; }
+
+details summary h1 { margin: auto; width: 70%; }
+
+details summary p { padding: 0; width: 47%; }
+
+details summary p span { color: whitesmoke; }
+
+details summary img { width: 18px; height: 18px; -webkit-filter: brightness(3); filter: brightness(3); margin: auto; }
 
 details .box { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -46,17 +62,21 @@ details .box .key { text-align: right; width: 40%; margin: 10px; display: block;
 
 details .box .value { text-align: left; width: 40%; margin: 10px; display: block; }
 
-.desc { margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 1em; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.feel_box { width: 30%; }
 
-.desc .memo { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: auto; text-shadow: 0 0 1px gray; max-width: 300px; }
+.desc { margin: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.desc details { background: lightblue; }
+.desc .memo { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; max-width: 380px; width: 100%; margin: 20px auto; text-shadow: 0 0 1px gray; }
 
-.desc details summary { background: whitesmoke; }
+.desc label { display: block; }
+
+.desc details { width: 100%; }
 
 .desc details span { width: 100%; }
 
-.desc p { margin: 20px; }
+.desc input { display: block; margin: auto; }
+
+.desc .radio label { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; margin: 5px; }
 
 .desc ul { padding: 0; margin: 50px auto; text-align: left; }
 
@@ -64,19 +84,21 @@ details .box .value { text-align: left; width: 40%; margin: 10px; display: block
 
 .desc .text { color: #00b9da; }
 
-.desc .blue { background: blue; max-width: 200px; margin: auto; }
+.desc .white { background: white; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-.desc .skyblue { background: #20b3ec; max-width: 200px; margin: auto; }
+.desc .skyblue { background: #20b3ec; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-.desc .pink { background: pink; max-width: 200px; margin: auto; }
+.desc .blue { background: #003c8b; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-.desc .orange { background: orange; max-width: 200px; margin: auto; }
+.desc .pink { background: pink; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-.desc .red { background: red; max-width: 200px; margin: auto; }
+.desc .orange { background: orange; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-button { display: block; margin: auto; }
+.desc .red { background: red; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; }
 
-.five_days { margin: 10% auto; width: 90vw; }
+button { display: block; margin: 10px auto; }
 
-.five_days summary { background-color: whitesmoke; }
+.five_days { margin: 20px auto; width: 90vw; }
+
+.five_days summary { background-color: whitesmoke; -ms-flex-wrap: wrap; flex-wrap: wrap; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 /*# sourceMappingURL=weather.min.css.map */

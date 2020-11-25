@@ -78,4 +78,7 @@ $globalMenu =
 
 $apiKey = 'e446264b25946d417b1277c00910b88e'; //weather用
 
+
+
+
 $talk_apiKey = 'DZZlkvEYj5fcbvCwPozV96pHEpx4nbNe';//talk用

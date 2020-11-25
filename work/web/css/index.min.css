@@ -173,7 +173,7 @@ header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: del
 
 header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
 
-header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 10%; }
+header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 10%; font-size: 170%; }
 
 header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 600; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
 
@@ -325,7 +325,7 @@ html .icons .db, body .icons .db { color: #182e58; }
 
 html .icons .mamp::before, body .icons .mamp::before { content: "MAMP"; letter-spacing: -1px; background: #868e99; display: inline-block; width: 16px; height: 16px; line-height: 16px; text-align: center; color: #fff; border-radius: 50%; font-size: 2px; margin-right: 15px; }
 
-main { max-width: 1500px; margin: 0 auto; line-height: 3; }
+main { margin: 0 auto; line-height: 3; }
 
 main fieldset { max-width: 700px; text-align: center; margin: 50px auto; list-style: none; padding: 3%; border-radius: 5px; }
 

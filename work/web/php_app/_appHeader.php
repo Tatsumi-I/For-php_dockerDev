@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="たつみのポートフォリオサイト">
-<link rel="stylesheet" type="text/css" href="./styleForApp/appStyle.min.css">
-<link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
 
-  <title><?php 
-    if (!empty($pageName)) {
-      echo $pageName;
-    } else{
-      echo 'Hoz_on';
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE5M164E5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
     }
-    ?>
+    gtag('js', new Date());
+
+    gtag('config', 'G-VE5M164E5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="たつみのポートフォリオサイト">
+  <link rel="stylesheet" type="text/css" href="./styleForApp/appStyle.min.css">
+  <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
+
+  <title><?php
+          if (!empty($pageName)) {
+            echo $pageName;
+          } else {
+            echo 'Hoz_on';
+          }
+          ?>
   </title>
-<style>
-</style>
+  <style>
+  </style>
 </head>
 
 <body>
@@ -33,9 +46,9 @@
       <a href="list_table.php">Hoz_onリスト</a>
     </div>
     <hr>
-  <div class="all">
-    <div class="title">
-      <h1><span>Keep your inspiration!!</span></h1>
-      <h2>by "Hoz_on" !!</h2>
-      <p>~あなたのアイデア保存します~</p>
-    </div>
+    <div class="all">
+      <div class="title">
+        <h1><span>Keep your inspiration!!</span></h1>
+        <h2>by "Hoz_on" !!</h2>
+        <p>~あなたのアイデア保存します~</p>
+      </div>
