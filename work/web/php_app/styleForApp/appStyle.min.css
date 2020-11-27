@@ -1,4 +1,4 @@
-html { background: #b4ad9b27; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; text-align: center; font-family: adobe-text-pro, vdl-v7gothic, sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; background: rgba(255, 255, 255, 0.5); width: 100vw; -webkit-filter: drop-shadow(0 0 2px white); filter: drop-shadow(0 0 2px white); }
+html { background: #b4ad9b27; color: rgba(27, 37, 73, 0.8); scroll-behavior: smooth; margin: 0 auto; padding: 0; text-align: center; font-family: 'Noto Sans JP'sans-serif; font-weight: 400; font-style: normal; line-height: 3; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; background: rgba(255, 255, 255, 0.5); width: 100vw; -webkit-filter: drop-shadow(0 0 2px white); filter: drop-shadow(0 0 2px white); }
 
 header, footer { background: #b4ad9b27; margin: 0; padding: 10px; }
 

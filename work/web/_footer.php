@@ -53,7 +53,7 @@ require_once('../app/function.php')
 <!-- google.noto-sun日本語 -->
 <!-- アドビ日本語 -->
 
-<script>
+<!-- <script>
   (function(d) {
     var config = {
         kitId: 'pjg4svf',
@@ -82,7 +82,7 @@ require_once('../app/function.php')
     };
     s.parentNode.insertBefore(tk, s)
   })(document);
-</script>
+</script> -->
 
 <script src="js/myPortfolio.js"></script>
 <script>

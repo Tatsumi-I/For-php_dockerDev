@@ -94,37 +94,47 @@ $grege: #80786630;
 
 @keyframes bgcolor {
   0% {
-    background: radial-gradient(circle at center top,
-        rgb(65, 65, 65) 4%,
-        rgb(10, 10, 10) 50%,
-        rgb(0, 0, 0));
+    background: radial-gradient(
+      circle at center top,
+      rgb(65, 65, 65) 4%,
+      rgb(10, 10, 10) 50%,
+      rgb(0, 0, 0)
+    );
   }
 
   90% {
-    background: radial-gradient(circle at center top,
-        rgba(68, 68, 68, 0.8) 4%,
-        rgb(27, 27, 27) 50%,
-        rgb(22, 22, 22));
+    background: radial-gradient(
+      circle at center top,
+      rgba(68, 68, 68, 0.8) 4%,
+      rgb(27, 27, 27) 50%,
+      rgb(22, 22, 22)
+    );
   }
 
   93% {
-    background: radial-gradient(circle at center top,
-        rgba(117, 117, 117, 0.6) 4%,
-        rgba(10, 10, 10, 0.6) 50%,
-        rgba(0, 0, 0, 0.6));
+    background: radial-gradient(
+      circle at center top,
+      rgba(117, 117, 117, 0.6) 4%,
+      rgba(10, 10, 10, 0.6) 50%,
+      rgba(0, 0, 0, 0.6)
+    );
   }
 
   96% {
-    background: radial-gradient(circle at center top,
-        #afaaa385 4%,
-        #66625977 50%,
-        #5e594d30);
+    background: radial-gradient(
+      circle at center top,
+      #afaaa385 4%,
+      #66625977 50%,
+      #5e594d30
+    );
   }
   98% {
-    background: radial-gradient(circle at center top,
-        #afaaa32d 4%,
-        #66625923 50%,
-        #5e594d1c);
+    background: radial-gradient(
+      circle at center top,
+      #afaaa32d 4%,
+      #66625923 50%,
+      #5e594d1c
+    );
   }
   100% {
     background: transparent;

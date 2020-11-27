@@ -54,7 +54,10 @@ switch ($rand) {
   <link rel="stylesheet" type="text/css" href="./css/index.min.css">
   <link rel="shortcut icon" href="./imgs/logo.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> -->
 
   <style>
     <?php echo

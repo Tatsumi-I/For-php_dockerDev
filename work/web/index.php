@@ -26,7 +26,7 @@ $links =
             <p><strong>”新しい感動体験を創り出す”</strong></p>
             <p>ユーザーにとって</p>
             <p><em>最良で</em><em>心地よく</em><em>今までにない</em></p>
-            <p>感動体験を提供する。</p>
+            <p>感動体験を提供する</p>
             <br>
             <p>そのために努力し、学び続け、手を動かす</p>
             <br>
@@ -193,7 +193,7 @@ $links =
             <i class="fab fa-github git" title="Git/GitHub"></i>
           </div>
           <div class="container2">
-          <div class="contentImg">
+            <div class="contentImg">
               <img src="imgs/bot.png" alt="">
             </div>
             <div class="text">
@@ -212,8 +212,8 @@ $links =
             <img src="imgs/p5.png" alt="">
           </div>
           <div class="container2">
-            <iframe src="sketch_1.php" frameborder="0"></iframe>
-            <iframe src="sketch_2.php" frameborder="0"></iframe>
+            <!-- <iframe src="sketch_1.php" frameborder="0"></iframe>
+            <iframe src="sketch_2.php" frameborder="0"></iframe> -->
             <div class="text">
               <p>学習開始初期から関心のある<strong>Processing</strong></p>
               <p><strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>

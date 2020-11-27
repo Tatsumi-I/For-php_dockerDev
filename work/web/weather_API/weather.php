@@ -91,112 +91,8 @@ require_once('../../app/function.php');
     <p><strong>Tatsumi's_Weather</strong></p>
     <p>OpenWeatherMapのWeb APIを使用</p>
     <hr>
-    <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
-    <h2>3つの”分かる！”が詰まった<br>お天気アプリです</h2>
-
-    <div class="desc">
-      <div class="memo">
-        <fieldset>
-          <legend class="text">
-            <h2>世界中の今が分かる！</h2>
-          </legend>
-          <p><strong>20万を超える都市</strong>から選択可能</p>
-          <div class="desc">
-            <details>
-              <summary><span>
-                  <p><span>クイック選択</span></p><i class="fas fa-angle-double-down"></i>
-                </span></summary>
-              <form action="" method="GET">
-                <div class="radio">
-                  <label><input type="radio" name="area" value="2130037">北海道</label>
-                  <label><input type="radio" name="area" value="1850147">東京</label>
-                  <label><input type="radio" name="area" value="1856057">名古屋</label>
-                  <label><input type="radio" name="area" value="1853909">大阪</label>
-                  <label><input type="radio" name="area" value="1863967">福岡</label>
-                  <label><input type="radio" name="area" value="1854345">沖縄</label>
-                  <!-- </div> -->
-                  <!-- <div> -->
-                  <label><input type="radio" name="area" value="2643744">London(GB)</label>
-                  <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
-                  <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
-                  <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
-                  <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
-                  <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
-                </div>
-                <button>Click or Enter!</button>
-
-              </form>
-            </details>
-
-            <details>
-              <summary><span>
-                  <p><span>地域を指定する</span></p><i class="fas fa-angle-double-down"></i>
-                </span></summary>
-                <br>
-              <form action="" method="GET">
-                <div>
-                  <form action="" method="GET">
-                    <label><b>地域名を"アルファベットで"入力</b>
-                      <br>
-                      <b>”1文字目は大文字”で入力して下さい</b>
-                      <input type="text" name="area_in" value=""></label>
-                    <br>
-                    <button>Click or Enter!</button>
-                    <h1>例1)."京都"の場合 → "Kyoto"</h1>
-                    <h1>例2)."大井"の場合 → "Ooi"</h1>
-                    <h1>例3)."新宿区"の場合 → "Shinjyuku-ku"</h1>
-                    <br>
-                    <h2>＊東京23区でもサポートされて<br>いない地域があります！</h2>
-                    <ul>
-                      <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
-                      <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
-                      <li>一部サポートされていない地域があります</li>
-                      <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
-                    </ul>
-                  </form>
-                </div>
-              </form>
-            </details>
 
 
-
-          </div>
-        </fieldset>
-      </div>
-
-
-      <div class="memo">
-        <fieldset>
-          <legend class="text">
-            <h2><strong>体感気温</strong>がすぐ分かる！</h2>
-          </legend>
-          <p class="red">体感気温 35 ~ ℃</p>
-          <p class="orange">体感気温 30 ~ 35 ℃</p>
-          <p class="pink">体感気温 25 ~ 30 ℃</p>
-          <p class="blue">体感気温 5 ~ 10 ℃</p>
-          <p class="skyblue">体感気温 0 ~ 5 ℃</p>
-          <p class="white">体感気温 0 ℃ 以下</p>
-        </fieldset>
-      </div>
-
-
-      <div class="memo">
-        <fieldset>
-          <legend class="text">
-            <h2>5日先の天気まで分かる！</h2>
-          </legend>
-          <p>24時間天気はもちろん<br><strong>5日先の天気まで</strong>分かっちゃう</p>
-        </fieldset>
-      </div>
-
-
-    </div>
-
-
-
-  </header>
-
-  <main>
     <?php
     $weather_icon = $weather_now['icon'];
     switch ($weather_icon) {
@@ -263,6 +159,121 @@ require_once('../../app/function.php');
     echo $weather_now['description'] . '/';
     echo $weather_now['main'] . '<br>';
     echo '体感気温' . $feels_now . '℃';
+    echo '</div>';
+    ?>
+    <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
+
+
+    <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
+    <div class="desc">
+
+      <div class="memo_1">
+        <!-- <fieldset>
+          <legend class="text"> -->
+        <h2><strong>世界中</strong>の今が分かる！</h2>
+        <div class="">
+          <p><strong>20万を超える都市</strong>から選択可能</p>
+          <!-- <div class="desc"> -->
+          <details>
+            <summary><span>
+                <p><strong>クイック選択</strong></p><i class="fas fa-angle-double-down"></i>
+              </span></summary>
+            <form action="" method="GET">
+              <div class="radio">
+                <label><input type="radio" name="area" value="2130037">北海道</label>
+                <label><input type="radio" name="area" value="1850147">東京</label>
+                <label><input type="radio" name="area" value="1856057">名古屋</label>
+                <label><input type="radio" name="area" value="1853909">大阪</label>
+                <label><input type="radio" name="area" value="1863967">福岡</label>
+                <label><input type="radio" name="area" value="1854345">沖縄</label>
+                <!-- </div> -->
+                <!-- <div> -->
+                <label><input type="radio" name="area" value="2643744">London(GB)</label>
+                <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
+                <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
+                <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
+                <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
+                <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
+              </div>
+              <button>Click or Enter!</button>
+
+            </form>
+          </details>
+
+          <details>
+            <summary><span>
+                <p><strong>地域を指定する</strong></p><i class="fas fa-angle-double-down"></i>
+              </span></summary>
+            <br>
+            <form action="" method="GET">
+              <div>
+                <form action="" method="GET">
+                  <label><b>地域名を"アルファベットで"入力</b>
+                    <br>
+                    <b>”1文字目は大文字”で入力して下さい</b>
+                    <input type="text" name="area_in" value=""></label>
+                  <br>
+                  <button>Click or Enter!</button>
+                  <h1>例1)."京都"の場合 → "Kyoto"</h1>
+                  <h1>例2)."大井"の場合 → "Ooi"</h1>
+                  <h1>例3)."新宿区"の場合 → "Shinjyuku-ku"</h1>
+                  <br>
+                  <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
+                  <ul>
+                    <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
+                    <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
+                    <li>一部サポートされていない地域があります</li>
+                    <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
+                  </ul>
+                </form>
+              </div>
+            </form>
+          </details>
+
+
+
+        </div>
+      </div>
+
+
+
+      <div class="memo_2">
+        <!-- <fieldset>
+            <legend class="text"> -->
+        <h2><strong>体感気温</strong>がすぐ分かる！</h2>
+        <div class="feel_color">
+          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
+          <div class="feel_color1">
+            <p class="red">体感気温 35 ~ ℃</p>
+            <p class="orange">体感気温 30 ~ 35 ℃</p>
+            <p class="pink">体感気温 25 ~ 30 ℃</p>
+          </div>
+          <div class="feel_color2">
+            <p class="blue">体感気温 5 ~ 10 ℃</p>
+            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
+            <p class="white">体感気温 0 ℃ 以下</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="memo_3">
+        <!-- <fieldset>
+            <legend class="text"> -->
+        <h2><strong>5日先</strong>の天気まで分かる！</h2>
+        <div class="">
+          <p>24時間天気はもちろん<br>5日先の天気まで分かっちゃう</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </header>
+
+  <main>
+    <?php
     //   echo
     //   <<< mail_form
     // <form action="" method="POST">
@@ -290,7 +301,6 @@ require_once('../../app/function.php');
     // //   echo 'false';
     // // }
 
-    echo '</div>';
 
 
 

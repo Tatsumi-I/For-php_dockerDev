@@ -113,57 +113,59 @@
 
 header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: delay 10s forwards; animation: delay 10s forwards; }
 
-header .headerContainer, footer .headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
+.headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
 
-header .headerContainer .homeGroup, footer .headerContainer .homeGroup { padding: 10%; }
+.homeGroup { padding: 10%; font-size: 360%; }
 
-header .headerContainer .homeGroup .copy, footer .headerContainer .homeGroup .copy { font-family: itc-american-typewriter, sans-serif; font-style: normal; font-weight: 600; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
+@media (max-width: 700px) { .homeGroup { font-size: 160%; } }
 
-header .headerContainer .homeGroup .copy a, footer .headerContainer .homeGroup .copy a { color: #966432; }
+.logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 10% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
 
-header .headerContainer .homeGroup .copy a p, footer .headerContainer .homeGroup .copy a p { color: #966432; display: inline-block; margin: 0 3%; }
+.logoImg { width: 130px; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; margin: 0 auto; display: block; }
 
-header .headerContainer .homeGroup .copy a .item0, footer .headerContainer .homeGroup .copy a .item0 { display: none; -webkit-animation: fade 3s forwards; animation: fade 3s forwards; opacity: 0; }
+a { color: white; text-decoration: none; }
 
-header .headerContainer .homeGroup .copy a .item1, footer .headerContainer .homeGroup .copy a .item1 { -webkit-animation: fade 4s 1.5s forwards; animation: fade 4s 1.5s forwards; opacity: 0; }
+a:visited { color: white; }
 
-header .headerContainer .homeGroup .copy a .item2, footer .headerContainer .homeGroup .copy a .item2 { opacity: 0; -webkit-animation: fade 2s forwards 2.5s; animation: fade 2s forwards 2.5s; }
+.copy { font-family: sans-serif; -webkit-animation: flash 2s infinite 10s; animation: flash 2s infinite 10s; text-align: center; margin: auto; }
 
-header .headerContainer .homeGroup .copy a .item3, footer .headerContainer .homeGroup .copy a .item3 { opacity: 0; -webkit-animation: fade 2s forwards 3s; animation: fade 2s forwards 3s; }
+.copy a { color: #966432; }
 
-header .headerContainer .homeGroup .copy a .item4, footer .headerContainer .homeGroup .copy a .item4 { opacity: 0; -webkit-animation: fade 2s forwards 4s; animation: fade 2s forwards 4s; }
+.copy a p { color: #966432; display: inline-block; margin: 0 3%; }
 
-header .headerContainer .homeGroup .copy a .item5, footer .headerContainer .homeGroup .copy a .item5 { -webkit-animation: fade 4s forwards 0.5s; animation: fade 4s forwards 0.5s; display: none; opacity: 0; }
+.copy a .item0 { display: none; -webkit-animation: fade 3s forwards; animation: fade 3s forwards; opacity: 0; }
 
-header .headerContainer .homeGroup .copy a:hover, header .headerContainer .homeGroup .copy a:active, header .headerContainer .homeGroup .copy a:visited, footer .headerContainer .homeGroup .copy a:hover, footer .headerContainer .homeGroup .copy a:active, footer .headerContainer .homeGroup .copy a:visited { margin-bottom: 35px; }
+.copy a .item1 { -webkit-animation: fade 4s 1.5s forwards; animation: fade 4s 1.5s forwards; opacity: 0; }
 
-header .headerContainer .homeGroup .copy a:hover p, header .headerContainer .homeGroup .copy a:active p, header .headerContainer .homeGroup .copy a:visited p, footer .headerContainer .homeGroup .copy a:hover p, footer .headerContainer .homeGroup .copy a:active p, footer .headerContainer .homeGroup .copy a:visited p { text-shadow: 0px 0px 2px rgba(179, 90, 12, 0.795), -1px -1px 10px rgba(192, 192, 192, 0.3); }
+.copy a .item2 { opacity: 0; -webkit-animation: fade 2s forwards 2.5s; animation: fade 2s forwards 2.5s; }
 
-header .headerContainer .homeGroup .copy a:hover .item1, header .headerContainer .homeGroup .copy a:active .item1, header .headerContainer .homeGroup .copy a:visited .item1, footer .headerContainer .homeGroup .copy a:hover .item1, footer .headerContainer .homeGroup .copy a:active .item1, footer .headerContainer .homeGroup .copy a:visited .item1 { display: none; }
+.copy a .item3 { opacity: 0; -webkit-animation: fade 2s forwards 3s; animation: fade 2s forwards 3s; }
 
-header .headerContainer .homeGroup .copy a:hover .item0, header .headerContainer .homeGroup .copy a:hover .item5, header .headerContainer .homeGroup .copy a:active .item0, header .headerContainer .homeGroup .copy a:active .item5, header .headerContainer .homeGroup .copy a:visited .item0, header .headerContainer .homeGroup .copy a:visited .item5, footer .headerContainer .homeGroup .copy a:hover .item0, footer .headerContainer .homeGroup .copy a:hover .item5, footer .headerContainer .homeGroup .copy a:active .item0, footer .headerContainer .homeGroup .copy a:active .item5, footer .headerContainer .homeGroup .copy a:visited .item0, footer .headerContainer .homeGroup .copy a:visited .item5 { display: inline-block; }
+.copy a .item4 { opacity: 0; -webkit-animation: fade 2s forwards 4s; animation: fade 2s forwards 4s; }
 
-header .headerContainer .homeGroup .logo img, footer .headerContainer .homeGroup .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 10% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
+.copy a .item5 { -webkit-animation: fade 4s forwards 0.5s; animation: fade 4s forwards 0.5s; display: none; opacity: 0; }
 
-header .headerContainer .homeGroup .logo .nameBar, footer .headerContainer .homeGroup .logo .nameBar { display: block; margin: 0 auto; text-align: center; text-shadow: 0 0 15px rgba(245, 245, 245, 0.3); -webkit-transition: text-shadow 3s ease 8s; transition: text-shadow 3s ease 8s; }
+.copy a:hover, .copy a:active, .copy a:visited { margin-bottom: 35px; }
 
-header .headerContainer .homeGroup .logo .nameBar:hover, footer .headerContainer .homeGroup .logo .nameBar:hover { -webkit-animation: flash 3s infinite; animation: flash 3s infinite; }
+.copy a:hover p, .copy a:active p, .copy a:visited p { text-shadow: 0px 0px 2px rgba(179, 90, 12, 0.795), -1px -1px 10px rgba(192, 192, 192, 0.3); }
 
-header .headerContainer .homeGroup .logo .nameBar h1, footer .headerContainer .homeGroup .logo .nameBar h1 { -webkit-animation: fade 9s forwards 6s; animation: fade 9s forwards 6s; opacity: 0; margin: 0 auto; font-size: 0.5em; font-weight: 200; letter-spacing: 0.9em; color: rgba(255, 255, 255, 0.5); text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); text-align: center; }
+.copy a:hover .item1, .copy a:active .item1, .copy a:visited .item1 { display: none; }
 
-header .headerContainer .homeGroup .logo .nameBar h2, footer .headerContainer .homeGroup .logo .nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s, rum-col 10s infinite 12s; animation: fade 8s forwards 5s, rum-col 10s infinite 12s; letter-spacing: 0.2; font-family: adobe-text-pro, serif; font-weight: 300; font-style: normal; font-size: 120%; margin-top: 3%; }
+.copy a:hover .item0, .copy a:hover .item5, .copy a:active .item0, .copy a:active .item5, .copy a:visited .item0, .copy a:visited .item5 { display: inline-block; }
 
-header .logoImg, footer .logoImg { width: 130px; -webkit-animation: flash 10s infinite; animation: flash 10s infinite; margin: 0 auto; display: block; }
+.inHeader { margin: auto; -webkit-animation: toDown 5s forwards; animation: toDown 5s forwards; }
 
-header .inHeader, footer .inHeader { margin: auto; -webkit-animation: toDown 5s forwards; animation: toDown 5s forwards; }
+.inHeader h1 { text-align: center; font-size: 50px; -webkit-animation: rum-col 30s infinite; animation: rum-col 30s infinite; }
 
-header .inHeader h1, footer .inHeader h1 { text-align: center; font-size: 50px; -webkit-animation: rum-col 30s infinite; animation: rum-col 30s infinite; }
+.inHeader h2 { color: rgba(255, 255, 240, 0.5); font-size: 6px; letter-spacing: 0.9em; text-align: center; -webkit-transform: translateY(-20px); transform: translateY(-20px); }
 
-header .inHeader h2, footer .inHeader h2 { color: rgba(255, 255, 240, 0.5); font-size: 6px; letter-spacing: 0.9em; text-align: center; -webkit-transform: translateY(-20px); transform: translateY(-20px); }
+.nameBar { display: block; margin: 0 auto; text-align: center; text-shadow: 0 0 15px rgba(245, 245, 245, 0.3); -webkit-transition: text-shadow 3s ease 8s; transition: text-shadow 3s ease 8s; }
 
-header a, footer a { color: white; text-decoration: none; }
+.nameBar:hover { -webkit-animation: flash 3s infinite; animation: flash 3s infinite; }
 
-header a:visited, footer a:visited { color: white; }
+.nameBar h1 { -webkit-animation: fade 9s forwards 6s; animation: fade 9s forwards 6s; opacity: 0; margin: 0 auto; font-size: 0.5em; font-weight: 200; letter-spacing: 0.9em; color: rgba(255, 255, 255, 0.5); text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); text-align: center; }
+
+.nameBar h2 { color: white; opacity: 0; -webkit-animation: fade 8s forwards 5s, rum-col 10s infinite 12s; animation: fade 8s forwards 5s, rum-col 10s infinite 12s; letter-spacing: 0.2; font-family: serif; font-size: 120%; margin-top: 3%; }
 
 footer .copyLight { margin: 0; color: #966432; text-align: center; padding: 20px; }
 
@@ -197,16 +199,6 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .headFootOpenMenu a:link, .headFootOpenMenu a:visited { color: #966432; }
 
-.headFootOpenMenu .fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 5% 1%; border-radius: 10px; }
-
-.headFootOpenMenu .fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 500px; width: 90%; margin: 10px auto; }
-
-.headFootOpenMenu .fl .inner { margin: 0 auto; padding: clamp(0 10px, 0 30px, 0 50px); border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
-
-.headFootOpenMenu .fl .inner span { background: #966432; border-radius: 5px; color: white; padding: 5px 12px; }
-
-.headFootOpenMenu .fl p, .headFootOpenMenu .fl div { min-width: 190px; }
-
 .headFootOpenMenu details[open] { cursor: initial; }
 
 .headFootOpenMenu details[open] summary span { display: none; }
@@ -214,6 +206,16 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 .headFootOpenMenu details[open] summary:hover { cursor: pointer; }
 
 .headFootOpenMenu details[open] summary::after { content: "close"; background: #80786630; margin-left: 2em; border-radius: 5px; padding: 5px 12px; }
+
+.fl { height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; padding: 5% 1%; border-radius: 10px; }
+
+.fl fieldset { text-align: left; list-style: none; padding: 3%; border-radius: 5px; max-width: 500px; width: 90%; margin: 10px auto; }
+
+.fl .inner { margin: 0 auto; padding: clamp(0 10px, 0 30px, 0 50px); border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; }
+
+.fl .inner span { background: #966432; border-radius: 5px; color: white; padding: 5px 12px; }
+
+.fl p, .fl div { min-width: 190px; }
 
 .homeGroup { padding: 10%; }
 /*# sourceMappingURL=headerFooterStyle.min.css.map */

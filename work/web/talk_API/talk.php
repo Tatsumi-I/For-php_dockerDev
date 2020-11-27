@@ -84,21 +84,7 @@
         break;
     }
 
-    $r = rand(1, 4);
-    switch ($r) {
-      case 1:
-        $names = 'あやちゃん';
-        break;
-      case 2:
-        $names = 'こといちゃん';
-        break;
-      case 3:
-        $names = 'みきちゃん';
-        break;
-      case 4:
-        $names = 'ウケるwww';
-        break;
-    }
+
 
 
     $r = rand(1, 14);
@@ -107,7 +93,7 @@
         $reply = '今オナラしました?!';
         break;
       case 2:
-        $reply = '(社交辞令)';
+        $reply = '(社交辞令だけど)';
         break;
       case 3:
         $reply = 'それより病院を紹介しましょうか?!';
@@ -131,7 +117,7 @@
         $reply = 'ていうかその髪型は寝癖ですか?';
         break;
       case 10:
-        $reply = 'そういえば、私のおすすめの潤滑油をご自宅に送りました!<br>着払いです。';
+        $reply = 'そういえば、私のおすすめの鋼鉄をご自宅に送りました!<br>着払いです。';
         break;
       case 11:
         $reply = 'さっきからずっと鼻毛出てますよ。';
@@ -151,25 +137,25 @@
     $r = rand(0, 6);
     switch ($r) {
       case 0:
-        $img = '13089765615165.jpg';
+        $img = ' .jpg';
         break;
       case 1:
-        $img = '13089765635043.jpg';
+        $img = ' .jpg';
         break;
       case 2:
-        $img = '13089765692941.jpg';
+        $img = ' .jpg';
         break;
       case 3:
-        $img = '13089765733333.jpg';
+        $img = ' .jpg';
         break;
       case 4:
-        $img = '13089765781066.jpg';
+        $img = ' .jpg';
         break;
       case 5:
-        $img = '13089765838257.jpg';
+        $img = ' .jpg';
         break;
       case 6:
-        $img = '13089765933043.jpg';
+        $img = ' .jpg';
         break;
     }
 
@@ -183,8 +169,6 @@
       </div>
 
       <h1>TALK APIによる<br><span>\ イラッとする /</span><br>AIチャットボット</h1>
-      <hr>
-      <h1> ~ 特別 ver.~</h1>
 
     </div>
   </header>
@@ -212,8 +196,7 @@
           <div class="triangle_left">
           </div>
           <div class="bot">
-            <p><?php echo $tag;
-                echo $names; ?></p>
+            <p><?php echo $tag; ?></p>
             <p><?php echo $response; ?> !</p>
             <p><?php echo $reply; ?></p>
           </div>

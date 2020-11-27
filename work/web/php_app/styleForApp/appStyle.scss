@@ -19,13 +19,13 @@ html {
   padding: 0;
   text-align: center;
   // overflow-x: hidden;
-  font-family: adobe-text-pro, vdl-v7gothic, sans-serif;
+  font-family: "Noto Sans JP", "Libre Baskerville", sans-serif;
   font-weight: 400;
   font-style: normal;
   // letter-spacing: 0.1em;
   line-height: 3;
   font-feature-settings: "palt" 1, "swsh" 1;
-  background:rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   width: 100vw;
   filter: drop-shadow(0 0 2px white);
 }
@@ -35,7 +35,7 @@ footer {
   background: $grege;
   margin: 0;
   padding: 10px;
-  img{
+  img {
     width: 50px;
   }
   a {
@@ -47,11 +47,11 @@ footer {
       color: $Orange;
     }
   }
-  p{
+  p {
     margin: 0 auto;
   }
 }
-p{
+p {
   font-size: 130%;
   font-weight: 700;
   text-align: left;
@@ -79,17 +79,17 @@ body {
     max-width: 700px;
     border-spacing: 0;
     min-width: 250px;
-    tr{
+    tr {
       border-bottom: 1px solid $Orange;
     }
     th,
     td,
-    tr{
+    tr {
       justify-content: space-between;
       padding: 0 15px;
       display: flex;
       white-space: nowrap;
-      a{
+      a {
         display: block;
         padding: 0 5px;
       }
@@ -97,18 +97,18 @@ body {
   }
 }
 
-main{
+main {
   // width: clamp(300px,500px,100vw);
-  background:rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   // width: max-content;
   margin: 0 auto;
-  min-height:80vh;
+  min-height: 80vh;
   h1 {
     margin: 10px;
     padding: 10px;
     line-break: 18px;
   }
-  a{
+  a {
     text-decoration: none;
     background: $night;
     color: whitesmoke;
@@ -117,24 +117,24 @@ main{
     cursor: pointer;
     box-shadow: $shadow;
     // width: 90vw;
-    display:block;
+    display: block;
     margin: 1% auto;
   }
-  .title{
-    background: url('../imgs/keep.jpg') left 0% / cover no-repeat ;
+  .title {
+    background: url("../imgs/keep.jpg") left 0% / cover no-repeat;
     font-size: 120%;
     h1,
     h2,
-    p{
+    p {
       padding: 0;
       margin: 0;
     }
-    p{
+    p {
       margin: 50px auto 0;
       filter: drop-shadow(0 0 1px $darkBlue);
-      color:white;
+      color: white;
     }
-    h1{
+    h1 {
       span {
         display: block;
         min-width: 300px;
@@ -156,15 +156,14 @@ main{
   font-size: 110%;
 }
 
-.desc{
-  p{
+.desc {
+  p {
     background: $grege;
     margin: 30px 2%;
-    padding: 0 1em ;
+    padding: 0 1em;
     max-width: 90vw;
     text-align: left;
     font-weight: 400;
- 
   }
 }
 nav {
@@ -173,7 +172,7 @@ nav {
   color: $Orange;
 }
 
-summary{
+summary {
   background: $night;
   color: whitesmoke;
   padding: 1em 2em;
@@ -181,7 +180,7 @@ summary{
   cursor: pointer;
   box-shadow: $shadow;
   width: 300px;
-  display:block;
+  display: block;
   margin: 3% auto;
 }
 
@@ -194,9 +193,9 @@ form {
   padding: 50px 5%;
   max-width: 700px;
 
-  div{
+  div {
     margin: 20px auto;
-    background:white;
+    background: white;
     padding: 30px 2%;
     max-width: 90vw;
     border: 1px solid;
@@ -248,25 +247,22 @@ button {
     cursor: pointer;
   }
 }
-p{
+p {
   text-align: center;
 }
 .reset {
   background: rgba(46, 46, 46, 0.158);
 }
 
-
-
-
 fieldset {
   margin: 1% auto;
   padding: 2%;
   max-width: 700px;
-  img{
+  img {
     width: 100%;
   }
 
-  legend{
+  legend {
     font-size: 300%;
   }
   ul,
@@ -277,8 +273,7 @@ fieldset {
   }
 }
 
-
-.cancel{
+.cancel {
   width: fit-content;
   padding: 0 1em;
   display: block;
