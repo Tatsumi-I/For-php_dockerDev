@@ -26,8 +26,12 @@ footer {
 .homeGroup {
   padding: 10%;
   font-size: 360%;
+  min-height: 70vh;
   @media (max-width: 700px) {
-    font-size: 160%;
+    font-size: 260%;
+    img {
+      width: 100px;
+    }
   }
 }
 

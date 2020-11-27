@@ -115,9 +115,10 @@ header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: del
 
 .headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
 
-.homeGroup { padding: 10%; font-size: 360%; }
+.homeGroup { padding: 10%; font-size: 360%; min-height: 70vh; }
 
-@media (max-width: 700px) { .homeGroup { font-size: 160%; } }
+@media (max-width: 700px) { .homeGroup { font-size: 260%; }
+  .homeGroup img { width: 100px; } }
 
 .logo img { width: 200px; max-width: 50%; height: auto; padding: 0; margin: 10% auto; -webkit-animation: flash 8s infinite; animation: flash 8s infinite; display: block; }
 

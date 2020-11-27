@@ -173,9 +173,9 @@
     </div>
   </header>
   <main>
-    <div class="imgHolder">
+    <!-- <div class="imgHolder">
       <img src="../imgs/<?php echo $img; ?>" alt="">
-    </div>
+    </div> -->
 
     <div class="base">
       <div class="wall_color">

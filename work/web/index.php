@@ -212,8 +212,8 @@ $links =
             <img src="imgs/p5.png" alt="">
           </div>
           <div class="container2">
-            <!-- <iframe src="sketch_1.php" frameborder="0"></iframe>
-            <iframe src="sketch_2.php" frameborder="0"></iframe> -->
+            <iframe src="sketch_1.php" frameborder="0"></iframe>
+            <iframe src="sketch_2.php" frameborder="0"></iframe>
             <div class="text">
               <p>学習開始初期から関心のある<strong>Processing</strong></p>
               <p><strong>これからも理解を深めていきたい言語</strong>・分野の1つです。</p>
@@ -268,97 +268,102 @@ $links =
 
 <section id="area_2">
   <div class="sectionArea">
-    <h2>Design成果物の概要</h2>
+    <details>
+      <summary>
+        <h2>Design成果物の概要</h2>
+      </summary>
 
-    <div class="tra3d">Design...</div>
+      <div class="tra3d">Design...</div>
 
-    <div class="desc">
-      <p><strong>架空サイトのファーストビュー</strong>です</p>
-      <ul>
-        <li>模写や模倣はありません。</li>
-        <li>ジャンルや対象ユーザーの異なるデザインを作りました。</li>
-      </ul>
+      <div class="desc">
+        <p><strong>架空サイトのファーストビュー</strong>です</p>
+        <ul>
+          <li>模写や模倣はありません。</li>
+          <li>ジャンルや対象ユーザーの異なるデザインを作りました。</li>
+        </ul>
 
-    </div>
-    <div class="contentsArea">
-      <div class="contentOuter">
+      </div>
+      <div class="contentsArea">
+        <div class="contentOuter">
 
-        <div class="content">
-          <h3>欧州モーターバイクレース協会</h3>
-          <div class="icons">
-            <img src="imgs/ps.png" alt="">
-            <img src="imgs/ai.png" alt="">
-          </div>
-          <div class="container2">
-            <div class="contentImg_over">
-              <img src="imgs/art2.png">
+          <div class="content">
+            <h3>欧州モーターバイクレース協会</h3>
+            <div class="icons">
+              <img src="imgs/ps.png" alt="">
+              <img src="imgs/ai.png" alt="">
             </div>
-            <div class=text>
+            <div class="container2">
+              <div class="contentImg_over">
+                <img src="imgs/art2.png">
+              </div>
+              <div class=text>
 
-              <p>このデザインは、バイクレースを主宰しているヨーロッパの架空の団体が運営するサイトをイメージしています。</p>
-              <p><strong>躍動感、エネルギーやパワー</strong>を表現するためのデザインとして作りました。</p>
-              <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="content">
-          <h3>こどもふれあいパーク</h3>
-          <div class="icons">
-            <img src="imgs/ps.png" width="20px" alt="">
-            <img src="imgs/ai.png" width="20px" alt="">
-          </div>
-          <div class="container2">
-            <div class="contentImg">
-              <img src="imgs/art1.png">
-            </div>
-            <div class=text>
-              <p>このデザインは、動物公園のサイトをイメージしています。</p>
-              <p><strong>楽しさや可愛らしさ、POPさ</strong>を表現するためのデザインとして作りました。</p>
-              <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="content">
-          <h3>Gentle’s Style</h3>
-          <div class="icons">
-            <img src="imgs/ps.png" width="20px" alt="">
-            <img src="imgs/ai.png" width="20px" alt="">
-          </div>
-          <div class="container2">
-            <div class="contentImg">
-              <img src="imgs/GentleStyle.png">
-            </div>
-            <div class=text>
-              <p>このデザインは、40-50代男性向けWebマガジンをイメージしています。</p>
-              <p><strong>高級感や男性的な印象、落ち着いた色調</strong>を表現するためのデザインとして作りました。</p>
-              <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
+                <p>このデザインは、バイクレースを主宰しているヨーロッパの架空の団体が運営するサイトをイメージしています。</p>
+                <p><strong>躍動感、エネルギーやパワー</strong>を表現するためのデザインとして作りました。</p>
+                <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="content">
-          <h3>株式会社 b.Next</h3>
-          <div class="icons">
-            <img src="imgs/ps.png" width="20px" alt="">
-            <img src="imgs/ai.png" width="20px" alt="">
+          <div class="content">
+            <h3>こどもふれあいパーク</h3>
+            <div class="icons">
+              <img src="imgs/ps.png" width="20px" alt="">
+              <img src="imgs/ai.png" width="20px" alt="">
+            </div>
+            <div class="container2">
+              <div class="contentImg">
+                <img src="imgs/art1.png">
+              </div>
+              <div class=text>
+                <p>このデザインは、動物公園のサイトをイメージしています。</p>
+                <p><strong>楽しさや可愛らしさ、POPさ</strong>を表現するためのデザインとして作りました。</p>
+                <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
+              </div>
+
+            </div>
           </div>
-          <div class="container2">
-            <div class="contentImg">
-              <img src="imgs/b.Next.png">
-            </div>
-            <div class=text>
-              <p>このデザインは、IT企業のコーポレートサイトをイメージしています。</p>
-              <p><strong>シンプルで簡潔な情報の提示、知性や信頼性</strong>を表現するためのデザインとして作りました。</p>
-              <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
-            </div>
 
+          <div class="content">
+            <h3>Gentle’s Style</h3>
+            <div class="icons">
+              <img src="imgs/ps.png" width="20px" alt="">
+              <img src="imgs/ai.png" width="20px" alt="">
+            </div>
+            <div class="container2">
+              <div class="contentImg">
+                <img src="imgs/GentleStyle.png">
+              </div>
+              <div class=text>
+                <p>このデザインは、40-50代男性向けWebマガジンをイメージしています。</p>
+                <p><strong>高級感や男性的な印象、落ち着いた色調</strong>を表現するためのデザインとして作りました。</p>
+                <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h3>株式会社 b.Next</h3>
+            <div class="icons">
+              <img src="imgs/ps.png" width="20px" alt="">
+              <img src="imgs/ai.png" width="20px" alt="">
+            </div>
+            <div class="container2">
+              <div class="contentImg">
+                <img src="imgs/b.Next.png">
+              </div>
+              <div class=text>
+                <p>このデザインは、IT企業のコーポレートサイトをイメージしています。</p>
+                <p><strong>シンプルで簡潔な情報の提示、知性や信頼性</strong>を表現するためのデザインとして作りました。</p>
+                <p><a href="design.php" target="tatsumi_Design">詳細ページ</a></p>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </details>
+
   </div>
 </section>
 

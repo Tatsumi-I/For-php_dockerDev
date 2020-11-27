@@ -27,7 +27,7 @@ body {
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0.1em;
-  font-size: 90%;
+  font-size: 80%;
   // flex-wrap: wrap;
   color: dimgrey;
 }
@@ -44,7 +44,7 @@ header,
 footer {
   background: url("../imgs/clear_sky.jpg") no-repeat;
   background-size: cover;
-  min-height: 100px;
+  min-height: 150px;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -193,13 +193,13 @@ details {
     }
     p {
       padding: 0;
-      width: 40%;
+      width: 45%;
     }
     img {
       width: 18px;
       height: 18px;
       filter: brightness(3);
-      margin: auto;
+      margin: auto 0;
     }
   }
   .box {
@@ -357,7 +357,7 @@ button {
 }
 
 .five_days {
-  margin: 20px auto;
+  margin: 40px auto;
   width: 96vw;
   summary {
     background-color: whitesmoke;
