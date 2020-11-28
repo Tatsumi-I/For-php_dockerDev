@@ -75,6 +75,8 @@ require_once('../../app/function.php');
   $time_now = date('m/d(D)  H時', $unix_time);
   $city_now = $response_now['name'];
   $feels_now = $response_now['main']['feels_like'];
+  $wind_now = $response_now['wind']['speed'];
+
 
 
 
@@ -152,20 +154,46 @@ require_once('../../app/function.php');
         break;
     }
 
+    $bg_color = 'none';
+    switch ($feels_now) {
+      case ($feels_now >= 35):
+        $bg_color = 'red';
+        break;
+      case (($feels_now >= 30) && ($feels_now < 35)):
+        $bg_color = 'orange';
+        break;
+      case (($feels_now >= 25) && ($feels_now < 30)):
+        $bg_color = 'pink';
+        break;
+      case (($feels_now <= 10) && ($feels_now >= 5)):
+        $bg_color = 'rgb(0, 60, 139)';
+        break;
+      case (($feels_now > 0) && ($feels_now <= 5)):
+        $bg_color = 'skyblue';
+        break;
+      case (($feels_now > -100) && ($feels_now <= 0)):
+        $bg_color = 'white';
+        break;
+    }
+    ?>
+
+    <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
+    
+    <?php
+
     echo '<div class="weather_now">';
     echo '<p><strong>' . $city_now . ' ' . $time_now . '現在の天気</strong></p>';
     echo '<img src="../imgs/' . $w_icon . '">';
 
-    echo $weather_now['description'] . '/';
-    echo $weather_now['main'] . '<br>';
-    echo '体感気温' . $feels_now . '℃';
+    echo '<p>' . $weather_now['description'] . '/' . $weather_now['main'] . '</p>';
+    echo '<p class="feel_box" style="background-color:' . $bg_color . '">体感気温' . $feels_now . '℃</p>';
+    echo '<p>風速' . $wind_now . 'm/秒</p>';
     echo '</div>';
     ?>
-    <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
 
-
-    <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
     <div class="desc">
+
+      <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
 
       <div class="memo_1">
         <!-- <fieldset>
@@ -348,6 +376,7 @@ require_once('../../app/function.php');
 
     $weather_desc = $list[$i]['weather'][0]['description'];
     $humidity = $list[$i]['main']['humidity'];
+    $wind = $list[$i]['wind']['speed'];
     $temp_max = $list[$i]['main']['temp_max'];
     $temp_min = $list[$i]['main']['temp_min'];
     $feels = round($list[$i]['main']['feels_like'], 2);
@@ -393,15 +422,16 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
+          <p>風速：</p>
           <p>最高気温：</p>
-          <p>最低気温：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
+          <p>$wind m/秒</p>
           <p>$temp_max ℃</p>
-          <p>$temp_min ℃</p>
+
         </div>
       </div>
     </details>
@@ -475,6 +505,7 @@ require_once('../../app/function.php');
       }
       $weather_desc = $list[$i]['weather'][0]['description'];
       $humidity = $list[$i]['main']['humidity'];
+      $wind = $list[$i]['wind']['speed'];
       $temp_max = $list[$i]['main']['temp_max'];
       $temp_min = $list[$i]['main']['temp_min'];
       $feels = round($list[$i]['main']['feels_like'], 1);
@@ -521,15 +552,16 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
+          <p>風速：</p>
           <p>最高気温：</p>
-          <p>最低気温：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
+          <p>$wind m/秒</p>
           <p>$temp_max ℃</p>
-          <p>$temp_min ℃</p>
+
         </div>
       </div>
     </details>
@@ -617,6 +649,7 @@ require_once('../../app/function.php');
 
       $weather_desc = $list[$i]['weather'][0]['description'];
       $humidity = $list[$i]['main']['humidity'];
+      $wind = $list[$i]['wind']['speed'];
       $temp_max = $list[$i]['main']['temp_max'];
       $temp_min = $list[$i]['main']['temp_min'];
       $feels = round($list[$i]['main']['feels_like'], 2);
@@ -663,15 +696,16 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
+          <p>風速：</p>
           <p>最高気温：</p>
-          <p>最低気温：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
+          <p>$wind m/秒</p>
           <p>$temp_max ℃</p>
-          <p>$temp_min ℃</p>
+
         </div>
       </div>
     </details>

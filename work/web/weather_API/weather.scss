@@ -1,6 +1,35 @@
 @charset "utf-8";
-
+// @import "../css/anime.min.css";
 $grege: #80786630;
+
+@keyframes slide_up {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0.1;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 
 .fa,
 .fab,
@@ -23,7 +52,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans JP", "Libre Baskerville",  sans-serif;
+  font-family: "Noto Sans JP", "Libre Baskerville", sans-serif;
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0.1em;
@@ -31,8 +60,7 @@ body {
   // flex-wrap: wrap;
   color: dimgrey;
 }
-body{
-  
+body {
   max-width: 1400px;
   margin: auto;
 }
@@ -121,15 +149,15 @@ button {
   background: skyblue;
   color: white;
   border: transparent;
-  padding: 1em; 
+  padding: 1em;
   cursor: pointer;
   border-radius: 5px;
   margin: 20px auto;
 }
 
 .weather_now {
-  // border: 1px solid grey;
-  // max-width: 500px;
+  opacity: 0;
+  animation: slide_up 3s forwards;
   background: rgba(245, 245, 245, 0.8);
   color: dimgrey;
   width: 80%;
@@ -140,6 +168,14 @@ button {
 
   h1 {
     margin: 0;
+  }
+  p {
+    margin: 3px;
+  }
+  .feel_box {
+    margin: auto;
+    padding: 0 1em;
+    border-radius: 5px;
   }
   img {
     width: 40px;
@@ -193,13 +229,14 @@ details {
     }
     p {
       padding: 0;
-      width: 45%;
+      width: 42%;
+      margin: auto 0;
     }
     img {
       width: 18px;
       height: 18px;
       filter: brightness(3);
-      margin: auto 0;
+      margin: auto;
     }
   }
   .box {
@@ -220,6 +257,7 @@ details {
 
 .feel_box {
   width: 30%;
+  margin: auto;
 }
 
 .desc {
@@ -230,6 +268,8 @@ details {
   // padding: 1em;
   flex-wrap: wrap;
   h1 {
+    opacity: 0;
+    animation: delay 4s forwards 2s;
     margin: 0 auto;
     color: whitesmoke;
     background: transparent;
@@ -238,6 +278,7 @@ details {
   .memo_1,
   .memo_2,
   .memo_3 {
+    opacity: 0;
     justify-content: space-between;
     min-height: 150px;
     max-width: 380px;
@@ -246,12 +287,21 @@ details {
     text-shadow: 0 0 1px rgb(128, 128, 128);
     h2 {
       text-align: left;
-      margin: 10px 0 30px;
+      margin: 0 auto;
       padding: 10px;
       border-left: 5px solid grey;
       border-bottom: 1px solid grey;
-      width: 95%;
+      width: 90%;
     }
+  }
+  .memo_1 {
+    animation: slide 2s forwards 3s;
+  }
+  .memo_2 {
+    animation: slide 2s forwards 4s;
+  }
+  .memo_3 {
+    animation: slide 2s forwards 5s;
   }
 
   .feel_color {
