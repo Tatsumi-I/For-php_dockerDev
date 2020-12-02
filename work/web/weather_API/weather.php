@@ -32,8 +32,8 @@ require_once('../../app/function.php');
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
-
 <body>
+  <!-- <pre> -->
 
 
 
@@ -74,16 +74,18 @@ require_once('../../app/function.php');
   $unix_time = $response_now['dt'];
   $time_now = date('m/d(D)  H時', $unix_time);
   $city_now = $response_now['name'];
+  $temp_now = $response_now['main']['temp'];
   $feels_now = $response_now['main']['feels_like'];
   $wind_now = $response_now['wind']['speed'];
 
+// var_dump( $response_now);
 
 
 
 
   ?>
 
-
+<!-- </pre> -->
   <header>
     <div class="header">
       <img src="../imgs/logo.png" alt="">
@@ -183,8 +185,8 @@ require_once('../../app/function.php');
 
     echo '<div class="weather_now">';
     echo '<p><strong>' . $city_now . ' ' . $time_now . '現在の天気</strong></p>';
+    echo '<p>気温' . $temp_now . '℃</p>';
     echo '<img src="../imgs/' . $w_icon . '">';
-
     echo '<p>' . $weather_now['description'] . '/' . $weather_now['main'] . '</p>';
     echo '<p class="feel_box" style="background-color:' . $bg_color . '">体感気温' . $feels_now . '℃</p>';
     echo '<p>風速' . $wind_now . 'm/秒</p>';
@@ -214,8 +216,6 @@ require_once('../../app/function.php');
                 <label><input type="radio" name="area" value="1853909">大阪</label>
                 <label><input type="radio" name="area" value="1863967">福岡</label>
                 <label><input type="radio" name="area" value="1854345">沖縄</label>
-                <!-- </div> -->
-                <!-- <div> -->
                 <label><input type="radio" name="area" value="2643744">London(GB)</label>
                 <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
                 <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
@@ -377,6 +377,7 @@ require_once('../../app/function.php');
     $weather_desc = $list[$i]['weather'][0]['description'];
     $humidity = $list[$i]['main']['humidity'];
     $wind = $list[$i]['wind']['speed'];
+    $temp = $list[$i]['main']['temp'];
     $temp_max = $list[$i]['main']['temp_max'];
     $temp_min = $list[$i]['main']['temp_min'];
     $feels = round($list[$i]['main']['feels_like'], 2);
@@ -422,16 +423,17 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
-          <p>風速：</p>
+          <p>気温：</p>
           <p>最高気温：</p>
+          <p>風速：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
-          <p>$wind m/秒</p>
+          <p>$temp ℃</p>
           <p>$temp_max ℃</p>
-
+          <p>$wind m/秒</p>
         </div>
       </div>
     </details>
@@ -506,6 +508,7 @@ require_once('../../app/function.php');
       $weather_desc = $list[$i]['weather'][0]['description'];
       $humidity = $list[$i]['main']['humidity'];
       $wind = $list[$i]['wind']['speed'];
+      $temp = $list[$i]['main']['temp'];
       $temp_max = $list[$i]['main']['temp_max'];
       $temp_min = $list[$i]['main']['temp_min'];
       $feels = round($list[$i]['main']['feels_like'], 1);
@@ -552,16 +555,17 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
-          <p>風速：</p>
+          <p>気温：</p>
           <p>最高気温：</p>
+          <p>風速：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
-          <p>$wind m/秒</p>
+          <p>$temp ℃</p>
           <p>$temp_max ℃</p>
-
+          <p>$wind m/秒</p>
         </div>
       </div>
     </details>
@@ -650,6 +654,7 @@ require_once('../../app/function.php');
       $weather_desc = $list[$i]['weather'][0]['description'];
       $humidity = $list[$i]['main']['humidity'];
       $wind = $list[$i]['wind']['speed'];
+      $temp = $list[$i]['main']['temp'];
       $temp_max = $list[$i]['main']['temp_max'];
       $temp_min = $list[$i]['main']['temp_min'];
       $feels = round($list[$i]['main']['feels_like'], 2);
@@ -696,16 +701,17 @@ require_once('../../app/function.php');
           <p>概況：</p>
           <p>降水確率：</p>
           <p>湿度：</p>
-          <p>風速：</p>
+          <p>気温：</p>
           <p>最高気温：</p>
+          <p>風速：</p>
         </div>
         <div class="value">
           <p>$weather_desc</p>
           <p>$rains ％</p>
           <p>$humidity %</p>
-          <p>$wind m/秒</p>
+          <p>$temp ℃</p>
           <p>$temp_max ℃</p>
-
+          <p>$wind m/秒</p>
         </div>
       </div>
     </details>

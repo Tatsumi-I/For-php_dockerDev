@@ -174,7 +174,7 @@
   </header>
   <main>
     <!-- <div class="imgHolder">
-      <img src="../imgs/<?php echo $img; ?>" alt="">
+      <img src="../imgs/<//?php echo $img; ?>" alt="">
     </div> -->
 
     <div class="base">
