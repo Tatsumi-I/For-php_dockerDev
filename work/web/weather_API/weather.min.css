@@ -72,7 +72,7 @@ button { background: skyblue; color: white; border: transparent; padding: 1em; c
 
 .weather_now h1 { margin: 0; }
 
-.weather_now p { margin: 3px; }
+.weather_now p { margin: 6px; }
 
 .weather_now .feel_box { margin: 3px auto; padding: 0 1em; border-radius: 5px; color: whitesmoke; }
 
@@ -116,11 +116,9 @@ details .box .value { text-align: left; width: 40%; margin: 10px; }
 
 .desc .memo_3 { -webkit-animation: slide 2s forwards 5s; animation: slide 2s forwards 5s; }
 
-.desc .feel_color { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.desc .feel_color { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 
 .desc .feel_color img { width: 100px; }
-
-.desc .feel_color .feel_color1, .desc .feel_color .feel_color2 { margin: auto; }
 
 .desc label { display: block; }
 
@@ -140,17 +138,17 @@ details .box .value { text-align: left; width: 40%; margin: 10px; }
 
 .desc .text { color: #00b9da; }
 
-.desc .white { background: white; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .white { background: white; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
-.desc .skyblue { background: #20b3ec; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .skyblue { background: #20b3ec; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
-.desc .blue { background: #003c8b; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .blue { background: #003c8b; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
-.desc .pink { background: pink; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .pink { background: pink; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
-.desc .orange { background: orange; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .orange { background: orange; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
-.desc .red { background: red; max-width: 200px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 0 1em; }
+.desc .red { background: red; width: 120px; margin: 10px auto; border-radius: 5px; border: 1px solid dimgray; padding: 1px 1em; }
 
 button { display: block; margin: 10px auto; }
 

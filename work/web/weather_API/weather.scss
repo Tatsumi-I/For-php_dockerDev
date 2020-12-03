@@ -170,7 +170,7 @@ button {
     margin: 0;
   }
   p {
-    margin: 3px;
+    margin: 6px;
   }
   .feel_box {
     margin: 3px auto;
@@ -308,15 +308,12 @@ details {
 
   .feel_color {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     // background: whitesmoke;
     img {
       width: 100px;
     }
-    .feel_color1,
-    .feel_color2 {
-      margin: auto;
-    }
+
   }
   label {
     display: block;
@@ -355,51 +352,51 @@ details {
   }
   .white {
     background: white;
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
   .skyblue {
     background: rgb(32, 179, 236);
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
   .blue {
     background: rgb(0, 60, 139);
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
   .pink {
     background: pink;
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
   .orange {
     background: orange;
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
   .red {
     background: red;
-    max-width: 200px;
+    width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
-    padding: 0 1em;
+    padding: 1px 1em;
   }
 }
 
