@@ -1,8 +1,16 @@
-html, body { font-size: 70%; font-family: sans-serif; width: 100vw; max-width: 700px; margin: 0 auto; padding: 0; }
+@-webkit-keyframes pop { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes pop { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+html, body { font-size: 70%; font-family: sans-serif; text-align: center; line-height: 3em; width: 100vw; max-width: 700px; margin: 0 auto; padding: 0; }
 
 body { max-width: 900px; }
 
 hr { width: 80%; }
+
+.pop_info { background: #0d3a3a; margin: 0 auto; padding: 20px; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; border-radius: 100px; color: whitesmoke; font-size: 16px; font-weight: bold; text-align: center; opacity: 0; -webkit-animation: pop 4s; animation: pop 4s; }
 
 img { width: 100%; -webkit-filter: opacity(0.8); filter: opacity(0.8); }
 
@@ -20,7 +28,7 @@ form { margin: 20px auto; }
 
 select { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.container { display: -webkit-box; display: -ms-flexbox; display: flex; width: 95%; margin: auto; }
+.container { display: none; width: 95%; margin: auto; }
 
 dl { margin: 30px auto; width: 80%; max-width: 700px; }
 

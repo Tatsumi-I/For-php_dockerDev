@@ -74,7 +74,7 @@ button { background: skyblue; color: white; border: transparent; padding: 1em; c
 
 .weather_now p { margin: 6px; }
 
-.weather_now .feel_box { margin: 3px auto; padding: 0 1em; border-radius: 5px; color: whitesmoke; }
+.weather_now .feel_box { margin: 3px auto; padding: 0 1em; border-radius: 5px; color: whitesmoke; text-shadow: 0 0 1px dimgrey; }
 
 .weather_now img { width: 40px; display: block; margin: 5px auto; }
 

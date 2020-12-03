@@ -23,53 +23,59 @@
 
 </head>
 
-<?php
-//日本の状況取得のための処理
+<body>
+  <header>
 
-if (isset($_GET['jp_name']) && (!empty($_GET['jp_name']))) {
-  $jp_name_list = $_GET['jp_name'];
-  // echo 'OK' . $jp_name_list;
-} else {
-  $jp_name_list = '東京都';
-}
+    <img src="../imgs/covid.jpg" alt="">
+    <h1>厚生労働省HPの情報を<br>もっと身近に！わかりやすく！</h1>
+    <hr>
+    <h2>新型コロナウイルス情報を<br>ちょろろろぉ〜っとできるプログラム<br>をかいたよ</h2>
+
+    <?php
+    //日本の状況取得のための処理
+
+    if (isset($_GET['jp_name']) && (!empty($_GET['jp_name']))) {
+      $jp_name_list = $_GET['jp_name'];
+      echo '<P class="pop_info">' . $jp_name_list . 'の情報を取得しました</p>';
+    } else {
+      $jp_name_list = '東京都';
+    }
 
 
 
-$covid_japan = json_decode(file_get_contents('https://opendata.corona.go.jp/api/Covid19JapanAll' . '?dataName=' . urlencode($jp_name_list), true), true);
+    $covid_japan = json_decode(file_get_contents('https://opendata.corona.go.jp/api/Covid19JapanAll' . '?dataName=' . urlencode($jp_name_list), true), true);
 
-// var_dump($covid_japan['itemList'][0]);
-$data_day = date($covid_japan['itemList'][0]['date']);
+    // var_dump($covid_japan['itemList'][0]);
+    $data_day = date($covid_japan['itemList'][0]['date']);
 
-// var_dump($covid_japan['itemList'][0]['name_jp']);
-$selected_name = $covid_japan['itemList'][0]['name_jp'];
+    // var_dump($covid_japan['itemList'][0]['name_jp']);
+    $selected_name = $covid_japan['itemList'][0]['name_jp'];
 
-// var_dump($covid_japan['itemList'][0]['npatients']);
-$selected_infections = number_format((int)$covid_japan['itemList'][0]['npatients']);
+    // var_dump($covid_japan['itemList'][0]['npatients']);
+    $selected_infections = number_format((int)$covid_japan['itemList'][0]['npatients']);
 
-// var_dump($covid_japan_all['itemList']);
-// var_dump($covid_japan_all['itemList'][$j]['name_jp']);
-// var_dump($covid_japan_all['itemList'][$j]['npatients']);
-$covid_japan_all = json_decode(file_get_contents('https://opendata.corona.go.jp/api/Covid19JapanAll', true), true);
+    $covid_japan_all = json_decode(file_get_contents('https://opendata.corona.go.jp/api/Covid19JapanAll', true), true);
 
-?>
-<pre>
 
-<?php
-//世界の状況取得のための処理
 
-if (isset($_GET['country']) && (!empty($_GET['country']))) {
-  $country_list = $_GET['country'];
-  // echo 'OK' . $jp_name_list;
-} else {
-  $country_list = '米国';
-}
+    ?>
 
-$covid_world = json_decode(file_get_contents('https://opendata.corona.go.jp/api/OccurrenceStatusOverseas' . '?dataName=' . urlencode($country_list), true), true);
+    <?php
+    //世界の状況取得のための処理
 
-$covid_world_all = json_decode(file_get_contents('https://opendata.corona.go.jp/api/OccurrenceStatusOverseas', true), true);
+    if (isset($_GET['country']) && (!empty($_GET['country']))) {
+      $country_list = $_GET['country'];
+      echo '<P class="pop_info">' . $country_list . 'の情報を取得しました</p>';
+    } else {
+      $country_list = '米国';
+    }
 
-// var_dump($covid_world['itemList'][0]);
-/*
+    $covid_world = json_decode(file_get_contents('https://opendata.corona.go.jp/api/OccurrenceStatusOverseas' . '?dataName=' . urlencode($country_list), true), true);
+
+    $covid_world_all = json_decode(file_get_contents('https://opendata.corona.go.jp/api/OccurrenceStatusOverseas', true), true);
+
+    // var_dump($covid_world['itemList'][0]);
+    /*
   ["date"]=>
   string(10) "2020/12/01"
   ["dataName"]=>
@@ -81,117 +87,103 @@ $covid_world_all = json_decode(file_get_contents('https://opendata.corona.go.jp/
 }
 */
 
-// var_dump($covid_world_all['itemList'][~192]['dataName']);
-// var_dump($covid_world_all['itemList'][~192]['infectedNum']);
-// var_dump($covid_world_all['itemList'][~192]['deceasedNum']);
+    // var_dump($covid_world_all['itemList'][~192]['dataName']);
+    // var_dump($covid_world_all['itemList'][~192]['infectedNum']);
+    // var_dump($covid_world_all['itemList'][~192]['deceasedNum']);
 
-$n = 0;
+    $n = 0;
 
-$world_data_day = $covid_world_all['itemList'][$n]['date'];
-$select_country = $covid_world_all['itemList'][$n]['dataName'];
-$country_infection = (int)str_replace(',', '', $covid_world_all['itemList'][$n]['infectedNum']);
-$country_die = (int)str_replace(',', '', $covid_world_all['itemList'][$n]['deceasedNum']);
-
-
-$selected_world_date = $covid_world['itemList'][0]['date'];
-$selected_country = $covid_world['itemList'][0]['dataName'];
-$selected_country_infections = (int)str_replace(',', '', $covid_world['itemList'][0]['infectedNum']);
-$selected_country_die = (int)str_replace(',', '', $covid_world['itemList'][0]['deceasedNum']);
-
-// var_dump($world_data_day);
-// var_dump($select_country);
-// var_dump($country_infection);
-
-// //以下世界の合計数
-
-$world_all_infections = (int)str_replace(',', '', $covid_world_all['itemList'][193]['infectedNum']);
-$world_all_die = (int)str_replace(',', '', $covid_world_all['itemList'][193]['deceasedNum']);
+    $world_data_day = $covid_world_all['itemList'][$n]['date'];
+    $select_country = $covid_world_all['itemList'][$n]['dataName'];
+    $country_infection = (int)str_replace(',', '', $covid_world_all['itemList'][$n]['infectedNum']);
+    $country_die = (int)str_replace(',', '', $covid_world_all['itemList'][$n]['deceasedNum']);
 
 
-?>
+    $selected_world_date = $covid_world['itemList'][0]['date'];
+    $selected_country = $covid_world['itemList'][0]['dataName'];
+    $selected_country_infections = (int)str_replace(',', '', $covid_world['itemList'][0]['infectedNum']);
+    $selected_country_die = (int)str_replace(',', '', $covid_world['itemList'][0]['deceasedNum']);
 
-<p></p>
+    // var_dump($world_data_day);
+    // var_dump($select_country);
+    // var_dump($country_infection);
 
-</pre>
+    // //以下世界の合計数
 
-
-
-<?php
-
-
-ini_set("iog_errors", "on");
-ini_set("error_iog", "./php_error.log");
-
-
-$csv_you = file_get_contents('https://www.mhlw.go.jp/content/pcr_positive_daily.csv', true);
-// $csv_you = file_get_contents('https://www.mhlw.go.jp/content/pcr_positive_daily.csv', true);
-$lines = explode("\r\n", $csv_you);
-foreach ($lines as $line) {
-  $records_you[] = explode(",", $line);
-}
-
-$leng = count($records_you);
-$i = $leng - 7;
+    $world_all_infections = (int)str_replace(',', '', $covid_world_all['itemList'][193]['infectedNum']);
+    $world_all_die = (int)str_replace(',', '', $covid_world_all['itemList'][193]['deceasedNum']);
 
 
-if (isset($_GET['ago'])) {
-  $ago = $_GET['ago'];
-  $value_people_past = $records_you[$leng - $ago][1];
-} else {
-  $ago = 30;
-}
+    ?>
 
-$value_people_today = $records_you[$leng - 2][1];
-$value_people_past = $records_you[$leng - $ago][1];
-// var_dump($value_people_past);
-$diff = number_format((int)$value_people_today - (int)$value_people_past);
-$diff_per = number_format(round((int)$value_people_today / (int)$value_people_past * 100, 1));
-
-$csv_die = file_get_contents('https://www.mhlw.go.jp/content/death_total.csv', true);
-$lines = explode("\r\n", $csv_die);
-foreach ($lines as $line) {
-  $records_die[] = explode(",", $line);
-}
-
-$csv_nyuuinn = file_get_contents('https://www.mhlw.go.jp/content/cases_total.csv', true);
-$lines = explode("\r\n", $csv_nyuuinn);
-foreach ($lines as $line) {
-  $records_nyu[] = explode(",", $line);
-}
-
-$csv_jyu = file_get_contents('https://www.mhlw.go.jp/content/severe_daily.csv', true);
-$lines = explode("\r\n", $csv_jyu);
-foreach ($lines as $line) {
-  $records_jyu[] = explode(",", $line);
-}
-
-// $csv_summary1 = file_get_contents('https://www.mhlw.go.jp/content/current_situation.csv', true);
-// $csv_summary1_1 = str_getcsv($csv_summary1, '#', '"');
-$csv_summary = file_get_contents('https://www.mhlw.go.jp/content/current_situation.csv', true);
-$lines = explode("\r\n", $csv_summary);
-foreach ($lines as $line) {
-  $records_sum[] = explode('"', $line);
-}
-
-// // $i = 0;
-
-// $pattern = "/[ ]*\(.*?\)[ ]*/u";
-$pattern = array(',', '\n', '"', '(', ')');
-$records_sum = str_replace($pattern, '', $records_sum[4]);
+    <?php
 
 
-$infection = substr($records_sum[3], 0, 6);
+    ini_set("iog_errors", "on");
+    ini_set("error_iog", "./php_error.log");
 
 
-?>
+    $csv_you = file_get_contents('https://www.mhlw.go.jp/content/pcr_positive_daily.csv', true);
+    // $csv_you = file_get_contents('https://www.mhlw.go.jp/content/pcr_positive_daily.csv', true);
+    $lines = explode("\r\n", $csv_you);
+    foreach ($lines as $line) {
+      $records_you[] = explode(",", $line);
+    }
+    // var_dump($records_you);
+    $leng = count($records_you);
+    $i = $leng - 7;
 
-<body>
-  <header>
 
-    <img src="../imgs/covid.jpg" alt="">
-    <h1>厚生労働省HPの情報を<br>もっと身近に！わかりやすく！</h1>
-    <hr>
-    <h2>新型コロナウイルス情報を<br>ちょろろろぉ〜っとできるプログラム<br>をかいたよ</h2>
+    if (isset($_GET['ago'])) {
+      $ago = $_GET['ago'];
+      $value_people_past = $records_you[$leng - $ago][1];
+      echo '<P class="pop_info">比較しています</P>';
+    } else {
+      $ago = 30;
+    }
+
+    $value_people_today_date = $records_you[$leng - 2][0];
+    $value_people_today = $records_you[$leng - 2][1];
+    $value_people_past = $records_you[$leng - $ago][1];
+    // var_dump($value_people_today_date);
+
+    $diff = number_format((int)$value_people_today - (int)$value_people_past);
+    $diff_per = number_format(round((int)$value_people_today / (int)$value_people_past * 100, 1));
+
+    $csv_die = file_get_contents('https://www.mhlw.go.jp/content/death_total.csv', true);
+    $lines = explode("\r\n", $csv_die);
+    foreach ($lines as $line) {
+      $records_die[] = explode(",", $line);
+    }
+
+    $csv_nyuuinn = file_get_contents('https://www.mhlw.go.jp/content/cases_total.csv', true);
+    $lines = explode("\r\n", $csv_nyuuinn);
+    foreach ($lines as $line) {
+      $records_nyu[] = explode(",", $line);
+    }
+
+    $csv_jyu = file_get_contents('https://www.mhlw.go.jp/content/severe_daily.csv', true);
+    $lines = explode("\r\n", $csv_jyu);
+    foreach ($lines as $line) {
+      $records_jyu[] = explode(",", $line);
+    }
+
+    // $csv_summary1 = file_get_contents('https://www.mhlw.go.jp/content/current_situation.csv', true);
+    // $csv_summary1_1 = str_getcsv($csv_summary1, '#', '"');
+    $csv_summary = file_get_contents('https://www.mhlw.go.jp/content/current_situation.csv', true);
+    $lines = explode("\r\n", $csv_summary);
+    foreach ($lines as $line) {
+      $records_sum[] = explode('"', $line);
+    }
+
+    $pattern = array(',', '\n', '"', '(', ')');
+    $records_sum = str_replace($pattern, '', $records_sum[4]);
+    $infection = substr($records_sum[3], 0, 6);
+
+
+    ?>
+
+
     <div class="desc">
       <h1>このアプリの特徴とメリットぉ！</h1>
       <dl>
@@ -237,11 +229,13 @@ $infection = substr($records_sum[3], 0, 6);
     <p><strong>Let’s try it !</strong></p>
     <div class="data_container">
       <div class="data_title">
-        <h1>日本の感染者<?php echo number_format($infection); ?>人</h1>
+        <h1>日本の感染者<?php echo number_format((int)$infection); ?>人</h1>
+        <p><?php echo $value_people_today_date; ?>時点</p>
       </div>
 
       <?php
       $new_die = substr($records_sum[9], 0, 4);
+
       $new_nyuuin = substr($records_sum[5], 0, 5);
       $new_kaihuku = substr($records_sum[7], 0, 6);
 
@@ -272,20 +266,20 @@ $infection = substr($records_sum[3], 0, 6);
       </div>
     </div>
 
-
-
     <div class="data_container">
       <div class="data_title">
         <h1>過去との比較ができます</h1>
       </div>
       <div class="data_desc">
+        <p><?php echo $value_people_today_date . 'の新規感染者数：' . $value_people_today . '人'; ?></p>
+
         <h2><?php echo $ago - 2; ?>日前と比較して <?php if ($diff > 0) {
                                               echo '+ ';
                                             }
                                             echo $diff . '人( 増加率: ' . $diff_per . '% )'; ?></h2>
         <?php
         // echo $ago - 2 . '今日 ( ' . $records_you[$leng - $ago][0] . ' ) の新規感染者数';
-        echo $ago - 2 . '日前 ( ' . $records_you[$leng - $ago][0] . ' ) の新規感染者数';
+        echo $ago - 2 . '日前 ( ' . $records_you[$leng - $ago][0] . ' ) の新規感染者数：';
         echo $value_people_past . '人';
         ?>
 
@@ -315,11 +309,12 @@ $infection = substr($records_sum[3], 0, 6);
 
         <form method="GET" action="">
           <select name="jp_name" id="">
+            <option value="">都道府県を選択する</option>
+
             <?php
             $japan_leng = 47;
             for ($j = 0; $j < $japan_leng; $j++) {
               $jp_name_list = $covid_japan_all['itemList'][$j]['name_jp'];
-              $jp_infections = $covid_japan_all['itemList'][$j]['npatients'];
             ?>
               <option value="<?php echo $jp_name_list; ?>"><?php echo $jp_name_list; ?></option>
             <?php
@@ -329,19 +324,21 @@ $infection = substr($records_sum[3], 0, 6);
           <button>Choice!</button>
         </form>
 
-        <h2><?php echo $selected_name . ' : ' . $selected_infections . '人'; ?></h2>
+        <h2><?php echo $selected_name . ' : ' . $selected_infections . ' 人'; ?></h2>
 
       </div>
     </div>
 
     <div class="data_container">
       <div class="data_title">
-        <h1>世界各国の合計感染者数と死者数</h1>
+        <h1>国別の感染者数と死者数</h1>
         <p> <?php echo $selected_world_date; ?> 時点</p>
       </div>
       <div class="data_desc">
         <form method="GET" action="">
           <select name="country" id="">
+            <option value="">国を選択する</option>
+
             <?php
             for ($n = 0; $n < 193; $n++) {
               $select_country = $covid_world_all['itemList'][$n]['dataName'];
@@ -356,29 +353,26 @@ $infection = substr($records_sum[3], 0, 6);
           </select>
           <button>Push</button>
         </form>
-        <p><?php echo $selected_country; ?></p>
-        <p><?php echo $selected_country_infections; ?></p>
-        <p><?php echo $selected_country_die; ?></p>
+        <h2><?php echo $selected_country . '<br>感染者：' . number_format($selected_country_infections) . ' 人<br>死者：', number_format($selected_country_die); ?> 人</h2>
 
-        
       </div>
     </div>
     <div class="data_container">
       <div class="data_title">
-        <h1>世界の合計感染者数と死者数</h1>
+        <h1>世界の感染者数と死者数</h1>
         <p> <?php echo $selected_world_date; ?> 時点</p>
       </div>
       <div class="data_desc">
-      <p><?php echo
+        <h2><?php echo
               $covid_world_all['itemList'][193]['dataName']
                 . '<br>感染者：' .
-                $world_all_infections
-                . '<br>死者：' .
-                $world_all_die; ?></p>
-        
-        <p>世界人口約77億人に対する感染者率：<?php echo round(($world_all_infections / 7700000000), 3) * 100 . '%'; ?></p>
+                number_format($world_all_infections)
+                . ' 人<br>死者：' .
+                number_format($world_all_die); ?> 人</h2>
 
-        
+        <h2>世界人口 約77億人に対する感染者率：<?php echo round(($world_all_infections / 7700000000), 3) * 100 . '%'; ?></h2>
+
+
       </div>
     </div>
 
