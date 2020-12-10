@@ -116,7 +116,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: $shadow;
-    // width: 90vw;
+    width: 90vw;
+    max-width: 400px; 
     display: block;
     margin: 1% auto;
   }

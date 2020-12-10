@@ -16,7 +16,7 @@ try {
   $id = (int) $_GET['id'];
   // var_dump($id);
   // print_r($id);
-  $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
+  $dbh = new PDO('mysql:host=Localhost;dbname=myfirstdeploy_db;charset=utf8', $user, $pass);
   $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "SELECT * FROM eva WHERE id = ?";

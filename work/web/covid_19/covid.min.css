@@ -32,12 +32,6 @@ img { width: 100%; -webkit-filter: opacity(0.8); filter: opacity(0.8); }
 
 .data_desc h1, .data_desc h2 { margin: 30px auto 0; }
 
-form { margin: 40px auto; -webkit-filter: drop-shadow(2px 2px 1px black); filter: drop-shadow(2px 2px 1px black); }
-
-select { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px; display: block; margin: 20px auto; width: 50%; border-radius: 5px; background: silver; color: snow; }
-
-button { border: none; color: snow; border-radius: 6px; padding: 10px; background: silver; width: 50%; }
-
 .container { display: -webkit-box; display: -ms-flexbox; display: flex; width: 95%; margin: auto; }
 
 .container details { background: #194650; color: snow; }
@@ -101,4 +95,12 @@ footer .copyright { margin: 50px auto 10px; font-family: serif; }
 .policy a { display: inline; margin: 0; padding: 2px; }
 
 .policy summary { display: block; text-align: center; border-radius: 5px; padding: 1em; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
+
+form { margin: 40px auto; -webkit-filter: drop-shadow(2px 2px 1px black); filter: drop-shadow(2px 2px 1px black); }
+
+form a { background: none; }
+
+select { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px; display: block; margin: 20px auto; width: 50%; border-radius: 5px; background: silver; color: snow; }
+
+button { border: none; color: snow; border-radius: 6px; padding: 10px; background: silver; width: 50%; }
 /*# sourceMappingURL=covid.min.css.map */

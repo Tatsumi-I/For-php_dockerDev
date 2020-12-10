@@ -96,30 +96,7 @@ img {
   }
 }
 
-form {
-  margin: 40px auto;
-  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
-}
-select {
-  justify-content: space-between;
-  padding: 10px;
-  display: block;
-  margin: 20px auto;
-  width: 50%;
-  border-radius: 5px;
-  background: silver;
-  color: snow;
-}
-button {
-  border: none;
-  color: snow;
-  border-radius: 6px;
-  padding: 10px;
-  background: silver;
-  // display: block;
-  // margin: auto;
-  width: 50%;
-}
+
 .container {
   display: flex;
   width: 95%;
@@ -305,4 +282,30 @@ footer {
     color: white;
     filter: drop-shadow(0 4px 2px grey);
   }
+}form {
+  margin: 40px auto;
+  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+  a{
+    background: none;
+  }
+}
+select {
+  justify-content: space-between;
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 5px;
+  background: silver;
+  color: snow;
+}
+button {
+  border: none;
+  color: snow;
+  border-radius: 6px;
+  padding: 10px;
+  background: silver;
+  // display: block;
+  // margin: auto;
+  width: 50%;
 }

@@ -14,7 +14,7 @@ require_once('_appFooter.php');
 <footer>
   <img src="/imgs/myLogoWhite.png" alt="">
 
-  <p><a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a></p>
+  <a href="hoz_onTop.php">PHP & MYSQL_app ”Hoz_on”</a>
   <p class="copyLight"><small>&copy; <?= $myName; ?>.2020</small></p>
 
 </footer>

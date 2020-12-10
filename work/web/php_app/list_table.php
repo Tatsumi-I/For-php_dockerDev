@@ -11,7 +11,7 @@ require_once('_appHeader.php');
 
 // 以下、DBとの接続
 try {
-  $dbh = new PDO('mysql:host=mysql_host;dbname=db_4portfolio;charset=utf8', $user, $pass);
+  $dbh = new PDO('mysql:host=Localhost;dbname=myfirstdeploy_db;charset=utf8', $user, $pass);
   $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "SELECT * FROM eva";
   $stmt = $dbh->query($sql);

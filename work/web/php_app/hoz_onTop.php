@@ -30,7 +30,7 @@ require_once('_appHeader.php');
 <p>あなたの<strong>感想や貴重なアドバイスも</strong>”Hozon”致します！</p>
 <p>あなたのための Hoz_on を今すぐ始めましょう！</p>
 
-<p><a href="eva.php">今すぐ Hoz_on する</a></p>
+<a href="eva.php">今すぐ Hoz_on する</a>
 
 
 <?php

@@ -3,8 +3,8 @@
 // $user = "tatsumi";
 // $pass = "vWtiKogx0heXmvEl";
 
-$user = "root";
-$pass = "root";
+$user = "myfirstdeploy_db";
+$pass = "myfirstdeploy";
 
 // $user = "tatsumi_2";
 // $user = "1SMux1TiOdgq88Og";

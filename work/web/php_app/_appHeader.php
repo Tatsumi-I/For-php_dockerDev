@@ -17,7 +17,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="たつみのポートフォリオサイト">
-  <link rel="stylesheet" type="text/css" href="./styleForApp/appStyle.min.css">
+  <link rel="stylesheet" type="text/css" href="styleForApp/appStyle.min.css">
   <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/uie3lbv.css">
