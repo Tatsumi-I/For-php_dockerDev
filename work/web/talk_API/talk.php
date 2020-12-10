@@ -31,6 +31,8 @@
     <?php
 
     require_once('../../app/function.php');
+    require_once('../policy/policy.php');
+
 
 
     if (!empty($_POST['text'])) {
@@ -74,7 +76,7 @@
         $tag = '';
         break;
       case 2:
-        $tag = '前歯にゴマはさんでるとこすみません';
+        $tag = '前歯に海苔つけてるとこすみません';
         break;
       case 3:
         $tag = 'ちょwww';
@@ -102,7 +104,7 @@
         $reply = 'ウケるwww';
         break;
       case 5:
-        $reply = '(ちょっと何言ってるかわかんねーや)';
+        $reply = '(ちょっと何言ってるかわかんないや)';
         break;
       case 6:
         $reply = '(ちょwww<br>頭悪い発言やめてwww)';
@@ -111,13 +113,13 @@
         $reply = '(人の話聞いてwww)';
         break;
       case 8:
-        $reply = 'ジャイアンみたいなこと言いますね!';
+        $reply = 'ジャイアンみたいなこと言いますね';
         break;
       case 9:
         $reply = 'ていうかその髪型は寝癖ですか?';
         break;
       case 10:
-        $reply = 'そういえば、私のおすすめの鋼鉄をご自宅に送りました!<br>着払いです。';
+        $reply = 'そういえば、私のポエムを100通ほど着払いでご自宅に送りました!';
         break;
       case 11:
         $reply = 'さっきからずっと鼻毛出てますよ。';
@@ -212,11 +214,19 @@
   </main>
   <footer>
     <div class="base">
+      <p class="desc">このチャットボットは、人工知能の機能をAPIを通して提供している、a3rtのtalk API機能を使用しています。</p>
+      <a class="link" href="https://a3rt.recruit-tech.co.jp/">https://a3rt.recruit-tech.co.jp/</a>
+      <details class="policy">
+        <summary>プライバシーポリシー</summary>
+        <?php
+          echo $policy;
+        ?>
+      </details>
       <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
     </div>
-
-  </footer>
-
-</body>
+      
+    </footer>
+    
+  </body>
 
 </html>

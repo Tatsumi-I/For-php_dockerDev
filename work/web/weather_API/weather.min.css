@@ -1,11 +1,11 @@
-@-webkit-keyframes slide_up { 0% { opacity: 0;
+@-webkit-keyframes slide_up { 0% { opacity: 0.2;
     -webkit-transform: translateY(200px);
             transform: translateY(200px); }
   100% { opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } }
 
-@keyframes slide_up { 0% { opacity: 0;
+@keyframes slide_up { 0% { opacity: 0.2;
     -webkit-transform: translateY(200px);
             transform: translateY(200px); }
   100% { opacity: 1;
@@ -36,7 +36,7 @@
 
 html, body { font-size: 90%; scroll-behavior: smooth; margin: 0; padding: 0; font-family: "Noto Sans JP", "Libre Baskerville", sans-serif; font-weight: 200; font-style: normal; letter-spacing: 0.1em; font-size: 80%; color: dimgrey; }
 
-body { max-width: 1400px; margin: auto; }
+body { margin: auto; }
 
 hr { width: 90%; margin: 10px auto; }
 
@@ -46,7 +46,7 @@ header h1, footer h1 { margin: 0; color: midnightblue; border-radius: 3px; paddi
 
 h2 { text-align: center; margin: 20px auto; }
 
-.header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5)); height: 10vh; }
+.header { display: -webkit-box; display: -ms-flexbox; display: flex; height: 10vh; margin: auto; max-width: 700px; }
 
 .header i, .header img { min-width: 30px; max-width: 50px; display: block; margin: auto; text-align: center; }
 
@@ -68,17 +68,17 @@ form label { display: -webkit-inline-box; display: -ms-inline-flexbox; display: 
 
 button { background: skyblue; color: white; border: transparent; padding: 1em; cursor: pointer; border-radius: 5px; margin: 20px auto; }
 
-.weather_now { opacity: 0; -webkit-animation: slide_up 3s forwards; animation: slide_up 3s forwards; background: rgba(245, 245, 245, 0.8); color: dimgrey; width: 80%; max-width: 700px; margin: 10px auto; padding: 2%; border-radius: 100px; }
+.weather_now { opacity: 0; -webkit-animation: slide_up 3s forwards; animation: slide_up 3s forwards; background: rgba(245, 245, 245, 0.8); color: dimgrey; width: 90%; max-width: 700px; margin: 10px auto; padding: 2%; border-radius: 100px; }
 
 .weather_now h1 { margin: 0; }
 
 .weather_now p { margin: 6px; }
 
-.weather_now .feel_box { margin: 3px auto; padding: 0 1em; border-radius: 5px; color: whitesmoke; text-shadow: 0 0 1px dimgrey; }
+.weather_now .feel_box { margin: 3px auto; padding: 0 1em; border-radius: 5px; color: whitesmoke; text-shadow: 0 0 1px black; }
 
 .weather_now img { width: 40px; display: block; margin: 5px auto; }
 
-details { max-width: 700px; display: block; margin: 6px auto; width: 97vw; padding: 0; border-radius: 10px; -webkit-box-shadow: 0 0 7px rgba(5, 5, 5, 0.3); box-shadow: 0 0 7px rgba(5, 5, 5, 0.3); }
+details { max-width: 700px; display: block; margin: 6px auto; width: 97vw; padding: 0; border-radius: 10px; -webkit-box-shadow: 0 0 7px rgba(5, 5, 5, 0.5); box-shadow: 0 0 7px rgba(5, 5, 5, 0.5); }
 
 details h3, details p, details i { margin: auto; border-radius: 5px; }
 
@@ -104,17 +104,17 @@ details .box .value { text-align: left; width: 40%; margin: 10px; }
 
 .desc { color: white; margin: 30px auto; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.desc h1 { opacity: 0; -webkit-animation: delay 4s forwards 2s; animation: delay 4s forwards 2s; margin: 0 auto; color: whitesmoke; background: transparent; width: 100vw; }
+.desc h1 { opacity: 0; -webkit-animation: delay 4s forwards 1s; animation: delay 4s forwards 1s; margin: 0 auto; color: whitesmoke; background: transparent; width: 100vw; }
 
-.desc .memo_1, .desc .memo_2, .desc .memo_3 { opacity: 0; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; min-height: 150px; max-width: 380px; width: 100%; margin: 20px auto; text-shadow: 0 0 1px gray; }
+.desc .memo_1, .desc .memo_2, .desc .memo_3 { opacity: 0; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; min-height: 150px; max-width: 380px; width: 100%; margin: 20px auto; text-shadow: 0 0 1px black; }
 
 .desc .memo_1 h2, .desc .memo_2 h2, .desc .memo_3 h2 { text-align: left; margin: 20px auto; padding: 10px; border-left: 5px solid grey; border-bottom: 1px solid grey; width: 80%; }
 
-.desc .memo_1 { -webkit-animation: slide 2s forwards 3s; animation: slide 2s forwards 3s; }
+.desc .memo_1 { -webkit-animation: slide 2s forwards 1s; animation: slide 2s forwards 1s; }
 
-.desc .memo_2 { -webkit-animation: slide 2s forwards 4s; animation: slide 2s forwards 4s; }
+.desc .memo_2 { -webkit-animation: slide 2s forwards 2s; animation: slide 2s forwards 2s; }
 
-.desc .memo_3 { -webkit-animation: slide 2s forwards 5s; animation: slide 2s forwards 5s; }
+.desc .memo_3 { -webkit-animation: slide 2s forwards 3s; animation: slide 2s forwards 3s; }
 
 .desc .feel_color { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; }
 
@@ -124,9 +124,11 @@ details .box .value { text-align: left; width: 40%; margin: 10px; }
 
 .desc details { width: 250px; max-width: 80vw; }
 
-.desc details summary { border: 1px solid grey; background: #ffffffb6; }
+.desc details summary { background: #8cacdd; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); text-shadow: none; }
 
-.desc details span { width: 100%; }
+.desc details span { color: whitesmoke; width: 100%; }
+
+.desc details span p { width: 80%; }
 
 .desc input { display: block; margin: auto; }
 
@@ -154,7 +156,17 @@ button { display: block; margin: 10px auto; }
 
 .five_days { margin: 40px auto; width: 96vw; }
 
-.five_days summary { background-color: whitesmoke; min-height: 40px; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
+.five_days summary { background-color: whitesmoke; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); min-height: 40px; height: -webkit-fit-content; height: -moz-fit-content; height: fit-content; }
 
 .five_days summary img { -webkit-filter: unset; filter: unset; }
+
+aside { max-width: 700px; margin: 100px auto 30px; padding: 1em 2em; width: 90%; text-align: center; }
+
+aside a { background: #8cacdd; border-radius: 5px; padding: 2em; display: block; text-decoration: none; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
+
+.policy { width: 90vw; text-align: left; }
+
+.policy a { display: inline; margin: 0; padding: 2px; }
+
+.policy summary { display: block; text-align: center; background: #8cacdd; border-radius: 5px; padding: 1em; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
 /*# sourceMappingURL=weather.min.css.map */

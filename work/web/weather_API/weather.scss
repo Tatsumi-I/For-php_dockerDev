@@ -4,7 +4,7 @@ $grege: #80786630;
 
 @keyframes slide_up {
   0% {
-    opacity: 0;
+    opacity: 0.2;
     transform: translateY(200px);
   }
   100% {
@@ -61,7 +61,7 @@ body {
   color: dimgrey;
 }
 body {
-  max-width: 1400px;
+  // max-width: 1400px;
   margin: auto;
 }
 hr {
@@ -92,8 +92,9 @@ h2 {
 
 .header {
   display: flex;
-  filter: drop-shadow(0 0 1px rgba(255, 250, 250, 0.5));
   height: 10vh;
+  margin: auto;
+  max-width: 700px;
 
   i,
   img {
@@ -127,8 +128,6 @@ fieldset {
 
 // }
 main {
-  // width: max-content;
-
   margin: 30px auto;
   text-align: center;
   width: 100%;
@@ -160,7 +159,7 @@ button {
   animation: slide_up 3s forwards;
   background: rgba(245, 245, 245, 0.8);
   color: dimgrey;
-  width: 80%;
+  width: 90%;
   max-width: 700px;
   margin: 10px auto;
   padding: 2%;
@@ -176,8 +175,8 @@ button {
     margin: 3px auto;
     padding: 0 1em;
     border-radius: 5px;
-    color:whitesmoke;
-    text-shadow: 0 0 1px dimgrey;
+    color: whitesmoke;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
   }
   img {
     width: 40px;
@@ -192,7 +191,7 @@ details {
   width: 97vw;
   padding: 0;
   border-radius: 10px;
-  box-shadow: 0 0 7px rgba(5, 5, 5, 0.3);
+  box-shadow: 0 0 7px rgba(5, 5, 5, 0.5);
 
   h3,
   p,
@@ -271,7 +270,7 @@ details {
   flex-wrap: wrap;
   h1 {
     opacity: 0;
-    animation: delay 4s forwards 2s;
+    animation: delay 4s forwards 1s;
     margin: 0 auto;
     color: whitesmoke;
     background: transparent;
@@ -287,7 +286,7 @@ details {
     max-width: 380px;
     width: 100%;
     margin: 20px auto;
-    text-shadow: 0 0 1px rgb(128, 128, 128);
+    text-shadow: 0 0 1px black;
     h2 {
       text-align: left;
       margin: 20px auto;
@@ -298,13 +297,13 @@ details {
     }
   }
   .memo_1 {
-    animation: slide 2s forwards 3s;
+    animation: slide 2s forwards 1s;
   }
   .memo_2 {
-    animation: slide 2s forwards 4s;
+    animation: slide 2s forwards 2s;
   }
   .memo_3 {
-    animation: slide 2s forwards 5s;
+    animation: slide 2s forwards 3s;
   }
 
   .feel_color {
@@ -314,7 +313,6 @@ details {
     img {
       width: 100px;
     }
-
   }
   label {
     display: block;
@@ -323,11 +321,16 @@ details {
     width: 250px;
     max-width: 80vw;
     summary {
-      border: 1px solid grey;
-      background: #ffffffb6;
+      background: rgb(140, 172, 221);
+      filter: drop-shadow(0 4px 2px grey);
+      text-shadow: none;
     }
     span {
+      color: whitesmoke;
       width: 100%;
+      p {
+        width: 80%;
+      }
     }
   }
   input {
@@ -411,11 +414,50 @@ button {
   width: 96vw;
   summary {
     background-color: whitesmoke;
+    filter: drop-shadow(0 4px 2px grey);
+
     // flex-wrap: wrap;
     min-height: 40px;
     height: fit-content;
     img {
       filter: unset;
     }
+  }
+}
+
+aside {
+  max-width: 700px;
+  margin: 100px auto 30px;
+  padding: 1em 2em;
+  width: 90%;
+  text-align: center;
+  a {
+    background: rgb(140, 172, 221);
+    border-radius: 5px;
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    margin: 30px auto;
+    color: white;
+    filter: drop-shadow(0 4px 2px grey);
+  }
+}
+.policy {
+  width: 90vw;
+  text-align: left;
+  a{
+    display: inline;
+    margin: 0;
+    padding: 2px;
+  }
+  summary {
+    display: block;
+    text-align: center;
+    background: rgb(140, 172, 221);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 30px auto;
+    color: white;
+    filter: drop-shadow(0 4px 2px grey);
   }
 }

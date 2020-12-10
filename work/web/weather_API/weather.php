@@ -5,6 +5,8 @@ ini_set("error_iog", "./php_error.log");
 
 require_once('../../app/function.php');
 
+require_once('../policy/policy.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +34,7 @@ require_once('../../app/function.php');
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
 </head>
+
 <body>
   <!-- <pre> -->
 
@@ -61,7 +64,6 @@ require_once('../../app/function.php');
   }
 
   $api_url = 'https://api.openweathermap.org/data/2.5/forecast?id=' . $area . '&appid=' . $apiKey . '&lang=ja&units=metric';
-
   $response = json_decode(file_get_contents($api_url), true);
   $list = $response['list'];
   $leng = count($list);
@@ -78,22 +80,31 @@ require_once('../../app/function.php');
   $feels_now = $response_now['main']['feels_like'];
   $wind_now = $response_now['wind']['speed'];
 
-// var_dump( $response_now);
+
+  $zip = '446-0074';
+  $api_url_zip = 'https://api.openweathermap.org/data/2.5/forecast?zip=' . $zip . ',jp' . '&lang=ja&appid=' . $apiKey . '&units=metric';
+  $response_zip = json_decode(file_get_contents($api_url_zip), true);
+  $list_zip = $response_zip['list'];
+  $leng_zip = count($list_zip);
+  $city_zip = $response_zip['city']['name'];
+
+  // var_dump($list_zip);
+
 
 
 
 
   ?>
 
-<!-- </pre> -->
+  <!-- </pre> -->
   <header>
     <div class="header">
       <img src="../imgs/logo.png" alt="">
       <i class="fas fa-times"></i>
       <img src="../imgs/api.jpg" alt="">
     </div>
-    <p><strong>Tatsumi's_Weather</strong></p>
-    <p>OpenWeatherMapのWeb APIを使用</p>
+    <h1>Tatsumi_Weather</h1>
+    <p>OpenWeatherのWeb APIを使用しています</p>
     <hr>
 
 
@@ -156,40 +167,45 @@ require_once('../../app/function.php');
         break;
     }
 
-    $bg_color = 'none';
+    $bg_color = 'darkgreen';
     switch ($feels_now) {
       case ($feels_now >= 35):
         $bg_color = 'red';
+        $color = 'whitesmoke';
         break;
       case (($feels_now >= 30) && ($feels_now < 35)):
         $bg_color = 'orange';
+        $color = 'whitesmoke';
         break;
       case (($feels_now >= 25) && ($feels_now < 30)):
         $bg_color = 'pink';
+        $color = 'whitesmoke';
         break;
       case (($feels_now <= 10) && ($feels_now >= 5)):
         $bg_color = 'rgb(0, 60, 139)';
+        $color = 'whitesmoke';
         break;
-      case (($feels_now > 0) && ($feels_now <= 5)):
+      case (($feels_now > 0) && ($feels_now < 5)):
         $bg_color = 'skyblue';
+        $color = 'whitesmoke';
         break;
       case (($feels_now > -100) && ($feels_now <= 0)):
         $bg_color = 'white';
+        $color = 'grey';
         break;
     }
     ?>
 
     <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
-    
+
     <?php
 
     echo '<div class="weather_now">';
     echo '<p><strong>' . $city_now . ' ' . $time_now . '現在の天気</strong></p>';
-    echo '<p>気温' . $temp_now . '℃</p>';
-    echo '<img src="../imgs/' . $w_icon . '">';
     echo '<p>' . $weather_now['description'] . '/' . $weather_now['main'] . '</p>';
-    echo '<p class="feel_box" style="background-color:' . $bg_color . '">体感気温' . $feels_now . '℃</p>';
-    echo '<p>風速' . $wind_now . 'm/秒</p>';
+    echo '<img src="../imgs/' . $w_icon . '">';
+    echo '<p class="feel_box" style="background-color:' . $bg_color . ';' . 'color:' . $color . '">体感気温' . $feels_now . '℃</p>';
+    echo '<p>気温' . $temp_now . '℃   風速' . $wind_now . 'm/秒</p>';
     echo '</div>';
     ?>
 
@@ -206,7 +222,7 @@ require_once('../../app/function.php');
           <!-- <div class="desc"> -->
           <details>
             <summary><span>
-                <p><strong>クイック選択</strong></p><i class="fas fa-angle-double-down"></i>
+                <p><strong>選択肢から選ぶ</strong></p><i class="fas fa-angle-double-down"></i>
               </span></summary>
             <form action="" method="GET">
               <div class="radio">
@@ -230,7 +246,7 @@ require_once('../../app/function.php');
 
           <details>
             <summary><span>
-                <p><strong>地域を指定する</strong></p><i class="fas fa-angle-double-down"></i>
+                <p><strong>キーボードで入力する</strong></p><i class="fas fa-angle-double-down"></i>
               </span></summary>
             <br>
             <form action="" method="GET">
@@ -242,9 +258,9 @@ require_once('../../app/function.php');
                     <input type="text" name="area_in" value=""></label>
                   <br>
                   <button>Click or Enter!</button>
-                  <h1>例1)."京都"の場合 → "Kyoto"</h1>
-                  <h1>例2)."大井"の場合 → "Ooi"</h1>
-                  <h1>例3)."新宿区"の場合 → "Shinjyuku-ku"</h1>
+                  <h3>例1)."京都"の場合 → "Kyoto"</h3>
+                  <h3>例2)."大井"の場合 → "Ooi"</h3>
+                  <h3>例3)."新宿区"の場合 → "Shinjyuku-ku"</h3>
                   <br>
                   <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
                   <ul>
@@ -424,7 +440,6 @@ require_once('../../app/function.php');
           <p>降水確率：</p>
           <p>湿度：</p>
           <p>気温：</p>
-          <p>最高気温：</p>
           <p>風速：</p>
         </div>
         <div class="value">
@@ -432,7 +447,6 @@ require_once('../../app/function.php');
           <p>$rains ％</p>
           <p>$humidity %</p>
           <p>$temp ℃</p>
-          <p>$temp_max ℃</p>
           <p>$wind m/秒</p>
         </div>
       </div>
@@ -556,7 +570,6 @@ require_once('../../app/function.php');
           <p>降水確率：</p>
           <p>湿度：</p>
           <p>気温：</p>
-          <p>最高気温：</p>
           <p>風速：</p>
         </div>
         <div class="value">
@@ -564,7 +577,6 @@ require_once('../../app/function.php');
           <p>$rains ％</p>
           <p>$humidity %</p>
           <p>$temp ℃</p>
-          <p>$temp_max ℃</p>
           <p>$wind m/秒</p>
         </div>
       </div>
@@ -702,7 +714,6 @@ require_once('../../app/function.php');
           <p>降水確率：</p>
           <p>湿度：</p>
           <p>気温：</p>
-          <p>最高気温：</p>
           <p>風速：</p>
         </div>
         <div class="value">
@@ -710,7 +721,6 @@ require_once('../../app/function.php');
           <p>$rains ％</p>
           <p>$humidity %</p>
           <p>$temp ℃</p>
-          <p>$temp_max ℃</p>
           <p>$wind m/秒</p>
         </div>
       </div>
@@ -727,6 +737,18 @@ require_once('../../app/function.php');
     ?>
 
   </main>
+  <aside>
+    <p>このアプリは、以下のサイトより情報を取得しています。</p>
+    <a href="https://openweathermap.org/">OpenWeather<br>https://openweathermap.org/</a>
+
+    <details class="policy">
+      <summary>プライバシーポリシー</summary>
+      <?php
+        echo $policy;
+      ?>
+    </details>
+  </aside>
+
   <footer>
     <img src="../imgs/logo.png" alt="" width="100px">
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
