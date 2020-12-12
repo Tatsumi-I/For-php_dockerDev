@@ -31,8 +31,6 @@
     <?php
 
     require_once('../../app/function.php');
-    require_once('../policy/policy.php');
-
 
 
     if (!empty($_POST['text'])) {
@@ -82,7 +80,7 @@
         $tag = 'ちょwww';
         break;
       case 4:
-        $tag = '鼻の穴膨らませてるとこすみません';
+        $tag = '（また話しかけてきたwww）';
         break;
     }
 
@@ -92,7 +90,7 @@
     $r = rand(1, 14);
     switch ($r) {
       case 1:
-        $reply = '今オナラしました?!';
+        $reply = 'てか今オナラしました?!';
         break;
       case 2:
         $reply = '(社交辞令だけど)';
@@ -170,7 +168,7 @@
         <img src="../imgs/api.jpg" alt="">
       </div>
 
-      <h1>TALK APIによる<br><span>\ イラッとする /</span><br>AIチャットボット</h1>
+      <h1>a3rt - TALK APIによる<br><span>\ イラッとする /</span><br>AIチャットボット</h1>
 
     </div>
   </header>
@@ -214,19 +212,27 @@
   </main>
   <footer>
     <div class="base">
-      <p class="desc">このチャットボットは、人工知能の機能をAPIを通して提供している、a3rtのtalk API機能を使用しています。</p>
+      <p class="desc">このチャットボットは、"イラッとするAI"というコンセプトの基、ユーザーが楽しむために作られたプログラムです。</p>
+      <p class="desc">人工知能の機能をAPIを通して提供しているa3rtのtalk API機能を使用するとともに、<br>ランダムで表示されるコメントにより、最終的な返答を生成しています。</p>
+      <p class="desc">機械学習やAIの技術、並びにa3rtのtalk APIに対する信用と信頼を損なおうとする意図や目的はありません。<br>機械学習やAIの技術、並びにa3rtのtalk APIに関するすごい技術については、以下のリンクよりご確認ください。</p>
       <a class="link" href="https://a3rt.recruit-tech.co.jp/">https://a3rt.recruit-tech.co.jp/</a>
+
       <details class="policy">
         <summary>プライバシーポリシー</summary>
-        <?php
-          echo $policy;
-        ?>
+        <p>
+          当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+          Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+        </p>
+        <p>
+          この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+          <br>
+        </p>
       </details>
       <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
     </div>
-      
-    </footer>
-    
-  </body>
+
+  </footer>
+
+</body>
 
 </html>

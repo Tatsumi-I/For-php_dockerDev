@@ -75,13 +75,13 @@ try {
                             echo "selected";
                           }
                           ?>>
-          Code</option>
+          良い</option>
         <option value="2" <?php
                           if ($result['category'] === 2) {
                             echo "selected";
                           }
                           ?>>
-          Design</option>
+          要改善</option>
       </select>
     </label>
   </div>
@@ -93,17 +93,17 @@ try {
                                                           if ($result['checked'] === 1) {
                                                             echo "checked";
                                                           }
-                                                          ?>>Good !</label>
+                                                          ?>>見過ごせない！</label>
       <label><input type="radio" name="checked" value="2" <?php
                                                           if ($result['checked'] === 2) {
                                                             echo "checked";
                                                           }
-                                                          ?>>Bad...</label>
+                                                          ?>>あとでまた見たい</label>
       <label><input type="radio" name="checked" value="3" <?php
                                                           if ($result['checked'] === 3) {
                                                             echo "checked";
                                                           }
-                                                          ?>>What's?!</label>
+                                                          ?>>とりあえずKeep</label>
     </label>
 
   </div>

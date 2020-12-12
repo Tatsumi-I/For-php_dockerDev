@@ -12,16 +12,15 @@ $beige: #634130;
 
 html {
   background: $grege;
-  // font-size: 70%;
   color: $darkBlue;
   scroll-behavior: smooth;
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  // overflow-x: hidden;
   font-family: "Noto Sans JP", "Libre Baskerville", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 80%;
   // letter-spacing: 0.1em;
   line-height: 3;
   font-feature-settings: "palt" 1, "swsh" 1;
@@ -100,9 +99,9 @@ body {
 main {
   // width: clamp(300px,500px,100vw);
   background: rgba(255, 255, 255, 0.8);
-  // width: max-content;
   margin: 0 auto;
   min-height: 80vh;
+  max-width: 800px;
   h1 {
     margin: 10px;
     padding: 10px;
@@ -154,7 +153,6 @@ main {
   margin: 0 auto;
   padding: 0;
   min-height: 68vh;
-  font-size: 110%;
 }
 
 .desc {

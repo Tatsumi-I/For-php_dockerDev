@@ -111,67 +111,7 @@
 @keyframes delay { 0% { opacity: 0; }
   100% { opacity: 1; } }
 
-@keyframes flash { 0% { opacity: 0; }
-  1% { opacity: 0.3; }
-  2% { opacity: 0; }
-  3% { opacity: 0.3; }
-  4% { opacity: 0; }
-  6% { opacity: 0.5; }
-  9% { opacity: 0; }
-  25% { opacity: 0.7; }
-  35% { opacity: 0.7; }
-  36% { opacity: 0.5; }
-  37% { opacity: 0.8; }
-  95% { opacity: 0; }
-  95% { opacity: 0.8; }
-  97% { opacity: 0.9; }
-  98% { opacity: 0.6; }
-  99% { opacity: 0.5; }
-  100% { opacity: 0.9; } }
-
-@keyframes fade { 0% { opacity: 0; }
-  100% { opacity: 1; } }
-
-@keyframes delay { 0% { opacity: 0.3; }
-  100% { opacity: 1; } }
-
-@keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
-  90% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
-  93% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
-  96% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
-  98% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
-  100% { background: transparent; } }
-
-@keyframes rum-col { 0% { color: #c88c50; }
-  10% { color: #864621; }
-  20% { color: #a31800; }
-  30% { color: #860065; }
-  40% { color: #4701a3; }
-  50% { color: #1c2364; }
-  60% { color: #005e8a; }
-  70% { color: #017a66; }
-  80% { color: #016e1c; }
-  90% { color: #717e00; }
-  100% { color: #b99d00; } }
-
-@keyframes toUp { 0% { opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px); }
-  100% { opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
-
-@keyframes toDown { 0% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
-  98% { -webkit-transform: translateY(0px); transform: translateY(0px); }
-  99% { -webkit-transform: translateY(-2px); transform: translateY(-2px); }
-  100% { -webkit-transform: translateY(0px); transform: translateY(0px); } }
-
-@keyframes delay { 0% { opacity: 0; }
-  100% { opacity: 1; } }
-
-header .icons, footer .icons { padding: 30px; opacity: 0; -webkit-animation: delay 10s forwards; animation: delay 10s forwards; }
-
-.headerContainer { -webkit-animation: bgcolor 12s forwards; animation: bgcolor 12s forwards; }
+header .icons, footer .icons { padding: 30px; opacity: 0; }
 
 .homeGroup { padding: 10%; font-size: 360%; min-height: 70vh; }
 
@@ -210,7 +150,7 @@ a:visited { color: white; }
 
 .copy a:hover .item1, .copy a:active .item1, .copy a:visited .item1 { display: none; }
 
-.copy a:hover .item0, .copy a:hover .item5, .copy a:active .item0, .copy a:active .item5, .copy a:visited .item0, .copy a:visited .item5 { display: inline-block; }
+.copy a:hover .item0, .copy a:hover .item5, .copy a:active .item0, .copy a:active .item5, .copy a:visited .item0, .copy a:visited .item5 { -webkit-animation: fade 1s forwards; animation: fade 1s forwards; display: inline-block; }
 
 .inHeader { margin: auto; -webkit-animation: toDown 5s forwards; animation: toDown 5s forwards; }
 
@@ -280,7 +220,7 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .fa, .fab, .fal, .far, .fas { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
 
-html, body { color: #634130; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: "Libre Baskerville", serif; font-family: "Noto Sans JP", sans-serif; font-weight: 200; font-size: 80%; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
+html, body { color: #6341; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: "Libre Baskerville", serif; font-family: "Noto Sans JP", sans-serif; font-weight: 200; font-size: 80%; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
 
 html a, body a { text-decoration: none; color: darkgreen; cursor: pointer; -webkit-filter: drop-shadow(0px 0px 2px dimgrey); filter: drop-shadow(0px 0px 2px dimgrey); }
 
@@ -352,11 +292,11 @@ main a { color: #634130dc; text-align: center; }
 
 main a::after { content: "\0bb  "; }
 
-main h2 { font-size: 21px; color: #634130; display: block; background: #80786630; margin: 0px auto; padding: 10px 1em; text-align: initial; border-left: solid 20px #634130; border-radius: 0 10px 10px 0; z-index: 100; }
+main h2 { font-size: 21px; color: #6341; display: block; background: #80786630; margin: 0px auto; padding: 10px 1em; text-align: initial; border-left: solid 20px #6341; border-radius: 0 10px 10px 0; z-index: 100; }
 
 @media (min-width: 500px) { main h2 { position: -webkit-sticky; position: sticky; top: 9%; } }
 
-main h3 { color: #634130; font-size: 18px; border-bottom: 1px solid #253158; padding: 5px; margin: 40px auto; width: 90%; }
+main h3 { color: #6341; font-size: 18px; border-bottom: 1px solid #253158; padding: 5px; margin: 40px auto; width: 90%; }
 
 main strong { font-family: sans-serif; }
 
@@ -452,7 +392,7 @@ main .sum p { font-size: 120%; font-weight: bold; width: clamp(300px, 40%, 50vw)
 
 .backBone { background: url(../imgs/manequin_2.jpg) 20%/100% content-box no-repeat; }
 
-.blackApron { background: url(../imgs/B_A_2.png) 20%/100% content-box no-repeat; }
+.blackApron { background: url(../imgs/B_A_2.jpg) 20%/100% content-box no-repeat; }
 
 .hobby { background: url(../imgs/IMG_3214.JPG) 20%/100% content-box no-repeat; }
 

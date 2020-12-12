@@ -19,7 +19,7 @@ $links =
         <div class="concept">
           <!-- <img src="./imgs/color.jpg" alt=""> -->
           <div class="contentImg">
-            <img src="./imgs/B_A.png" alt="">
+            <img src="./imgs/B_A.jpg" alt="">
           </div>
           <div class="text">
 

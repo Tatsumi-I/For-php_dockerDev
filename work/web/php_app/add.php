@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($_POST['category'] === '1') {
           echo "coading";
         } elseif ($_POST['category'] === '2') {
-          echo "Design";
+          echo "要改善";
         }
       } else {
         echo "未分類";
@@ -70,9 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       echo 'Evaluation/評価 : ';
       if (!empty($_POST['checked'])) {
         if ($_POST['checked'] === '1') {
-          echo "Good !";
+          echo "見過ごせない！";
         } elseif ($_POST['checked'] === '2') {
-          echo "Bad...";
+          echo "あとでまた見たい";
         } elseif ($_POST['checked'] === '3') {
           echo "What's ?!";
         }

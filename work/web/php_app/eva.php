@@ -18,17 +18,17 @@ require_once('_appHeader.php');
       <!-- <br> -->
       <select name="category" id="">
         <option value="0">カテゴリ選択</option>
-        <option value="1">Code</option>
-        <option value="2">Design</option>
+        <option value="1">良い</option>
+        <option value="2">要改善</option>
       </select>
     </label>
   </div>
   <div>
     <label for="radio"><strong>Evaluation/評価</strong>
       <br>
-      <label><input type="radio" name="checked" value="1">Good !</label>
-      <label><input type="radio" name="checked" value="2">Bad...</label>
-      <label><input type="radio" name="checked" value="3">What's?!</label>
+      <label><input type="radio" name="checked" value="1">見過ごせない！</label>
+      <label><input type="radio" name="checked" value="2">あとでまた見たい</label>
+      <label><input type="radio" name="checked" value="3">とりあえずKeep</label>
     </label>
   </div>
   <div>
@@ -38,7 +38,7 @@ require_once('_appHeader.php');
       <br>
     </label>
   </div>
-  <button type="reset" class="reset">! Reset</button>
+  <button type="reset" class="reset">Reset</button>
   <button type="submit">Hoz_on !</button>
 </form>
 

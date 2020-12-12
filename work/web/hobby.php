@@ -43,16 +43,16 @@ $links =
     <img src="./imgs/IMG_8218.JPG" alt="">
 
     <img src="./imgs/IMG_8385.jpg" alt="">
-    <img src="./imgs/IMG_8686.png" alt="">
+    <img src="./imgs/IMG_8686.jpg" alt="">
     <img src="./imgs/IMG_8860.jpg" alt="">
     <img src="./imgs/IMG_9224.png" alt="">
     <img src="./imgs/IMG_9500.jpg" alt="">
 
     <img src="./imgs/IMG_9527.jpg" alt="">
     <img src="./imgs/IMG_9574.jpg" alt="">
-    <img src="./imgs/IMG_9700.png" alt="">
-    <img src="./imgs/IMG_E0681.png" alt="">
-    <img src="./imgs/IMG_E0732.png" alt="">
+    <img src="./imgs/IMG_9700.jpg" alt="">
+    <img src="./imgs/IMG_E0681.jpg" alt="">
+    <img src="./imgs/IMG_E0732.jpg" alt="">
   </div>
 </section>
 <section>

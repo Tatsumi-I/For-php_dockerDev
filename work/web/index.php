@@ -20,7 +20,7 @@ $links =
         <div class="concept">
           <!-- <img src="./imgs/color.jpg" alt=""> -->
           <div class="contentImg">
-            <img src="./imgs/5870.png" alt="">
+            <!-- <img src="./imgs/5870.png" alt=""> -->
           </div>
           <div class="text">
             <p><strong>”新しい感動体験を創り出す”</strong></p>
@@ -266,7 +266,7 @@ $links =
   </div>
 </section>
 
-<section id="area_2">
+<!-- <section id="area_2">
   <div class="sectionArea">
     <details>
       <summary>
@@ -365,7 +365,7 @@ $links =
     </details>
 
   </div>
-</section>
+</section> -->
 
 <section id="area_3">
   <div class="sectionArea">
@@ -377,7 +377,7 @@ $links =
         <h3>石川達実/<?= h($myName); ?></h3>
         <div class="container2">
           <div class="contentImg">
-            <img src="imgs/ba.png" style="filter:saturate(0.5);">
+            <img src="imgs/ba.jpg" style="filter:saturate(0.5);">
           </div>
           <div class="text">
             <p>1986年東京都生まれ。</p>
@@ -389,7 +389,7 @@ $links =
         </div>
       </div>
       <div class="content">
-        <h3 id="iconList">Knowledgeable about...(このポートフォリオに含まれている要素一覧です)</h3>
+        <h3 id="iconList">Knowledgeable about...(学習中の要素一覧です)</h3>
         <div class="container1">
           <div class="text">
             <div class="icons">

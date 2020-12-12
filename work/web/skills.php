@@ -63,11 +63,13 @@ $links =
           $total_hour =  round(($lean_hour + $add_hour), 2);
           $date = date('Y/m/d');
 
-          if (!empty($_GET['form_date']) && ($get_date = date_create(h($_GET['form_date'])))) {
+          if (!empty($_GET['form_date'])) {
+            $get_date = date_create(h($_GET['form_date']));
             $start_get_gap = date_diff($start, $get_date);
-            $sg_gap = $start_get_gap->format('%a');
+            $sg_gap = $start_get_gap -> format((int)'%a');
+            var_dump($sg_gap);
             $gap_month = round(($sg_gap / 30), 2) . 'ヶ月';
-            $form_date =  $get_date->format('Y/m/d') . '時点で<br>';
+            $form_date =  $get_date -> format('Y/m/d') . '時点で<br>';
             $today_form_gap = date_diff($today, $get_date);
             $tg_gap = $today_form_gap->format('%R%a');
             $tf_hour = $tg_gap * $day_ave;
@@ -75,6 +77,7 @@ $links =
             $error = '';
           } else {
             $error = 'カレンダーから日付を指定して下さい';
+            $gap_month = '';
             $form_date = '';
             $future_hour = '';
           }
@@ -90,38 +93,49 @@ $links =
                   <thead>
                     <tr>
                       <th>title</th>
-                      <th>data</th>
-                      <th class="coad">算出方法</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
                       <th>未来の学習累積時間を計算する（自動計算）
                         <form action="" method="GET">
                           <input type="date" name="form_date" autofocus>
                           <button>Done</button>
                         </form>
                       </th>
-                      <td>$error $form_date $gap_month<strong>$future_hour</strong></td>
-                      <td class="coad"><pre>
-                        if (!empty($ _GET['form_date']) 
-                            && ($ get_date = date_create(h($ _GET['form_date'])))){
-                          $ form_date =  $ get_date -> format('Y/m/d');
-                          $ today_form_gap = date_diff($ today, $ get_date);
-                          $ tg_gap = $ today_form_gap->format('%R%a');
-                          $ tf_hour = $ tg_gap * $ day_ave;
-                          $ future_hour = $ total_hour + $ tf_hour;
-                          $ error = '';
-                        } else {
-                          $ error = '正しい入力値ではありません';
-                          $ form_date = '';
-                          $ future_hour = '??';
-                        }
-                      </pre></td>
-                    </tr>
-                    <tr>
                       <th>本日$date 時点での合計時間（自動計算）</th>
+                      <th>経過日数/週（自動計算）</th>
+                      <th>日平均時間(実績)</th>
+                      <th>週平均時間(実績)</th>
+                      <th>$origin_day 時点での学習累計時間</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>data</th>
+                      <td>$error $form_date $gap_month<strong>$future_hour</strong></td>
                       <td class="data"><strong>$total_hour</strong> 時間</td>
+                      <td class="data"><strong>$s_t_gap</strong> 日 / $week 週</td>
+                      <td class="data"><strong>$day_ave</strong> 時間/日</td>
+                      <td class="data"><strong>$week_ave</strong> 時間/週</td>
+                      <td class="data"><strong>$lean_hour</strong> 時間</td>
+                    </tr>
+
+                    <tr>
+                      <th class="coad">算出方法</th>
+                      <td class="coad"><pre>
+                      if (!empty($ _GET['form_date']) 
+                          && ($ get_date = date_create(h($ _GET['form_date'])))){
+                        $ form_date =  $ get_date -> format('Y/m/d');
+                        $ today_form_gap = date_diff($ today, $ get_date);
+                        $ tg_gap = $ today_form_gap->format('%R%a');
+                        $ tf_hour = $ tg_gap * $ day_ave;
+                        $ future_hour = $ total_hour + $ tf_hour;
+                        $ error = '';
+                      } else {
+                        $ error = '正しい入力値ではありません';
+                        $ form_date = '';
+                        $ future_hour = '??';
+                      }
+                    </pre></td>
+
                       <td class="coad"><pre>
                         $ origin_today_gap = date_diff($ origin, $ today);
                         $ ot_gap = $ origin_today_gap->format('%a');
@@ -129,27 +143,18 @@ $links =
                         $ total_hour =  round(($ lean_hour + $ add_hour), 2);
                       </pre>
                       </td>
-                    </tr>
-                    <tr>
-                      <th>経過日数/週（自動計算）</th>
-                      <td class="data"><strong>$s_t_gap</strong> 日 / $week 週</td>
+
                       <td class="coad"><pre>
                         $ start_today_gap = date_diff($ start, $ today);
                         $ s_t_gap = $ start_today_gap->format('%a');
                       </pre>
                       </td>
-                    </tr>
-                    <tr>
-                      <th>日平均時間(実績)</th>
-                      <td class="data"><strong>$day_ave</strong> 時間/日</td>
+
                       <td class="coad"><pre>
                         $ day_ave = round(($ lean_hour / $ so_gap), 2);
                       </pre>
                       </td>
-                    </tr>
-                    <tr>
-                      <th>週平均時間(実績)</th>
-                      <td class="data"><strong>$week_ave</strong> 時間/週</td>
+
                       <td class="coad"><pre>
                         $ start_origin_gap = date_diff($ start, $ origin);
                         $ so_gap = $ start_origin_gap->format('%a');
@@ -158,10 +163,7 @@ $links =
                         $ week_ave = round(($ lean_hour / $ week_for_math), 2);
                       </pre>
                       </td>
-                    </tr>
-                    <tr>
-                      <th>$origin_day 時点での学習累計時間</th>
-                      <td class="data"><strong>$lean_hour</strong> 時間</td>
+
                       <td class="coad"><pre>
                         $ self_learn = 310;
                         $ other_learn = 111 + 75;

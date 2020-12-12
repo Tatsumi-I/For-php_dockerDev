@@ -52,9 +52,9 @@ h2 { text-align: center; margin: 20px auto; }
 
 .header i { font-size: 200%; color: snow; -webkit-filter: drop-shadow(0 0 1px dimgrey); filter: drop-shadow(0 0 1px dimgrey); }
 
-.city { color: lightgrey; max-width: 1000px; margin: 0 auto; }
+.city { color: white; max-width: 1000px; margin: 0 auto; }
 
-span { color: white; }
+span { color: #2635ff; }
 
 fieldset { min-width: 270px; border-radius: 5px; }
 
@@ -164,9 +164,9 @@ aside { max-width: 700px; margin: 100px auto 30px; padding: 1em 2em; width: 90%;
 
 aside a { background: #8cacdd; border-radius: 5px; padding: 2em; display: block; text-decoration: none; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
 
-.policy { width: 90vw; text-align: left; }
+.policy { width: 90%; text-align: left; max-width: 500px; }
 
 .policy a { display: inline; margin: 0; padding: 2px; }
 
-.policy summary { display: block; text-align: center; background: #8cacdd; border-radius: 5px; padding: 1em; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
+.policy summary { display: block; text-align: center; background: transparent; border-radius: 5px; padding: 1em; margin: 30px auto; color: white; -webkit-filter: drop-shadow(0 4px 2px grey); filter: drop-shadow(0 4px 2px grey); }
 /*# sourceMappingURL=weather.min.css.map */

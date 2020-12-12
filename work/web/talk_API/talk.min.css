@@ -40,7 +40,7 @@ button { background: #1295d1; color: snow; padding: 0 1em; border-radius: 5px; }
 
 .base { max-width: 700px; min-width: 300px; text-align: center; background: #bdbdbc; padding: 5px 20px; margin: auto; border-radius: 5px; }
 
-.desc { border-left: 3px solid #1295d1; padding: 1em; }
+.desc { border-left: 3px solid #1295d1; padding: 1em; color: snow; font-size: 70%; }
 
 a { text-decoration: none; background: #1295d1; color: snow; padding: 1em; border-radius: 5px; }
 

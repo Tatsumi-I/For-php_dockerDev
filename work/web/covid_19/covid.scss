@@ -42,9 +42,9 @@ hr {
   font-weight: bold;
   text-align: center;
   opacity: 0;
-  animation: pop 4s;
+  animation: pop 8s;
   position: sticky;
-  top: 10px;
+  top: 0;
   z-index: 2;
 }
 section {
@@ -77,8 +77,7 @@ img {
 .data_container {
   font-size: 140%;
 }
-.data_title_japan,
-.data_title_world {
+.data_title {
   background: rgb(255, 172, 90);
   padding: 2em 0;
   text-shadow: 1px 1px 0px dimgrey;
@@ -266,7 +265,7 @@ footer {
   }
 }
 .policy {
-  width: 90vw;
+  width: 90%;
   text-align: left;
   a{
     display: inline;

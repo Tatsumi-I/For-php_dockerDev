@@ -52,7 +52,7 @@ try {
       if ($category === '1') {
         echo "Coading";
       } elseif ($category === '2') {
-        echo "Design";
+        echo "要改善";
       }
     } else {
       echo "未選択";
@@ -64,9 +64,9 @@ try {
     $checked = (string) h($result['checked'], ENT_QUOTES, 'UTF-8');
     if (!empty($checked)) {
       if ($checked === '1') {
-        echo "Good !";
+        echo "見過ごせない！";
       } elseif ($checked === '2') {
-        echo "Bad...";
+        echo "あとでまた見たい";
       } elseif ($checked === '3') {
         echo "What's ?!";
       }

@@ -5,7 +5,6 @@ ini_set("error_iog", "./php_error.log");
 
 require_once('../../app/function.php');
 
-require_once('../policy/policy.php');
 
 ?>
 
@@ -42,35 +41,52 @@ require_once('../policy/policy.php');
 
   <?php
 
+
   $city_info = json_decode(file_get_contents('city.list.min.json'), true);
   $length = count($city_info);
 
   $i = 0;
-  $area = '1856057';
+  $area = '?id=' . '1856057';
 
 
-  if ((isset($_GET['area'])) && (!isset($_GET['area_in']))) {
-    $area = $_GET['area'];
-    // echo 'GET area!';
-  } elseif (!isset($_GET['area']) && (isset($_GET['area_in']))) {
+  if ((isset($_GET['area'])) && (!isset($_GET['area_in'])) && (empty($_GET['zip']))) {
+    $area = '?id=' . $_GET['area'];
+  } elseif (!isset($_GET['area']) && (!isset($_GET['area_in'])) && (!empty($_GET['zip']))) {
+    if (strlen($_GET['zip']) === 8) {
+      $area = '?zip=' . h($_GET['zip']) . ',jp';
+    } else {
+      $area = '?zip=100-0012,jp';
+      $error = '郵便番号として正しくありません';
+    }
+  } elseif (!isset($_GET['area']) && (isset($_GET['area_in'])) && (empty($_GET['zip']))) {
     $input_area = h($_GET['area_in']);
     $city = $city_info[$i]['name'];
 
     foreach ($city_info as $city) {
       if ($city['name'] === $input_area) {
-        $area = $city['id'];
+        $area = '?id=' . $city['id'];
       }
     }
   }
 
-  $api_url = 'https://api.openweathermap.org/data/2.5/forecast?id=' . $area . '&appid=' . $apiKey . '&lang=ja&units=metric';
+
+  // if (!empty($_GET['zip'])) {
+  //   if (isset($_GET['zip']) && (strlen($_GET['zip']) === 8)) {
+  //     $area = '?zip=' . h($_GET['zip']) . ',jp';
+  //   } else {
+  //     $area = '?zip=100-0012,jp';
+  //   }
+  // }
+
+
+  $api_url = 'https://api.openweathermap.org/data/2.5/forecast' . $area . '&appid=' . $apiKey . '&lang=ja&units=metric';
   $response = json_decode(file_get_contents($api_url), true);
   $list = $response['list'];
   $leng = count($list);
   $city = $response['city']['name'];
 
 
-  $api_url_now = 'https://api.openweathermap.org/data/2.5/weather?id=' . $area . '&appid=' . $apiKey . '&lang=ja&units=metric';
+  $api_url_now = 'https://api.openweathermap.org/data/2.5/weather' . $area . '&lang=ja&appid=' . $apiKey . '&units=metric';
   $response_now = json_decode(file_get_contents($api_url_now), true);
   $weather_now = $response_now['weather'][0];
   $unix_time = $response_now['dt'];
@@ -81,21 +97,9 @@ require_once('../policy/policy.php');
   $wind_now = $response_now['wind']['speed'];
 
 
-  $zip = '446-0074';
-  $api_url_zip = 'https://api.openweathermap.org/data/2.5/forecast?zip=' . $zip . ',jp' . '&lang=ja&appid=' . $apiKey . '&units=metric';
-  $response_zip = json_decode(file_get_contents($api_url_zip), true);
-  $list_zip = $response_zip['list'];
-  $leng_zip = count($list_zip);
-  $city_zip = $response_zip['city']['name'];
-
-  // var_dump($list_zip);
-
-
-
-
 
   ?>
-
+  
   <!-- </pre> -->
   <header>
     <div class="header">
@@ -168,26 +172,28 @@ require_once('../policy/policy.php');
     }
 
     $bg_color = 'darkgreen';
+    $color = 'snow';
+
     switch ($feels_now) {
       case ($feels_now >= 35):
         $bg_color = 'red';
-        $color = 'whitesmoke';
+        $color = 'snow';
         break;
       case (($feels_now >= 30) && ($feels_now < 35)):
         $bg_color = 'orange';
-        $color = 'whitesmoke';
+        $color = 'snow';
         break;
       case (($feels_now >= 25) && ($feels_now < 30)):
         $bg_color = 'pink';
-        $color = 'whitesmoke';
+        $color = 'snow';
         break;
       case (($feels_now <= 10) && ($feels_now >= 5)):
         $bg_color = 'rgb(0, 60, 139)';
-        $color = 'whitesmoke';
+        $color = 'snow';
         break;
       case (($feels_now > 0) && ($feels_now < 5)):
         $bg_color = 'skyblue';
-        $color = 'whitesmoke';
+        $color = 'snow';
         break;
       case (($feels_now > -100) && ($feels_now <= 0)):
         $bg_color = 'white';
@@ -195,7 +201,7 @@ require_once('../policy/policy.php');
         break;
     }
     ?>
-
+    <h1><?php if(!empty($error)){echo $error;} ?></h1>
     <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
 
     <?php
@@ -249,33 +255,43 @@ require_once('../policy/policy.php');
                 <p><strong>キーボードで入力する</strong></p><i class="fas fa-angle-double-down"></i>
               </span></summary>
             <br>
+
             <form action="" method="GET">
               <div>
-                <form action="" method="GET">
-                  <label><b>地域名を"アルファベットで"入力</b>
-                    <br>
-                    <b>”1文字目は大文字”で入力して下さい</b>
-                    <input type="text" name="area_in" value=""></label>
+                <label><b>地域名を"アルファベットで"入力</b>
                   <br>
-                  <button>Click or Enter!</button>
-                  <h3>例1)."京都"の場合 → "Kyoto"</h3>
-                  <h3>例2)."大井"の場合 → "Ooi"</h3>
-                  <h3>例3)."新宿区"の場合 → "Shinjyuku-ku"</h3>
-                  <br>
-                  <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
-                  <ul>
-                    <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
-                    <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
-                    <li>一部サポートされていない地域があります</li>
-                    <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
-                  </ul>
-                </form>
+                  <b>”1文字目は大文字”で入力して下さい</b>
+                  <input type="text" name="area_in" value=""></label>
+                <br>
+                <button>Click or Enter!</button>
+                <h3>例1)."京都"の場合 → "Kyoto"</h3>
+                <h3>例2)."大井"の場合 → "Ooi"</h3>
+                <h3>例3)."新宿区"の場合 → "Shinjyuku-ku"</h3>
+                <br>
+                <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
+                <ul>
+                  <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
+                  <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
+                  <li>一部サポートされていない地域があります</li>
+                  <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
+                </ul>
               </div>
             </form>
+
           </details>
-
-
-
+          <details>
+            <summary><span>
+                <p><strong>”New!”郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
+              </span></summary>
+            <br>
+            <form action="" method="GET">
+              <label>試験運用中<br>
+                <b>必ず " -　(ハイフン) " を間に入れて下さい</b>
+                <input type="text" name="zip" placeholder=" (例) 000-0000">
+              </label>
+              <button>Try!</button>
+            </form>
+          </details>
         </div>
       </div>
 
@@ -354,37 +370,7 @@ require_once('../policy/policy.php');
     // echo '<div class="tables">';
     $i = 0;
     $weather_dt = $list[$i]['dt'];
-    // var_dump(date('D'));
 
-    // switch (date('D')) {
-    //   case 'Sun':
-    //     $d = '日';
-    //     break;
-
-    //   case 'Mon':
-    //     $d = '月';
-    //     break;
-
-    //   case 'Tue':
-    //     $d = '火';
-    //     break;
-
-    //   case 'Wed':
-    //     $d = '水';
-    //     break;
-
-    //   case 'Thu':
-    //     $d = '木';
-    //     break;
-
-    //   case 'Fri':
-    //     $d = '金';
-    //     break;
-
-    //   case 'Sat':
-    //     $d = '土';
-    //     break;
-    // };
     $time = date('m/d(D)  H時頃', $weather_dt);
 
     $weather = $list[$i]['weather'][0]['main'];
@@ -741,16 +727,21 @@ require_once('../policy/policy.php');
     <p>このアプリは、以下のサイトより情報を取得しています。</p>
     <a href="https://openweathermap.org/">OpenWeather<br>https://openweathermap.org/</a>
 
-    <details class="policy">
-      <summary>プライバシーポリシー</summary>
-      <?php
-        echo $policy;
-      ?>
-    </details>
   </aside>
-
+  
   <footer>
     <img src="../imgs/logo.png" alt="" width="100px">
+      <details class="policy">
+        <summary>プライバシーポリシー</summary>
+        <p>
+          当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+          Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+        </p>
+        <p>
+          この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+          <br>
+        </p>
+      </details>
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
 
   </footer>

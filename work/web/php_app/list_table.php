@@ -53,7 +53,7 @@ try {
     if ($row['category'] === '1') {
       echo "<td>" .  'Coading' . "</td>\n";
     } elseif ($row['category'] === '2') {
-      echo "<td>" . 'Design' . "</td>\n";
+      echo "<td>" . '要改善' . "</td>\n";
     } else {
       echo "<td>" . '未分類' . "</td>\n";
     };
@@ -61,7 +61,7 @@ try {
     if ($row['checked'] === '1') {
       echo "<td>" .  'Good!' . "</td>\n";
     } elseif ($row['checked'] === '2') {
-      echo "<td>" . 'Bad...' . "</td>\n";
+      echo "<td>" . 'あとでまた見たい' . "</td>\n";
     } elseif ($row['checked'] === '3') {
       echo "<td>" . 'What\'s?!' . "</td>\n";
     } else {
@@ -121,7 +121,7 @@ try {
     if ($row['category'] === '1') {
       echo "<td>" .  'Coading' . "</td>\n";
     } elseif ($row['category'] === '2') {
-      echo "<td>" . 'Design' . "</td>\n";
+      echo "<td>" . '要改善' . "</td>\n";
       // }
     } else {
       echo "<td>" . '未分類' . "</td>\n";
@@ -130,7 +130,7 @@ try {
     if ($row['checked'] === '1') {
       echo "<td>" .  'Good!' . "</td>\n";
     } elseif ($row['checked'] === '2') {
-      echo "<td>" . 'Bad...' . "</td>\n";
+      echo "<td>" . 'あとでまた見たい' . "</td>\n";
     } elseif ($row['checked'] === '3') {
       echo "<td>" . 'What\'s?!' . "</td>\n";
     } else {

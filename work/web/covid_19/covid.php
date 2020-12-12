@@ -17,6 +17,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
   <title>Covid_19 Data analysis - Tatsumi Works</title>
   <link rel="stylesheet" href="covid.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -113,7 +114,6 @@
 
     <?php
 
-    require_once('../policy/policy.php');
 
 
     //日本の状況取得のための処理
@@ -227,7 +227,7 @@
       <img src="../imgs/japan.jpg" alt="" class="ja">
 
       <div class="data_container">
-        <div class="data_title_japan" id="open_data">
+        <div class="data_title" id="open_data">
           <h1>1, 日本の感染者<?php echo number_format($japan_infections); ?>人</h1>
           <p><?php echo $value_people_today_date; ?>時点</p>
         </div>
@@ -257,7 +257,7 @@
       </div>
 
       <div class="data_container">
-        <div class="data_title_japan" id="path_data">
+        <div class="data_title" id="path_data">
           <h1>2, 過去と比較ができます</h1>
           <p><?php echo $value_people_today_date . 'の新規感染者数：' . $value_people_today . '人'; ?></p>
         </div>
@@ -284,14 +284,14 @@
               ?>
             </select>
             <button>
-                と比較する
+              と比較する
             </button>
           </form>
         </div>
       </div>
 
       <div class="data_container">
-        <div class="data_title_japan" id="japan_data">
+        <div class="data_title" id="japan_data">
           <h1>3, 都道府県別の合計感染者数</h1>
           <p> <?php echo $data_day; ?> 時点</p>
         </div>
@@ -317,7 +317,7 @@
               ?>
             </select>
             <button>
-                Choice!
+              Choice!
             </button>
           </form>
 
@@ -344,13 +344,19 @@
     $world_all_die = (int)str_replace(',', '', $covid_world_all_list[194]['deceasedNum']);
 
     ?>
+    <pre>
+<?php
+// var_dump($covid_world);
+?>
+</pre>
+
 
     <section>
       <h1 class="section_head">In the World</h1>
       <img src="../imgs/earth.jpg" alt="">
 
       <div class="data_container">
-        <div class="data_title_world" id="country_data">
+        <div class="data_title" id="country_data">
           <h1>4, 国別の感染者数と死者数</h1>
           <p> <?php echo $selected_world_date; ?> 時点</p>
         </div>
@@ -378,14 +384,14 @@
               ?>
             </select>
             <button>
-                Push
-              </button>
+              Push
+            </button>
           </form>
 
         </div>
       </div>
       <div class="data_container">
-        <div class="data_title_world" id="world_data">
+        <div class="data_title" id="world_data">
           <h1>5, 世界の感染者数と死者数</h1>
           <p> <?php echo $selected_world_date; ?> 時点</p>
         </div>
@@ -543,11 +549,14 @@
     <section>
       <h1 class="section_head">私たちにできること</h1>
       <img src="../imgs/stay.jpg" alt="">
-      <h2>自分を守るため</h2>
-      <h2>自分ではない誰かを守るため</h2>
-      <p><strong>できることからはじめよう</strong></p>
-      <br>
-      <p>明日の世界を変えるのは、他でもない私たちだから</p>
+      <div class="data_title">
+        <h2>できることからはじめよう</h2>
+      </div>
+      <div class="data_desc">
+        <br>
+        <p>明日の世界を変えるのは、<br>他でもない私たちだから</p>
+        <br>
+      </div>
     </section>
 
   </main>
@@ -563,9 +572,15 @@
     <h1>Covid_19 Data analysis - Tatsumi Works</h1>
     <details class="policy">
       <summary>プライバシーポリシー</summary>
-      <?php
-      echo $policy;
-      ?>
+      <p>
+        当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+        Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+      </p>
+      <p>
+        この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+        <br>
+      </p>
+
     </details>
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
 

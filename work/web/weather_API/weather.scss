@@ -112,12 +112,12 @@ h2 {
 }
 .city {
   // background: midnightblue;
-  color: lightgrey;
+  color: rgb(255, 255, 255);
   max-width: 1000px;
   margin: 0 auto;
 }
 span {
-  color: white;
+  color: rgb(38, 53, 255);
 }
 
 fieldset {
@@ -443,8 +443,10 @@ aside {
   }
 }
 .policy {
-  width: 90vw;
+  width: 90%;
+  // color: teal;
   text-align: left;
+  max-width: 500px;
   a{
     display: inline;
     margin: 0;
@@ -453,7 +455,7 @@ aside {
   summary {
     display: block;
     text-align: center;
-    background: rgb(140, 172, 221);
+    background: transparent;
     border-radius: 5px;
     padding: 1em;
     margin: 30px auto;
