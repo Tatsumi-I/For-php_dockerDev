@@ -220,7 +220,7 @@ footer address p a:hover { text-shadow: 0 0 2px 20px white; }
 
 .fa, .fab, .fal, .far, .fas { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
 
-html, body { color: #6341; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: "Libre Baskerville", serif; font-family: "Noto Sans JP", sans-serif; font-weight: 200; font-size: 80%; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
+html, body { color: #634130; scroll-behavior: smooth; margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; font-family: "Libre Baskerville", serif; font-family: "Noto Sans JP", sans-serif; font-weight: 200; font-size: 80%; font-style: normal; letter-spacing: 0.1em; -webkit-font-feature-settings: "palt" 1, "swsh" 1; font-feature-settings: "palt" 1, "swsh" 1; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-perspective: 10px; perspective: 10px; -webkit-filter: drop-shadow(0 0 1px white); filter: drop-shadow(0 0 1px white); }
 
 html a, body a { text-decoration: none; color: darkgreen; cursor: pointer; -webkit-filter: drop-shadow(0px 0px 2px dimgrey); filter: drop-shadow(0px 0px 2px dimgrey); }
 
@@ -292,11 +292,11 @@ main a { color: #634130dc; text-align: center; }
 
 main a::after { content: "\0bb  "; }
 
-main h2 { font-size: 21px; color: #6341; display: block; background: #80786630; margin: 0px auto; padding: 10px 1em; text-align: initial; border-left: solid 20px #6341; border-radius: 0 10px 10px 0; z-index: 100; }
+main h2 { font-size: 21px; color: #634130; display: block; background: #80786630; margin: 0px auto; padding: 10px 1em; text-align: initial; border-left: solid 20px #634130; border-radius: 0 10px 10px 0; z-index: 100; }
 
 @media (min-width: 500px) { main h2 { position: -webkit-sticky; position: sticky; top: 9%; } }
 
-main h3 { color: #6341; font-size: 18px; border-bottom: 1px solid #253158; padding: 5px; margin: 40px auto; width: 90%; }
+main h3 { color: #634130; font-size: 18px; border-bottom: 1px solid #253158; padding: 5px; margin: 40px auto; width: 90%; }
 
 main strong { font-family: sans-serif; }
 

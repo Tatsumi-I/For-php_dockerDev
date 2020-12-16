@@ -339,16 +339,18 @@
 
 
     // //以下世界の合計数
+    for ($i = 190; $i < 200; $i++) {
+      if ($covid_world_all_list[$i]['dataName'] === '計') {
 
-    $world_all_infections = (int)str_replace(',', '', $covid_world_all_list[194]['infectedNum']);
-    $world_all_die = (int)str_replace(',', '', $covid_world_all_list[194]['deceasedNum']);
+    $world_all_infections = (int)str_replace(',', '', $covid_world_all_list[$i]['infectedNum']);
+    $world_all_die = (int)str_replace(',', '', $covid_world_all_list[$i]['deceasedNum']);
 
     ?>
-    <pre>
-<?php
-// var_dump($covid_world);
-?>
-</pre>
+    <!-- <pre> -->
+    <?php
+    // var_dump($covid_world_all_list);
+    ?>
+    <!-- </pre> -->
 
 
     <section>
@@ -372,7 +374,7 @@
               <option value="">国を選択する</option>
 
               <?php
-              for ($n = 0; $n < 194; $n++) {
+              for ($n = 0; $n < 193; $n++) {
                 $select_country = $covid_world_all_list[$n]['dataName'];
                 $country_infection = (int)str_replace(',', '', $covid_world_all_list[$n]['infectedNum']);
                 $country_die = (int)str_replace(',', '', $covid_world_all_list[$n]['deceasedNum']);
@@ -396,11 +398,23 @@
           <p> <?php echo $selected_world_date; ?> 時点</p>
         </div>
         <div class="data_desc">
-          <h2><?php echo $covid_world_all_list[194]['dataName']; ?></h2>
-          <h2>感染者：<?php echo number_format($world_all_infections); ?>人</h2>
-          <h2>死者：<?php echo number_format($world_all_die); ?> 人</h2>
+          <h2><?php
+          
+                  echo $covid_world_all_list[$i]['dataName']; ?></h2>
+          <h2>感染者：<?php echo $covid_world_all_list[$i]['infectedNum']; ?>人</h2>
+          <h2>死者：<?php echo $covid_world_all_list[$i]['deceasedNum']; ?> 人</h2>
 
-          <h2>世界人口 約77億人に対する感染者率：<br><?php echo round(($world_all_infections / 7700000000 * 100), 5); ?> %</h2>
+                  <!-- echo $covid_world_all_list[$i]['infectedNum'];
+                } else {
+                  echo 'NOT ';
+                } -->
+                <?php
+               
+                }
+              }
+      ?>
+
+      <h2>世界人口 約77億人に対する感染者率：<br><?php echo round(($world_all_infections / 7700000000 * 100), 5); ?> %</h2>
         </div>
       </div>
 
@@ -588,7 +602,7 @@
   <script>
     $getJSON('covid.php', function(json) {
       var html = '<p>';
-      html += <?php $covid_world_all_list[194]; ?>;
+      html += <?php $covid_world_all_list[193]; ?>;
       html += '</p>';
       $('#data').html(html);
     });

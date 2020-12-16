@@ -65,7 +65,7 @@
   <header>
 
     <?php
-    require_once('../app/function.php');
+    // require_once('../app/function.php');
     $myName = 'Tatsumi-Ishikawa';
 
     $date = 'Y/m/d (D) H:i:s';
@@ -96,7 +96,7 @@
     $globalMenu =
       '
   <div class="fl">
-    <fieldset><legend>HOME</legend>
+    <h1>HOME</h1>
       <p><a href="index.php"></a></p>
       <fieldset><legend>スキルと知識</legend>
         <p class="indent1">ページ一覧</p>
@@ -132,7 +132,6 @@
           <li><a href="mailto:t.tsumi02@gmail.com">MAILで問い合わせる</a></li>
         </ul>
       </fieldset>
-    </fieldset>
     
   </div>
   ';
