@@ -1,0 +1,465 @@
+@charset "utf-8";
+// @import "../css/anime.min.css";
+$grege: #80786630;
+
+@keyframes slide_up {
+  0% {
+    opacity: 0.2;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes delay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0.1;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+html,
+body {
+  font-size: 90%;
+  // line-height: 3em;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", "Libre Baskerville", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  font-size: 80%;
+  // flex-wrap: wrap;
+  color: dimgrey;
+}
+body {
+  // max-width: 1400px;
+  margin: auto;
+}
+hr {
+  width: 90%;
+  margin: 10px auto;
+}
+header,
+footer {
+  background: url("../imgs/clear_sky.jpg") no-repeat;
+  background-size: cover;
+  min-height: 150px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  // padding: 1%;
+  h1 {
+    margin: 0;
+    color: midnightblue;
+    border-radius: 3px;
+    padding: 1em;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  margin: auto;
+  max-width: 700px;
+
+  i,
+  img {
+    min-width: 30px;
+    max-width: 50px;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  i {
+    font-size: 200%;
+    color: snow;
+    filter: drop-shadow(0 0 1px dimgrey);
+  }
+}
+.city {
+  // background: midnightblue;
+  color: rgb(255, 255, 255);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+span {
+  color: rgb(38, 53, 255);
+}
+
+fieldset {
+  min-width: 270px;
+  // min-height: 200px;
+  border-radius: 5px;
+}
+
+// }
+main {
+  margin: 30px auto;
+  text-align: center;
+  width: 100%;
+  h1 {
+    margin: 50px auto;
+  }
+}
+
+form {
+  div {
+    margin: auto;
+  }
+  label {
+    display: inline-flex;
+  }
+}
+button {
+  background: skyblue;
+  color: white;
+  border: transparent;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.weather_now {
+  opacity: 0;
+  animation: slide_up 3s forwards;
+  background: rgba(245, 245, 245, 0.8);
+  color: dimgrey;
+  width: 90%;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 2%;
+  border-radius: 100px;
+
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin: 6px;
+  }
+  .feel_box {
+    margin: 3px auto;
+    padding: 0 1em;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-shadow: 0 0 1px rgb(0, 0, 0);
+  }
+  img {
+    width: 40px;
+    display: block;
+    margin: 5px auto;
+  }
+}
+details {
+  max-width: 700px;
+  display: block;
+  margin: 6px auto;
+  width: 97vw;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(5, 5, 5, 0.5);
+
+  h3,
+  p,
+  i {
+    margin: auto;
+    border-radius: 5px;
+  }
+  i {
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    text-align: right;
+    margin: auto;
+  }
+  summary {
+    color: transparent;
+    display: flex;
+    background: midnightblue;
+    border-radius: 10px;
+    height: 40px;
+
+    span {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      color: grey;
+      cursor: pointer;
+      // margin: 0 5px 5px;
+      width: 100%;
+    }
+    h1 {
+      margin: auto;
+      width: 70%;
+    }
+    p {
+      padding: 0;
+      width: 42%;
+      margin: auto 0;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+      filter: brightness(3);
+      margin: auto;
+    }
+  }
+  .box {
+    display: flex;
+    // flex-wrap: wrap;
+    .key {
+      text-align: right;
+      width: 50%;
+      margin: 10px 0;
+    }
+    .value {
+      text-align: left;
+      width: 40%;
+      margin: 10px;
+    }
+  }
+}
+
+.feel_box {
+  width: 30%;
+  margin: auto;
+}
+
+.desc {
+  color: white;
+  // max-width: 300px;
+  margin: 30px auto;
+  display: flex;
+  // padding: 1em;
+  flex-wrap: wrap;
+  h1 {
+    opacity: 0;
+    animation: delay 4s forwards 1s;
+    margin: 0 auto;
+    color: whitesmoke;
+    background: transparent;
+    width: 100vw;
+  }
+
+  .memo_1,
+  .memo_2,
+  .memo_3 {
+    opacity: 0;
+    justify-content: space-between;
+    min-height: 150px;
+    max-width: 380px;
+    width: 100%;
+    margin: 20px auto;
+    text-shadow: 0 0 1px black;
+    h2 {
+      text-align: left;
+      margin: 20px auto;
+      padding: 10px;
+      border-left: 5px solid grey;
+      border-bottom: 1px solid grey;
+      width: 80%;
+    }
+  }
+  .memo_1 {
+    animation: slide 2s forwards 1s;
+  }
+  .memo_2 {
+    animation: slide 2s forwards 2s;
+  }
+  .memo_3 {
+    animation: slide 2s forwards 3s;
+  }
+
+  .feel_color {
+    display: flex;
+    justify-content: space-around;
+    // background: whitesmoke;
+    img {
+      width: 100px;
+    }
+  }
+  label {
+    display: block;
+  }
+  details {
+    width: 250px;
+    max-width: 80vw;
+    summary {
+      background: rgb(140, 172, 221);
+      filter: drop-shadow(0 4px 2px grey);
+      text-shadow: none;
+    }
+    span {
+      color: whitesmoke;
+      width: 100%;
+      p {
+        width: 80%;
+      }
+    }
+  }
+  input {
+    display: block;
+    margin: auto;
+  }
+  .radio {
+    label {
+      display: inline-flex;
+      margin: 15px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 50px auto;
+    text-align: left;
+    li {
+      margin: 20px;
+    }
+  }
+  .text {
+    color: rgb(0, 185, 218);
+  }
+  .white {
+    background: white;
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+  .skyblue {
+    background: rgb(32, 179, 236);
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+  .blue {
+    background: rgb(0, 60, 139);
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+  .pink {
+    background: pink;
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+  .orange {
+    background: orange;
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+  .red {
+    background: red;
+    width: 120px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 1px 1em;
+  }
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+.five_days {
+  margin: 40px auto;
+  width: 96vw;
+  summary {
+    background-color: whitesmoke;
+    filter: drop-shadow(0 4px 2px grey);
+
+    // flex-wrap: wrap;
+    min-height: 40px;
+    height: fit-content;
+    img {
+      filter: unset;
+    }
+  }
+}
+
+aside {
+  max-width: 700px;
+  margin: 100px auto 30px;
+  padding: 1em 2em;
+  width: 90%;
+  text-align: center;
+  a {
+    background: rgb(140, 172, 221);
+    border-radius: 5px;
+    padding: 2em;
+    display: block;
+    text-decoration: none;
+    margin: 30px auto;
+    color: white;
+    filter: drop-shadow(0 4px 2px grey);
+  }
+}
+.policy {
+  width: 90%;
+  // color: teal;
+  text-align: left;
+  max-width: 500px;
+  a{
+    display: inline;
+    margin: 0;
+    padding: 2px;
+  }
+  summary {
+    display: block;
+    text-align: center;
+    background: transparent;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 30px auto;
+    color: white;
+    filter: drop-shadow(0 4px 2px grey);
+  }
+}

@@ -1,0 +1,310 @@
+@charset 'utf-8';
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  font-size: 70%;
+  @media (min-width: 700px) {
+    font-size: 95%;
+  }
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 3em;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 900px;
+}
+hr {
+  width: 80%;
+}
+
+.pop_info {
+  background: rgb(13, 58, 58);
+  margin: 0 auto;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 100px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  animation: pop 8s;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+section {
+  margin: 30px auto;
+}
+.section_head {
+  font-family: monospace;
+  font-size: 30px;
+  margin: 0 auto;
+  background: steelblue;
+  color: antiquewhite;
+  padding: 1em;
+  filter: drop-shadow(0px 4px 2px black);
+}
+
+img {
+  width: 100%;
+  filter: opacity(0.8);
+}
+.desc {
+  margin: 30px 0;
+}
+.under_dt {
+  // display: flex;
+  .dd_img {
+    // width: 30%;
+    margin: auto;
+  }
+}
+.data_container {
+  font-size: 140%;
+}
+.data_title {
+  background: rgb(255, 172, 90);
+  padding: 2em 0;
+  text-shadow: 1px 1px 0px dimgrey;
+  filter: drop-shadow(0px 4px 2px black);
+  color: whitesmoke;
+  // margin-bottom: 30px;
+}
+.data_desc {
+  background: rgb(25, 70, 80);
+  padding: 50px 0;
+  color: whitesmoke;
+  h1,
+  h2 {
+    margin: 30px auto 0;
+  }
+}
+
+
+.container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  details {
+    background: rgb(25, 70, 80);
+    color: snow;
+    summary {
+      background: rgb(255, 172, 90);
+    }
+  }
+}
+dl {
+  margin: 30px auto;
+  max-width: 700px;
+
+  dt,
+  dd {
+    text-align: left;
+    line-height: 3em;
+  }
+  dt {
+    border-bottom: 2px solid darkslategrey;
+    line-height: unset;
+    margin: 40px 0 10px;
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+  dd {
+    display: list-item;
+  }
+}
+
+table {
+  margin: 20px auto;
+  padding: 5px;
+  width: 95%;
+  border: none;
+}
+thead {
+  // background: steelblue;
+}
+tbody {
+}
+tr,
+td {
+  padding: 0;
+  margin: 0;
+}
+
+td {
+  // outline: 1px solid lightslategray;
+  padding: 1em;
+}
+
+i {
+  /* width: 100px; */
+  color: lightskyblue;
+}
+
+.value {
+  // text-align: right;
+  // width: 100px;
+}
+
+details {
+  margin: 30px auto;
+  width: 90vw;
+  max-width: 700px;
+  summary {
+    border: 1px solid grey;
+  }
+}
+
+.desc_sum {
+  summary {
+    color: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    max-width: 100vw;
+    p {
+      margin: auto 0;
+    }
+
+    i {
+      font-size: 19px;
+      // vertical-align: ;
+      color: rgb(1, 33, 121);
+      margin: auto 0;
+    }
+  }
+
+  span {
+    background: steelblue;
+    color: whitesmoke;
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .close {
+    display: none;
+  }
+  h1,
+  .open {
+    display: inline-block;
+  }
+}
+.desc_sum[open] {
+  h1,
+  .close {
+    display: inline-block;
+  }
+  .open {
+    display: none;
+  }
+}
+
+.ja {
+  filter: saturate(0.8);
+}
+
+a {
+  background: darkcyan;
+  color: whitesmoke;
+  padding: 1em;
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  text-decoration: none;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px 2px dimgrey);
+}
+
+aside {
+  margin: 100px auto;
+  width: 90%;
+  h1 {
+    border-left: 5px solid darkslategrey;
+    padding: 1em;
+    text-align: left;
+  }
+}
+
+footer {
+  background: rgb(25, 70, 80);
+  color: snow;
+  padding: 30px 0;
+  img {
+    display: block;
+    width: 40%;
+    margin: auto;
+  }
+  h1 {
+    margin: 30px auto;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .copyright {
+    margin: 50px auto 10px;
+    font-family: serif;
+  }
+}
+.policy {
+  width: 90%;
+  text-align: left;
+  a{
+    display: inline;
+    margin: 0;
+    padding: 2px;
+  }
+  summary {
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 30px auto;
+    color: white;
+    filter: drop-shadow(0 4px 2px grey);
+  }
+}form {
+  margin: 40px auto;
+  filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+  a{
+    background: none;
+  }
+}
+select {
+  justify-content: space-between;
+  padding: 10px;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 5px;
+  background: silver;
+  color: snow;
+}
+button {
+  border: none;
+  color: snow;
+  border-radius: 6px;
+  padding: 10px;
+  background: silver;
+  // display: block;
+  // margin: auto;
+  width: 50%;
+}

@@ -1,0 +1,113 @@
+@-webkit-keyframes flash { 0% { opacity: 0; }
+  1% { opacity: 0.3; }
+  2% { opacity: 0; }
+  3% { opacity: 0.3; }
+  4% { opacity: 0; }
+  6% { opacity: 0.5; }
+  9% { opacity: 0; }
+  25% { opacity: 0.7; }
+  35% { opacity: 0.7; }
+  36% { opacity: 0.5; }
+  37% { opacity: 0.8; }
+  95% { opacity: 0; }
+  95% { opacity: 0.8; }
+  97% { opacity: 0.9; }
+  98% { opacity: 0.6; }
+  99% { opacity: 0.5; }
+  100% { opacity: 0.9; } }
+
+@keyframes flash { 0% { opacity: 0; }
+  1% { opacity: 0.3; }
+  2% { opacity: 0; }
+  3% { opacity: 0.3; }
+  4% { opacity: 0; }
+  6% { opacity: 0.5; }
+  9% { opacity: 0; }
+  25% { opacity: 0.7; }
+  35% { opacity: 0.7; }
+  36% { opacity: 0.5; }
+  37% { opacity: 0.8; }
+  95% { opacity: 0; }
+  95% { opacity: 0.8; }
+  97% { opacity: 0.9; }
+  98% { opacity: 0.6; }
+  99% { opacity: 0.5; }
+  100% { opacity: 0.9; } }
+
+@-webkit-keyframes fade { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes fade { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@-webkit-keyframes delay { 0% { opacity: 0.3; }
+  100% { opacity: 1; } }
+
+@keyframes delay { 0% { opacity: 0.3; }
+  100% { opacity: 1; } }
+
+@-webkit-keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
+  90% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  93% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  96% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
+  98% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
+  100% { background: transparent; } }
+
+@keyframes bgcolor { 0% { background: radial-gradient(circle at center top, #414141 4%, #0a0a0a 50%, black); }
+  90% { background: radial-gradient(circle at center top, rgba(68, 68, 68, 0.8) 4%, #1b1b1b 50%, #161616); }
+  93% { background: radial-gradient(circle at center top, rgba(117, 117, 117, 0.6) 4%, rgba(10, 10, 10, 0.6) 50%, rgba(0, 0, 0, 0.6)); }
+  96% { background: radial-gradient(circle at center top, #afaaa385 4%, #66625977 50%, #5e594d30); }
+  98% { background: radial-gradient(circle at center top, #afaaa32d 4%, #66625923 50%, #5e594d1c); }
+  100% { background: transparent; } }
+
+@-webkit-keyframes rum-col { 0% { color: #c88c50; }
+  10% { color: #864621; }
+  20% { color: #a31800; }
+  30% { color: #860065; }
+  40% { color: #4701a3; }
+  50% { color: #1c2364; }
+  60% { color: #005e8a; }
+  70% { color: #017a66; }
+  80% { color: #016e1c; }
+  90% { color: #717e00; }
+  100% { color: #b99d00; } }
+
+@keyframes rum-col { 0% { color: #c88c50; }
+  10% { color: #864621; }
+  20% { color: #a31800; }
+  30% { color: #860065; }
+  40% { color: #4701a3; }
+  50% { color: #1c2364; }
+  60% { color: #005e8a; }
+  70% { color: #017a66; }
+  80% { color: #016e1c; }
+  90% { color: #717e00; }
+  100% { color: #b99d00; } }
+
+@-webkit-keyframes toUp { 0% { opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes toUp { 0% { opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px); }
+  100% { opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes toDown { 0% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+  98% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  99% { -webkit-transform: translateY(-2px); transform: translateY(-2px); }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px); } }
+
+@keyframes toDown { 0% { -webkit-transform: translateY(-200px); transform: translateY(-200px); }
+  98% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  99% { -webkit-transform: translateY(-2px); transform: translateY(-2px); }
+  100% { -webkit-transform: translateY(0px); transform: translateY(0px); } }
+
+@keyframes delay { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+/*# sourceMappingURL=anime.min.css.map */
