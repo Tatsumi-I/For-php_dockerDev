@@ -87,20 +87,9 @@ require_once('../../app/function.php');
 
 
   $api_url_now = 'https://api.openweathermap.org/data/2.5/weather' . $area . '&lang=ja&appid=' . $apiKey . '&units=metric';
-  $response_now = json_decode(file_get_contents($api_url_now), true);
-  $weather_now = $response_now['weather'][0];
-  $unix_time = $response_now['dt'];
-  $time_now = date('m/d(D)  H時', $unix_time);
-  $city_now = $response_now['name'];
-  $temp_now = $response_now['main']['temp'];
-  $feels_now = $response_now['main']['feels_like'];
-  $wind_now = $response_now['wind']['speed'];
-
-
-
   ?>
-  
-  <!-- </pre> -->
+
+
   <header>
     <div class="header">
       <img src="../imgs/logo.png" alt="">
@@ -111,8 +100,36 @@ require_once('../../app/function.php');
     <p>OpenWeatherのWeb APIを使用しています</p>
     <hr>
 
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+      const jqXHR = $.ajax({
+        url: '<?php $api_url_now; ?>',
+        type: 'GET'
+      });
+      jqXHR.always(function() {
+        <?php
+        $response_now = json_decode(file_get_contents($api_url_now), true);
+
+        ?>
+        console.log('request_終わり');
+
+      });
+
+      
+      console.log('非同期_終わり');
+    </script>
 
     <?php
+    $weather_now = $response_now['weather'][0];
+    $unix_time = $response_now['dt'];
+    $time_now = date('m/d(D)  H時', $unix_time);
+    $city_now = $response_now['name'];
+    $temp_now = $response_now['main']['temp'];
+    $feels_now = $response_now['main']['feels_like'];
+    $wind_now = $response_now['wind']['speed'];
+
+
+
     $weather_icon = $weather_now['icon'];
     switch ($weather_icon) {
       case '01d':
@@ -191,17 +208,19 @@ require_once('../../app/function.php');
         $bg_color = 'rgb(0, 60, 139)';
         $color = 'snow';
         break;
-      case (($feels_now > 0) && ($feels_now < 5)):
+      case (($feels_now >= 0) && ($feels_now < 5)):
         $bg_color = 'skyblue';
         $color = 'snow';
         break;
-      case (($feels_now > -100) && ($feels_now <= 0)):
+      case (($feels_now < 0) && ($feels_now > -100)):
         $bg_color = 'white';
         $color = 'grey';
         break;
     }
     ?>
-    <h1><?php if(!empty($error)){echo $error;} ?></h1>
+    <h1><?php if (!empty($error)) {
+          echo $error;
+        } ?></h1>
     <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
 
     <?php
@@ -214,6 +233,7 @@ require_once('../../app/function.php');
     echo '<p>気温' . $temp_now . '℃   風速' . $wind_now . 'm/秒</p>';
     echo '</div>';
     ?>
+
 
     <div class="desc">
 
@@ -396,13 +416,13 @@ require_once('../../app/function.php');
       case (($feels >= 25) && ($feels < 30)):
         $bg_color = 'pink';
         break;
-      case (($feels <= 10) && ($feels >= 5)):
+      case (($feels >= 5) && ($feels <= 10)):
         $bg_color = 'rgb(0, 60, 139)';
         break;
-      case (($feels > 0) && ($feels <= 5)):
+      case (($feels >= 0) && ($feels < 5)):
         $bg_color = 'skyblue';
         break;
-      case (($feels > -100) && ($feels <= 0)):
+      case (($feels > -100) && ($feels < 0)):
         $bg_color = 'white';
         break;
     }
@@ -448,6 +468,7 @@ require_once('../../app/function.php');
 
       $weather = $list[$i]['weather'][0]['main'];
       $weather_icon = $list[$i]['weather'][0]['icon'];
+
       switch ($weather_icon) {
         case '01d':
           $w_icon = 'sun.png';
@@ -728,20 +749,20 @@ require_once('../../app/function.php');
     <a href="https://openweathermap.org/">OpenWeather<br>https://openweathermap.org/</a>
 
   </aside>
-  
+
   <footer>
     <img src="../imgs/logo.png" alt="" width="100px">
-      <details class="policy">
-        <summary>プライバシーポリシー</summary>
-        <p>
-          当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
-          Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
-        </p>
-        <p>
-          この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
-          <br>
-        </p>
-      </details>
+    <details class="policy">
+      <summary>プライバシーポリシー</summary>
+      <p>
+        当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+        Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+      </p>
+      <p>
+        この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+        <br>
+      </p>
+    </details>
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
 
   </footer>

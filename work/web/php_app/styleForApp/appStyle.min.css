@@ -26,7 +26,7 @@ body { margin: 0 auto; }
 
 .list_table table th, .list_table table td, .list_table table tr { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 15px; display: -webkit-box; display: -ms-flexbox; display: flex; white-space: nowrap; }
 
-.list_table table th a, .list_table table td a, .list_table table tr a { display: block; padding: 0 5px; }
+.list_table table th a, .list_table table td a, .list_table table tr a { width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; display: block; padding: 0 5px; }
 
 main { background: rgba(255, 255, 255, 0.8); margin: 0 auto; min-height: 80vh; max-width: 800px; }
 
