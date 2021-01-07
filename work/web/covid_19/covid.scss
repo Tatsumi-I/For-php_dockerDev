@@ -12,21 +12,18 @@ html,
 body {
   font-size: 70%;
   @media (min-width: 700px) {
-    font-size: 95%;
+    font-size: 105%;
   }
   font-family: sans-serif;
   letter-spacing: 1px;
   text-align: center;
   line-height: 3em;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   scroll-behavior: smooth;
 }
 
-body {
-  max-width: 900px;
-}
 hr {
   width: 80%;
 }
@@ -90,8 +87,12 @@ img {
   padding: 50px 0;
   color: whitesmoke;
   h1,
-  h2 {
-    margin: 30px auto 0;
+  h2
+   {
+    margin: 50px auto 0;
+  }
+  p{
+    margin: 30px;
   }
 }
 
@@ -103,6 +104,7 @@ img {
   details {
     background: rgb(25, 70, 80);
     color: snow;
+    width: 90vw;
     summary {
       background: rgb(255, 172, 90);
     }
@@ -110,7 +112,6 @@ img {
 }
 dl {
   margin: 30px auto;
-  max-width: 700px;
 
   dt,
   dd {
@@ -123,6 +124,11 @@ dl {
     margin: 40px 0 10px;
     padding: 10px 5px;
     font-size: 12px;
+    font-weight: bold;
+    @media(min-width:700px){
+      font-size: 16px;
+
+    }
   }
   dd {
     display: list-item;
@@ -135,11 +141,7 @@ table {
   width: 95%;
   border: none;
 }
-thead {
-  // background: steelblue;
-}
-tbody {
-}
+
 tr,
 td {
   padding: 0;
@@ -156,19 +158,16 @@ i {
   color: lightskyblue;
 }
 
-.value {
-  // text-align: right;
-  // width: 100px;
-}
 
 details {
   margin: 30px auto;
-  width: 90vw;
-  max-width: 700px;
+  width: 700px;
+  max-width: 90vw;
   summary {
     border: 1px solid grey;
   }
 }
+
 
 .desc_sum {
   summary {
@@ -176,7 +175,7 @@ details {
     outline: none;
     border: none;
     display: flex;
-    max-width: 100vw;
+    // max-width: 100vw;
     p {
       margin: auto 0;
     }
@@ -192,10 +191,8 @@ details {
   span {
     background: steelblue;
     color: whitesmoke;
-    padding: 1em;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    border-radius: 30px;
     display: flex;
     justify-content: space-around;
   }
@@ -218,17 +215,13 @@ details {
   }
 }
 
-.ja {
-  filter: saturate(0.8);
-}
-
 a {
   background: darkcyan;
   color: whitesmoke;
   padding: 1em;
   display: block;
-  width: 90%;
-  max-width: 400px;
+  width: 80%;
+  max-width: 800px;
   margin: 30px auto;
   text-decoration: none;
   border-radius: 10px;

@@ -1,6 +1,8 @@
 .fa, .fab, .fal, .far, .fas { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
 
-html, body { font-size: 90%; font-family: vdl-v7gothic; font-weight: 200; font-style: normal; letter-spacing: 0.1em; margin: 0; padding: 0; }
+html, body { font-size: 80%; font-family: vdl-v7gothic; font-weight: 200; font-style: normal; letter-spacing: 0.1em; margin: 0; padding: 0; }
+
+@media (min-width: 500px) { html, body { font-size: 120%; } }
 
 .imgHolder img { -webkit-filter: contrast(0.7); filter: contrast(0.7); width: 100%; margin: auto; max-width: 738px; display: block; }
 
@@ -45,4 +47,6 @@ button { background: #1295d1; color: snow; padding: 0 1em; border-radius: 5px; }
 a { text-decoration: none; background: #1295d1; color: snow; padding: 1em; border-radius: 5px; }
 
 details { text-align: left; margin: 30px auto; color: snow; padding: 1em; border-radius: 5px; }
+
+footer img { width: 200px; }
 /*# sourceMappingURL=talk.min.css.map */

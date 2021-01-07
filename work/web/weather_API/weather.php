@@ -87,20 +87,9 @@ require_once('../../app/function.php');
 
 
   $api_url_now = 'https://api.openweathermap.org/data/2.5/weather' . $area . '&lang=ja&appid=' . $apiKey . '&units=metric';
-  $response_now = json_decode(file_get_contents($api_url_now), true);
-  $weather_now = $response_now['weather'][0];
-  $unix_time = $response_now['dt'];
-  $time_now = date('m/d(D)  H時', $unix_time);
-  $city_now = $response_now['name'];
-  $temp_now = $response_now['main']['temp'];
-  $feels_now = $response_now['main']['feels_like'];
-  $wind_now = $response_now['wind']['speed'];
-
-
-
   ?>
-  
-  <!-- </pre> -->
+
+
   <header>
     <div class="header">
       <img src="../imgs/logo.png" alt="">
@@ -111,8 +100,36 @@ require_once('../../app/function.php');
     <p>OpenWeatherのWeb APIを使用しています</p>
     <hr>
 
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+      const jqXHR = $.ajax({
+        url: '<?php $api_url_now; ?>',
+        type: 'GET'
+      });
+      jqXHR.always(function() {
+        <?php
+        $response_now = json_decode(file_get_contents($api_url_now), true);
+
+        ?>
+        console.log('request_終わり');
+
+      });
+
+
+      console.log('非同期_終わり');
+    </script>
 
     <?php
+    $weather_now = $response_now['weather'][0];
+    $unix_time = $response_now['dt'];
+    $time_now = date('m/d(D)  H時', $unix_time);
+    $city_now = $response_now['name'];
+    $temp_now = $response_now['main']['temp'];
+    $feels_now = $response_now['main']['feels_like'];
+    $wind_now = $response_now['wind']['speed'];
+
+
+
     $weather_icon = $weather_now['icon'];
     switch ($weather_icon) {
       case '01d':
@@ -191,17 +208,19 @@ require_once('../../app/function.php');
         $bg_color = 'rgb(0, 60, 139)';
         $color = 'snow';
         break;
-      case (($feels_now > 0) && ($feels_now < 5)):
+      case (($feels_now >= 0) && ($feels_now < 5)):
         $bg_color = 'skyblue';
         $color = 'snow';
         break;
-      case (($feels_now > -100) && ($feels_now <= 0)):
+      case (($feels_now < 0) && ($feels_now > -100)):
         $bg_color = 'white';
         $color = 'grey';
         break;
     }
     ?>
-    <h1><?php if(!empty($error)){echo $error;} ?></h1>
+    <h1><?php if (!empty($error)) {
+          echo $error;
+        } ?></h1>
     <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
 
     <?php
@@ -215,15 +234,33 @@ require_once('../../app/function.php');
     echo '</div>';
     ?>
 
+
     <div class="desc">
 
       <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
 
       <div class="memo_1">
         <!-- <fieldset>
-          <legend class="text"> -->
-        <h2><strong>世界中</strong>の今が分かる！</h2>
-        <div class="">
+            <legend class="text"> -->
+        <h2><strong><mark>1</mark>　体感気温</strong>がすぐ分かる！</h2>
+        <div class="feel_color">
+          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
+          <div class="feel_color1">
+            <p class="red">体感気温 35 ~ ℃</p>
+            <p class="orange">体感気温 30 ~ 35 ℃</p>
+            <p class="pink">体感気温 25 ~ 30 ℃</p>
+          </div>
+          <div class="feel_color2">
+            <p class="blue">体感気温 5 ~ 10 ℃</p>
+            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
+            <p class="white">体感気温 0 ℃ 以下</p>
+          </div>
+        </div>
+      </div>
+      <div class="memo_2">
+        <h2><strong><mark>2</mark>　世界中</strong>の今が分かる！</h2>
+        <div>
+          <h3 class="pop">こちらから地域を選択できます</h3>
           <p><strong>20万を超える都市</strong>から選択可能</p>
           <!-- <div class="desc"> -->
           <details>
@@ -281,7 +318,7 @@ require_once('../../app/function.php');
           </details>
           <details>
             <summary><span>
-                <p><strong>”New!”郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
+                <p><strong>郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
               </span></summary>
             <br>
             <form action="" method="GET">
@@ -295,32 +332,10 @@ require_once('../../app/function.php');
         </div>
       </div>
 
-
-
-      <div class="memo_2">
-        <!-- <fieldset>
-            <legend class="text"> -->
-        <h2><strong>体感気温</strong>がすぐ分かる！</h2>
-        <div class="feel_color">
-          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
-          <div class="feel_color1">
-            <p class="red">体感気温 35 ~ ℃</p>
-            <p class="orange">体感気温 30 ~ 35 ℃</p>
-            <p class="pink">体感気温 25 ~ 30 ℃</p>
-          </div>
-          <div class="feel_color2">
-            <p class="blue">体感気温 5 ~ 10 ℃</p>
-            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
-            <p class="white">体感気温 0 ℃ 以下</p>
-          </div>
-        </div>
-      </div>
-
-
       <div class="memo_3">
         <!-- <fieldset>
             <legend class="text"> -->
-        <h2><strong>5日先</strong>の天気まで分かる！</h2>
+        <h2><strong><mark>3</mark>　 5日先</strong>の天気まで分かる！</h2>
         <div class="">
           <p>24時間天気はもちろん<br>5日先の天気まで分かっちゃう</p>
         </div>
@@ -396,13 +411,13 @@ require_once('../../app/function.php');
       case (($feels >= 25) && ($feels < 30)):
         $bg_color = 'pink';
         break;
-      case (($feels <= 10) && ($feels >= 5)):
+      case (($feels >= 5) && ($feels <= 10)):
         $bg_color = 'rgb(0, 60, 139)';
         break;
-      case (($feels > 0) && ($feels <= 5)):
+      case (($feels >= 0) && ($feels < 5)):
         $bg_color = 'skyblue';
         break;
-      case (($feels > -100) && ($feels <= 0)):
+      case (($feels > -100) && ($feels <= -0)):
         $bg_color = 'white';
         break;
     }
@@ -413,7 +428,7 @@ require_once('../../app/function.php');
     <details open>
       <summary>
         <span>
-          <p><strong>$time</strong></p>
+          <p><strong class="time">$time</strong></p>
           <img src="../imgs/$w_icon">
 
           <p class="feel_box" style="background-color:$bg_color">体感：$feels ℃</p>
@@ -448,6 +463,7 @@ require_once('../../app/function.php');
 
       $weather = $list[$i]['weather'][0]['main'];
       $weather_icon = $list[$i]['weather'][0]['icon'];
+
       switch ($weather_icon) {
         case '01d':
           $w_icon = 'sun.png';
@@ -529,10 +545,10 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels > 0) && ($feels <= 5)):
+        case (($feels >= 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= 0)):
+        case (($feels > -100) && ($feels <= -0)):
           $bg_color = 'white';
           break;
       }
@@ -543,7 +559,7 @@ require_once('../../app/function.php');
     <details>
       <summary>
         <span>
-          <p><strong>$time</strong></p>
+          <p><strong class="time">$time</strong></p>
           <img src="../imgs/$w_icon">
           <p class="feel_box" style="background-color:$bg_color">体感：$feels ℃</p>
           <i class="fas fa-angle-double-down"></i>
@@ -673,10 +689,10 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels > 0) && ($feels <= 5)):
+        case (($feels >= 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= 0)):
+        case (($feels > -100) && ($feels <= -0)):
           $bg_color = 'white';
           break;
       }
@@ -728,20 +744,20 @@ require_once('../../app/function.php');
     <a href="https://openweathermap.org/">OpenWeather<br>https://openweathermap.org/</a>
 
   </aside>
-  
+
   <footer>
     <img src="../imgs/logo.png" alt="" width="100px">
-      <details class="policy">
-        <summary>プライバシーポリシー</summary>
-        <p>
-          当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
-          Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
-        </p>
-        <p>
-          この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
-          <br>
-        </p>
-      </details>
+    <details class="policy">
+      <summary>プライバシーポリシー</summary>
+      <p>
+        当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+        Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+      </p>
+      <p>
+        この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+        <br>
+      </p>
+    </details>
     <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
 
   </footer>

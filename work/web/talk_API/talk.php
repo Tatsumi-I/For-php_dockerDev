@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ja">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE5M164E5N"></script>
@@ -16,7 +15,7 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APIによるチャットボット</title>
+  <title>AIチャットボット</title>
   <link rel="stylesheet" href="talk.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="shortcut icon" href="../imgs/logo.png" type="image/png" sizes="16*16">
@@ -26,9 +25,8 @@
 <body>
   <header>
 
-
-
     <?php
+
 
     require_once('../../app/function.php');
 
@@ -117,7 +115,7 @@
         $reply = 'ていうかその髪型は寝癖ですか?';
         break;
       case 10:
-        $reply = 'そういえば、私のポエムを100通ほど着払いでご自宅に送りました!';
+        $reply = '(そんなわけないじゃん)';
         break;
       case 11:
         $reply = 'さっきからずっと鼻毛出てますよ。';
@@ -214,7 +212,7 @@
     <div class="base">
       <p class="desc">このチャットボットは、"イラッとするAI"というコンセプトの基、ユーザーが楽しむために作られたプログラムです。</p>
       <p class="desc">人工知能の機能をAPIを通して提供しているa3rtのtalk API機能を使用するとともに、<br>ランダムで表示されるコメントにより、最終的な返答を生成しています。</p>
-      <p class="desc">機械学習やAIの技術、並びにa3rtのtalk APIに対する信用と信頼を損なおうとする意図や目的はありません。<br>機械学習やAIの技術、並びにa3rtのtalk APIに関するすごい技術については、以下のリンクよりご確認ください。</p>
+      <p class="desc">機械学習やAIの技術、並びにa3rtのtalk APIの権威を損う目的はありません。<br>a3rtのtalk APIに関するすごい技術については、以下のリンクよりご確認ください。</p>
       <a class="link" href="https://a3rt.recruit-tech.co.jp/">https://a3rt.recruit-tech.co.jp/</a>
 
       <details class="policy">
@@ -228,6 +226,7 @@
           <br>
         </p>
       </details>
+      <img src="../imgs/logo.png" alt="">
       <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
     </div>
 

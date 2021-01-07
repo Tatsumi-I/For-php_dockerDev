@@ -41,7 +41,7 @@ try {
 
     echo "<tr>\n";
     echo "<td>";
-    echo "<a href=detail.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">";
+    echo "<a class='td_a' href=detail.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">";
     echo $row['id'] . "</a></td>\n";
 
     if (!empty($row['title'])) {
@@ -70,9 +70,9 @@ try {
 
     echo "<td>" . $time_format . "</td>\n";
     echo "<td colspan=\"3\">\n";
-    // echo "<a href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">詳細</a>\n";
-    echo "<a href=edit.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">変更</a>\n";
-    echo "<a href=del_confirm.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">削除</a>\n";
+    // echo "<a class='td_a' href=detail.php?id=" . h($row['id'],ENT_QUOTES,'UTF-8') . ">詳細</a>\n";
+    echo "<a class='td_a' href=edit.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">変更</a>\n";
+    echo "<a class='td_a' href=del_confirm.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">削除</a>\n";
     echo "</td>\n";
     echo "</tr>\n";
   }
@@ -109,7 +109,7 @@ try {
 
     echo "<tr>\n";
     echo "<td>";
-    echo "<a href=detail.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">";
+    echo "<a class='td_a' href=detail.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">";
     echo $row['id'] . "</a></td>\n";
 
     if (!empty($row['title'])) {
@@ -140,8 +140,8 @@ try {
     echo "<td>" . $time_format . "</td>\n";
 
     echo "<td>\n";
-    echo "<a href=edit.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">変更</a>\n";
-    echo "<a href=del_confirm.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">削除</a>\n";
+    echo "<a class='td_a' href=edit.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">変更</a>\n";
+    echo "<a class='td_a' href=del_confirm.php?id=" . h($row['id'], ENT_QUOTES, 'UTF-8') . ">削除</a>\n";
     echo "</td>\n";
     echo "</tr>\n";
   }
