@@ -115,7 +115,7 @@ require_once('../../app/function.php');
 
       });
 
-      
+
       console.log('非同期_終わり');
     </script>
 
@@ -241,9 +241,26 @@ require_once('../../app/function.php');
 
       <div class="memo_1">
         <!-- <fieldset>
-          <legend class="text"> -->
-        <h2><strong>世界中</strong>の今が分かる！</h2>
-        <div class="">
+            <legend class="text"> -->
+        <h2><strong><mark>1</mark>　体感気温</strong>がすぐ分かる！</h2>
+        <div class="feel_color">
+          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
+          <div class="feel_color1">
+            <p class="red">体感気温 35 ~ ℃</p>
+            <p class="orange">体感気温 30 ~ 35 ℃</p>
+            <p class="pink">体感気温 25 ~ 30 ℃</p>
+          </div>
+          <div class="feel_color2">
+            <p class="blue">体感気温 5 ~ 10 ℃</p>
+            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
+            <p class="white">体感気温 0 ℃ 以下</p>
+          </div>
+        </div>
+      </div>
+      <div class="memo_2">
+        <h2><strong><mark>2</mark>　世界中</strong>の今が分かる！</h2>
+        <div>
+          <h3 class="pop">こちらから地域を選択できます</h3>
           <p><strong>20万を超える都市</strong>から選択可能</p>
           <!-- <div class="desc"> -->
           <details>
@@ -301,7 +318,7 @@ require_once('../../app/function.php');
           </details>
           <details>
             <summary><span>
-                <p><strong>”New!”郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
+                <p><strong>郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
               </span></summary>
             <br>
             <form action="" method="GET">
@@ -315,32 +332,10 @@ require_once('../../app/function.php');
         </div>
       </div>
 
-
-
-      <div class="memo_2">
-        <!-- <fieldset>
-            <legend class="text"> -->
-        <h2><strong>体感気温</strong>がすぐ分かる！</h2>
-        <div class="feel_color">
-          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
-          <div class="feel_color1">
-            <p class="red">体感気温 35 ~ ℃</p>
-            <p class="orange">体感気温 30 ~ 35 ℃</p>
-            <p class="pink">体感気温 25 ~ 30 ℃</p>
-          </div>
-          <div class="feel_color2">
-            <p class="blue">体感気温 5 ~ 10 ℃</p>
-            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
-            <p class="white">体感気温 0 ℃ 以下</p>
-          </div>
-        </div>
-      </div>
-
-
       <div class="memo_3">
         <!-- <fieldset>
             <legend class="text"> -->
-        <h2><strong>5日先</strong>の天気まで分かる！</h2>
+        <h2><strong><mark>3</mark>　 5日先</strong>の天気まで分かる！</h2>
         <div class="">
           <p>24時間天気はもちろん<br>5日先の天気まで分かっちゃう</p>
         </div>
@@ -422,7 +417,7 @@ require_once('../../app/function.php');
       case (($feels >= 0) && ($feels < 5)):
         $bg_color = 'skyblue';
         break;
-      case (($feels > -100) && ($feels < 0)):
+      case (($feels > -100) && ($feels <= -0)):
         $bg_color = 'white';
         break;
     }
@@ -433,7 +428,7 @@ require_once('../../app/function.php');
     <details open>
       <summary>
         <span>
-          <p><strong>$time</strong></p>
+          <p><strong class="time">$time</strong></p>
           <img src="../imgs/$w_icon">
 
           <p class="feel_box" style="background-color:$bg_color">体感：$feels ℃</p>
@@ -550,10 +545,10 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels > 0) && ($feels <= 5)):
+        case (($feels >= 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= 0)):
+        case (($feels > -100) && ($feels <= -0)):
           $bg_color = 'white';
           break;
       }
@@ -564,7 +559,7 @@ require_once('../../app/function.php');
     <details>
       <summary>
         <span>
-          <p><strong>$time</strong></p>
+          <p><strong class="time">$time</strong></p>
           <img src="../imgs/$w_icon">
           <p class="feel_box" style="background-color:$bg_color">体感：$feels ℃</p>
           <i class="fas fa-angle-double-down"></i>
@@ -694,10 +689,10 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels > 0) && ($feels <= 5)):
+        case (($feels >= 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= 0)):
+        case (($feels > -100) && ($feels <= -0)):
           $bg_color = 'white';
           break;
       }

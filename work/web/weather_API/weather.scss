@@ -30,6 +30,24 @@ $grege: #80786630;
     transform: translateX(0px);
   }
 }
+@keyframes pop {
+  0%{
+    transform: translateY(0px);
+
+  }
+  80%{
+    transform: translateY(-5px);
+
+  }
+  90%{
+    transform: translateY(2px);
+
+  }
+  100%{
+    transform: translateY(-2px);
+
+  }
+}
 
 .fa,
 .fab,
@@ -56,8 +74,11 @@ body {
   font-weight: 200;
   font-style: normal;
   letter-spacing: 0.1em;
-  font-size: 80%;
-  // flex-wrap: wrap;
+  font-size: 110%;
+  @media(max-width:700px){
+    font-size: 80%;
+  }
+  // flex-wrap: wrap
   color: dimgrey;
 }
 body {
@@ -283,7 +304,7 @@ details {
     opacity: 0;
     justify-content: space-between;
     min-height: 150px;
-    max-width: 380px;
+    // max-width: 380px;
     width: 100%;
     margin: 20px auto;
     text-shadow: 0 0 1px black;
@@ -321,7 +342,7 @@ details {
     width: 250px;
     max-width: 80vw;
     summary {
-      background: rgb(140, 172, 221);
+      background: rgb(0, 60, 139);
       filter: drop-shadow(0 4px 2px grey);
       text-shadow: none;
     }
@@ -356,7 +377,7 @@ details {
   }
   .white {
     background: white;
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -364,7 +385,7 @@ details {
   }
   .skyblue {
     background: rgb(32, 179, 236);
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -372,7 +393,7 @@ details {
   }
   .blue {
     background: rgb(0, 60, 139);
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -380,7 +401,7 @@ details {
   }
   .pink {
     background: pink;
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -388,7 +409,7 @@ details {
   }
   .orange {
     background: orange;
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -396,7 +417,7 @@ details {
   }
   .red {
     background: red;
-    width: 120px;
+    // width: 120px;
     margin: 10px auto;
     border-radius: 5px;
     border: 1px solid dimgray;
@@ -462,4 +483,17 @@ aside {
     color: white;
     filter: drop-shadow(0 4px 2px grey);
   }
+}
+.time{
+  color:white;
+}
+
+.pop{
+  animation:delay 4s infinite;
+}
+mark{
+  padding: 3px;
+  background:rgb(0, 139, 93);
+  border-radius: 5px;
+  color:white;
 }

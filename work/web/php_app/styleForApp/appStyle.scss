@@ -71,31 +71,7 @@ body {
   }
 }
 
-.list_table {
-  overflow-x: scroll;
-  table {
-    margin: 0 auto;
-    max-width: 700px;
-    border-spacing: 0;
-    min-width: 250px;
-    tr {
-      border-bottom: 1px solid $Orange;
-    }
-    th,
-    td,
-    tr {
-      justify-content: space-between;
-      padding: 0 15px;
-      display: flex;
-      white-space: nowrap;
-      a {
-        width: fit-content;
-        display: block;
-        padding: 0 5px;
-      }
-    }
-  }
-}
+
 
 main {
   // width: clamp(300px,500px,100vw);
@@ -278,4 +254,29 @@ fieldset {
   padding: 0 1em;
   display: block;
   text-align: center;
+}
+.list_table {
+  overflow-x: scroll;
+  table {
+    margin: 0 auto;
+    max-width: 700px;
+    border-spacing: 0;
+    min-width: 250px;
+    tr {
+      border-bottom: 1px solid $Orange;
+    }
+    th,
+    td,
+    tr {
+      justify-content: space-between;
+      padding: 0 15px;
+      display: flex;
+      white-space: nowrap;
+      .td_a {
+        width: 40px;
+        display: block;
+        padding: 0 5px;
+      }
+    }
+  }
 }
