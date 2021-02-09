@@ -1,7 +1,8 @@
 # 天気予報アプリの詳細
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">
 
-## 概要
+## 機能概要
+
   - 体感気温に特化した天気予報
   - 世界中の2万以上の地域を指定可能
   - 最大5日先まで参照可能
