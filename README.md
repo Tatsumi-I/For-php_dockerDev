@@ -1,6 +1,6 @@
 # 天気予報アプリの詳細
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">
-
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">＊実際はこんなに遅くありません。
+[使ってみる](http://myfirstdeploy.s3.coreserver.jp/work/web/weather_API/weather.php)
 ## 機能概要
 
   - 体感気温に特化した天気予報
