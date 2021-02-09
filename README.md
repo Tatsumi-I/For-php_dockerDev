@@ -1,19 +1,16 @@
 # 天気予報アプリの詳細
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">
 
-
 ## 概要
+
 ### 体感気温に特化した天気予報
 ### 世界中の2万以上の地域を指定可能
 ### 最大5日先まで参照可能
 
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot03.png" width="30%">
-
-  
 ## 制作の背景と目的
 
 ### 「何を知っているか」はQOLや幸福度に影響します。
-<img src="https://unsplash.com/photos/z0nVqfrOqWA" width="30%">
+<img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="30%">
 
 そしてこれからの時代は
 #### 情報をどう活用するか
@@ -23,9 +20,10 @@
 それで、**ただ天気がわかる**ではなく、**それでどうすればいいか**
 を可視化できるようなアプリを作りたいと考えて作成しました。
 
-<!-- <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="30%"> -->
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="50%">
 
 ## それを実現するために選んだもの
+<img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 ### PHP, Web API, レスポンシブデザイン
 ### その他：Sass, CSSanimation, JSON, HTML5, CSS3, Google Analytics
 
