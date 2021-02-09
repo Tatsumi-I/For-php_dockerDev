@@ -36,7 +36,7 @@
  - 選択肢から選ぶ
  - 文字を入力して指定する
  - 郵便番号で選択する
- <img src="" width="30%">
+ <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="30%">
 
 ## こだわったところ
 
