@@ -6,9 +6,12 @@
 ### 体感気温に特化した天気予報
 ### 世界中の2万以上の地域を指定可能
 ### 最大5日先まで参照可能
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="30%">
+
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot03.png" width="30%">
+
   
 ## 制作の背景と目的
+
 ### 「何を知っているか」はQOLや幸福度に影響します。
 そしてこれからの時代は
 #### 情報をどう活用するか
@@ -17,6 +20,8 @@
 
 それで、**ただ天気がわかる**ではなく、**それでどうすればいいか**
 を可視化できるようなアプリを作りたいと考えて作成しました。
+
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="30%">
 
 ## それを実現するために選んだもの
 ### PHP, Web API, レスポンシブデザイン
