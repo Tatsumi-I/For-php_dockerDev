@@ -47,7 +47,7 @@
 ## 操作方法
  **ファーストビューにある3つのメニューバーから都市を選択します**
  <br>
- <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="60%">
+ <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="55%">
 
  3通りの方法で検索できます**
  - 選択肢から選ぶ
@@ -65,7 +65,7 @@
   
 ## 苦労したところ
 
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="60%">
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
   ### 文字列の判定
 
@@ -92,7 +92,7 @@
 
 もしご興味を持っていただけたようでしたら、以下のリンクからさらに情報を得ることもできます。
   
-[コロナデータ取得アプリ]（http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php）
+[![コロナデータ取得アプリ]（http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php）]
   
 [AIチャットボット]（http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php）
 
