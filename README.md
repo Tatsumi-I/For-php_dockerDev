@@ -20,10 +20,10 @@
 <br>
 これらは重要な考え方だと考えています。
 
-それで、**ただ天気が分かる**ではなく、**それでどうすればいいか**
+**ただ天気が分かる**ではなく、**それでどうすればいいか**
 <br>
 を可視化できるようなアプリを作りたいと考えて作成しました。
-  
+<br>
 ## それを実現するために選んだもの
 <br>
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
