@@ -130,6 +130,17 @@
     $japan_url = 'https://opendata.corona.go.jp/api/Covid19JapanAll';
     $world_url = 'https://opendata.corona.go.jp/api/OccurrenceStatusOverseas';
 
+
+    $recover_url = 'https://www.mhlw.go.jp/content/recovery_total.csv';
+    $get_recover = file_get_contents($recover_url, true);
+    $exp_recover = explode(',', $get_recover);
+    $new_recover = (array_reverse($exp_recover));
+    $recover = str_replace("\r\n","" ,$new_recover);
+    // var_dump($recover[0]);
+
+
+
+
     $covid_japan = json_decode(file_get_contents($japan_url . '?dataName=' . urlencode($jp_name_list), true), true);
     // $covid_japan = json_decode(file_get_contents($japan_url . '?date=' . $date, true), true);
 
@@ -234,24 +245,21 @@
         </div>
 
         <?php
-        // $new_die = substr($records_sum[9], 0, 4);
 
-        $new_kaihuku = substr($records_sum[7], 0, 6);
-
-        $kaihuku = (int)$new_kaihuku;
-
-        $total_kansen = ($japan_infections + $kaihuku + $japan_die);
+        $recover = (int)$recover[0];
+        // var_dump($recover);
+        $total_kansen = ($japan_infections + $recover + $japan_die);
 
         $die_per = round($japan_die / $total_kansen * 100, 2);
 
-        $kaihuku_per = round($kaihuku / $total_kansen * 100, 2);
+        $recover_per = round($recover / $total_kansen * 100, 2);
 
         ?>
         <div class="data_desc">
           <h1>感染を経験した人<?php echo number_format($total_kansen); ?>人</h1>
           <p>（ 現在感染中 + 回復者 + 死亡者の合計 ）</p>
           <h2>そのうち死亡 <?php echo number_format($japan_die); ?>人 ( <?php echo $die_per; ?>% )</h2>
-          <h2>そのうち回復 <?php echo number_format($kaihuku); ?>人 ( <?php echo $kaihuku_per; ?>% )</h2>
+          <h2>そのうち回復 <?php echo number_format($recover); ?>人 ( <?php echo $recover_per; ?>% )</h2>
           <br>
           <p>＊この情報は自動で更新されます</p>
         </div>
@@ -419,7 +427,7 @@
           ?>
           <h2><?php echo round(($world_all_infections / $human_num * 100), 5); ?> %</h2>
 
-          <p>（感染者率0.01％は約<strong>70万人</strong>です。）</p>
+          <p>（感染者率0.1％は約<strong>700万人</strong>です。）</p>
             </div>
           </div>
 
@@ -443,76 +451,6 @@
           ?>
           <img src="../imgs/tokyo.jpg" alt="">
           <b>参考情報</b>
-          <!-- <div class="container">
-            <details>
-              <summary>感染者数（累計）</summary>
-              <table>
-                <thead>
-                  <tr>
-                    <td>日付</td>
-                    <td>数</td>
-                  </tr>
-                </thead>
-                <tbody>
-
-                  <?php
-
-                  // $i = 0;
-                  // foreach ($records_you as $value) {
-                  //   // if (($i >  $leng - 6) && ($i < $leng)) {
-                  //     var_dump($value);
-                  //     $i++;
-                  //     $value_date = $value;
-                  //     $value_people = number_format($value[1]);
-                  //     echo '<tr><td>' . $value_date . '</td>';
-                  //     echo '<td class="value">' . $value_people . '</td></tr>';
-                  //     if($i < 6)break;
-                  //   // }
-
-                  // }
-                  ?>
-                </tbody>
-              </table>
-            </details>
-
-          </div> -->
-
-          <!-- <div class="container">
-            <details>
-              <summary>死亡者数（累計）</summary>
-              <table>
-                <thead>
-                  <tr>
-                    <td>日付</td>
-                    <td>数</td>
-                  </tr>
-                </thead>
-                <tbody>
-
-
-
-                  <?php
-                  // $leng = count($records_die);
-                  // $i = $leng - 7;
-                  // foreach (array_reverse($records_die) as $value) {
-                  //   $i++;
-                  //   // var_dump($records_die);
-
-                  //   if (($i >  $leng - 6) && ($i < $leng)) {
-                  //     $value_date = $value[0];
-                  //     $value_people = number_format($value[1]);
-                  //     echo '<tr><td>' . $value_date . '</td>';
-                  //     echo '<td class="value">' . $value_people . '</td></tr>';
-                  //   }
-                  // }
-                  ?>
-
-                </tbody>
-              </table>
-            </details>
-
-          </div> -->
-
           <div class="container">
             <details>
               <summary>入院治療等が必要な方の数（累計）</summary>
@@ -581,13 +519,19 @@
           </div>
         </section>
         <section>
-          <h1 class="section_head">私たちにできること</h1>
+          <h1 class="section_head">私たちにできることは？</h1>
           <img src="../imgs/stay.jpg" alt="">
           <div class="data_title">
-            <h2>できることからはじめよう</h2>
+            <h2>「未来は行動の先にある」</h2>
+            <p>ビル・ゲイツ</p>
           </div>
           <div class="data_desc">
-            「未来は行動の先にある」<br> ビル・ゲイツ
+            <h3>今私たちが未来のためにできることはなんでしょうか</h3>
+            <p>多くの人にとって、”未来”は不透明で、限りなく不確かに見えるでしょう</p>
+            <p>私たち一人一人には、”未来”をすぐに変えられる力はないかもしれません</p>
+            <p>しかし”明日をどんな1日にするか”は自分で選ぶことができます</p>
+            <p>私たちには確かに、明日を変える力があるのです</p>
+            <p>未来のために共に闘いましょう</p>
           </div>
         </section>
 

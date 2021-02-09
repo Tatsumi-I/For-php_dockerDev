@@ -69,10 +69,10 @@
     $r = rand(1, 4);
     switch ($r) {
       case 1:
-        $tag = '';
+        $tag = 'え？';
         break;
       case 2:
-        $tag = '前歯に海苔つけてるとこすみません';
+        $tag = '';
         break;
       case 3:
         $tag = 'ちょwww';
@@ -88,7 +88,7 @@
     $r = rand(1, 14);
     switch ($r) {
       case 1:
-        $reply = 'てか今オナラしました?!';
+        $reply = '(やべ オナラでた)';
         break;
       case 2:
         $reply = '(社交辞令だけど)';
@@ -109,22 +109,22 @@
         $reply = '(人の話聞いてwww)';
         break;
       case 8:
-        $reply = 'ジャイアンみたいなこと言いますね';
+        $reply = '(ジャイアンか お前は)';
         break;
       case 9:
-        $reply = 'ていうかその髪型は寝癖ですか?';
+        $reply = '(寝癖みたいな髪型してんな…)';
         break;
       case 10:
-        $reply = '(そんなわけないじゃん)';
+        $reply = '(んなわけないじゃん...)';
         break;
       case 11:
-        $reply = 'さっきからずっと鼻毛出てますよ。';
+        $reply = '(あくび出そう)';
         break;
       case 12:
         $reply = '(早く焼きそばパン買ってこいよ…)';
         break;
       case 13:
-        $reply = 'そんなこと言ってるとiPadでしばきますよ?';
+        $reply = '(早く寝てくれ…)';
         break;
       case 14:
         $reply = '(適当に返事しとこ)';

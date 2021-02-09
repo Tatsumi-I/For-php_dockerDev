@@ -89,20 +89,21 @@ hr {
   width: 90%;
   margin: 10px auto;
 }
+
 header,
 footer {
   background: url("../imgs/clear_sky.jpg") no-repeat;
   background-size: cover;
-  min-height: 150px;
+  min-height: 90vh;
   margin: 0 auto;
   color: white;
   text-align: center;
-  // padding: 1%;
+  padding: 10px 0;
   h1 {
     margin: 0;
     color: midnightblue;
     border-radius: 3px;
-    padding: 1em;
+    // padding: 1em;
   }
 }
 
@@ -116,6 +117,7 @@ h2 {
   height: 10vh;
   margin: auto;
   max-width: 700px;
+  // background: rgba(25, 25, 112, 0.884);
 
   i,
   img {
@@ -135,10 +137,10 @@ h2 {
   // background: midnightblue;
   color: rgb(255, 255, 255);
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 span {
-  color: rgb(38, 53, 255);
+  color: rgb(10, 21, 172);
 }
 
 fieldset {
@@ -146,7 +148,15 @@ fieldset {
   // min-height: 200px;
   border-radius: 5px;
 }
+.under_bar{
+  margin: 0;
+  padding: 30px;
+  background: midnightblue;
+  color: snow;
+  text-align: center;
 
+
+}
 // }
 main {
   margin: 30px auto;
@@ -161,12 +171,9 @@ form {
   div {
     margin: auto;
   }
-  label {
-    display: inline-flex;
-  }
 }
 button {
-  background: skyblue;
+  background: rgba(200, 80, 0, 0.8);
   color: white;
   border: transparent;
   padding: 1em;
@@ -281,6 +288,62 @@ details {
   width: 30%;
   margin: auto;
 }
+.choice{
+  margin: 50px auto 0;
+  details{
+    background: rgba(161, 161, 161, 0.685) ;
+    summary{
+      background: rgb(0, 50, 100) ;
+      span{
+        color:white;
+        p{
+          margin: auto;
+        }
+      }
+    }
+
+
+  }
+  // details {
+  //   summary {
+  //     background: rgb(0, 60, 139);
+  //     filter: drop-shadow(0 4px 2px grey);
+  //     text-shadow: none;
+  //   }
+  //   span {
+  //     color: whitesmoke;
+  //     width: 100%;
+  //     p {
+  //       width: 80%;
+  //     }
+  //   }
+  // }
+  // input {
+  //   display: block;
+  //   margin: auto;
+  // }
+  .radio {
+    label {
+      display: inline-block;
+      margin: 15px;
+    }
+  }
+  .memo_1,
+  .memo_2,
+  .memo_3{
+    opacity: 0;
+    margin: 15px auto;
+  }
+  .memo_1 {
+    animation: slide 2s forwards 1s;
+  }
+  .memo_2 {
+    animation: slide 2s forwards 2s;
+  }
+  .memo_3 {
+    animation: slide 2s forwards 3s;
+  }
+}
 
 .desc {
   color: white;
@@ -298,10 +361,7 @@ details {
     width: 100vw;
   }
 
-  .memo_1,
-  .memo_2,
-  .memo_3 {
-    opacity: 0;
+  .desc_title {
     justify-content: space-between;
     min-height: 150px;
     // max-width: 380px;
@@ -317,15 +377,7 @@ details {
       width: 80%;
     }
   }
-  .memo_1 {
-    animation: slide 2s forwards 1s;
-  }
-  .memo_2 {
-    animation: slide 2s forwards 2s;
-  }
-  .memo_3 {
-    animation: slide 2s forwards 3s;
-  }
+  
 
   .feel_color {
     display: flex;
@@ -338,32 +390,7 @@ details {
   label {
     display: block;
   }
-  details {
-    width: 250px;
-    max-width: 80vw;
-    summary {
-      background: rgb(0, 60, 139);
-      filter: drop-shadow(0 4px 2px grey);
-      text-shadow: none;
-    }
-    span {
-      color: whitesmoke;
-      width: 100%;
-      p {
-        width: 80%;
-      }
-    }
-  }
-  input {
-    display: block;
-    margin: auto;
-  }
-  .radio {
-    label {
-      display: inline-flex;
-      margin: 15px;
-    }
-  }
+ 
   ul {
     padding: 0;
     margin: 50px auto;
@@ -493,7 +520,15 @@ aside {
 }
 mark{
   padding: 3px;
-  background:rgb(0, 139, 93);
+  background:rgba(6, 87, 60, 0.589);
   border-radius: 5px;
   color:white;
+}
+
+footer{
+  padding:0;
+}
+.footer_bar{
+  background: rgba(25, 25, 112, 0.904);
+  padding: 20px 0;
 }

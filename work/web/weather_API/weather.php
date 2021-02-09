@@ -91,13 +91,16 @@ require_once('../../app/function.php');
 
 
   <header>
-    <div class="header">
-      <img src="../imgs/logo.png" alt="">
-      <i class="fas fa-times"></i>
-      <img src="../imgs/api.jpg" alt="">
+    <div class="header_con">
+
+      <div class="header">
+        <img src="../imgs/logo.png" alt="">
+        <i class="fas fa-times"></i>
+        <img src="../imgs/api.jpg" alt="">
+      </div>
+      <b>Tatsumi_Weather</b>
+      <p>OpenWeatherのWeb APIを使用しています</p>
     </div>
-    <h1>Tatsumi_Weather</h1>
-    <p>OpenWeatherのWeb APIを使用しています</p>
     <hr>
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
@@ -218,10 +221,10 @@ require_once('../../app/function.php');
         break;
     }
     ?>
-    <h1><?php if (!empty($error)) {
+    <b><?php if (!empty($error)) {
           echo $error;
-        } ?></h1>
-    <p class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</p>
+        } ?></b>
+    <h1 class="city">現在<span>"<?php echo $city; ?>"</span>の天気を表示中</h1>
 
     <?php
 
@@ -234,118 +237,81 @@ require_once('../../app/function.php');
     echo '</div>';
     ?>
 
-
-    <div class="desc">
-
-      <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
-
-      <div class="memo_1">
-        <!-- <fieldset>
-            <legend class="text"> -->
-        <h2><strong><mark>1</mark>　体感気温</strong>がすぐ分かる！</h2>
-        <div class="feel_color">
-          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
-          <div class="feel_color1">
-            <p class="red">体感気温 35 ~ ℃</p>
-            <p class="orange">体感気温 30 ~ 35 ℃</p>
-            <p class="pink">体感気温 25 ~ 30 ℃</p>
+    <div class="choice">
+      <h3 class="pop">こちらから地域を選択できます</h3>
+      <!-- <div class="desc"> -->
+      <details class="memo_1">
+        <summary><span>
+            <p><strong>選択肢から選ぶ</strong></p><i class="fas fa-angle-double-down"></i>
+          </span></summary>
+        <form action="" method="GET">
+          <div class="radio">
+            <label><input type="radio" name="area" value="2130037">北海道</label>
+            <label><input type="radio" name="area" value="1850147">東京</label>
+            <label><input type="radio" name="area" value="1856057">名古屋</label>
+            <label><input type="radio" name="area" value="1853909">大阪</label>
+            <label><input type="radio" name="area" value="1863967">福岡</label>
+            <label><input type="radio" name="area" value="1854345">沖縄</label>
+            <label><input type="radio" name="area" value="2643744">London(GB)</label>
+            <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
+            <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
+            <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
+            <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
+            <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
           </div>
-          <div class="feel_color2">
-            <p class="blue">体感気温 5 ~ 10 ℃</p>
-            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
-            <p class="white">体感気温 0 ℃ 以下</p>
+          <button>Click or Enter!</button>
+
+        </form>
+      </details>
+
+      <details class="memo_2">
+        <summary><span>
+            <p><strong>キーボードで入力する</strong></p><i class="fas fa-angle-double-down"></i>
+          </span></summary>
+        <br>
+
+        <form action="" method="GET">
+          <div>
+            <label><b>地域名を"アルファベットで"入力</b>
+              <br>
+              <b>”1文字目は大文字”で入力して下さい</b>
+              <input type="text" name="area_in" value=""></label>
+            <br>
+            <button>Click or Enter!</button>
+            <h3>例1)."京都"の場合 → "Kyoto"</h3>
+            <h3>例2)."大井"の場合 → "Ooi"</h3>
+            <h3>例3)."新宿区"の場合 → "Shinjyuku-ku"</h3>
+            <br>
+            <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
+            <ul>
+              <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
+              <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
+              <li>一部サポートされていない地域があります</li>
+              <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      <div class="memo_2">
-        <h2><strong><mark>2</mark>　世界中</strong>の今が分かる！</h2>
-        <div>
-          <h3 class="pop">こちらから地域を選択できます</h3>
-          <p><strong>20万を超える都市</strong>から選択可能</p>
-          <!-- <div class="desc"> -->
-          <details>
-            <summary><span>
-                <p><strong>選択肢から選ぶ</strong></p><i class="fas fa-angle-double-down"></i>
-              </span></summary>
-            <form action="" method="GET">
-              <div class="radio">
-                <label><input type="radio" name="area" value="2130037">北海道</label>
-                <label><input type="radio" name="area" value="1850147">東京</label>
-                <label><input type="radio" name="area" value="1856057">名古屋</label>
-                <label><input type="radio" name="area" value="1853909">大阪</label>
-                <label><input type="radio" name="area" value="1863967">福岡</label>
-                <label><input type="radio" name="area" value="1854345">沖縄</label>
-                <label><input type="radio" name="area" value="2643744">London(GB)</label>
-                <label><input type="radio" name="area" value="5128581">N.Y(US)</label>
-                <label><input type="radio" name="area" value="5855797">Hawaii(US)</label>
-                <label><input type="radio" name="area" value="3369157">Cape Town(ZA)</label>
-                <label><input type="radio" name="area" value="2193732">Auckland(NZ)</label>
-                <label><input type="radio" name="area" value="1880252">シンガポール(SG)</label>
-              </div>
-              <button>Click or Enter!</button>
+        </form>
 
-            </form>
-          </details>
-
-          <details>
-            <summary><span>
-                <p><strong>キーボードで入力する</strong></p><i class="fas fa-angle-double-down"></i>
-              </span></summary>
-            <br>
-
-            <form action="" method="GET">
-              <div>
-                <label><b>地域名を"アルファベットで"入力</b>
-                  <br>
-                  <b>”1文字目は大文字”で入力して下さい</b>
-                  <input type="text" name="area_in" value=""></label>
-                <br>
-                <button>Click or Enter!</button>
-                <h3>例1)."京都"の場合 → "Kyoto"</h3>
-                <h3>例2)."大井"の場合 → "Ooi"</h3>
-                <h3>例3)."新宿区"の場合 → "Shinjyuku-ku"</h3>
-                <br>
-                <b>＊東京23区でもサポートされて<br>いない地域があります！</b>
-                <ul>
-                  <li>”半角英字”かつ”1文字目は大文字”で入力して下さい</li>
-                  <li>最小単位は"市"(もしくは"区")です（町名では検索できません）</li>
-                  <li>一部サポートされていない地域があります</li>
-                  <li>サポート外の地域や誤入力の場合、デフォルトである名古屋の天気が表示されます</li>
-                </ul>
-              </div>
-            </form>
-
-          </details>
-          <details>
-            <summary><span>
-                <p><strong>郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
-              </span></summary>
-            <br>
-            <form action="" method="GET">
-              <label>試験運用中<br>
-                <b>必ず " -　(ハイフン) " を間に入れて下さい</b>
-                <input type="text" name="zip" placeholder=" (例) 000-0000">
-              </label>
-              <button>Try!</button>
-            </form>
-          </details>
-        </div>
-      </div>
-
-      <div class="memo_3">
-        <!-- <fieldset>
-            <legend class="text"> -->
-        <h2><strong><mark>3</mark>　 5日先</strong>の天気まで分かる！</h2>
-        <div class="">
-          <p>24時間天気はもちろん<br>5日先の天気まで分かっちゃう</p>
-        </div>
-      </div>
-
-
+      </details>
+      <details class="memo_3">
+        <summary><span>
+            <p><strong>郵便番号で入力する</strong></p><i class="fas fa-angle-double-down"></i>
+          </span></summary>
+        <br>
+        <form action="" method="GET">
+          <label>
+            <b>必ず " -　(ハイフン) " を間に入れて下さい</b>
+            <input type="text" name="zip" placeholder=" (例) 000-0000">
+          </label>
+          <button>Try!</button>
+        </form>
+      </details>
     </div>
 
 
+
   </header>
+  <p class="under_bar">More details...<i class="fas fa-angle-double-down"></i></p>
 
   <main>
     <?php
@@ -414,12 +380,17 @@ require_once('../../app/function.php');
       case (($feels >= 5) && ($feels <= 10)):
         $bg_color = 'rgb(0, 60, 139)';
         break;
-      case (($feels >= 0) && ($feels < 5)):
+      case (($feels > 0) && ($feels < 5)):
         $bg_color = 'skyblue';
         break;
-      case (($feels > -100) && ($feels <= -0)):
+      case (($feels > -100) && ($feels <= 0)):
         $bg_color = 'white';
         break;
+      case (($feels === -0)):
+        $feels = 0;
+        // $bg_color = 'white';
+        break;
+
     }
 
 
@@ -545,11 +516,14 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels >= 0) && ($feels <= 5)):
+        case (($feels > 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= -0)):
+        case (($feels > -100) && ($feels <= 0)):
           $bg_color = 'white';
+          break;
+          default:
+        $bg_color = 'white';
           break;
       }
 
@@ -689,11 +663,14 @@ require_once('../../app/function.php');
           $bg_color = 'rgb(0, 60, 139)';
           break;
 
-        case (($feels >= 0) && ($feels <= 5)):
+        case (($feels > 0) && ($feels <= 5)):
           $bg_color = 'skyblue';
           break;
-        case (($feels > -100) && ($feels <= -0)):
+        case (($feels > -100) && ($feels <= 0)):
           $bg_color = 'white';
+          break;
+        default:
+        $bg_color = 'white';
           break;
       }
 
@@ -738,6 +715,7 @@ require_once('../../app/function.php');
 
     ?>
 
+
   </main>
   <aside>
     <p>このアプリは、以下のサイトより情報を取得しています。</p>
@@ -746,20 +724,63 @@ require_once('../../app/function.php');
   </aside>
 
   <footer>
-    <img src="../imgs/logo.png" alt="" width="100px">
-    <details class="policy">
-      <summary>プライバシーポリシー</summary>
-      <p>
-        当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
-        Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
-      </p>
-      <p>
-        この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
-        <br>
-      </p>
-    </details>
-    <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
+    <div class="desc">
 
+
+      <h1>3つの”分かる！”が詰まった<br>お天気アプリです</h1>
+
+      <div class="desc_title">
+        <!-- <fieldset>
+           <legend class="text"> -->
+        <h2><strong><mark>1</mark>　体感気温</strong>がすぐ分かる！</h2>
+        <div class="feel_color">
+          <!-- <img src="../imgs/cold_img2.jpg" alt=""> -->
+          <div class="feel_color1">
+            <p class="red">体感気温 35 ~ ℃</p>
+            <p class="orange">体感気温 30 ~ 35 ℃</p>
+            <p class="pink">体感気温 25 ~ 30 ℃</p>
+          </div>
+          <div class="feel_color2">
+            <p class="blue">体感気温 5 ~ 10 ℃</p>
+            <p class="skyblue">体感気温 0 ~ 5 ℃</p>
+            <p class="white">体感気温 0 ℃ 以下</p>
+          </div>
+        </div>
+      </div>
+      <div class="desc_title">
+        <h2><strong><mark>2</mark>　世界中</strong>の今が分かる！</h2>
+        <p><strong>20万を超える都市</strong>から選択可能</p>
+
+      </div>
+
+      <div class="desc_title">
+        <!-- <fieldset>
+           <legend class="text"> -->
+        <h2><strong><mark>3</mark>　 5日先</strong>の天気まで分かる！</h2>
+        <div class="">
+          <p>24時間天気はもちろん<br>5日先の天気まで分かっちゃう</p>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="footer_bar">
+
+      <img src="../imgs/logo.png" alt="" width="100px">
+      <details class="policy">
+        <summary>プライバシーポリシー</summary>
+        <p>
+          当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用します。データは匿名で収集されており、個人を特定するものではありません。<br>
+          Cookieを無効にすることで収集を拒否することが出来ます。お使いのブラウザの設定をご確認ください。
+        </p>
+        <p>
+          この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/">Googleアナリティクスサービス利用規約のページ</a>や<a href="https://policies.google.com/technologies/ads?hl=ja">Googleポリシーと規約ページ</a>をご覧ください。
+            <br>
+          </p>
+        </details>
+        <p class="copyLight"><small>&copy; Tatsumi_Ishikawa.2020</small></p>
+        
+      </div>
   </footer>
 </body>
 
