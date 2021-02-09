@@ -92,9 +92,9 @@
 
 もしご興味を持っていただけたようでしたら、以下のリンクからさらに情報を得ることもできます。
   
-[コロナデータ取得アプリ]（http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php）
+[コロナデータ取得アプリ](http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php)
 
-[AIチャットボット]（http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php）
+[AIチャットボット](http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php)
 
 [twitter](https://twitter.com/Tatsumi14079486)
 
