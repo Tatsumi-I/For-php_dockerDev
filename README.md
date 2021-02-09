@@ -43,7 +43,7 @@
 ## 操作方法
  **ファーストビューにある3つのメニューバーから都市を選択します**
  <br>
- <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="70%">
+ <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="60%">
 
  3通りの方法で検索できます**
  - 選択肢から選ぶ
@@ -61,7 +61,7 @@
   
 ## 苦労したところ
 
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="70%">
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="60%">
   
   ### 文字列の判定
 
