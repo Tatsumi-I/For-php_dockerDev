@@ -3,13 +3,13 @@
 
 ## 概要
 
-### 体感気温に特化した天気予報
-### 世界中の2万以上の地域を指定可能
-### 最大5日先まで参照可能
+  ### 体感気温に特化した天気予報
+  ### 世界中の2万以上の地域を指定可能
+  ### 最大5日先まで参照可能
   
 ## 制作の背景と目的
 
-### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
+  ### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
 <img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="30%">
 
 そしてこれからの時代は
@@ -25,11 +25,11 @@
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 <br>
 
-### PHP,Web API,レスポンシブデザイン
+  ### PHP,Web_API,レスポンシブデザイン
 
 <br>
 
-### その他：Sass,CSSanimation,JSON,HTML5,CSS3,Google_Analytics
+  ### その他：Sass,CSSanimation,JSON,HTML5,CSS3,Google_Analytics
   
 ## 機能詳細  
   **データの取得**  
@@ -63,7 +63,7 @@
 
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="50%">
   
-### 文字列の判定
+  ### 文字列の判定
 
 <br>
 入力された地域が有効なデータか、照合する機能の実装
@@ -74,17 +74,17 @@
 ## 今後さらに学びたいこと
 <br>
 
-### 複数のDBとユーザーが関わるアプリ作成
+  ### 複数のDBとユーザーが関わるアプリ作成
 
-### 関数やMVCの理解（保守性や可読性）
+  ### 関数やMVCの理解（保守性や可読性）
 
-### サーバーサイドとインフラ両面の深い知識
+  ### サーバーサイドとインフラ両面の深い知識
 
 <br>
 
 ## 最後に
 
-### お忙しい中、最後まで読んでいただきありがとうございます。
+  ### お忙しい中、最後まで読んでいただきありがとうございます。
 
 もしご興味を持っていただけたようでしたら、以下のリンクからさらに情報を得ることもできます。
   
