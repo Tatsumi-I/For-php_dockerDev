@@ -24,7 +24,7 @@
 <br>
 を可視化できるようなアプリを作りたいと考えて作成しました。
 <br>
-## それを実現するために選んだもの
+## それを実現するために使用している技術
 <br>
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 <br>
@@ -92,8 +92,10 @@
 
 もしご興味を持っていただけたようでしたら、以下のリンクからさらに情報を得ることもできます。
   
-[その他]
+[コロナデータ取得アプリ]（http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php）
   
-[その他]
+[AIチャットボット]（http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php）
+
+[twitter](https://twitter.com/Tatsumi14079486)
+
   
-[その他]
