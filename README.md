@@ -25,9 +25,10 @@
 ## それを実現するために選んだもの
 <br>
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
-### PHP, Web API, レスポンシブデザイン
 <br>
-### その他：Sass, CSSanimation, JSON, HTML5, CSS3, Google Analytics
+### PHP,Web API,レスポンシブデザイン
+<br>
+### その他：Sass,CSSanimation,JSON,HTML5,CSS3,Google_Analytics
   
 ## 機能詳細  
   **データの取得**  
@@ -40,6 +41,7 @@
   
 ## 操作方法
  **ファーストビューにある3つのメニューバーから都市を選択します**
+ <br>
  <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="30%">
 
  3通りの方法で検索できます**
@@ -58,7 +60,7 @@
   
 ## 苦労したところ
   
-- 文字列の判定
+### 文字列の判定
 <br>
 入力された地域が有効なデータか、照合する機能の実装
 <br>
@@ -69,7 +71,7 @@
 ### 複数のDBとユーザーが関わるアプリ作成
 ### 関数やMVCの理解（保守性や可読性）
 ### サーバーサイドとインフラ両面の深い知識
-  
+<br>
 ## 最後に
 ### お忙しい中、最後まで読んでいただきありがとうございます。
 
