@@ -9,7 +9,7 @@
   
 ## 制作の背景と目的
 
-### 「何を知っているか」はQOLや幸福度に影響します。
+### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
 <img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="30%">
 
 そしてこれからの時代は
@@ -17,14 +17,16 @@
 #### 情報は生活をどう変えるか
 これらは重要な考え方だと考えています。
 
-それで、**ただ天気がわかる**ではなく、**それでどうすればいいか**
+それで、**天気がただわかる**ではなく、**それでどうすればいいか**
 を可視化できるようなアプリを作りたいと考えて作成しました。
 
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="50%">
   
 ## それを実現するために選んだもの
+<br>
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 ### PHP, Web API, レスポンシブデザイン
+<br>
 ### その他：Sass, CSSanimation, JSON, HTML5, CSS3, Google Analytics
   
 ## 機能詳細  
@@ -57,10 +59,13 @@
 ## 苦労したところ
   
 - 文字列の判定
+<br>
 入力された地域が有効なデータか、照合する機能の実装
+<br>
 入力された情報によってどのURLに反映すべきか分岐する機能の実装
-  
+<br>
 ## 今後さらに学びたいこと
+<br>
 ### 複数のDBとユーザーが関わるアプリ作成
 ### 関数やMVCの理解（保守性や可読性）
 ### サーバーサイドとインフラ両面の深い知識
