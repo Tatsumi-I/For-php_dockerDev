@@ -9,7 +9,7 @@
 ## 制作の背景と目的
 
   ### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
-<img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="30%">
+<img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="50%">
 
 そしてこれからの時代は
   - 情報をどう活用するか
@@ -43,7 +43,7 @@
 ## 操作方法
  **ファーストビューにある3つのメニューバーから都市を選択します**
  <br>
- <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="30%">
+ <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="70%">
 
  3通りの方法で検索できます**
  - 選択肢から選ぶ
@@ -61,7 +61,7 @@
   
 ## 苦労したところ
 
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="50%">
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="70%">
   
   ### 文字列の判定
 
