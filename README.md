@@ -1,3 +1,6 @@
+# このページでは私の成果物の一例として、天気予報アプリの詳細をご紹介致します。
+
+
 # 天気予報アプリの詳細
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">＊実際はこんなに遅くありません。
 <br>[使ってみる](http://myfirstdeploy.s3.coreserver.jp/work/web/weather_API/weather.php)
