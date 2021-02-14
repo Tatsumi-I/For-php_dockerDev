@@ -54,10 +54,40 @@
 **データの取得**  
  1.Open Weather からJSONで提供されているデータをAPIで取得します。  
  2.ユーザーの選択に応じてURLに反映させ、必要な情報を表示します。  
+ 
+ ````
+  $api_url = 'https://api.openweathermap.org/data/2.5/forecast' . $area . '&appid=' . $apiKey . '&lang=ja&units=metric';
+  $response = json_decode(file_get_contents($api_url), true);
+  $list = $response['list'];
+  $leng = count($list);
+  $city = $response['city']['name'];
+ ````
   **判定**  
  1.入力されたデータが適正か判断し、エラーメッセージが表示され、デフォルトに指定されている名古屋の天気が表示されます。  
  2.入力されたデータが適正なら、多次元配列のJSONからデータを取り出して表示します。  
  3.条件により、体感気温に背景色を付与します。  
+ ````
+   if ((isset($_GET['area'])) && (!isset($_GET['area_in'])) && (empty($_GET['zip']))) {
+    $area = '?id=' . $_GET['area'];
+  } elseif (!isset($_GET['area']) && (!isset($_GET['area_in'])) && (!empty($_GET['zip']))) {
+    if (strlen($_GET['zip']) === 8) {
+      $area = '?zip=' . $_GET['zip'] . ',jp';
+    } else {
+      $area = '?zip=100-0012,jp';
+      $error = '郵便番号として正しくありません';
+    }
+  } elseif (!isset($_GET['area']) && (isset($_GET['area_in'])) && (empty($_GET['zip']))) {
+    $input_area = $_GET['area_in'];
+    $city = $city_info[$i]['name'];
+
+    foreach ($city_info as $city) {
+      if ($city['name'] === $input_area) {
+        $area = '?id=' . $city['id'];
+      }
+    }
+  }
+ 
+ ````
   
 ## 操作方法
  **ファーストビューにある3つのメニューバーから都市を選択します**
