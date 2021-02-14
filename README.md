@@ -38,11 +38,9 @@
 <br><br>
 ## それを実現するために使用している技術
 <br>
-<img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
-<br>
-
   ### PHP,Web_API,レスポンシブデザイン
-
+  
+<img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 <br>
 
   ### その他：Sass,CSSanimation,JSON,HTML5,CSS3,Google_Analytics
@@ -101,36 +99,37 @@
 
  <br>
   3.条件により、体感気温に背景色を付与します。 
+  <br>
   
 ## 操作方法
 <br>
 
 ### ファーストビューにある3つのメニューバーから都市を選択します
-
- <br>
  <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="55%">
 
- **3通りの方法で検索できます**
  - 選択肢から選ぶ
  - 文字を入力して指定する
  - 郵便番号で選択する
+ <br>
  
 ## こだわったところ
-<br>
-  
+
+### ユーザビリティ
+
 <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="50%">
   
 - 多様な使用を想定した機能（地域カバー率、検索方法の選択肢）
 - 毎日見たくなるようなUI/UX
 - jQueryやBootstrapを使用しないUI
 - レスポンシブデザイン
+
   <br>
+  
 ## 苦労したところ
 <br>
+  ### 文字列の判定
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
-  ### 文字列の判定
-
 <br>
 入力された地域が有効なデータか、照合する機能の実装
 <br>
