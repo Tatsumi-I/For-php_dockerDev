@@ -1,12 +1,12 @@
 # このページでは私の成果物の一例をご紹介致します。
 <br>
-その他成果物のリンク先も文末にてご紹介させていただいておりますので、ぜひ御覧ください。
+## その他成果物のリンク先も文末にてご紹介させていただいておりますので、ぜひ御覧ください。
 
-
+<br>
 <br>
 
 
-# 作例1）.天気予報アプリの詳細
+# 天気予報アプリの詳細
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">＊実際はこんなに遅くありません。
 <br>[使ってみる](http://myfirstdeploy.s3.coreserver.jp/work/web/weather_API/weather.php)
 <br>
