@@ -17,7 +17,7 @@
   - 体感気温に特化した天気予報
   - 世界中の20万以上の地域を指定可能
   - 最大5日先まで参照可能
-
+<br>
 ## 制作の背景と目的
 
   ### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
@@ -45,13 +45,14 @@
 <br>
 
   ### その他：Sass,CSSanimation,JSON,HTML5,CSS3,Google_Analytics
+  <br>
   
-## 機能詳細  
+  ## 機能詳細  
 
 <img src="https://openweathermap.org/themes/openweathermap/assets/img/landing/one_call_api.png" width="50%">
 
 
-**データの取得**  
+### データの取得
  1.Open Weather からJSONで提供されているデータをAPIで取得します。  
  2.ユーザーの選択に応じてURLに反映させ、必要な情報を表示します。  
  
@@ -62,7 +63,8 @@
   $leng = count($list);
   $city = $response['city']['name'];
  ````
-  **判定**  
+### 判定
+<br>
  1.入力されたデータが適正か判断し、エラーメッセージが表示され、デフォルトに指定されている名古屋の天気が表示されます。  
  2.入力されたデータが適正なら、JSONからデータを取り出して表示します。  
 <br> 
@@ -96,16 +98,17 @@
   
 ## 操作方法
 <br>
- **ファーストビューにある3つのメニューバーから都市を選択します**
+### ファーストビューにある3つのメニューバーから都市を選択します
  <br>
  <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="55%">
 
- 3通りの方法で検索できます**
+ **3通りの方法で検索できます**
  - 選択肢から選ぶ
  - 文字を入力して指定する
  - 郵便番号で選択する
  
 ## こだわったところ
+<br>
   
 <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="50%">
   
@@ -139,7 +142,7 @@
 
 ## 最後に
 
-  #### お忙しい中、最後まで読んでいただきありがとうございます。
+  #### お忙しい中 最後まで読んでいただきありがとうございます。
 
 もしご興味を持っていただけたようでしたら、以下のリンクからさらに情報を得ることもできます。
   
