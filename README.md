@@ -64,19 +64,23 @@
  ````
   **判定**  
  1.入力されたデータが適正か判断し、エラーメッセージが表示され、デフォルトに指定されている名古屋の天気が表示されます。  
- 2.入力されたデータが適正なら、多次元配列のJSONからデータを取り出して表示します。  
- 3.条件により、体感気温に背景色を付与します。  
+ 2.入力されたデータが適正なら、JSONからデータを取り出して表示します。  
+<br> 
  ````
-   if ((isset($_GET['area'])) && (!isset($_GET['area_in'])) && (empty($_GET['zip']))) {
+  if ((isset($_GET['area'])) && (!isset($_GET['area_in'])) && (empty($_GET['zip']))) {
     $area = '?id=' . $_GET['area'];
-  } elseif (!isset($_GET['area']) && (!isset($_GET['area_in'])) && (!empty($_GET['zip']))) {
+  } 
+  
+  if (!isset($_GET['area']) && (!isset($_GET['area_in'])) && (!empty($_GET['zip']))) {
     if (strlen($_GET['zip']) === 8) {
       $area = '?zip=' . $_GET['zip'] . ',jp';
     } else {
       $area = '?zip=100-0012,jp';
       $error = '郵便番号として正しくありません';
     }
-  } elseif (!isset($_GET['area']) && (isset($_GET['area_in'])) && (empty($_GET['zip']))) {
+  } 
+  
+  if (!isset($_GET['area']) && (isset($_GET['area_in'])) && (empty($_GET['zip']))) {
     $input_area = $_GET['area_in'];
     $city = $city_info[$i]['name'];
 
@@ -86,10 +90,12 @@
       }
     }
   }
- 
  ````
+ <br>
+  3.条件により、体感気温に背景色を付与します。 
   
 ## 操作方法
+<br>
  **ファーストビューにある3つのメニューバーから都市を選択します**
  <br>
  <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="55%">
