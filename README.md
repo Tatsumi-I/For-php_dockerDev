@@ -48,8 +48,10 @@
   
 ## 機能詳細  
 
-<img src="https://openweathermap.org/themes/openweathermap/assets/img/landing/one_call_api.png" width="50%"> 
-  **データの取得**  
+<img src="https://openweathermap.org/themes/openweathermap/assets/img/landing/one_call_api.png" width="50%">
+
+
+**データの取得**  
  1.Open Weather からJSONで提供されているデータをAPIで取得します。  
  2.ユーザーの選択に応じてURLに反映させ、必要な情報を表示します。  
   **判定**  
