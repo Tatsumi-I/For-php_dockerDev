@@ -18,6 +18,7 @@
   - 世界中の20万以上の地域を指定可能
   - 最大5日先まで参照可能
 <br>
+
 ## 制作の背景と目的
 
   ### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
@@ -34,7 +35,7 @@
 **ただ天気が分かる**ではなく、**それでどうすればいいか**
 <br>
 を可視化できるようなアプリを作りたいと考えて作成しました。
-<br>
+<br><br>
 ## それを実現するために使用している技術
 <br>
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
@@ -62,13 +63,15 @@
   $list = $response['list'];
   $leng = count($list);
   $city = $response['city']['name'];
- ````
+  
+````
 ### 判定
 <br>
  1.入力されたデータが適正か判断し、エラーメッセージが表示され、デフォルトに指定されている名古屋の天気が表示されます。  
  2.入力されたデータが適正なら、JSONからデータを取り出して表示します。  
 <br> 
- ````
+
+````
   if ((isset($_GET['area'])) && (!isset($_GET['area_in'])) && (empty($_GET['zip']))) {
     $area = '?id=' . $_GET['area'];
   } 
@@ -92,7 +95,9 @@
       }
     }
   }
- ````
+  
+````
+
  <br>
   3.条件により、体感気温に背景色を付与します。 
   
