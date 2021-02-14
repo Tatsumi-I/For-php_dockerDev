@@ -49,6 +49,8 @@
   
   ## 機能詳細  
 
+### Open Weather から提供されているAPIを活用しています。
+
 <img src="https://openweathermap.org/themes/openweathermap/assets/img/landing/one_call_api.png" width="50%">
 
 
@@ -65,7 +67,6 @@
   
 ````
 ### 判定
-<br>
  1.入力されたデータが適正か判断し、エラーメッセージが表示され、デフォルトに指定されている名古屋の天気が表示されます。  
  <br>
  2.入力されたデータが適正なら、JSONからデータを取り出して表示します。  
@@ -100,11 +101,9 @@
 
  <br>
   3.条件により、体感気温に背景色を付与します。 
-  <br>
+  <br><br>
   
 ## 操作方法
-<br>
-
 ### ファーストビューにある3つのメニューバーから都市を選択します
  <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot.png" width="55%">
 
@@ -127,8 +126,6 @@
   <br>
   
 ## 苦労したところ
-<br>
-
 ### 文字列の判定
 
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
