@@ -38,8 +38,9 @@
 <br><br>
 ## それを実現するために使用している技術
 <br>
-  ### PHP,Web_API,レスポンシブデザイン
-  
+
+### PHP,Web_API,レスポンシブデザイン
+
 <img src="https://images.unsplash.com/photo-1599507593362-50fa53ed1b40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHBocHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" width="50%">
 <br>
 
@@ -127,7 +128,9 @@
   
 ## 苦労したところ
 <br>
-  ### 文字列の判定
+
+### 文字列の判定
+
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
 <br>
