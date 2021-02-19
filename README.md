@@ -156,8 +156,5 @@
 
 [AIチャットボット](http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php)
 
-[コメントCRUDアプリ](http://myfirstdeploy.s3.coreserver.jp/work/web/covid_19/covid.php)
-
-[自己紹介サイト](http://myfirstdeploy.s3.coreserver.jp/work/web/chara.php)
 
   
