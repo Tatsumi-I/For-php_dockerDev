@@ -1,4 +1,4 @@
-# このページでは私の成果物の一例をご紹介致します
+# 私の成果物の一例をご紹介致します
 <br>
 
 **その他成果物のリンク先もご紹介させていただいております。**<br>**こちらもぜひ御覧ください。**
@@ -8,7 +8,8 @@
 
 
 # 天気予報アプリの詳細
-<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">＊実際はこんなに遅くありません。
+<img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">
+<br>＊実際はこんなに遅くありません
 <br>[使ってみる](http://myfirstdeploy.s3.coreserver.jp/work/web/weather_API/weather.php)
 <br>
 
@@ -19,21 +20,21 @@
   - 最大5日先まで参照可能
 <br>
 
-## 制作の背景と目的
+## 制作の背景とゴール
 
   ### 「どうすべきかを知っている」ことはQOLや幸福度に影響します。
   #### ただ天気が分かるではなく、それでどうすればいいか、を可視化できるようなアプリを作りたい と考えて作成しました。
   
 <img src="https://images.unsplash.com/photo-1484627147104-f5197bcd6651?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" width="50%">
 
-そしてこれからの時代において
+そしてこれからの時代において重要な
 
   - 情報をどう活用するか
   - 情報は生活をどう変えるか
+ 
+を表現できるアプリを目指しました。
   
-<br>
-これらは重要な考え方だと考えています。
-
+  
 <br><br>
 ## それを実現するために使用している技術
 <br>
@@ -130,6 +131,8 @@
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
 <br>
+***バリデーション***
+
 入力された地域が有効なデータか、照合する機能の実装
 <br>
 入力された情報によってどのURLに反映すべきか分岐する機能の実装
@@ -156,5 +159,4 @@
 
 [AIチャットボット](http://myfirstdeploy.s3.coreserver.jp/work/web/talk_API/talk.php)
 
-
-  
+[Tatsumi's portfolio](http://ec2-35-72-191-104.ap-northeast-1.compute.amazonaws.com)
