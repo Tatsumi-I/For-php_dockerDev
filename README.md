@@ -132,6 +132,7 @@
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
 <br>
+
 ### バリデーション
 
 入力された地域が有効なデータか、照合する機能の実装
