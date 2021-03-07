@@ -10,7 +10,9 @@
 # 天気予報アプリの詳細
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather.gif" width="30%">
 <br>＊実際はこんなに遅くありません
+
 <br>[使ってみる](http://myfirstdeploy.s3.coreserver.jp/work/web/weather_API/weather.php)
+
 <br>
 
 ## 機能概要
@@ -126,12 +128,11 @@
   <br>
   
 ## 苦労したところ
-### 文字列の判定
 
 <img src="https://github.com/Tatsumi-I/For-php_dockerDev/blob/master/weather_shot01.png" width="55%">
   
 <br>
-***バリデーション***
+### バリデーション
 
 入力された地域が有効なデータか、照合する機能の実装
 <br>
